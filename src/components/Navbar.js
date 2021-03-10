@@ -14,7 +14,7 @@ function Navbar() {
             <div className="navbar-container">
                {/* TROY ZADA HEADER/LOGO */}
                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                  TROY ZADA
+                  TZ
                </Link>
 
                {/* FOR MOBILE VIEW, HAVE 3 BARS ICON WITH NAVBAR ITEMS BELOW */}
@@ -85,6 +85,15 @@ function Navbar() {
                         onClick={closeMobileMenu}
                      >
                         PROJECTS
+                     </Link>
+                  </li>
+                  <li className="nav-item">
+                     <Link
+                        to="/awards"
+                        className="nav-links"
+                        onClick={closeMobileMenu}
+                     >
+                        AWARDS
                      </Link>
                   </li>
                   <li className="nav-item">
