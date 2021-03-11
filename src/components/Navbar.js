@@ -31,7 +31,7 @@ function Navbar() {
                         onClick={closeMobileMenu}
                      >
                         {/* HOME PAGE, ABOUT ME */}
-                        Home
+                        HOME
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -41,7 +41,7 @@ function Navbar() {
                         onClick={closeMobileMenu}
                      >
                         {/* BUTTON TO DOWNLOAD RESUME, EDUCATION, AWARDS */}
-                        Resume
+                        RESUME
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -51,7 +51,7 @@ function Navbar() {
                         onClick={closeMobileMenu}
                      >
                         {/* PROGRESS BARS OF VARIOUS SOFT/HARD SKILLS */}
-                        Skills
+                        SKILLS
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -61,7 +61,7 @@ function Navbar() {
                         onClick={closeMobileMenu}
                      >
                         {/* WORK AND PROJECTS */}
-                        Experience
+                        EXPERIENCE
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -72,7 +72,7 @@ function Navbar() {
                      >
                         {/* POSTS ABOUT VARIOUS STUFF */}
                         {/* E.G. FIRST POST ABOUT "CREATING THIS WEBSITE" */}
-                        Blog
+                        BLOG
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -81,7 +81,7 @@ function Navbar() {
                         className="nav-links"
                         onClick={closeMobileMenu}
                      >
-                        Contact
+                        CONTACT
                      </Link>
                   </li>
                </ul>

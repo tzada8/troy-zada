@@ -21,6 +21,7 @@ nav {
    max-width: 1500px;
 }
 
+/* WILL PROBABLY USE AN IMAGE AS MY LOGO */
 .navbar-logo {
    color: var(--WHITE);
    justify-self: start;
