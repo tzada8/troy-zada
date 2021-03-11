@@ -30,16 +30,8 @@ function Navbar() {
                         className="nav-links"
                         onClick={closeMobileMenu}
                      >
-                        HOME
-                     </Link>
-                  </li>
-                  <li className="nav-item">
-                     <Link
-                        to="/about"
-                        className="nav-links"
-                        onClick={closeMobileMenu}
-                     >
-                        ABOUT
+                        {/* HOME PAGE AND ABOUT ME */}
+                        Home
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -48,7 +40,8 @@ function Navbar() {
                         className="nav-links"
                         onClick={closeMobileMenu}
                      >
-                        RESUME
+                        {/* BUTTON TO DOWNLOAD RESUME, EDUCATION, AWARDS */}
+                        Resume
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -57,16 +50,8 @@ function Navbar() {
                         className="nav-links"
                         onClick={closeMobileMenu}
                      >
-                        SKILLS
-                     </Link>
-                  </li>
-                  <li className="nav-item">
-                     <Link
-                        to="/education"
-                        className="nav-links"
-                        onClick={closeMobileMenu}
-                     >
-                        EDUCATION
+                        {/* PROGRESS BARS OF VARIOUS SOFT/HARD SKILLS */}
+                        Skills
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -75,16 +60,8 @@ function Navbar() {
                         className="nav-links"
                         onClick={closeMobileMenu}
                      >
-                        WORK
-                     </Link>
-                  </li>
-                  <li className="nav-item">
-                     <Link
-                        to="/projects"
-                        className="nav-links"
-                        onClick={closeMobileMenu}
-                     >
-                        PROJECTS
+                        {/* WORK AND PROJECTS */}
+                        Experience
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -93,7 +70,18 @@ function Navbar() {
                         className="nav-links"
                         onClick={closeMobileMenu}
                      >
-                        AWARDS
+                        Awards
+                     </Link>
+                  </li>
+                  <li className="nav-item">
+                     <Link
+                        to="/awards"
+                        className="nav-links"
+                        onClick={closeMobileMenu}
+                     >
+                        {/* POSTS ABOUT VARIOUS STUFF */}
+                        {/* E.G. FIRST POST ABOUT "CREATING THIS WEBSITE" */}
+                        Blog
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -102,7 +90,7 @@ function Navbar() {
                         className="nav-links"
                         onClick={closeMobileMenu}
                      >
-                        CONTACT
+                        Contact
                      </Link>
                   </li>
                </ul>
