@@ -107,7 +107,7 @@ nav {
       z-index: 1;
       border-left: 3px solid var(--GREY);
       border-bottom: 3px solid var(--GREY);
-      transition: all 0.5s ease;
+      transition: all 1.2s ease;
    }
 
    .nav-menu.active {
