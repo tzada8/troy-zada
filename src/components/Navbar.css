@@ -1,11 +1,11 @@
 /* GLOBAL VARIABLE FOR NUMBER OF ITEMS */
 :root {
    --NUM_OF_ITEMS: 7;
-   --NAV_MENU_SIZE: 245px;
+   --NAV_MENU_SIZE: 231px;
 }
 
 nav {
-   background: #35aef1;
+   background: red;
    position: fixed;
    display: flex;
    justify-content: center;
@@ -22,7 +22,7 @@ nav {
 }
 
 .navbar-logo {
-   color: white;
+   color: var(--WHITE);
    justify-self: start;
    margin-left: 15px;
    font-size: 2rem;
@@ -38,7 +38,7 @@ nav {
 }
 
 .nav-menu {
-   background: black;
+   background: var(--REG_BLUE);
    justify-content: center;
    text-align: center;
 }
@@ -51,7 +51,7 @@ nav {
    background: var(--REG_BLUE);
    padding-top: 4px;
    padding-bottom: 4px;
-   color: white;
+   color: var(--WHITE);
    font-weight: normal;
 }
 
@@ -64,7 +64,7 @@ nav {
 /* IF SCREEN IS MOBILE VERSION, THEN HAVE FOLLOWING STYLES */
 @media screen and (max-width: 960px) {
    nav {
-      background: black;
+      background: var(--GREY);
       width: 100vw;
    }
 
@@ -83,7 +83,7 @@ nav {
    }
 
    .menu-icon {
-      color: white;
+      color: var(--WHITE);
       position: absolute;
       display: block;
       top: 20%;
@@ -103,8 +103,10 @@ nav {
       top: 50px;
       right: 0;
       width: 30%;
-      height: var(--NAV_MENU_SIZE);
+      height: calc(var(--NAV_MENU_SIZE) + 3px);
       z-index: 998;
+      border-left: 3px solid var(--GREY);
+      border-bottom: 3px solid var(--GREY);
    }
 
    .nav-menu.active {
@@ -114,7 +116,7 @@ nav {
    }
 
    .nav-links {
-      background: green;
+      background: var(--REG_BLUE);
       display: block;
       text-align: right;
       padding-right: 18%;
