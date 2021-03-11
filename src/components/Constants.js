@@ -4,7 +4,7 @@ export const RESUME = "RESUME";
 export const SKILLS = "SKILLS";
 export const EXPERIENCE = "EXPERIENCE";
 export const BLOG = "BLOG";
-export const CONTACT = "Contact";
+export const CONTACT = "CONTACT";
 
 // SOCIAL MEDIA LINKS
 export const LINKEDIN_LINK = "https://www.linkedin.com/in/troy-zada";
