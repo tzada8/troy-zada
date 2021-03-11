@@ -38,7 +38,7 @@ nav {
 }
 
 .nav-menu {
-   background: yellow;
+   background: black;
    justify-content: center;
    text-align: center;
 }
@@ -48,9 +48,15 @@ nav {
 }
 
 .nav-links {
-   background: green;
+   background: var(--REG_BLUE);
    padding-top: 4px;
    padding-bottom: 4px;
+   color: white;
+   font-weight: normal;
+}
+
+.nav-links:hover {
+   background: var(--DARK_BLUE);
 }
 
 /* MIGHT NEED TO ADJUST THE MAX-WIDTH DEPENDING ON CARD SIZES */
@@ -83,6 +89,7 @@ nav {
       top: 20%;
       right: 5%;
       font-size: 1.8rem;
+      cursor: pointer;
    }
 
    .fa-times {
@@ -90,7 +97,6 @@ nav {
    }
 
    .nav-menu {
-      background: yellow;
       position: absolute;
       display: block;
       flex-direction: column;
