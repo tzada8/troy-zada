@@ -24,11 +24,10 @@ nav {
 /* WILL PROBABLY USE AN IMAGE AS MY LOGO */
 .navbar-logo {
    color: var(--WHITE);
-   justify-self: start;
-   margin-left: 15px;
    font-size: 2rem;
    display: flex;
    align-items: center;
+
    /* ATTEMPT AT MAKING CIRCLE FOR LOGO ICON */
    /* border: 4px solid orange;
    border-radius: 100%; */
@@ -39,25 +38,38 @@ nav {
 }
 
 .nav-menu {
+   /* REMOVE BACKGROUND AFTERWARDS */
    background: yellow;
    justify-content: center;
    text-align: center;
+   width: 115px;
+   text-align: left;
 }
 
 .nav-item {
    height: calc(var(--NAV_MENU_SIZE) / var(--NUM_OF_ITEMS));
+   padding: 18px 0;
 }
 
 .nav-links {
    background: var(--REG_BLUE);
-   padding-top: 4px;
-   padding-bottom: 4px;
    color: var(--WHITE);
+   display: block;
+   padding: 4px 0;
    font-weight: normal;
+
+   background: linear-gradient(
+      to right,
+      var(--DARK_BLUE) 50%,
+      var(--REG_BLUE) 50%
+   );
+   background-size: 200% 100%;
+   background-position: right bottom;
+   transition: all 0.4s linear;
 }
 
 .nav-links:hover {
-   background: var(--DARK_BLUE);
+   background-position: left bottom;
 }
 
 /* MIGHT NEED TO ADJUST THE MAX-WIDTH DEPENDING ON CARD SIZES */
@@ -77,6 +89,7 @@ nav {
    .navbar-logo {
       position: absolute;
       display: flex;
+      margin-left: 15px;
       top: 0;
       left: 0;
       transform: translateY(40%);
@@ -98,6 +111,8 @@ nav {
    }
 
    .nav-menu {
+      /* CHANGE TO var(--REG_BLUE) */
+      background: yellow;
       position: absolute;
       display: flex;
       flex-direction: column;
@@ -116,11 +131,20 @@ nav {
       transition: all 0.5s ease;
    }
 
+   .nav-item {
+      padding: 0;
+   }
+
    .nav-links {
       background: var(--REG_BLUE);
       display: block;
       text-align: right;
       padding-right: 18%;
+   }
+
+   .nav-links:hover {
+      background: var(--DARK_BLUE);
+      transition: none;
    }
 }
 
