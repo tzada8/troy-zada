@@ -1,6 +1,37 @@
+/* GLOBAL VARIABLES */
+:root {
+   /* COLOURS */
+   --BLACK: #000;
+   --WHITE: #f9f9f9;
+   --DARK_GREY: #242424;
+
+   /* FONTS */
+   --FONT_HEADINGS: "PT Sans";
+   --FONT_CONTENT: "Roboto";
+}
+
 * {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-   font-family: "PT Sans", "Roboto", sans-serif;
+   font-family: var(--FONT_HEADINGS), var(--FONT_CONTENT), Arial, sans-serif;
+}
+
+body {
+   font-size: 18px;
+   background: var(--WHITE);
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+   color: var(--BLACK);
+}
+
+button {
+   cursor: pointer;
 }
