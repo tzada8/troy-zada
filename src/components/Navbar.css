@@ -1,7 +1,7 @@
 /* GLOBAL VARIABLE FOR NUMBER OF ITEMS */
 :root {
-   --NUM_OF_ITEMS: 7;
-   --NAV_MENU_SIZE: 231px;
+   --NUM_OF_ITEMS: 6;
+   --NAV_MENU_SIZE: calc(var(--NUM_OF_ITEMS) * 33px);
 }
 
 nav {
@@ -38,7 +38,7 @@ nav {
 }
 
 .nav-menu {
-   background: var(--REG_BLUE);
+   background: yellow;
    justify-content: center;
    text-align: center;
 }
@@ -98,21 +98,21 @@ nav {
 
    .nav-menu {
       position: absolute;
-      display: block;
+      display: flex;
       flex-direction: column;
       top: 50px;
-      right: 0;
+      right: -100%;
       width: 30%;
       height: calc(var(--NAV_MENU_SIZE) + 3px);
-      z-index: 998;
+      z-index: 1;
       border-left: 3px solid var(--GREY);
       border-bottom: 3px solid var(--GREY);
+      transition: all 0.5s ease;
    }
 
    .nav-menu.active {
-      background: blue;
-      /* right: 0; */
-      overflow-y: auto;
+      right: 0;
+      transition: all 0.5s ease;
    }
 
    .nav-links {
@@ -127,11 +127,11 @@ nav {
 @media screen and (max-width: 480px) {
    .nav-menu {
       width: 100%;
-      height: var(--NAV_MENU_SIZE);
+      height: calc(var(--NAV_MENU_SIZE) + 3px);
+      border-left: 0;
    }
 
    .nav-links {
-      background: turquoise;
       display: block;
       text-align: center;
       padding-right: 0;

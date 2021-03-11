@@ -30,7 +30,7 @@ function Navbar() {
                         className="nav-links"
                         onClick={closeMobileMenu}
                      >
-                        {/* HOME PAGE AND ABOUT ME */}
+                        {/* HOME PAGE, ABOUT ME */}
                         Home
                      </Link>
                   </li>
@@ -62,15 +62,6 @@ function Navbar() {
                      >
                         {/* WORK AND PROJECTS */}
                         Experience
-                     </Link>
-                  </li>
-                  <li className="nav-item">
-                     <Link
-                        to="/awards"
-                        className="nav-links"
-                        onClick={closeMobileMenu}
-                     >
-                        Awards
                      </Link>
                   </li>
                   <li className="nav-item">
