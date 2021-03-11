@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { HOME, RESUME, SKILLS, EXPERIENCE, BLOG, CONTACT } from "../Constants";
 
 function Navbar() {
    const [click, setClick] = useState(false);
@@ -31,7 +32,7 @@ function Navbar() {
                         onClick={closeMobileMenu}
                      >
                         {/* HOME PAGE, ABOUT ME */}
-                        HOME
+                        {HOME}
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -41,7 +42,7 @@ function Navbar() {
                         onClick={closeMobileMenu}
                      >
                         {/* BUTTON TO DOWNLOAD RESUME, EDUCATION, AWARDS */}
-                        RESUME
+                        {RESUME}
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -51,7 +52,7 @@ function Navbar() {
                         onClick={closeMobileMenu}
                      >
                         {/* PROGRESS BARS OF VARIOUS SOFT/HARD SKILLS */}
-                        SKILLS
+                        {SKILLS}
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -61,7 +62,7 @@ function Navbar() {
                         onClick={closeMobileMenu}
                      >
                         {/* WORK AND PROJECTS */}
-                        EXPERIENCE
+                        {EXPERIENCE}
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -72,7 +73,7 @@ function Navbar() {
                      >
                         {/* POSTS ABOUT VARIOUS STUFF */}
                         {/* E.G. FIRST POST ABOUT "CREATING THIS WEBSITE" */}
-                        BLOG
+                        {BLOG}
                      </Link>
                   </li>
                   <li className="nav-item">
@@ -81,7 +82,7 @@ function Navbar() {
                         className="nav-links"
                         onClick={closeMobileMenu}
                      >
-                        CONTACT
+                        {CONTACT}
                      </Link>
                   </li>
                </ul>
