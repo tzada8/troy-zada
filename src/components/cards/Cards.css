@@ -1,0 +1,17 @@
+.card-box {
+   background: blue;
+   width: 40%;
+   height: 550px;
+}
+
+.card-container {
+   padding: 40px;
+}
+
+.card-title {
+   font-family: var(--FONT_HEADINGS);
+}
+
+.card-content {
+   font-family: var(--FONT_CONTENT);
+}

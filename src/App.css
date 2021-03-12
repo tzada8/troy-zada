@@ -8,15 +8,15 @@
    --DARK_BLUE: #004e7c;
 
    /* FONTS */
-   --FONT_HEADINGS: "PT Sans";
-   --FONT_CONTENT: "Roboto";
+   --FONT_HEADINGS: "PT Sans", Arial, sans-serif;
+   --FONT_CONTENT: "Roboto", Arial, sans-serif;
 }
 
 * {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-   font-family: var(--FONT_HEADINGS), var(--FONT_CONTENT), Arial, sans-serif;
+   font-family: var(--FONT_HEADINGS);
 }
 
 body {
