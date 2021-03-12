@@ -1,7 +1,7 @@
 import React from "react";
 import "./Blog.css";
 
-function blog() {
+function Blog() {
    return (
       <div>
          <h1>BLOG</h1>
@@ -9,4 +9,4 @@ function blog() {
    );
 }
 
-export default blog;
+export default Blog;

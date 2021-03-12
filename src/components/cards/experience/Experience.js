@@ -1,7 +1,7 @@
 import React from "react";
 import "./Experience.css";
 
-function experience() {
+function Experience() {
    return (
       <div>
          <h1>EXPERIENCE</h1>
@@ -9,4 +9,4 @@ function experience() {
    );
 }
 
-export default experience;
+export default Experience;

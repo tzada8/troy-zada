@@ -1,7 +1,7 @@
 import React from "react";
 import "./Skills.css";
 
-function skills() {
+function Skills() {
    return (
       <div>
          <h1>SKILLS</h1>
@@ -9,4 +9,4 @@ function skills() {
    );
 }
 
-export default skills;
+export default Skills;
