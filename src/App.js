@@ -4,11 +4,27 @@ import "./App.css";
 
 import Navbar from "./components/navbar/Navbar";
 
+// CARDS
+import Home from "./components/cards/home/Home";
+import Resume from "./components/cards/resume/Resume";
+import Skills from "./components/cards/skills/Skills";
+import Experience from "./components/cards/experience/Experience";
+import Blog from "./components/cards/blog/Blog";
+import Contact from "./components/cards/contact/Contact";
+
 function App() {
    return (
       <div>
          <Router>
             <Navbar />
+            <Switch>
+               <Route path="/" exact component={Home} />
+               <Route path="/" exact component={Resume} />
+               <Route path="/" exact component={Skills} />
+               <Route path="/" exact component={Experience} />
+               <Route path="/" exact component={Blog} />
+               <Route path="/" exact component={Contact} />
+            </Switch>
          </Router>
          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
