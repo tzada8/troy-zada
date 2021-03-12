@@ -19,11 +19,11 @@ function App() {
             <Navbar />
             <Switch>
                <Route path="/" exact component={Home} />
-               <Route path="/" exact component={Resume} />
-               <Route path="/" exact component={Skills} />
-               <Route path="/" exact component={Experience} />
-               <Route path="/" exact component={Blog} />
-               <Route path="/" exact component={Contact} />
+               <Route path="/resume" exact component={Resume} />
+               <Route path="/skills" exact component={Skills} />
+               <Route path="/experience" exact component={Experience} />
+               <Route path="/blog" exact component={Blog} />
+               <Route path="/contact" exact component={Contact} />
             </Switch>
          </Router>
          <p>
