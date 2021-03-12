@@ -39,5 +39,8 @@ button {
 }
 
 .content-container {
+   background: url("./images/temp_home.jpg") center center/cover no-repeat;
+   height: 100vh;
+   width: 100%;
    padding: 50px 0;
 }
