@@ -1,7 +1,9 @@
 .card-box {
    background: blue;
    width: 40%;
-   height: 450px;
+   max-width: 500px;
+   /* height: 450px; */
+   height: 80%;
    overflow-y: auto;
 }
 
