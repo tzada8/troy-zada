@@ -37,3 +37,7 @@ a {
 button {
    cursor: pointer;
 }
+
+.content-container {
+   padding: 50px 0;
+}
