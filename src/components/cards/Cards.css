@@ -10,9 +10,9 @@
 }
 
 .card-title {
-   font-family: var(--FONT_HEADINGS);
+   padding-left: 150px;
 }
 
 .card-content {
-   font-family: var(--FONT_CONTENT);
+   padding-top: 150px;
 }
