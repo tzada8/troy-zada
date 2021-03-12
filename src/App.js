@@ -2,9 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
+// NAVIGATION
 import Navbar from "./components/navbar/Navbar";
 
-// CARDS
+// CARDS FOR CONTENT
 import Home from "./components/cards/home/Home";
 import Resume from "./components/cards/resume/Resume";
 import Skills from "./components/cards/skills/Skills";

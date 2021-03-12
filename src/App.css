@@ -38,6 +38,7 @@ button {
    cursor: pointer;
 }
 
+/* ALL MAIN CONTENT EXCLUDING NAVBAR */
 .content-container {
    background: url("./images/temp_home.jpg") center center/cover no-repeat;
    height: 100vh;
