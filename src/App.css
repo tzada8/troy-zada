@@ -8,14 +8,14 @@
    --DARK_BLUE: #004e7c;
 
    /* FONTS */
-   --FONT_HEADINGS: "PT Sans", Arial, sans-serif;
+   --FONT: "Montserrat", Arial, sans-serif;
 }
 
 * {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-   font-family: var(--FONT_HEADINGS);
+   font-family: var(--FONT);
 }
 
 body {
