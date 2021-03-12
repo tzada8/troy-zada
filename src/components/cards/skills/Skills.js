@@ -1,6 +1,7 @@
 import React from "react";
 import "./Skills.css";
 import "../Cards.css";
+import { SKILLS } from "../../Constants";
 
 function Skills() {
    return (
@@ -8,7 +9,7 @@ function Skills() {
          <div className="card-container">
             {/* TITLE OF CARD */}
             <div className="card-title">
-               <h1>SKILLS</h1>
+               <h1>{SKILLS}</h1>
             </div>
 
             {/* REST OF CONTENT */}

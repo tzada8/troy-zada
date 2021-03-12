@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import "../Cards.css";
+import { CONTACT } from "../../Constants";
 
 function Contact() {
    return (
@@ -8,7 +9,7 @@ function Contact() {
          <div className="card-container">
             {/* TITLE OF CARD */}
             <div className="card-title">
-               <h1>CONTACT</h1>
+               <h1>{CONTACT}</h1>
             </div>
 
             {/* REST OF CONTENT */}

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import "../Cards.css";
+import { HOME } from "../../Constants";
 
 function Home() {
    return (
@@ -8,7 +9,7 @@ function Home() {
          <div className="card-container">
             {/* TITLE OF CARD */}
             <div className="card-title">
-               <h1>HOME</h1>
+               <h1>{HOME}</h1>
             </div>
 
             {/* REST OF CONTENT */}
