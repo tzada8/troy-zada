@@ -1,10 +1,15 @@
 .card-box {
    background: blue;
+   position: absolute;
+   display: block;
    width: 40%;
    max-width: 500px;
+   min-height: calc(var(--MIN_SCREEN_HEIGHT) - 50px);
    /* height: 450px; */
-   height: 80%;
+   height: 550px;
+   margin: 2% 0;
    overflow-y: auto;
+   /* margin: 10vh 20%; */
 }
 
 .card-container {

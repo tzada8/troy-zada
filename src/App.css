@@ -9,6 +9,9 @@
 
    /* FONTS */
    --FONT: "Montserrat", Arial, sans-serif;
+
+   /* MIN SCREEN HEIGHT */
+   --MIN_SCREEN_HEIGHT: 600px;
 }
 
 * {
@@ -40,7 +43,21 @@ button {
 /* ALL MAIN CONTENT EXCLUDING NAVBAR */
 .content-container {
    background: url("./images/temp_home.jpg") center center/cover no-repeat;
+   background-attachment: fixed;
+   position: block;
    height: 100vh;
+   min-height: var(--MIN_SCREEN_HEIGHT);
    width: 100%;
-   padding: 50px 0;
+   /* padding: 5% 5%; */
+}
+
+/* IF SCREEN IS MOBILE VERSION, THEN HAVE FOLLOWING STYLES */
+@media screen and (max-width: 960px) {
+   .content-container {
+      padding-top: calc(50px + 10%);
+   }
+}
+
+/* IF SCREEN IS MOBILE VERSION, THEN HAVE FOLLOWING STYLES */
+@media screen and (max-width: 480px) {
 }
