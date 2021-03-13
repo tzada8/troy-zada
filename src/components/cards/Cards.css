@@ -5,11 +5,17 @@
    width: 40%;
    max-width: 500px;
    min-height: calc(var(--MIN_SCREEN_HEIGHT) - 50px);
-   /* height: 450px; */
    height: 550px;
-   margin: 2% 0;
    overflow-y: auto;
-   /* margin: 10vh 20%; */
+}
+
+/* LOCATION FOR HOME CARD */
+.home {
+   margin: 5% 5%;
+}
+
+/* LOCATION FOR ALL OTHER CARDS */
+.other {
 }
 
 .card-container {

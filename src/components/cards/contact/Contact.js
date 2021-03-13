@@ -5,7 +5,7 @@ import { CONTACT } from "../../Constants";
 
 function Contact() {
    return (
-      <div className="card-box">
+      <div className="card-box other">
          <div className="card-container">
             {/* TITLE OF CARD */}
             <div className="card-title">
