@@ -2,7 +2,7 @@
    background: blue;
    position: absolute;
    display: block;
-   width: 40%;
+   width: 35%;
    max-width: 500px;
    min-height: calc(var(--MIN_SCREEN_HEIGHT) - 50px);
    height: 550px;
@@ -11,11 +11,12 @@
 
 /* LOCATION FOR HOME CARD */
 .home {
-   margin: 5% 5%;
+   margin: 5% 17.5%;
 }
 
 /* LOCATION FOR ALL OTHER CARDS */
 .other {
+   margin: 5% 55%;
 }
 
 .card-container {
