@@ -15,13 +15,17 @@ function Home() {
          <div className="card-container">
             {/* ROUND HEADSHOT IMAGE */}
             <div className="home-img-round" />
-
             {/* TITLE OF CARD */}
-            <h1 className="home-intro-name">Hi, I'm Troy Zada!</h1>
-            {/* CURRENT ROLE/POSITION */}
-            <h2>Programmer, Lorem, ipsum.</h2>
-
-            <hr className="home-page-separator" />
+            <div className="home-intro-title">
+               <h1 className="home-intro-name">
+                  Hi, I'm <div className="home-troy-zada">Troy Zada!</div>
+               </h1>
+               {/* CURRENT ROLE/POSITION */}
+               <h2 className="home-intro-qualities">
+                  Programmer, Lorem, ipsum.
+               </h2>
+               <hr className="home-page-separator" />
+            </div>
 
             {/* BRIEF OVERALL DESCRIPTION */}
             <p className="card-paragraphs">
@@ -30,30 +34,43 @@ function Home() {
                consectetur, adipisicing elit. Eaque, eius.
             </p>
 
-            {/* SOCIAL ICON LINKS */}
-            <div className="social-media">
-               <div className="social-media-wrap">
-                  {/* ICON FOR FACEBOOK */}
-                  <a
-                     className="social-icon-link facebook"
-                     href={FACEBOOK_LINK}
-                     target="_blank"
-                     rel="noreferrer"
-                     aria-label="Facebook"
-                  >
-                     <i className="fab fa-facebook-f"></i>
-                  </a>
+            {/* WAYS TO CONTACT */}
+            <div className="home-page-contact">
+               {/* EMAIL AND PHONE */}
+               <div className="home-email-phone">
+                  Email: {EMAIL}
+                  <br />
+                  Phone: {PHONE}
+               </div>
 
-                  {/* ICON FOR LINKEDIN */}
-                  <a
-                     className="social-icon-link linkedin"
-                     href={LINKEDIN_LINK}
-                     target="_blank"
-                     rel="noreferrer"
-                     aria-label="LinkedIn"
-                  >
-                     <i className="fab fa-linkedin"></i>
-                  </a>
+               {/* SOCIAL ICON LINKS */}
+               <div className="social-media">
+                  <div className="social-media-container">
+                     {/* ICON FOR FACEBOOK */}
+                     <div className="social-media-background">
+                        <a
+                           className="social-icon-link facebook"
+                           href={FACEBOOK_LINK}
+                           target="_blank"
+                           rel="noreferrer"
+                           aria-label="Facebook"
+                        >
+                           <i className="fab fa-facebook-square"></i>
+                        </a>
+                     </div>
+                     {/* ICON FOR LINKEDIN */}
+                     <div className="social-media-background">
+                        <a
+                           className="social-icon-link linkedin"
+                           href={LINKEDIN_LINK}
+                           target="_blank"
+                           rel="noreferrer"
+                           aria-label="LinkedIn"
+                        >
+                           <i className="fab fa-linkedin"></i>
+                        </a>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>

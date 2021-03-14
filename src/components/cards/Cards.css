@@ -6,6 +6,8 @@
    max-width: 500px;
    min-height: calc(var(--MIN_SCREEN_HEIGHT) - 50px);
    height: 550px;
+   text-align: center;
+   align-content: center;
    overflow-y: auto;
    border: 2px solid var(--BLACK);
 }

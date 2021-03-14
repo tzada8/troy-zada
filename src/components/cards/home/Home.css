@@ -1,18 +1,3 @@
-/* .home-img-round {
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   display: block;
-   width: 100%;
-   max-width: 100%;
-   height: 100%;
-   max-height: 100%;
-   object-fit: cover;
-   transition: all 0.2s linear;
-} */
-
 .home-img-round {
    background: url("../../../images/Solo.JPG") center center/cover no-repeat;
    position: block;
@@ -23,38 +8,92 @@
    border: 4px solid red;
 }
 
+.home-intro-name {
+   font-size: 40px;
+   margin-top: 20px;
+   background: purple;
+}
+
+.home-troy-zada {
+   display: inline;
+   color: var(--REG_BLUE);
+}
+
+.home-intro-qualities {
+   background: green;
+}
+
+.home-page-separator {
+   border: 2px solid orange;
+}
+
+.card-paragraphs {
+   /* background: blue; */
+}
+
+.home-email-phone {
+   background: var(--REG_BLUE);
+   color: var(--WHITE);
+   font-size: 13px;
+   padding: 5px 0;
+   border-radius: 7px;
+}
+
 .social-media {
-   background: orange;
    display: flex;
    justify-content: center;
    align-items: center;
 }
 
-.social-media-wrap {
-   background: red;
+.social-media-container {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   width: 60px;
+   width: 90px;
    padding: 10px;
 }
 
 .social-icon-link {
-   background: turquoise;
-   color: black;
-   font-size: 20px;
+   color: var(--DARK_BLUE);
+   font-size: 30px;
 }
 
 .social-icon-link:hover {
-   color: yellow;
+   color: var(--REG_BLUE);
+}
+
+.fa-facebook-square {
+   background-image: linear-gradient(
+      to bottom,
+      transparent 20%,
+      var(--WHITE) 20%,
+      var(--WHITE) 93%,
+      transparent 93%
+   );
+   background-size: 65% 98%;
+   background-position: 50% 0;
+   background-repeat: no-repeat;
+}
+
+.fa-linkedin {
+   background-image: linear-gradient(
+      to bottom,
+      transparent 10%,
+      var(--WHITE) 20%,
+      var(--WHITE) 93%,
+      transparent 93%
+   );
+   background-size: 80% 95%;
+   background-position: 50% 0;
+   background-repeat: no-repeat;
 }
 
 /* ALSO CAN INCREASE OVERALL CARD SIZE */
 
 /* IF SCREEN IS VERY WIDE, INCREASE SIZE OF CONTENT IN CARD */
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
    .home-img-round {
       height: 300px;
       width: 300px;
    }
-}
+} */
