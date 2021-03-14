@@ -1,16 +1,18 @@
 /* GLOBAL VARIABLE FOR NUMBER OF ITEMS */
 :root {
    --NUM_OF_ITEMS: 6;
-   --NAV_MENU_SIZE: calc(var(--NUM_OF_ITEMS) * 33px);
+   --NAV_MENU_SIZE: calc(var(--NUM_OF_ITEMS) * 30px);
 }
 
 nav {
    background: red;
-   position: fixed;
+   position: absolute;
    display: flex;
+   margin-top: 5%;
+   margin-left: 5vw;
    justify-content: center;
    align-items: center;
-   font-size: 1.2rem;
+   font-size: 1rem;
    z-index: 999;
    font-weight: bold;
 }
@@ -19,6 +21,7 @@ nav {
    display: flex;
    height: var(--NAV_MENU_SIZE);
    max-width: 1500px;
+   display: table-column;
 }
 
 /* WILL PROBABLY USE AN IMAGE AS MY LOGO */
@@ -42,20 +45,20 @@ nav {
    background: yellow;
    justify-content: center;
    text-align: center;
-   width: 115px;
+   width: 135px;
    text-align: left;
+   display: table;
 }
 
 .nav-item {
    height: calc(var(--NAV_MENU_SIZE) / var(--NUM_OF_ITEMS));
-   padding: 18px 0;
 }
 
 .nav-links {
    background: var(--REG_BLUE);
    color: var(--WHITE);
    display: block;
-   padding: 4px 0;
+   padding: 4px 10px;
    font-weight: normal;
 
    background: linear-gradient(
@@ -78,7 +81,11 @@ nav {
 @media screen and (max-width: 960px) {
    nav {
       background: var(--GREY);
+      position: fixed;
+      margin-top: 0;
+      margin-left: 0;
       width: 100vw;
+      font-size: 1.2rem;
    }
 
    .navbar-container {

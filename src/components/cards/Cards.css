@@ -11,7 +11,9 @@
 
 /* LOCATION FOR HOME CARD */
 .home {
-   margin: 5% 17.5%;
+   /* CENTER CARD ON X-AXIS */
+   /* calc(50% - (35% / 2)) */
+   margin: 5% 17.5vw;
 }
 
 /* LOCATION FOR ALL OTHER CARDS */
@@ -30,3 +32,10 @@
 .card-content {
    padding-top: 150px;
 }
+
+/* IF SCREEN HEIGHT IS SUPER BIG, THEN CENTER CONTENT VERTICALLY */
+/* @media screen and (min-height: 600px) {
+   .home {
+      margin: 5% calc(50% - (35% / 2));
+   }
+} */
