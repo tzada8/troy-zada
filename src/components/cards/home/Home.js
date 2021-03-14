@@ -5,8 +5,14 @@ import { HOME } from "../../Constants";
 
 function Home() {
    return (
-      <div className="card-box home">
+      <div className="card-box home-page">
          <div className="card-container">
+            <img
+               className="home-img-round"
+               src="../../../images/Solo.JPG"
+               alt="test temp pic"
+            />
+
             {/* TITLE OF CARD */}
             <div className="card-title">
                <h1>{HOME}</h1>

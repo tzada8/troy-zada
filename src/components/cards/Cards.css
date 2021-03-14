@@ -10,14 +10,14 @@
 }
 
 /* LOCATION FOR HOME CARD */
-.home {
+.home-page {
    /* CENTER CARD ON X-AXIS */
    /* calc(50% - (35% / 2)) */
    margin: 5% 17.5vw;
 }
 
 /* LOCATION FOR ALL OTHER CARDS */
-.other {
+.other-page {
    margin: 5% 55%;
 }
 
@@ -26,11 +26,11 @@
 }
 
 .card-title {
-   padding-left: 150px;
+   /* padding: 0; */
 }
 
 .card-content {
-   padding-top: 150px;
+   /* padding-top: 0; */
 }
 
 /* IF SCREEN HEIGHT IS SUPER BIG, THEN CENTER CONTENT VERTICALLY */

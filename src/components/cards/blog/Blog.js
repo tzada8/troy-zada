@@ -5,7 +5,7 @@ import { BLOG } from "../../Constants";
 
 function Blog() {
    return (
-      <div className="card-box other">
+      <div className="card-box other-page">
          <div className="card-container">
             {/* TITLE OF CARD */}
             <div className="card-title">
