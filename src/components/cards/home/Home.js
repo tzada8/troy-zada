@@ -17,6 +17,7 @@ function Home() {
             <div className="home-img-round" />
             {/* TITLE OF CARD */}
             <div className="home-intro-title">
+               <h2 className="home-hello-welcome">Hello & Welcome</h2>
                <h1 className="home-intro-name">
                   Hi, I'm <div className="home-troy-zada">Troy Zada!</div>
                </h1>
@@ -24,7 +25,7 @@ function Home() {
                <h2 className="home-intro-qualities">
                   Programmer, Lorem, ipsum.
                </h2>
-               <hr className="home-page-separator" />
+               <hr className="horizontal-bar-fade" />
             </div>
 
             {/* BRIEF OVERALL DESCRIPTION */}
