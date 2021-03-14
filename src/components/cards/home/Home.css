@@ -43,6 +43,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   padding: 10px 0;
 }
 
 .social-media-container {
@@ -50,7 +51,7 @@
    justify-content: space-between;
    align-items: center;
    width: 90px;
-   padding: 10px;
+   padding: 0 10px;
 }
 
 .social-icon-link {
