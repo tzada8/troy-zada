@@ -47,29 +47,23 @@ function Home() {
                <div className="social-media">
                   <div className="social-media-container">
                      {/* ICON FOR FACEBOOK */}
-                     <div className="social-media-background">
-                        <a
-                           className="social-icon-link facebook"
-                           href={FACEBOOK_LINK}
-                           target="_blank"
-                           rel="noreferrer"
-                           aria-label="Facebook"
-                        >
-                           <i className="fab fa-facebook-square"></i>
-                        </a>
-                     </div>
+                     <a
+                        href={FACEBOOK_LINK}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Facebook"
+                     >
+                        <i className="fab fa-facebook-square social-icon"></i>
+                     </a>
                      {/* ICON FOR LINKEDIN */}
-                     <div className="social-media-background">
-                        <a
-                           className="social-icon-link linkedin"
-                           href={LINKEDIN_LINK}
-                           target="_blank"
-                           rel="noreferrer"
-                           aria-label="LinkedIn"
-                        >
-                           <i className="fab fa-linkedin"></i>
-                        </a>
-                     </div>
+                     <a
+                        href={LINKEDIN_LINK}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="LinkedIn"
+                     >
+                        <i className="fab fa-linkedin social-icon"></i>
+                     </a>
                   </div>
                </div>
             </div>

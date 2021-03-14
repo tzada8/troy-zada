@@ -54,16 +54,9 @@
    padding: 0 10px;
 }
 
-.social-icon-link {
-   color: var(--DARK_BLUE);
+.social-icon {
    font-size: 30px;
-}
-
-.social-icon-link:hover {
-   color: var(--REG_BLUE);
-}
-
-.fa-facebook-square {
+   color: var(--DARK_BLUE);
    background-image: linear-gradient(
       to bottom,
       transparent 20%,
@@ -71,22 +64,22 @@
       var(--WHITE) 93%,
       transparent 93%
    );
-   background-size: 65% 98%;
    background-position: 50% 0;
    background-repeat: no-repeat;
+   transition: all 0.4s ease;
+}
+
+.social-icon:hover {
+   transition: all 0.4s ease;
+   color: var(--REG_BLUE);
+}
+
+.fa-facebook-square {
+   background-size: 65% 98%;
 }
 
 .fa-linkedin {
-   background-image: linear-gradient(
-      to bottom,
-      transparent 10%,
-      var(--WHITE) 20%,
-      var(--WHITE) 93%,
-      transparent 93%
-   );
    background-size: 80% 95%;
-   background-position: 50% 0;
-   background-repeat: no-repeat;
 }
 
 /* ALSO CAN INCREASE OVERALL CARD SIZE */
