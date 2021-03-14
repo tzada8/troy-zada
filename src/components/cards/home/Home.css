@@ -14,8 +14,7 @@
 } */
 
 .home-img-round {
-   background: url("../../../images/temp_home.jpg") center center/cover
-      no-repeat;
+   background: url("../../../images/Solo.JPG") center center/cover no-repeat;
    position: block;
    height: 150px;
    width: 150px;
@@ -36,7 +35,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   width: 110px;
+   width: 60px;
    padding: 10px;
 }
 
