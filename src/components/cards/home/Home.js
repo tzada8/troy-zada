@@ -1,8 +1,13 @@
 import React from "react";
-import SocialIcons from "../../social/SocialIcons";
 import "./Home.css";
 import "../Cards.css";
-import { HOME, PHONE, EMAIL } from "../../Constants";
+import {
+   HOME,
+   PHONE,
+   EMAIL,
+   FACEBOOK_LINK,
+   LINKEDIN_LINK,
+} from "../../Constants";
 
 function Home() {
    return (
@@ -25,7 +30,31 @@ function Home() {
             </p>
 
             {/* SOCIAL ICON LINKS */}
-            <SocialIcons />
+            <div className="social-media">
+               <div className="social-media-wrap">
+                  {/* ICON FOR FACEBOOK */}
+                  <a
+                     className="social-icon-link facebook"
+                     href={FACEBOOK_LINK}
+                     target="_blank"
+                     rel="noreferrer"
+                     aria-label="Facebook"
+                  >
+                     <i className="fab fa-facebook-f"></i>
+                  </a>
+
+                  {/* ICON FOR LINKEDIN */}
+                  <a
+                     className="social-icon-link linkedin"
+                     href={LINKEDIN_LINK}
+                     target="_blank"
+                     rel="noreferrer"
+                     aria-label="LinkedIn"
+                  >
+                     <i className="fab fa-linkedin"></i>
+                  </a>
+               </div>
+            </div>
          </div>
       </div>
    );
