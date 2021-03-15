@@ -34,8 +34,8 @@ function Home() {
             {/* BRIEF OVERALL DESCRIPTION */}
             <p className="card-paragraphs">
                Motivated and hard-working engineering student with a passion for
-               programming, innovation, and optimizing processes. I am eager to
-               learn and enjoy being able to work out and find solutions to
+               programming, innovation, and optimizing processes. I enjoy
+               learning and being able to work out and find solutions to
                difficult problems. "Live as if you were to die tomorrow. Learn
                as if you were to live forever." - Mahatma Gandhi
             </p>
