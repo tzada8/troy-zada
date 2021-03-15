@@ -7,6 +7,8 @@ import {
    EMAIL,
    FACEBOOK_LINK,
    LINKEDIN_LINK,
+   FIRST_NAME,
+   LAST_NAME,
 } from "../../Constants";
 
 function Home() {
@@ -17,22 +19,25 @@ function Home() {
             <div className="home-img-round" />
             {/* TITLE OF CARD */}
             <div className="home-intro-title">
-               <h2 className="home-hello-welcome">Hello & Welcome</h2>
+               <h2 className="home-hello-welcome">Hello & Welcome, I am</h2>
+               {/* Troy Zada, a Student, a Programmer, ... */}
                <h1 className="home-intro-name">
-                  Hi, I'm <div className="home-troy-zada">Troy Zada!</div>
+                  {FIRST_NAME} {LAST_NAME}!
                </h1>
                {/* CURRENT ROLE/POSITION */}
-               <h2 className="home-intro-qualities">
-                  Programmer, Lorem, ipsum.
-               </h2>
+               <h4 className="home-intro-program">
+                  Management Engineering Student @ University of Waterloo
+               </h4>
                <hr className="horizontal-bar-fade" />
             </div>
 
             {/* BRIEF OVERALL DESCRIPTION */}
             <p className="card-paragraphs">
-               A passionate, hardworking, and dedicated Management Engineering
-               Student at the University of Waterloo. Lorem ipsum dolor sit amet
-               consectetur, adipisicing elit. Eaque, eius.
+               Motivated and hard-working engineering student with a passion for
+               programming, innovation, and optimizing processes. I am eager to
+               learn and enjoy being able to work out and find solutions to
+               difficult problems. "Live as if you were to die tomorrow. Learn
+               as if you were to live forever." - Mahatma Gandhi
             </p>
 
             {/* WAYS TO CONTACT */}

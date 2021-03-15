@@ -13,3 +13,6 @@ export const FACEBOOK_LINK = "https://www.facebook.com/Troy.M.Zada";
 // CONTACTS
 export const EMAIL = "tzada@uwaterloo.ca";
 export const PHONE = "647-526-0838";
+
+export const FIRST_NAME = "Troy";
+export const LAST_NAME = "Zada";

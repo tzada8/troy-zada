@@ -9,26 +9,27 @@
 }
 
 .home-intro-title {
-   background: teal;
+   margin-top: 15px;
+   /* background: teal; */
+}
+
+.home-hello-welcome {
+   font-size: 20px;
 }
 
 .home-intro-name {
-   font-size: 40px;
-   margin-top: 20px;
-   background: purple;
-}
-
-.home-troy-zada {
-   display: inline;
+   padding: 10px 0;
+   font-size: 35px;
    color: var(--REG_BLUE);
 }
 
-.home-intro-qualities {
-   background: green;
+.home-intro-program {
+   /* font-size: 14px; */
+   /* font-size: 21px; */
 }
 
 .card-paragraphs {
-   /* background: blue; */
+   padding-bottom: 15px;
 }
 
 .home-email-phone {

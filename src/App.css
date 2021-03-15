@@ -4,11 +4,13 @@
    --BLACK: #000;
    --WHITE: #f9f9f9;
    --GREY: #3d3d3d;
-   --REG_BLUE: #0195d4;
+   --REG_BLUE: #009ad0;
    --DARK_BLUE: #004e7c;
 
    /* FONTS */
    --FONT: "Montserrat", Arial, sans-serif;
+   /* ----- BELOW WILL NEED FIXING ----- */
+   --CARD_HEADING_FONT: 25px;
 
    /* MIN SCREEN HEIGHT */
    --MIN_SCREEN_HEIGHT: 600px;
@@ -24,6 +26,10 @@
 body {
    font-size: 14px;
    background: var(--WHITE);
+}
+
+p {
+   color: var(--GREY);
 }
 
 li {
@@ -42,7 +48,7 @@ button {
 
 /* VARIOUS HORIZONTAL BAR STYLES */
 .horizontal-bar-fade {
-   margin: 20px 0;
+   margin: 15px 0;
    width: 100%;
    border: 0;
    height: 1px;
