@@ -70,6 +70,15 @@ function Home() {
                      >
                         <i className="fab fa-linkedin social-icon"></i>
                      </a>
+                     {/* ICON FOR EMAIL */}
+                     <a
+                        href={LINKEDIN_LINK}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Email"
+                     >
+                        <i className="fas fa-envelope-square social-icon"></i>
+                     </a>
                   </div>
                </div>
             </div>
