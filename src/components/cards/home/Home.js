@@ -71,7 +71,6 @@ function Home() {
                         <i className="fab fa-linkedin social-icon"></i>
                      </a>
                      {/* ICON FOR EMAIL */}
-                     <h3 id="email">{EMAIL}</h3>
                      <a
                         id="envelope-icon"
                         href="mailto:tzada@uwaterloo.ca"
@@ -79,6 +78,7 @@ function Home() {
                         rel="noreferrer"
                         aria-label="Email"
                      >
+                        <p id="email-text">{EMAIL}</p>
                         <i className="fas fa-envelope-square social-icon"></i>
                      </a>
                   </div>

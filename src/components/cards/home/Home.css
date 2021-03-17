@@ -89,12 +89,13 @@
 }
 
 /* FIX HOVER OVER EMAIL ICON */
-#email {
+#email-text {
    /* display: none; */
    opacity: 0;
+   transition: all 0.5s ease;
 }
 
-#envelope-icon:hover #email {
+#envelope-icon:hover #email-text {
    /* display: block; */
    opacity: 1;
 }
