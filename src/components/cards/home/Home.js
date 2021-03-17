@@ -71,8 +71,10 @@ function Home() {
                         <i className="fab fa-linkedin social-icon"></i>
                      </a>
                      {/* ICON FOR EMAIL */}
+                     <h3 id="email">{EMAIL}</h3>
                      <a
-                        href={LINKEDIN_LINK}
+                        id="envelope-icon"
+                        href="mailto:tzada@uwaterloo.ca"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="Email"

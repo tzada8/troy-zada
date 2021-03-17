@@ -88,6 +88,17 @@
    background-size: 80% 95%;
 }
 
+/* FIX HOVER OVER EMAIL ICON */
+#email {
+   /* display: none; */
+   opacity: 0;
+}
+
+#envelope-icon:hover #email {
+   /* display: block; */
+   opacity: 1;
+}
+
 /* ALSO CAN INCREASE OVERALL CARD SIZE */
 
 /* IF SCREEN IS VERY WIDE, INCREASE SIZE OF CONTENT IN CARD */
