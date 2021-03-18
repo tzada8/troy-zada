@@ -83,7 +83,7 @@ nav {
 
 /* MIGHT NEED TO ADJUST THE MAX-WIDTH DEPENDING ON CARD SIZES */
 
-/* IF SCREEN IS MOBILE VERSION, THEN HAVE FOLLOWING STYLES */
+/* IF SCREEN IS DESKTOP-SMALL VERSION, THEN HAVE FOLLOWING STYLES */
 @media screen and (max-width: 960px) {
    nav {
       background: var(--GREY);
@@ -158,6 +158,10 @@ nav {
    .nav-links:hover {
       background: var(--DARK_BLUE);
       transition: none;
+   }
+
+   .nav-links-active {
+      background: var(--DARK_BLUE);
    }
 }
 
