@@ -47,7 +47,7 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 .card-container {
-   padding: 30px;
+   margin: 30px;
 }
 
 .card-title {

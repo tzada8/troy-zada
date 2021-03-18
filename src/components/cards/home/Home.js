@@ -41,13 +41,6 @@ function Home() {
 
             {/* WAYS TO CONTACT */}
             <div className="home-page-contact">
-               {/* EMAIL AND PHONE */}
-               <div className="home-email-phone">
-                  Email: {EMAIL}
-                  <br />
-                  Phone: {PHONE}
-               </div>
-
                {/* SOCIAL ICON LINKS */}
                <div className="social-media">
                   <div className="social-media-container">
@@ -60,15 +53,6 @@ function Home() {
                      >
                         <i className="fab fa-facebook-square social-icon"></i>
                      </a>
-                     {/* ICON FOR LINKEDIN */}
-                     <a
-                        href={LINKEDIN_LINK}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="LinkedIn"
-                     >
-                        <i className="fab fa-linkedin social-icon"></i>
-                     </a>
                      {/* ICON FOR EMAIL */}
                      <a
                         id="envelope-icon"
@@ -79,6 +63,15 @@ function Home() {
                      >
                         <p id="email-text">{EMAIL}</p>
                         <i className="fas fa-envelope-square social-icon"></i>
+                     </a>
+                     {/* ICON FOR LINKEDIN */}
+                     <a
+                        href={LINKEDIN_LINK}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="LinkedIn"
+                     >
+                        <i className="fab fa-linkedin social-icon"></i>
                      </a>
                   </div>
                </div>
