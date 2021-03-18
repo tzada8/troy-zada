@@ -30,6 +30,7 @@ body {
 
 p {
    color: var(--GREY);
+   line-height: 140%;
 }
 
 li {
