@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { HOME, RESUME, SKILLS, EXPERIENCE, BLOG, CONTACT } from "../Constants";
 
@@ -26,64 +26,76 @@ function Navbar() {
                {/* LIST OF NAVBAR ITEMS */}
                <ul className={click ? "nav-menu active" : "nav-menu"}>
                   <li className="nav-item">
-                     <Link
+                     <NavLink
+                        exact
                         to="/"
                         className="nav-links"
+                        activeClassName="nav-links-active"
                         onClick={closeMobileMenu}
                      >
                         {/* HOME PAGE, ABOUT ME */}
                         {HOME}
-                     </Link>
+                     </NavLink>
                   </li>
                   <li className="nav-item">
-                     <Link
+                     <NavLink
+                        exact
                         to="/resume"
                         className="nav-links"
+                        activeClassName="nav-links-active"
                         onClick={closeMobileMenu}
                      >
                         {/* BUTTON TO DOWNLOAD RESUME, EDUCATION, AWARDS */}
                         {RESUME}
-                     </Link>
+                     </NavLink>
                   </li>
                   <li className="nav-item">
-                     <Link
+                     <NavLink
+                        exact
                         to="/skills"
                         className="nav-links"
+                        activeClassName="nav-links-active"
                         onClick={closeMobileMenu}
                      >
                         {/* PROGRESS BARS OF VARIOUS SOFT/HARD SKILLS */}
                         {SKILLS}
-                     </Link>
+                     </NavLink>
                   </li>
                   <li className="nav-item">
-                     <Link
+                     <NavLink
+                        exact
                         to="/experience"
                         className="nav-links"
+                        activeClassName="nav-links-active"
                         onClick={closeMobileMenu}
                      >
                         {/* WORK AND PROJECTS */}
                         {EXPERIENCE}
-                     </Link>
+                     </NavLink>
                   </li>
                   <li className="nav-item">
-                     <Link
+                     <NavLink
+                        exact
                         to="/blog"
                         className="nav-links"
+                        activeClassName="nav-links-active"
                         onClick={closeMobileMenu}
                      >
                         {/* POSTS ABOUT VARIOUS STUFF */}
                         {/* E.G. FIRST POST ABOUT "CREATING THIS WEBSITE" */}
                         {BLOG}
-                     </Link>
+                     </NavLink>
                   </li>
                   <li className="nav-item">
-                     <Link
+                     <NavLink
+                        exact
                         to="/contact"
                         className="nav-links"
+                        activeClassName="nav-links-active"
                         onClick={closeMobileMenu}
                      >
                         {CONTACT}
-                     </Link>
+                     </NavLink>
                   </li>
                </ul>
             </div>

@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.css";
 import "../Cards.css";
 import {
-   HOME,
    PHONE,
    EMAIL,
    FACEBOOK_LINK,
