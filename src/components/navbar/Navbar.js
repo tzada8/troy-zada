@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
-import { HOME, RESUME, SKILLS, EXPERIENCE, BLOG, CONTACT } from "../Constants";
+import {
+   HOME,
+   PORTFOLIO,
+   SKILLS,
+   EXPERIENCE,
+   BLOG,
+   CONTACT,
+} from "../Constants";
 
 function Navbar() {
    const [click, setClick] = useState(false);
@@ -46,7 +53,7 @@ function Navbar() {
                         onClick={closeMobileMenu}
                      >
                         {/* BUTTON TO DOWNLOAD RESUME, EDUCATION, AWARDS */}
-                        {RESUME}
+                        {PORTFOLIO}
                      </NavLink>
                   </li>
                   <li className="nav-item">

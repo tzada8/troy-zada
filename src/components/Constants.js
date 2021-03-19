@@ -1,6 +1,6 @@
 // NAVBAR CATEGORIES
 export const HOME = "HOME";
-export const RESUME = "RESUME";
+export const PORTFOLIO = "PORTFOLIO";
 export const SKILLS = "SKILLS";
 export const EXPERIENCE = "EXPERIENCE";
 export const BLOG = "BLOG";

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Resume.css";
 import "../Cards.css";
-import { RESUME } from "../../Constants";
+import { PORTFOLIO } from "../../Constants";
 
 function Resume() {
    return (
@@ -9,7 +9,7 @@ function Resume() {
          <div className="card-container">
             {/* TITLE OF CARD */}
             <div className="card-title">
-               <h1>{RESUME}</h1>
+               <h1>{PORTFOLIO}</h1>
             </div>
 
             {/* REST OF CONTENT */}
