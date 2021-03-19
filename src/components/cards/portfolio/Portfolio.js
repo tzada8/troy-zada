@@ -1,5 +1,5 @@
 import React from "react";
-import "./Resume.css";
+import "./Portfolio.css";
 import "../Cards.css";
 import { PORTFOLIO } from "../../Constants";
 

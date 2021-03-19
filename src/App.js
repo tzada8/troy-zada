@@ -7,7 +7,7 @@ import Navbar from "./components/navbar/Navbar";
 
 // CARDS FOR CONTENT
 import Home from "./components/cards/home/Home";
-import Resume from "./components/cards/resume/Resume";
+import Portfolio from "./components/cards/portfolio/Portfolio";
 import Skills from "./components/cards/skills/Skills";
 import Experience from "./components/cards/experience/Experience";
 import Blog from "./components/cards/blog/Blog";
@@ -22,7 +22,7 @@ function App() {
             <div className="content-container">
                <Switch>
                   <Route path="/" exact component={Home} />
-                  <Route path="/resume" exact component={Resume} />
+                  <Route path="/resume" exact component={Portfolio} />
                   <Route path="/skills" exact component={Skills} />
                   <Route path="/experience" exact component={Experience} />
                   <Route path="/blog" exact component={Blog} />
