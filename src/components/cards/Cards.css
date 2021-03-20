@@ -10,18 +10,19 @@
    align-content: center;
    overflow-y: auto;
    border: 2px solid var(--BLACK);
+   margin: 5% calc(50% - (35% / 2));
 }
 
 /* LOCATION FOR HOME CARD */
 .home-page {
    /* CENTER CARD ON X-AXIS */
    /* calc(50% - (35% / 2)) */
-   margin: 5% 17.5vw;
+   /* margin: 5% 50%; */
 }
 
 /* LOCATION FOR ALL OTHER CARDS */
 .other-page {
-   margin: 5% 55%;
+   /* margin: 5% 55%; */
 }
 
 /* CUSTOM SCROLLBAR FOR ALL PAGES */

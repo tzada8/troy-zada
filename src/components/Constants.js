@@ -5,6 +5,7 @@ export const SKILLS = "SKILLS";
 export const EXPERIENCE = "EXPERIENCE";
 export const BLOG = "BLOG";
 export const CONTACT = "CONTACT";
+export const PAGE_NOT_FOUND = "PAGE NOT FOUND";
 
 // SOCIAL MEDIA LINKS / CONTACT
 export const LINKEDIN_LINK = "https://www.linkedin.com/in/troy-zada";
