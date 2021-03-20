@@ -15,7 +15,7 @@ function PageNotFound() {
             <div className="card-content">
                <p>
                   This page does not exist. Please choose one of the pages from
-                  the menu, or return back to homepage here:{" "}
+                  the menu, or return back to the homepage here:{" "}
                   <Link to="/">{HOME}</Link>.
                </p>
             </div>
