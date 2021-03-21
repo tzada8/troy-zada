@@ -10,7 +10,7 @@ nav {
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 5%;
+   margin-top: 32px;
    font-size: 1rem;
    z-index: 999;
    font-weight: bold;
@@ -18,11 +18,14 @@ nav {
 }
 
 .middle {
-   margin-left: 50vw;
+   margin-left: 150px;
+   margin-left: calc(50% - (135px / 2 + 25%));
 }
 
 .left {
-   margin-left: 5vw;
+   /* margin-left: 32px; */
+   /* margin-left: calc(50% - (var(--CARD_WIDTH) + 7%) - 8px); */
+   margin-left: calc(50% - (135px + 33%));
 }
 
 .navbar-container {

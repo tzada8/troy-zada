@@ -1,8 +1,12 @@
+:root {
+   --CARD_WIDTH: 35%;
+}
+
 .card-box {
    background: var(--WHITE);
    position: absolute;
    display: block;
-   width: 35%;
+   width: var(--CARD_WIDTH);
    max-width: 500px;
    min-height: calc(var(--MIN_SCREEN_HEIGHT) - 50px);
    height: 550px;
@@ -10,7 +14,7 @@
    align-content: center;
    overflow-y: auto;
    border: 2px solid var(--BLACK);
-   margin: 5% calc(50% - (35% / 2));
+   margin: 32px calc(50% - (var(--CARD_WIDTH) / 2));
    z-index: 8;
    opacity: 0;
    transition: all 0.5s linear;
@@ -23,14 +27,12 @@
 
 /* LOCATION FOR HOME CARD */
 .home-loc {
-   /* CENTER CARD ON X-AXIS */
-   /* calc(50% - (35% / 2)) */
-   margin: 5% 100px;
+   margin: 32px calc(50% - (var(--CARD_WIDTH) - 4%) - 8px);
 }
 
 /* LOCATION FOR ALL OTHER CARDS */
 .other-page {
-   margin: 5% 55%;
+   margin: 32px calc(50% + 4% + 8px);
    z-index: 9;
    opacity: 1;
 }
