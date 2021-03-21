@@ -12,16 +12,34 @@ import {
 
 function Navbar() {
    const [click, setClick] = useState(false);
+   const [navLocation, setNavLocation] = useState(true);
 
    const handleClick = () => setClick(!click);
    const closeMobileMenu = () => setClick(false);
 
+   // HAVE NAVMENU LOCATION MOVE DEPENDING ON ACTIVE COMPONENT
+   function handleNavLocation(id) {
+      const temp = document.getElementById(id);
+      if (temp.id === "HOME-MENU") {
+         setNavLocation(true);
+      } else {
+         setNavLocation(false);
+      }
+   }
+
    return (
       <div>
-         <nav>
+         <nav className={navLocation ? "middle" : "left"}>
             <div className="navbar-container">
                {/* TROY ZADA HEADER/LOGO */}
-               <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+               <Link
+                  to="/"
+                  className="navbar-logo"
+                  onClick={() => {
+                     closeMobileMenu();
+                     handleNavLocation("HOME-MENU");
+                  }}
+               >
                   TZ
                </Link>
 
@@ -34,11 +52,16 @@ function Navbar() {
                <ul className={click ? "nav-menu active" : "nav-menu"}>
                   <li className="nav-item">
                      <NavLink
+                        id="HOME-MENU"
                         exact
                         to="/"
                         className="nav-links"
                         activeClassName="nav-links-active"
-                        onClick={closeMobileMenu}
+                        // onClick={closeMobileMenu}
+                        onClick={() => {
+                           closeMobileMenu();
+                           handleNavLocation("HOME-MENU");
+                        }}
                      >
                         {/* HOME PAGE, ABOUT ME */}
                         {HOME}
@@ -46,11 +69,15 @@ function Navbar() {
                   </li>
                   <li className="nav-item">
                      <NavLink
+                        id="PORTFOLIO-MENU"
                         exact
                         to="/portfolio"
                         className="nav-links"
                         activeClassName="nav-links-active"
-                        onClick={closeMobileMenu}
+                        onClick={() => {
+                           closeMobileMenu();
+                           handleNavLocation("PORTFOLIO-MENU");
+                        }}
                      >
                         {/* BUTTON TO DOWNLOAD RESUME, EDUCATION, AWARDS */}
                         {PORTFOLIO}
@@ -58,11 +85,15 @@ function Navbar() {
                   </li>
                   <li className="nav-item">
                      <NavLink
+                        id="SKILLS-MENU"
                         exact
                         to="/skills"
                         className="nav-links"
                         activeClassName="nav-links-active"
-                        onClick={closeMobileMenu}
+                        onClick={() => {
+                           closeMobileMenu();
+                           handleNavLocation("SKILLS-MENU");
+                        }}
                      >
                         {/* PROGRESS BARS OF VARIOUS SOFT/HARD SKILLS */}
                         {SKILLS}
@@ -70,11 +101,15 @@ function Navbar() {
                   </li>
                   <li className="nav-item">
                      <NavLink
+                        id="EXPERIENCE-MENU"
                         exact
                         to="/experience"
                         className="nav-links"
                         activeClassName="nav-links-active"
-                        onClick={closeMobileMenu}
+                        onClick={() => {
+                           closeMobileMenu();
+                           handleNavLocation("EXPERIENCE-MENU");
+                        }}
                      >
                         {/* WORK AND PROJECTS */}
                         {EXPERIENCE}
@@ -82,11 +117,15 @@ function Navbar() {
                   </li>
                   <li className="nav-item">
                      <NavLink
+                        id="BLOG-MENU"
                         exact
                         to="/blog"
                         className="nav-links"
                         activeClassName="nav-links-active"
-                        onClick={closeMobileMenu}
+                        onClick={() => {
+                           closeMobileMenu();
+                           handleNavLocation("BLOG-MENU");
+                        }}
                      >
                         {/* POSTS ABOUT VARIOUS STUFF */}
                         {/* E.G. FIRST POST ABOUT "CREATING THIS WEBSITE" */}
@@ -95,11 +134,15 @@ function Navbar() {
                   </li>
                   <li className="nav-item">
                      <NavLink
+                        id="CONTACT-MENU"
                         exact
                         to="/contact"
                         className="nav-links"
                         activeClassName="nav-links-active"
-                        onClick={closeMobileMenu}
+                        onClick={() => {
+                           closeMobileMenu();
+                           handleNavLocation("CONTACT-MENU");
+                        }}
                      >
                         {CONTACT}
                      </NavLink>

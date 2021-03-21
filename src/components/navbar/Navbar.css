@@ -8,13 +8,21 @@ nav {
    background: red;
    position: absolute;
    display: flex;
-   margin-top: 5%;
-   margin-left: 5vw;
    justify-content: center;
    align-items: center;
+   margin-top: 5%;
    font-size: 1rem;
    z-index: 999;
    font-weight: bold;
+   transition: all 0.5s linear;
+}
+
+.middle {
+   margin-left: 50vw;
+}
+
+.left {
+   margin-left: 5vw;
 }
 
 .navbar-container {
@@ -86,9 +94,14 @@ nav {
       background: var(--GREY);
       position: fixed;
       margin-top: 0;
-      margin-left: 0;
       width: 100vw;
       font-size: 1.2rem;
+      transition: none;
+   }
+
+   .middle,
+   .left {
+      margin-left: 0;
    }
 
    .navbar-container {
