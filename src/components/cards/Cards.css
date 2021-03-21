@@ -13,6 +13,7 @@
    margin: 5% calc(50% - (35% / 2));
    transition: all 0.4s linear;
    opacity: 0;
+   z-index: 8;
 }
 
 .home-vis {
@@ -31,6 +32,7 @@
 .other-page {
    margin: 5% 55%;
    opacity: 1;
+   z-index: 9;
 }
 
 /* CUSTOM SCROLLBAR FOR ALL PAGES */
