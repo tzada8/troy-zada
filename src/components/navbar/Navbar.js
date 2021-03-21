@@ -12,7 +12,7 @@ import {
 
 function Navbar() {
    const [click, setClick] = useState(false);
-   const [navLocation, setNavLocation] = useState(true);
+   const [midNavLocation, setMidNavLocation] = useState(true);
 
    const handleClick = () => setClick(!click);
    const closeMobileMenu = () => setClick(false);
@@ -21,15 +21,15 @@ function Navbar() {
    function handleNavLocation(id) {
       const temp = document.getElementById(id);
       if (temp.id === "HOME-MENU") {
-         setNavLocation(true);
+         setMidNavLocation(true);
       } else {
-         setNavLocation(false);
+         setMidNavLocation(false);
       }
    }
 
    return (
       <div>
-         <nav className={navLocation ? "middle" : "left"}>
+         <nav className={midNavLocation ? "middle" : "left"}>
             <div className="navbar-container">
                {/* TROY ZADA HEADER/LOGO */}
                <Link
