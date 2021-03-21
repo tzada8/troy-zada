@@ -11,18 +11,27 @@
    overflow-y: auto;
    border: 2px solid var(--BLACK);
    margin: 5% calc(50% - (35% / 2));
+   transition: all 0.4s linear;
+   opacity: 0;
+}
+
+.home-vis {
+   opacity: 1;
+   z-index: 10;
 }
 
 /* LOCATION FOR HOME CARD */
-.home-page {
+.home-loc {
    /* CENTER CARD ON X-AXIS */
    /* calc(50% - (35% / 2)) */
    margin: 5% 100px;
+   opacity: 1;
 }
 
 /* LOCATION FOR ALL OTHER CARDS */
 .other-page {
    margin: 5% 55%;
+   opacity: 1;
 }
 
 /* CUSTOM SCROLLBAR FOR ALL PAGES */

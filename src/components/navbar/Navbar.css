@@ -55,7 +55,6 @@ nav {
 }
 
 .nav-links {
-   background: var(--REG_BLUE);
    color: var(--WHITE);
    display: block;
    padding: 4px 10px;
@@ -73,8 +72,6 @@ nav {
 
 .nav-links:hover {
    background-position: left bottom;
-   /* background: orange;
-   transition: all 0.4s ease; */
 }
 
 .nav-links-active {

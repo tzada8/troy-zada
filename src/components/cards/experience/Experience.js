@@ -3,9 +3,9 @@ import "./Experience.css";
 import "../Cards.css";
 import { EXPERIENCE } from "../../Constants";
 
-function Experience() {
+function Experience(props) {
    return (
-      <div className="card-box other-page">
+      <div className={props.isActive ? "card-box other-page" : "card-box"}>
          <div className="card-container">
             {/* TITLE OF CARD */}
             <div className="card-title">

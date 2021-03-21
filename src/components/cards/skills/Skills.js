@@ -3,9 +3,9 @@ import "./Skills.css";
 import "../Cards.css";
 import { SKILLS } from "../../Constants";
 
-function Skills() {
+function Skills(props) {
    return (
-      <div className="card-box other-page">
+      <div className={props.isActive ? "card-box other-page" : "card-box"}>
          <div className="card-container">
             {/* TITLE OF CARD */}
             <div className="card-title">

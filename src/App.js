@@ -22,27 +22,52 @@ function App() {
             <div className="content-container">
                <Switch>
                   <Route exact path="/">
-                     <Home />
+                     <Home isOnlyComp={true} />
+                     <Portfolio isActive={false} />
+                     <Skills isActive={false} />
+                     <Experience isActive={false} />
+                     <Blog isActive={false} />
+                     <Contact isActive={false} />
                   </Route>
                   <Route exact path="/portfolio">
-                     <Home />
-                     <Portfolio />
+                     <Home isOnlyComp={false} />
+                     <Portfolio isActive={true} />
+                     <Skills isActive={false} />
+                     <Experience isActive={false} />
+                     <Blog isActive={false} />
+                     <Contact isActive={false} />
                   </Route>
                   <Route exact path="/skills">
-                     <Home />
-                     <Skills />
+                     <Home isOnlyComp={false} />
+                     <Portfolio isActive={false} />
+                     <Skills isActive={true} />
+                     <Experience isActive={false} />
+                     <Blog isActive={false} />
+                     <Contact isActive={false} />
                   </Route>
                   <Route exact path="/experience">
-                     <Home />
-                     <Experience />
+                     <Home isOnlyComp={false} />
+                     <Portfolio isActive={false} />
+                     <Skills isActive={false} />
+                     <Experience isActive={true} />
+                     <Blog isActive={false} />
+                     <Contact isActive={false} />
                   </Route>
                   <Route exact path="/blog">
-                     <Home />
-                     <Blog />
+                     <Home isOnlyComp={false} />
+                     <Portfolio isActive={false} />
+                     <Skills isActive={false} />
+                     <Experience isActive={false} />
+                     <Blog isActive={true} />
+                     <Contact isActive={false} />
                   </Route>
                   <Route exact path="/contact">
-                     <Home />
-                     <Contact />
+                     <Home isOnlyComp={false} />
+                     <Portfolio isActive={false} />
+                     <Skills isActive={false} />
+                     <Experience isActive={false} />
+                     <Blog isActive={false} />
+                     <Contact isActive={true} />
                   </Route>
                   {/* IN CASE USER TYPES A LINK IN URL THAT DOES NOT EXIST */}
                   <Route component={PageNotFound} />

@@ -8,9 +8,15 @@ import {
    FULL_NAME,
 } from "../../Constants";
 
-function Home() {
+function Home(props) {
    return (
-      <div className="card-box home-page">
+      <div
+         className={
+            props.isOnlyComp
+               ? "card-box home-vis"
+               : "card-box home-vis home-loc"
+         }
+      >
          <div className="card-container">
             {/* ROUND HEADSHOT IMAGE */}
             <div className="home-img-round" />
