@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+
 /* GLOBAL VARIABLE FOR NUMBER OF ITEMS */
 :root {
    --NUM_OF_ITEMS: 6;
@@ -13,17 +15,14 @@ nav {
    font-size: 1rem;
    z-index: 999;
    font-weight: bold;
-   transition: all 0.5s linear;
+   transition: margin-left 0.5s linear;
 }
 
 .middle {
-   margin-left: 150px;
    margin-left: calc(50% - (135px / 2 + 25.5%));
 }
 
 .left {
-   /* margin-left: 32px; */
-   /* margin-left: calc(50% - (var(--CARD_WIDTH) + 7%) - 8px); */
    margin-left: calc(50% - (135px + 33%));
 }
 
@@ -34,29 +33,20 @@ nav {
    display: table-column;
 }
 
-/* WILL PROBABLY USE AN IMAGE AS MY LOGO */
+/* LOGO AS "TZ" */
 .navbar-logo {
+   background: linear-gradient(45deg, #056ba7 25%, #1fbcf5 50%, #056ba7 75%);
    color: var(--WHITE);
-   font-size: 2rem;
+   font-family: "Merienda One";
+   font-size: 50px;
    display: flex;
    align-items: center;
    justify-content: center;
-   background: linear-gradient(white, black);
-   height: 100px;
-   width: 100px;
-   margin: 0 auto;
-   margin-bottom: 20px;
-
-   /* ATTEMPT AT MAKING CIRCLE FOR LOGO ICON */
-   border: 2px solid var(--BLACK);
-   border-radius: 100%;
-}
-
-.tzada-logo {
-   background: url("../../images/tzada_logo.png") center center/cover no-repeat;
-   position: block;
-   height: 80px;
-   width: 80px;
+   height: 90px;
+   width: 90px;
+   border-radius: 50%;
+   margin: 15px auto;
+   border: 2px solid var(--GREY);
 }
 
 .menu-icon {
@@ -90,7 +80,7 @@ nav {
    );
    background-size: 200% 100%;
    background-position: right bottom;
-   transition: all 0.4s linear;
+   transition: background-position 0.4s linear;
 }
 
 .nav-links:hover {
@@ -124,14 +114,24 @@ nav {
       display: flex;
    }
 
+   /* LOGO AS "TZ" */
    .navbar-logo {
+      background: linear-gradient(45deg, #056ba7 25%, #1fbcf5 50%, #056ba7 75%);
+      color: var(--WHITE);
+      font-family: "Merienda One";
       position: absolute;
       display: flex;
-      margin-left: 15px;
+      font-size: 21px;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
       top: 0;
       left: 0;
-      transform: translateY(40%);
-      font-size: 1.6rem;
+      margin: 0 15px;
+      transform: translateY(12%);
+      border: 1px solid var(--BLACK);
    }
 
    .menu-icon {
@@ -161,12 +161,12 @@ nav {
       z-index: 1;
       border-left: 3px solid var(--GREY);
       border-bottom: 3px solid var(--GREY);
-      transition: all 0.5s ease;
+      transition: right 0.5s linear;
    }
 
    .nav-menu.active {
       right: 0;
-      transition: all 0.5s ease;
+      transition: right 0.5s ease;
    }
 
    .nav-item {
@@ -182,11 +182,7 @@ nav {
       border: none;
    }
 
-   .nav-links:hover {
-      background: var(--DARK_BLUE);
-      transition: none;
-   }
-
+   .nav-links:hover,
    .nav-links-active {
       background: var(--DARK_BLUE);
    }
