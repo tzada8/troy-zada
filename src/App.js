@@ -21,12 +21,29 @@ function App() {
             <Navbar />
             <div className="content-container">
                <Switch>
-                  <Route path="/" exact component={Home} />
-                  <Route path="/resume" exact component={Portfolio} />
-                  <Route path="/skills" exact component={Skills} />
-                  <Route path="/experience" exact component={Experience} />
-                  <Route path="/blog" exact component={Blog} />
-                  <Route path="/contact" exact component={Contact} />
+                  <Route exact path="/">
+                     <Home />
+                  </Route>
+                  <Route exact path="/portfolio">
+                     <Home />
+                     <Portfolio />
+                  </Route>
+                  <Route exact path="/skills">
+                     <Home />
+                     <Skills />
+                  </Route>
+                  <Route exact path="/experience">
+                     <Home />
+                     <Experience />
+                  </Route>
+                  <Route exact path="/blog">
+                     <Home />
+                     <Blog />
+                  </Route>
+                  <Route exact path="/contact">
+                     <Home />
+                     <Contact />
+                  </Route>
                   {/* IN CASE USER TYPES A LINK IN URL THAT DOES NOT EXIST */}
                   <Route component={PageNotFound} />
                </Switch>

@@ -17,12 +17,12 @@
 .home-page {
    /* CENTER CARD ON X-AXIS */
    /* calc(50% - (35% / 2)) */
-   /* margin: 5% 50%; */
+   margin: 5% 100px;
 }
 
 /* LOCATION FOR ALL OTHER CARDS */
 .other-page {
-   /* margin: 5% 55%; */
+   margin: 5% 55%;
 }
 
 /* CUSTOM SCROLLBAR FOR ALL PAGES */

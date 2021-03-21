@@ -47,7 +47,7 @@ function Navbar() {
                   <li className="nav-item">
                      <NavLink
                         exact
-                        to="/resume"
+                        to="/portfolio"
                         className="nav-links"
                         activeClassName="nav-links-active"
                         onClick={closeMobileMenu}
