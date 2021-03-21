@@ -39,7 +39,7 @@ function Navbar() {
                      handleNavLocation("HOME-MENU");
                   }}
                >
-                  TZ
+                  <div className="tzada-logo" />
                </Link>
 
                {/* FOR MOBILE VIEW, HAVE 3 BARS ICON WITH NAVBAR ITEMS BELOW */}
