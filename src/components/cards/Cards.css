@@ -69,6 +69,33 @@ div::-webkit-scrollbar-thumb:hover {
    /* padding-top: 0; */
 }
 
+/* IF SCREEN IS DESKTOP-SMALL VERSION, THEN HAVE FOLLOWING STYLES */
+@media screen and (max-width: 960px) {
+   .card-box {
+      margin: 0 5%;
+      max-width: none;
+      width: 90%;
+      height: auto;
+   }
+
+   .home-vis {
+      opacity: 1;
+   }
+
+   .home-loc {
+      margin: 0 5%;
+      opacity: 0;
+   }
+
+   .other-page {
+      margin: 0 5%;
+   }
+}
+
+/* IF SCREEN IS MOBILE VERSION, THEN HAVE FOLLOWING STYLES */
+@media screen and (max-width: 480px) {
+}
+
 /* IF SCREEN HEIGHT IS SUPER BIG, THEN CENTER CONTENT VERTICALLY */
 /* @media screen and (min-height: 600px) {
    .home {
