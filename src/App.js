@@ -5,13 +5,8 @@ import "./App.css";
 // NAVIGATION
 import Navbar from "./components/navbar/Navbar";
 
-// CARDS FOR CONTENT
-import Home from "./components/cards/home/Home";
-import Portfolio from "./components/cards/portfolio/Portfolio";
-import Skills from "./components/cards/skills/Skills";
-import Experience from "./components/cards/experience/Experience";
-import Blog from "./components/cards/blog/Blog";
-import Contact from "./components/cards/contact/Contact";
+// RENDER CARDS
+import RenderCards from "./components/cards/RenderCards";
 import PageNotFound from "./components/cards/page_not_found/PageNotFound";
 
 function App() {
@@ -22,52 +17,64 @@ function App() {
             <div className="content-container">
                <Switch>
                   <Route exact path="/">
-                     <Home isOnlyComp={true} />
-                     <Portfolio isActive={false} />
-                     <Skills isActive={false} />
-                     <Experience isActive={false} />
-                     <Blog isActive={false} />
-                     <Contact isActive={false} />
+                     <RenderCards
+                        home={true}
+                        portfolio={false}
+                        skills={false}
+                        experience={false}
+                        blog={false}
+                        contact={false}
+                     />
                   </Route>
                   <Route exact path="/portfolio">
-                     <Home isOnlyComp={false} />
-                     <Portfolio isActive={true} />
-                     <Skills isActive={false} />
-                     <Experience isActive={false} />
-                     <Blog isActive={false} />
-                     <Contact isActive={false} />
+                     <RenderCards
+                        home={false}
+                        portfolio={true}
+                        skills={false}
+                        experience={false}
+                        blog={false}
+                        contact={false}
+                     />
                   </Route>
                   <Route exact path="/skills">
-                     <Home isOnlyComp={false} />
-                     <Portfolio isActive={false} />
-                     <Skills isActive={true} />
-                     <Experience isActive={false} />
-                     <Blog isActive={false} />
-                     <Contact isActive={false} />
+                     <RenderCards
+                        home={false}
+                        portfolio={false}
+                        skills={true}
+                        experience={false}
+                        blog={false}
+                        contact={false}
+                     />
                   </Route>
                   <Route exact path="/experience">
-                     <Home isOnlyComp={false} />
-                     <Portfolio isActive={false} />
-                     <Skills isActive={false} />
-                     <Experience isActive={true} />
-                     <Blog isActive={false} />
-                     <Contact isActive={false} />
+                     <RenderCards
+                        home={false}
+                        portfolio={false}
+                        skills={false}
+                        experience={true}
+                        blog={false}
+                        contact={false}
+                     />
                   </Route>
                   <Route exact path="/blog">
-                     <Home isOnlyComp={false} />
-                     <Portfolio isActive={false} />
-                     <Skills isActive={false} />
-                     <Experience isActive={false} />
-                     <Blog isActive={true} />
-                     <Contact isActive={false} />
+                     <RenderCards
+                        home={false}
+                        portfolio={false}
+                        skills={false}
+                        experience={false}
+                        blog={true}
+                        contact={false}
+                     />
                   </Route>
                   <Route exact path="/contact">
-                     <Home isOnlyComp={false} />
-                     <Portfolio isActive={false} />
-                     <Skills isActive={false} />
-                     <Experience isActive={false} />
-                     <Blog isActive={false} />
-                     <Contact isActive={true} />
+                     <RenderCards
+                        home={false}
+                        portfolio={false}
+                        skills={false}
+                        experience={false}
+                        blog={false}
+                        contact={true}
+                     />
                   </Route>
                   {/* IN CASE USER TYPES A LINK IN URL THAT DOES NOT EXIST */}
                   <Route component={PageNotFound} />
