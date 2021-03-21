@@ -19,8 +19,7 @@ function Navbar() {
 
    // HAVE NAVMENU LOCATION MOVE DEPENDING ON ACTIVE COMPONENT
    function handleNavLocation(id) {
-      const temp = document.getElementById(id);
-      if (temp.id === "HOME-MENU") {
+      if (document.getElementById(id).id === "HOME-MENU") {
          setMidNavLocation(true);
       } else {
          setMidNavLocation(false);
