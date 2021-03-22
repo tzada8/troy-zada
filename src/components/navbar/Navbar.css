@@ -37,7 +37,7 @@ nav {
 .navbar-logo {
    background: linear-gradient(45deg, #056ba7 20%, #1fbcf5 50%, #056ba7 80%);
    color: var(--WHITE);
-   font-family: "Merienda One";
+   font-family: "Merienda One", "Montserrat", Arial, sans-serif;
    font-size: 50px;
    display: flex;
    align-items: center;

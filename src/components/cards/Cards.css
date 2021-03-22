@@ -64,7 +64,7 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 .card-title {
-   /* padding: 0; */
+   color: var(--REG_BLUE);
 }
 
 .card-content {
