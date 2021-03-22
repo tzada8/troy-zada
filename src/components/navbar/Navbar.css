@@ -35,7 +35,7 @@ nav {
 
 /* LOGO AS "TZ" */
 .navbar-logo {
-   background: linear-gradient(45deg, #056ba7 25%, #1fbcf5 50%, #056ba7 75%);
+   background: linear-gradient(45deg, #056ba7 20%, #1fbcf5 50%, #056ba7 80%);
    color: var(--WHITE);
    font-family: "Merienda One";
    font-size: 50px;
@@ -47,6 +47,12 @@ nav {
    border-radius: 50%;
    margin: 15px auto;
    border: 2px solid var(--GREY);
+   transition: color 1s linear;
+}
+
+.navbar-logo:hover {
+   color: #c7c1c1;
+   transition: color 1s linear;
 }
 
 .menu-icon {
