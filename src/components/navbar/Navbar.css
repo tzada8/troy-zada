@@ -155,8 +155,7 @@ nav {
    }
 
    .nav-menu {
-      /* CHANGE TO var(--REG_BLUE) */
-      background: yellow;
+      background: var(--REG_BLUE);
       position: absolute;
       display: block;
       top: 50px;
@@ -201,6 +200,7 @@ nav {
       width: 100%;
       height: calc(var(--NAV_MENU_SIZE) + 3px);
       border-left: 0;
+      transition: right 0.5s ease;
    }
 
    .nav-links {
