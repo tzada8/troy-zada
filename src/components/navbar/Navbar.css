@@ -161,7 +161,7 @@ nav {
       top: 50px;
       right: -100%;
       width: 30%;
-      height: calc(var(--NAV_MENU_SIZE) + 3px);
+      height: calc(var(--NAV_MENU_SIZE) + 5px);
       z-index: 1;
       border-left: 3px solid var(--GREY);
       border-bottom: 3px solid var(--GREY);
@@ -198,7 +198,7 @@ nav {
 @media screen and (max-width: 480px) {
    .nav-menu {
       width: 100%;
-      height: calc(var(--NAV_MENU_SIZE) + 3px);
+      height: calc(var(--NAV_MENU_SIZE) + 4px);
       border-left: 0;
       transition: right 0.5s ease;
    }

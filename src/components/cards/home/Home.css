@@ -1,11 +1,11 @@
 .home-img-round {
-   background: url("../../../images/Solo.JPG") center center/cover no-repeat;
+   background: url("../../../images/headshot_2.png") top -8px center/cover no-repeat;
    position: block;
    height: 150px;
    width: 150px;
    margin: auto;
    border-radius: 50%;
-   border: 4px solid red;
+   border: 4px solid var(--DARK_BLUE);
 }
 
 .home-intro-title {
