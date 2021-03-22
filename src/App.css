@@ -67,7 +67,8 @@ button {
 
 /* ALL MAIN CONTENT EXCLUDING NAVBAR */
 .content-container {
-   background: url("./images/pexels/test.jpg") center center/cover no-repeat;
+   background: url("./images/background/mountain1.jpg") center center/cover
+      no-repeat;
    background-attachment: fixed;
    position: block;
    height: 100vh;
