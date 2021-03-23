@@ -32,6 +32,7 @@ function Skills(props) {
                   <ProgressBar skillTitle="Punctuality" percent="30%" />
                   <ProgressBar skillTitle="Detail-Oriented" percent="30%" />
                   <ProgressBar skillTitle="Cross-Functional" percent="30%" />
+                  <ProgressBar skillTitle="Teamwork" percent="30%" />
                </div>
 
                {/* DIVIDER BETWEEN SKILL GROUPS */}
