@@ -1,5 +1,5 @@
 import React from "react";
-import TypeOfSkills from "./TypeOfSkills";
+import ProgressBar from "./ProgressBar";
 import "./Skills.css";
 import "../Cards.css";
 import { SKILLS } from "../../Constants";
@@ -16,7 +16,18 @@ function Skills(props) {
 
             {/* REST OF CONTENT */}
             <div className="card-content">
-               <TypeOfSkills />
+               <div className="group-skills-container">
+                  {/* GROUP OF TECHNICAL SKILLS */}
+                  <a
+                     href="/"
+                     target="_blank"
+                     rel="noreferrer"
+                     aria-label="Facebook"
+                  >
+                     <i className="fab fa-facebook-square social-icon" />
+                  </a>
+                  <h3>Type Of Skills</h3>
+               </div>
             </div>
          </div>
       </div>
