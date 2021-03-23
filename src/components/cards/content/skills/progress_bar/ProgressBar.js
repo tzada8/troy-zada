@@ -8,17 +8,12 @@ function ProgressBar(props) {
             <h4 className="progress-header">{props.skillTitle}</h4>
             <h4 className="percentage">{props.percent}</h4>
             <br />
-            <hr
-               className="horizontal-bar__skills"
-               style={{
-                  background:
-                     "linear-gradient(to right, var(--DARK_BLUE) " +
-                     props.percent +
-                     ", var(--WHITE) " +
-                     props.percent +
-                     ")",
-               }}
-            />
+            <div className="progress-bar__border">
+               <div
+                  className="progress-bar__progress"
+                  style={{ width: props.percent }}
+               />
+            </div>
          </div>
       </div>
    );
