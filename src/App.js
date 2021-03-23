@@ -7,7 +7,6 @@ import Navbar from "./components/navbar/Navbar";
 
 // RENDER CARDS
 import RenderCards from "./components/cards/RenderCards";
-import PageNotFound from "./components/cards/page_not_found/PageNotFound";
 
 function App() {
    return (
@@ -24,6 +23,7 @@ function App() {
                         experience={false}
                         blog={false}
                         contact={false}
+                        pageNotFound={false}
                      />
                   </Route>
                   <Route exact path="/portfolio">
@@ -34,6 +34,7 @@ function App() {
                         experience={false}
                         blog={false}
                         contact={false}
+                        pageNotFound={false}
                      />
                   </Route>
                   <Route exact path="/skills">
@@ -44,6 +45,7 @@ function App() {
                         experience={false}
                         blog={false}
                         contact={false}
+                        pageNotFound={false}
                      />
                   </Route>
                   <Route exact path="/experience">
@@ -54,6 +56,7 @@ function App() {
                         experience={true}
                         blog={false}
                         contact={false}
+                        pageNotFound={false}
                      />
                   </Route>
                   <Route exact path="/blog">
@@ -64,6 +67,7 @@ function App() {
                         experience={false}
                         blog={true}
                         contact={false}
+                        pageNotFound={false}
                      />
                   </Route>
                   <Route exact path="/contact">
@@ -74,10 +78,21 @@ function App() {
                         experience={false}
                         blog={false}
                         contact={true}
+                        pageNotFound={false}
                      />
                   </Route>
                   {/* IN CASE USER TYPES A LINK IN URL THAT DOES NOT EXIST */}
-                  <Route component={PageNotFound} />
+                  <Route>
+                     <RenderCards
+                        home={false}
+                        portfolio={false}
+                        skills={false}
+                        experience={false}
+                        blog={false}
+                        contact={false}
+                        pageNotFound={true}
+                     />
+                  </Route>
                </Switch>
             </div>
          </Router>
