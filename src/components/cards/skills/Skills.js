@@ -4,6 +4,9 @@ import "./Skills.css";
 import "../Cards.css";
 import { SKILLS } from "../../Constants";
 
+// WHEN CARD IS FIRST OPENED, HAVE ANIMATION THAT BRINGS ALL BARS TO RESPECTIVE PERCENT
+// FIX PERCENT VALUES FOR ALL SKILLS
+
 function Skills(props) {
    return (
       <div className={props.isActive ? "card-box other-page" : "card-box"}>
@@ -23,11 +26,12 @@ function Skills(props) {
                      Interpersonal Skills
                   </h3>
                   <hr className="horizontal-bar__skills-title" />
-                  <ProgressBar skillTitle="Communcation" percent="60%" />
-                  <ProgressBar skillTitle="Problem Solving" percent="90%" />
-                  <ProgressBar skillTitle="Time Management" percent="90%" />
-                  <ProgressBar skillTitle="Punctuality" percent="90%" />
-                  <ProgressBar skillTitle="Detail-Oriented" percent="90%" />
+                  <ProgressBar skillTitle="Communcation" percent="30%" />
+                  <ProgressBar skillTitle="Problem Solving" percent="30%" />
+                  <ProgressBar skillTitle="Time Management" percent="30%" />
+                  <ProgressBar skillTitle="Punctuality" percent="30%" />
+                  <ProgressBar skillTitle="Detail-Oriented" percent="30%" />
+                  <ProgressBar skillTitle="Cross-Functional" percent="30%" />
                </div>
 
                {/* DIVIDER BETWEEN SKILL GROUPS */}
@@ -40,13 +44,13 @@ function Skills(props) {
                      Professional Skills
                   </h3>
                   <hr className="horizontal-bar__skills-title" />
-                  <ProgressBar skillTitle="Java" percent="60%" />
-                  <ProgressBar skillTitle="Python" percent="90%" />
-                  <ProgressBar skillTitle="Excel VBA" percent="90%" />
-                  <ProgressBar skillTitle="HTML" percent="60%" />
-                  <ProgressBar skillTitle="CSS" percent="90%" />
-                  <ProgressBar skillTitle="JavaScript" percent="90%" />
-                  <ProgressBar skillTitle="R" percent="60%" />
+                  <ProgressBar skillTitle="Java" percent="30%" />
+                  <ProgressBar skillTitle="Python" percent="30%" />
+                  <ProgressBar skillTitle="Excel VBA" percent="30%" />
+                  <ProgressBar skillTitle="HTML" percent="30%" />
+                  <ProgressBar skillTitle="CSS" percent="30%" />
+                  <ProgressBar skillTitle="JavaScript" percent="30%" />
+                  <ProgressBar skillTitle="R" percent="30%" />
                </div>
             </div>
          </div>
