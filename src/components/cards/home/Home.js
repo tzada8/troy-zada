@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import "../Cards.css";
+import "../CreateCards.css";
 import {
    EMAIL,
    FACEBOOK_LINK,
