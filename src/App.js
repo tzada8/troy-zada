@@ -26,12 +26,12 @@ function App() {
                         pageNotFound={false}
                      />
                   </Route>
-                  <Route exact path="/portfolio">
+                  <Route exact path="/experience">
                      <RenderCards
                         home={false}
-                        portfolio={true}
+                        portfolio={false}
                         skills={false}
-                        experience={false}
+                        experience={true}
                         blog={false}
                         contact={false}
                         pageNotFound={false}
@@ -48,12 +48,12 @@ function App() {
                         pageNotFound={false}
                      />
                   </Route>
-                  <Route exact path="/experience">
+                  <Route exact path="/portfolio">
                      <RenderCards
                         home={false}
-                        portfolio={false}
+                        portfolio={true}
                         skills={false}
-                        experience={true}
+                        experience={false}
                         blog={false}
                         contact={false}
                         pageNotFound={false}
