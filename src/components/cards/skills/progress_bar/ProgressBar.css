@@ -1,5 +1,4 @@
 .progress-container {
-   /* background: cyan; */
    margin: 10px 0;
 }
 
@@ -19,7 +18,6 @@
 .horizontal-bar__skills {
    margin-top: 5px;
    height: 10px;
-   display: block;
    border-color: var(--BLACK);
    border-radius: 10px;
 }
