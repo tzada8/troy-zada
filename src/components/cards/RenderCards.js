@@ -33,12 +33,16 @@ function RenderCards(props) {
             isActive={props.experience}
             title={EXPERIENCE}
             content={<Experience />}
+            quotation="Something about experience/learning"
+            author="Insert author here"
          />
          {/* SKILLS */}
          <CreateCards
             isActive={props.skills}
             title={SKILLS}
             content={<Skills />}
+            quotation="An eye for an eye will leave the whole world blind"
+            author="M.K. Ghandi"
          />
          {/* PORTFOLIO */}
          <CreateCards
@@ -47,12 +51,20 @@ function RenderCards(props) {
             content={<Portfolio />}
          />
          {/* BLOG */}
-         <CreateCards isActive={props.blog} title={BLOG} content={<Blog />} />
+         <CreateCards
+            isActive={props.blog}
+            title={BLOG}
+            content={<Blog />}
+            quotation="Something about reading"
+            author="Insert author here"
+         />
          {/* CONTACT */}
          <CreateCards
             isActive={props.contact}
             title={CONTACT}
             content={<Contact />}
+            quotation="Something about reaching out/discussion"
+            author="Insert author here"
          />
          {/* PAGE NOT FOUND */}
          <CreateCards

@@ -41,7 +41,7 @@ function Home(props) {
                programming, innovation, and optimizing processes. I enjoy
                learning and being able to work out and find solutions to
                difficult problems. "Live as if you were to die tomorrow. Learn
-               as if you were to live forever." - Mahatma Gandhi
+               as if you were to live forever." - M.K. Gandhi
             </p>
 
             {/* SOCIAL ICON LINKS */}

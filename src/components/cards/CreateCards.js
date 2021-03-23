@@ -14,6 +14,14 @@ function CreateCards(props) {
 
             {/* REST OF CONTENT */}
             <div className="card-content">{props.content}</div>
+
+            {/* FOOTER FOR QUOTATION */}
+            <hr className="horizontal-bar__footer" />
+            <p className="footer-quote">
+               {'"'}
+               {props.quotation}
+               {'"'} - <span className="author">{props.author}</span>
+            </p>
          </div>
       </div>
    );
