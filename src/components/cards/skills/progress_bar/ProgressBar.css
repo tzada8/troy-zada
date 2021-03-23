@@ -18,6 +18,6 @@
 .horizontal-bar__skills {
    margin-top: 5px;
    height: 10px;
-   border-color: var(--BLACK);
+   border-color: var(--GREY);
    border-radius: 10px;
 }
