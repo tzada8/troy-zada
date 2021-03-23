@@ -11,6 +11,7 @@ function Skills(props) {
             <div className="card-title">
                <h1>{SKILLS}</h1>
             </div>
+            <hr className="horizontal-bar__title" />
 
             {/* REST OF CONTENT */}
             <div className="card-content">

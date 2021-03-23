@@ -65,6 +65,12 @@ div::-webkit-scrollbar-thumb:hover {
 
 .card-title {
    color: var(--REG_BLUE);
+   text-align: left;
+}
+
+hr.horizontal-bar__title {
+   margin: 5px 0 20px 0;
+   border-top: 1px solid var(--GREY);
 }
 
 .card-content {

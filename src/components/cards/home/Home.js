@@ -29,7 +29,7 @@ function Home(props) {
                <h4 className="home-intro-program">
                   Management Engineering Student @ University of Waterloo
                </h4>
-               <hr className="horizontal-bar-fade" />
+               <hr className="horizontal-bar__fade" />
             </div>
 
             {/* BRIEF OVERALL DESCRIPTION */}

@@ -52,7 +52,7 @@ button {
 }
 
 /* VARIOUS HORIZONTAL BAR STYLES */
-.horizontal-bar-fade {
+hr.horizontal-bar__fade {
    margin: 15px 0;
    width: 100%;
    border: 0;
