@@ -8,6 +8,9 @@ import {
    FULL_NAME,
 } from "../../Constants";
 
+// FIX EMAIL HOVER ICON
+// CHANGING TEXT (I AM ... / ... / ...)
+
 function Home(props) {
    return (
       <div
