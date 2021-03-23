@@ -18,22 +18,25 @@ function Skills(props) {
             <div className="card-content">
                {/* GROUP OF PROFESSIONAL SKILLS */}
                <div className="group-skills-container">
-                  <h3>
+                  <h3 className="skills-header">
                      <i className="fas fa-cogs" />
                      Professional Skills
                   </h3>
-                  <hr />
+                  <hr className="horizontal-bar__skills-title" />
                   <ProgressBar skillTitle="Example" percent="60%" />
                   <ProgressBar skillTitle="My Skill" percent="90%" />
                </div>
 
+               {/* DIVIDER BETWEEN SKILL GROUPS */}
+               <div className="skills-divider" />
+
                {/* GROUP OF INTERPERSONAL SKILLS */}
                <div className="group-skills-container">
-                  <h3>
+                  <h3 className="skills-header">
                      <i className="fas fa-users" />
                      Interpersonal Skills
                   </h3>
-                  <hr />
+                  <hr className="horizontal-bar__skills-title" />
                   <ProgressBar skillTitle="Example" percent="60%" />
                   <ProgressBar skillTitle="My Skill" percent="90%" />
                </div>

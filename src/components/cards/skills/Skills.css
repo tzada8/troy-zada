@@ -1,3 +1,23 @@
 .group-skills-container {
-   background: lime;
+   /* background: lime; */
+}
+
+.skills-header {
+   text-align: left;
+}
+
+.fa-cogs,
+.fa-users {
+   margin-right: 10px;
+}
+
+hr.horizontal-bar__skills-title {
+   /* margin: 5px 0 5px 0; */
+   margin-top: 5px;
+   margin-bottom: -3px;
+   border-top: 1px dotted black;
+}
+
+.skills-divider {
+   height: 40px;
 }

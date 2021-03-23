@@ -1,5 +1,5 @@
 .progress-container {
-   background: cyan;
+   /* background: cyan; */
    margin: 10px 0;
 }
 
@@ -15,5 +15,6 @@
    margin-top: 5px;
    height: 10px;
    display: block;
-   border-color: black;
+   border-color: var(--BLACK);
+   border-radius: 10px;
 }
