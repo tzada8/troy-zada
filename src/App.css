@@ -65,8 +65,8 @@ hr.horizontal-bar__fade {
    );
 }
 
-/* ALL MAIN CONTENT EXCLUDING NAVBAR */
-.content-container {
+/* BACKGROUND FOR ALL MAIN CONTENT */
+#content-container {
    background: url("./images/background/mountain2.jpg") center center/cover
       no-repeat;
    background-attachment: fixed;
@@ -74,7 +74,6 @@ hr.horizontal-bar__fade {
    height: 100vh;
    min-height: var(--MIN_SCREEN_HEIGHT);
    width: 100%;
-   /* padding: 5% 5%; */
 }
 
 /* IF SCREEN IS DESKTOP-SMALL VERSION, THEN HAVE FOLLOWING STYLES */

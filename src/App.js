@@ -14,7 +14,7 @@ function App() {
       <div>
          <Router>
             <Navbar />
-            <div className="content-container">
+            <div id="content-container">
                <Switch>
                   <Route exact path="/">
                      <RenderCards
