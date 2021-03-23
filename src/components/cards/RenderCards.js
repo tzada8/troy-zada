@@ -22,6 +22,7 @@ import Blog from "./content/blog/Blog";
 import Contact from "./content/contact/Contact";
 import PageNotFound from "./content/page_not_found/PageNotFound";
 
+// DETERMINES WHICH CARD SHOULD BE RENDERED TO/VISIBLE ON THE SCREEN
 function RenderCards(props) {
    return (
       <div>

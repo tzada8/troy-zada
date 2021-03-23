@@ -1,6 +1,7 @@
 import React from "react";
 import "./Cards.css";
 
+// CREATES CARD FRAME WITH APPROPRIATE CONTENT
 function CreateCards(props) {
    return (
       <div className={props.isActive ? "card-box other-page" : "card-box"}>
