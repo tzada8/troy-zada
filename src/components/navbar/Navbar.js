@@ -56,7 +56,6 @@ function Navbar() {
                         to="/"
                         className="nav-links"
                         activeClassName="nav-links-active"
-                        // onClick={closeMobileMenu}
                         onClick={() => {
                            closeMobileMenu();
                            handleNavLocation("HOME-MENU");
@@ -68,18 +67,18 @@ function Navbar() {
                   </li>
                   <li className="nav-item">
                      <NavLink
-                        id="PORTFOLIO-MENU"
+                        id="EXPERIENCE-MENU"
                         exact
-                        to="/portfolio"
+                        to="/experience"
                         className="nav-links"
                         activeClassName="nav-links-active"
                         onClick={() => {
                            closeMobileMenu();
-                           handleNavLocation("PORTFOLIO-MENU");
+                           handleNavLocation("EXPERIENCE-MENU");
                         }}
                      >
-                        {/* BUTTON TO DOWNLOAD RESUME, EDUCATION, AWARDS */}
-                        {PORTFOLIO}
+                        {/* WORK AND PROJECTS */}
+                        {EXPERIENCE}
                      </NavLink>
                   </li>
                   <li className="nav-item">
@@ -100,18 +99,18 @@ function Navbar() {
                   </li>
                   <li className="nav-item">
                      <NavLink
-                        id="EXPERIENCE-MENU"
+                        id="PORTFOLIO-MENU"
                         exact
-                        to="/experience"
+                        to="/portfolio"
                         className="nav-links"
                         activeClassName="nav-links-active"
                         onClick={() => {
                            closeMobileMenu();
-                           handleNavLocation("EXPERIENCE-MENU");
+                           handleNavLocation("PORTFOLIO-MENU");
                         }}
                      >
-                        {/* WORK AND PROJECTS */}
-                        {EXPERIENCE}
+                        {/* BUTTON TO DOWNLOAD RESUME, EDUCATION, AWARDS */}
+                        {PORTFOLIO}
                      </NavLink>
                   </li>
                   <li className="nav-item">
