@@ -18,29 +18,24 @@ function Skills(props) {
             <div className="card-content">
                {/* GROUP OF PROFESSIONAL SKILLS */}
                <div className="group-skills-container">
-                  <a
-                     href="/"
-                     target="_blank"
-                     rel="noreferrer"
-                     aria-label="Facebook"
-                  >
-                     <i className="fab fa-facebook-square social-icon" />
-                  </a>
-                  <h3>Type Of Skills</h3>
-                  <ProgressBar />
+                  <h3>
+                     <i className="fas fa-cogs" />
+                     Professional Skills
+                  </h3>
+                  <hr />
+                  <ProgressBar skillTitle="Example" percent="60%" />
+                  <ProgressBar skillTitle="My Skill" percent="90%" />
                </div>
 
                {/* GROUP OF INTERPERSONAL SKILLS */}
                <div className="group-skills-container">
-                  <a
-                     href="/"
-                     target="_blank"
-                     rel="noreferrer"
-                     aria-label="Facebook"
-                  >
-                     <i className="fab fa-facebook-square social-icon" />
-                  </a>
-                  <h3>Interpersonal Skills</h3>
+                  <h3>
+                     <i className="fas fa-users" />
+                     Interpersonal Skills
+                  </h3>
+                  <hr />
+                  <ProgressBar skillTitle="Example" percent="60%" />
+                  <ProgressBar skillTitle="My Skill" percent="90%" />
                </div>
             </div>
          </div>

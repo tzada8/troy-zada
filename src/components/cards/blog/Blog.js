@@ -14,6 +14,7 @@ function Blog(props) {
 
             {/* REST OF CONTENT */}
             <div className="card-content">
+               <i className="fas fa-blog" />
                <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Totam aliquam inventore ipsam vel eveniet reprehenderit,
