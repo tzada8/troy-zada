@@ -49,6 +49,8 @@ function RenderCards(props) {
             isActive={props.portfolio}
             title={PORTFOLIO}
             content={<Portfolio />}
+            quotation="Something about something here"
+            author="Insert author here"
          />
          {/* BLOG */}
          <CreateCards
