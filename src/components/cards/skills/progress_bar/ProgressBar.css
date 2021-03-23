@@ -4,11 +4,16 @@
 }
 
 .progress-header {
+   color: var(--GREY);
    float: left;
 }
 
 .percentage {
+   color: var(--GREY);
    float: right;
+   font-weight: normal;
+   padding-top: 2px;
+   font-size: 13px;
 }
 
 .horizontal-bar__skills {
