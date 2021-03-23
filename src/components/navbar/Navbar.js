@@ -10,9 +10,9 @@ import {
    CONTACT,
 } from "../Constants";
 
-function Navbar() {
+function Navbar(props) {
    const [click, setClick] = useState(false);
-   const [midNavLocation, setMidNavLocation] = useState(true);
+   const [midNavLocation, setMidNavLocation] = useState(props.startPos);
 
    const handleClick = () => setClick(!click);
    const closeMobileMenu = () => setClick(false);

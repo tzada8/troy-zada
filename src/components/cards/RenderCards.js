@@ -73,6 +73,8 @@ function RenderCards(props) {
             isActive={props.pageNotFound}
             title={PAGE_NOT_FOUND}
             content={<PageNotFound />}
+            quotation="Something about unable to find"
+            author="Insert author here"
          />
       </div>
    );

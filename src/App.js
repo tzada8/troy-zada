@@ -12,7 +12,6 @@ function App() {
    return (
       <div>
          <Router>
-            <Navbar />
             <div id="content-container">
                <Switch>
                   <Route exact path="/">
@@ -25,6 +24,7 @@ function App() {
                         contact={false}
                         pageNotFound={false}
                      />
+                     <Navbar startPos={true} />
                   </Route>
                   <Route exact path="/experience">
                      <RenderCards
@@ -36,6 +36,7 @@ function App() {
                         contact={false}
                         pageNotFound={false}
                      />
+                     <Navbar startPos={false} />
                   </Route>
                   <Route exact path="/skills">
                      <RenderCards
@@ -47,6 +48,7 @@ function App() {
                         contact={false}
                         pageNotFound={false}
                      />
+                     <Navbar startPos={false} />
                   </Route>
                   <Route exact path="/portfolio">
                      <RenderCards
@@ -58,6 +60,7 @@ function App() {
                         contact={false}
                         pageNotFound={false}
                      />
+                     <Navbar startPos={false} />
                   </Route>
                   <Route exact path="/blog">
                      <RenderCards
@@ -69,6 +72,7 @@ function App() {
                         contact={false}
                         pageNotFound={false}
                      />
+                     <Navbar startPos={false} />
                   </Route>
                   <Route exact path="/contact">
                      <RenderCards
@@ -80,6 +84,7 @@ function App() {
                         contact={true}
                         pageNotFound={false}
                      />
+                     <Navbar startPos={false} />
                   </Route>
                   {/* IN CASE USER TYPES A LINK IN URL THAT DOES NOT EXIST */}
                   <Route>
@@ -92,6 +97,7 @@ function App() {
                         contact={false}
                         pageNotFound={true}
                      />
+                     <Navbar startPos={false} />
                   </Route>
                </Switch>
             </div>
