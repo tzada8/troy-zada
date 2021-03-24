@@ -1,13 +1,3 @@
-.skills-header {
-   color: var(--BLACK);
-   text-align: left;
-}
-
-.fa-cogs,
-.fa-users {
-   margin-right: 10px;
-}
-
-.skills-divider {
+div.skills-divider {
    height: 30px;
 }

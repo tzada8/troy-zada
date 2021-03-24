@@ -1,0 +1,15 @@
+h3.subtitle-header {
+   color: var(--BLACK);
+   text-align: left;
+}
+
+i.subtitle-icon {
+   margin-right: 10px;
+   color: var(--BLACK);
+}
+
+hr.horizontal-bar__subtitle {
+   margin: 5px 0 -3px 0;
+   border-top: 1px dotted var(--BLACK);
+   border-left: 0;
+}

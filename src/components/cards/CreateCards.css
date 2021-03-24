@@ -74,12 +74,6 @@ hr.horizontal-bar__title {
    border-left: 0;
 }
 
-hr.horizontal-bar__subtitle {
-   margin: 5px 0 -3px 0;
-   border-top: 1px dotted var(--BLACK);
-   border-left: 0;
-}
-
 hr.horizontal-bar__footer {
    margin: 35px 0 5px 0;
    border-top: 1px solid var(--LIGHT_GREY);

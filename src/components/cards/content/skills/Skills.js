@@ -1,4 +1,5 @@
 import React from "react";
+import Subtitle from "../Subtitle";
 import ProgressBar from "./progress_bar/ProgressBar";
 import "./Skills.css";
 
@@ -10,11 +11,7 @@ function Skills() {
       <div>
          {/* GROUP OF INTERPERSONAL SKILLS */}
          <div className="group-skills-container">
-            <h3 className="skills-header">
-               <i className="fas fa-users" />
-               Interpersonal Skills
-            </h3>
-            <hr className="horizontal-bar__subtitle" />
+            <Subtitle icon="fas fa-users" content="Interpersonal Skills" />
             <ul>
                <li>
                   <ProgressBar skillTitle="Communcation" percent="30%" />
@@ -45,11 +42,7 @@ function Skills() {
 
          {/* GROUP OF PROFESSIONAL SKILLS */}
          <div className="group-skills-container">
-            <h3 className="skills-header">
-               <i className="fas fa-cogs" />
-               Professional Skills
-            </h3>
-            <hr className="horizontal-bar__subtitle" />
+            <Subtitle icon="fas fa-cogs" content="Professional Skills" />
             <ul>
                <li>
                   <ProgressBar skillTitle="Java" percent="30%" />
