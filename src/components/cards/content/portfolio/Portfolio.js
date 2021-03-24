@@ -1,9 +1,11 @@
 import React from "react";
+import Subtitle from "../Subtitle";
 import "./Portfolio.css";
 
 function Portfolio() {
    return (
       <div>
+         <Subtitle icon="fas fa-cogs" content="Coding Projects" />
          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
             aliquam inventore ipsam vel eveniet reprehenderit, voluptates

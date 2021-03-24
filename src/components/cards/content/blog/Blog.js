@@ -1,4 +1,5 @@
 import React from "react";
+import Subtitle from "../Subtitle";
 import "./Blog.css";
 
 function Blog() {
