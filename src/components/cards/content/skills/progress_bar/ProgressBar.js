@@ -3,7 +3,7 @@ import "./ProgressBar.css";
 
 function ProgressBar(props) {
    return (
-      <div className="progress-container">
+      <li className="progress-container">
          <h4 className="progress-header">{props.skillTitle}</h4>
          <h4 className="percentage">{props.percent}</h4>
          <br />
@@ -13,7 +13,7 @@ function ProgressBar(props) {
                style={{ width: props.percent }}
             />
          </div>
-      </div>
+      </li>
    );
 }
 

@@ -13,27 +13,13 @@ function Skills() {
          <div className="group-skills-container">
             <Subtitle icon="fas fa-users" content="Interpersonal Skills" />
             <ul>
-               <li>
-                  <ProgressBar skillTitle="Communcation" percent="30%" />
-               </li>
-               <li>
-                  <ProgressBar skillTitle="Problem Solving" percent="30%" />
-               </li>
-               <li>
-                  <ProgressBar skillTitle="Time Management" percent="30%" />
-               </li>
-               <li>
-                  <ProgressBar skillTitle="Punctuality" percent="30%" />
-               </li>
-               <li>
-                  <ProgressBar skillTitle="Detail-Oriented" percent="30%" />
-               </li>
-               <li>
-                  <ProgressBar skillTitle="Cross-Functional" percent="30%" />
-               </li>
-               <li>
-                  <ProgressBar skillTitle="Teamwork" percent="30%" />
-               </li>
+               <ProgressBar skillTitle="Communcation" percent="30%" />
+               <ProgressBar skillTitle="Problem Solving" percent="30%" />
+               <ProgressBar skillTitle="Time Management" percent="30%" />
+               <ProgressBar skillTitle="Punctuality" percent="30%" />
+               <ProgressBar skillTitle="Detail-Oriented" percent="30%" />
+               <ProgressBar skillTitle="Cross-Functional" percent="30%" />
+               <ProgressBar skillTitle="Teamwork" percent="30%" />
             </ul>
          </div>
 
@@ -44,27 +30,13 @@ function Skills() {
          <div className="group-skills-container">
             <Subtitle icon="fas fa-cogs" content="Professional Skills" />
             <ul>
-               <li>
-                  <ProgressBar skillTitle="Java" percent="30%" />
-               </li>
-               <li>
-                  <ProgressBar skillTitle="Python" percent="30%" />
-               </li>
-               <li>
-                  <ProgressBar skillTitle="Excel VBA" percent="30%" />
-               </li>
-               <li>
-                  <ProgressBar skillTitle="HTML" percent="30%" />
-               </li>
-               <li>
-                  <ProgressBar skillTitle="CSS" percent="30%" />
-               </li>
-               <li>
-                  <ProgressBar skillTitle="JavaScript" percent="30%" />
-               </li>
-               <li>
-                  <ProgressBar skillTitle="R" percent="30%" />
-               </li>
+               <ProgressBar skillTitle="Java" percent="30%" />
+               <ProgressBar skillTitle="Python" percent="30%" />
+               <ProgressBar skillTitle="Excel VBA" percent="30%" />
+               <ProgressBar skillTitle="HTML" percent="30%" />
+               <ProgressBar skillTitle="CSS" percent="30%" />
+               <ProgressBar skillTitle="JavaScript" percent="30%" />
+               <ProgressBar skillTitle="R" percent="30%" />
             </ul>
          </div>
       </div>

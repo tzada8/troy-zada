@@ -1,7 +1,7 @@
 import React from "react";
-import "Project.css";
+import "ProjectCard.css";
 
-function Project() {
+function ProjectCard() {
    return (
       <div>
          <h1>Example</h1>
@@ -9,4 +9,4 @@ function Project() {
    );
 }
 
-export default Project;
+export default ProjectCard;
