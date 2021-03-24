@@ -6,7 +6,7 @@ function Subtitle(props) {
       <div>
          <h3 className="subtitle-header">
             <i className={"subtitle-icon " + props.icon} />
-            {props.content}
+            {props.label}
          </h3>
          <hr className="horizontal-bar__subtitle" />
       </div>

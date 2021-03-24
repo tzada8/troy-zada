@@ -11,7 +11,7 @@ function Skills() {
       <div>
          {/* GROUP OF INTERPERSONAL SKILLS */}
          <div className="group-skills-container">
-            <Subtitle icon="fas fa-users" content="Interpersonal Skills" />
+            <Subtitle icon="fas fa-users" label="Interpersonal Skills" />
             <ul>
                <ProgressBar skillTitle="Communcation" percent="30%" />
                <ProgressBar skillTitle="Problem Solving" percent="30%" />
@@ -28,7 +28,7 @@ function Skills() {
 
          {/* GROUP OF PROFESSIONAL SKILLS */}
          <div className="group-skills-container">
-            <Subtitle icon="fas fa-cogs" content="Professional Skills" />
+            <Subtitle icon="fas fa-cogs" label="Professional Skills" />
             <ul>
                <ProgressBar skillTitle="Java" percent="30%" />
                <ProgressBar skillTitle="Python" percent="30%" />
