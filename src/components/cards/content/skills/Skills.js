@@ -14,7 +14,7 @@ function Skills() {
                <i className="fas fa-users" />
                Interpersonal Skills
             </h3>
-            <hr className="horizontal-bar__skills-title" />
+            <hr className="horizontal-bar__subtitle" />
             <ul>
                <li>
                   <ProgressBar skillTitle="Communcation" percent="30%" />
@@ -49,7 +49,7 @@ function Skills() {
                <i className="fas fa-cogs" />
                Professional Skills
             </h3>
-            <hr className="horizontal-bar__skills-title" />
+            <hr className="horizontal-bar__subtitle" />
             <ul>
                <li>
                   <ProgressBar skillTitle="Java" percent="30%" />

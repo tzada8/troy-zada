@@ -8,12 +8,6 @@
    margin-right: 10px;
 }
 
-hr.horizontal-bar__skills-title {
-   margin: 5px 0 -3px 0;
-   border-top: 1px dotted black;
-   border-left: 0;
-}
-
 .skills-divider {
    height: 30px;
 }
