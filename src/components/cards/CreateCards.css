@@ -76,7 +76,7 @@ hr.horizontal-bar__title {
 
 hr.horizontal-bar__subtitle {
    margin: 5px 0 -3px 0;
-   border-top: 1px dotted black;
+   border-top: 1px dotted var(--BLACK);
    border-left: 0;
 }
 
@@ -95,7 +95,6 @@ p.footer-quote {
 
 span.author {
    font-style: italic;
-   /* font-weight: bold; */
 }
 
 /* IF SCREEN IS DESKTOP-SMALL VERSION, THEN HAVE FOLLOWING STYLES */
