@@ -3,11 +3,19 @@ import Subtitle from "../Subtitle";
 import ProjectCard from "./project_card/ProjectCard";
 import "./Portfolio.css";
 
+// PICTURES FOR EACH PROJECT PREVIEW
+import item1_Moodivity from "./Solo.JPG";
+
 function Portfolio() {
    return (
       <div>
          <Subtitle icon="fas fa-cogs" label="Coding Projects" />
-         <ProjectCard />
+         <ProjectCard
+            path="#"
+            projectTitle="Moodivity"
+            src={item1_Moodivity}
+            text="This project was made in November 2020 using the React Framework as well as Django"
+         />
          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
             aliquam inventore ipsam vel eveniet reprehenderit, voluptates

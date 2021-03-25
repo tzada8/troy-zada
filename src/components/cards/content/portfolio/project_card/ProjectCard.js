@@ -5,16 +5,19 @@ import "./ProjectCard.css";
 function ProjectCard(props) {
    return (
       <li className="project-container">
-         <Link className="cards__item__link" to={props.path}>
+         <Link className="project-content" to={props.path}>
             <figure
-               className="cards__item__pic-wrap"
-               data-category={props.label}
+               className="project-picwrap"
+               data-category={props.projectTitle}
             >
-               <img className="cards__item__img" src={props.src} alt="Travel" />
+               <img className="project-image" src={props.src} alt="Project" />
             </figure>
-            <div className="cards__item__info">
-               <h5 className="cards__item__text">{props.text}</h5>
+            <div className="project-description-box">
+               <p className="project-description">{props.text}</p>
             </div>
+         </Link>
+         <Link className="see-more-link" to={props.path}>
+            SEE MORE
          </Link>
       </li>
    );
