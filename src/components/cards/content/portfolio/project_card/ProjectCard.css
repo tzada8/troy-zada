@@ -44,13 +44,9 @@ img.project-image:hover {
 
 .project-description-box {
    background: cyan;
-   /* padding: 20px 30px 30px; */
+   padding: 5px 5px;
 }
 
 .project-description {
    background: yellow;
-}
-
-.see-more-link {
-   background: beige;
 }

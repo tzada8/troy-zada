@@ -1,0 +1,22 @@
+.see-more-link {
+   color: var(--WHITE);
+   display: block;
+   margin-top: 5px;
+   padding: 4px 10px;
+   font-weight: bold;
+   width: 110px;
+   border: 2px solid var(--GREY);
+
+   background: linear-gradient(
+      to right,
+      var(--DARK_BLUE) 50%,
+      var(--REG_BLUE) 50%
+   );
+   background-size: 200% 100%;
+   background-position: right bottom;
+   transition: background-position 0.4s linear;
+}
+
+.see-more-link:hover {
+   background-position: left bottom;
+}

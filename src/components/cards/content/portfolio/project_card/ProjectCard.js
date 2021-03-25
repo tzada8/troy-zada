@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SeeMoreLink from "../../extra_components/see_more_link/SeeMoreLink";
 import "./ProjectCard.css";
 
 function ProjectCard(props) {
@@ -16,9 +17,7 @@ function ProjectCard(props) {
                <p className="project-description">{props.text}</p>
             </div>
          </Link>
-         <Link className="see-more-link" to={props.path}>
-            SEE MORE
-         </Link>
+         <SeeMoreLink path={props.path} />
       </li>
    );
 }

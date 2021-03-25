@@ -1,5 +1,5 @@
 import React from "react";
-import Subtitle from "../Subtitle";
+import Subtitle from "../extra_components/subtitle/Subtitle";
 import "./Blog.css";
 
 function Blog() {
