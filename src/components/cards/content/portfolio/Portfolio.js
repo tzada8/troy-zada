@@ -4,7 +4,7 @@ import ProjectCard from "./project_card/ProjectCard";
 import "./Portfolio.css";
 
 // PICTURES FOR EACH PROJECT PREVIEW
-import item1_Moodivity from "./Solo.JPG";
+import item1_Moodivity from "../../../../images/Solo.JPG";
 
 function Portfolio() {
    return (
