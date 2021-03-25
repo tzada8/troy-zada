@@ -18,6 +18,7 @@ function ProjectCard(props) {
             </div>
          </Link>
          <SeeMoreLink path={props.path} />
+         <hr className="horizontal-bar__projects" />
       </li>
    );
 }

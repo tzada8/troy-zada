@@ -1,5 +1,4 @@
 li.project-container {
-   background: orange;
    display: block;
    border-radius: 10px;
    width: 90%;
@@ -49,4 +48,10 @@ img.project-image:hover {
 
 .project-description {
    background: yellow;
+}
+
+hr.horizontal-bar__projects {
+   margin: 20px 0;
+   border: 2px solid var(--GREY);
+   border-radius: 5px;
 }
