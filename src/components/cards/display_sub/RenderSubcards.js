@@ -6,8 +6,8 @@ import React from "react";
 import CreateSubcards from "./CreateSubcards";
 
 // CONTENT
-import Moodivity from "./moodivity/Moodivity";
-import SudokuSolver from "./sudoku_solver/SudokuSolver";
+import Moodivity from "../content/portfolio/subcards/moodivity/Moodivity";
+import SudokuSolver from "../content/portfolio/subcards/sudoku_solver/SudokuSolver";
 
 // DETERMINES WHICH SUBCARD SHOULD BE RENDERED TO/VISIBLE ON THE SCREEN
 function RenderSubcards(props) {

@@ -8,19 +8,19 @@ import {
    BLOG,
    CONTACT,
    PAGE_NOT_FOUND,
-} from "../Constants";
+} from "../../Constants";
 
 // CARDS
-import Home from "./home/Home";
+import Home from "../home/Home";
 import CreateCards from "./CreateCards";
 
 // CONTENT
-import Portfolio from "./content/portfolio/Portfolio";
-import Skills from "./content/skills/Skills";
-import Experience from "./content/experience/Experience";
-import Blog from "./content/blog/Blog";
-import Contact from "./content/contact/Contact";
-import PageNotFound from "./content/page_not_found/PageNotFound";
+import Portfolio from "../content/portfolio/Portfolio";
+import Skills from "../content/skills/Skills";
+import Experience from "../content/experience/Experience";
+import Blog from "../content/blog/Blog";
+import Contact from "../content/contact/Contact";
+import PageNotFound from "../content/page_not_found/PageNotFound";
 
 // DETERMINES WHICH CARD SHOULD BE RENDERED TO/VISIBLE ON THE SCREEN
 function RenderCards(props) {

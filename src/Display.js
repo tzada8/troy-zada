@@ -4,8 +4,8 @@ import React from "react";
 import Navbar from "./components/navbar/Navbar";
 
 // RENDER CARDS
-import RenderCards from "./components/cards/RenderCards";
-import RenderSubcards from "./components/cards/content/portfolio/subcards/RenderSubcards";
+import RenderCards from "./components/cards/display_main/RenderCards";
+import RenderSubcards from "./components/cards/display_sub/RenderSubcards";
 
 function Display(props) {
    return (
