@@ -32,6 +32,7 @@ function Navbar(props) {
             <div className="navbar-container">
                {/* TROY ZADA HEADER/LOGO */}
                <Link
+                  exact
                   to="/"
                   className="navbar-logo"
                   onClick={() => {
@@ -68,7 +69,6 @@ function Navbar(props) {
                   <li className="nav-item">
                      <NavLink
                         id="EXPERIENCE-MENU"
-                        exact
                         to="/experience"
                         className="nav-links"
                         activeClassName="nav-links-active"
@@ -84,7 +84,6 @@ function Navbar(props) {
                   <li className="nav-item">
                      <NavLink
                         id="SKILLS-MENU"
-                        exact
                         to="/skills"
                         className="nav-links"
                         activeClassName="nav-links-active"
@@ -100,7 +99,6 @@ function Navbar(props) {
                   <li className="nav-item">
                      <NavLink
                         id="PORTFOLIO-MENU"
-                        exact
                         to="/portfolio"
                         className="nav-links"
                         activeClassName="nav-links-active"
@@ -116,7 +114,6 @@ function Navbar(props) {
                   <li className="nav-item">
                      <NavLink
                         id="BLOG-MENU"
-                        exact
                         to="/blog"
                         className="nav-links"
                         activeClassName="nav-links-active"
@@ -133,7 +130,6 @@ function Navbar(props) {
                   <li className="nav-item">
                      <NavLink
                         id="CONTACT-MENU"
-                        exact
                         to="/contact"
                         className="nav-links"
                         activeClassName="nav-links-active"
