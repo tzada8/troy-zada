@@ -15,13 +15,13 @@ function Portfolio() {
          <Subtitle icon="fas fa-code" label="Coding Projects" />
          <ul>
             <ProjectCard
-               path="#"
+               path="/portfolio/moodivity"
                projectTitle="Moodivity"
                src={item1_Moodivity}
                text="This project was made in November 2020 using the React Framework as well as Django"
             />
             <ProjectCard
-               path="#"
+               path="/portfolio/sudoko-solver"
                projectTitle="Sudoku Solver"
                src={item2_SudokuSolver}
                text="This project was made using the Backtracking algorithm and can solve any sudoku board"
