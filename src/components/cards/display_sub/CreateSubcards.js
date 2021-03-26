@@ -4,7 +4,9 @@ import "./CreateSubcards.css";
 // CREATES CARD FRAME WITH APPROPRIATE CONTENT
 function CreateSubcards(props) {
    return (
-      <div className={props.isActive ? "card-box other-page" : "card-box"}>
+      <div
+         className={props.isActive ? "card-box-top other-page" : "card-box-top"}
+      >
          <div className="card-container">
             {/* TITLE OF CARD */}
             <div className="card-title">
