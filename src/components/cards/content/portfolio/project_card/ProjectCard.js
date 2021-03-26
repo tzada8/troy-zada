@@ -20,7 +20,6 @@ function ProjectCard(props) {
                      alt="Project"
                   />
                </figure>
-               {/* <h3 className="test">{props.projectTitle}</h3> */}
                <div className="project-description-box">
                   <p className="project-description">{props.text}</p>
                </div>

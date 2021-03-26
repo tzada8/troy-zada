@@ -35,14 +35,6 @@ figure.project-picwrap::after {
    font-weight: bold;
 }
 
-.test {
-   margin: 5px;
-   width: max-content;
-   /* max-width: calc((100%) - 75%); */
-   font-size: 14px;
-   font-weight: bold;
-}
-
 img.project-image {
    position: absolute;
    top: 0;
