@@ -34,7 +34,7 @@ function Portfolio() {
          <Subtitle icon="fas fa-comments" label="Communication Projects" />
          <ul>
             <ProjectCard
-               path="#"
+               path="/portfolio/literature-fair"
                projectTitle="Literature Fair"
                src={item3_LiteratureFair}
                text="This project focuses on the literary theory of existentialism involving how each individual is in charge of their own lives based on their own decisions"

@@ -34,6 +34,9 @@ function App() {
                   <Route exact path="/portfolio/sudoku-solver">
                      <Display portfolio={false} sudokuSolver={true} />
                   </Route>
+                  <Route exact path="/portfolio/literature-fair">
+                     <Display portfolio={false} literatureFair={true} />
+                  </Route>
 
                   <Route exact path="/blog">
                      <Display blog={true} />

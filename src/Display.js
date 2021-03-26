@@ -23,6 +23,7 @@ function Display(props) {
          <RenderSubcards
             moodivity={props.moodivity}
             sudokuSolver={props.sudokuSolver}
+            literatureFair={props.literatureFair}
          />
       </div>
    );
