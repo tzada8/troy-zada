@@ -1,8 +1,8 @@
 import React from "react";
-import "./CreateCards.css";
+import "./CreateSubcards.css";
 
 // CREATES CARD FRAME WITH APPROPRIATE CONTENT
-function CreateCards(props) {
+function CreateSubcards(props) {
    return (
       <div className={props.isActive ? "card-box other-page" : "card-box"}>
          <div className="card-container">
@@ -27,4 +27,4 @@ function CreateCards(props) {
    );
 }
 
-export default CreateCards;
+export default CreateSubcards;
