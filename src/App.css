@@ -11,7 +11,7 @@
    /* FONTS */
    --FONT: "Montserrat", Arial, sans-serif;
    /* ----- BELOW WILL NEED FIXING ----- */
-   --CARD_HEADING_FONT: 25px;
+   --CARD_HEADING_FONT: 28px;
 
    /* MIN SCREEN HEIGHT */
    --MIN_SCREEN_HEIGHT: 600px;
@@ -27,6 +27,10 @@
 body {
    font-size: 14px;
    background: var(--WHITE);
+}
+
+h1 {
+   font-size: var(--CARD_HEADING_FONT);
 }
 
 p {

@@ -1,6 +1,7 @@
 .see-more-link {
    color: var(--WHITE);
    display: block;
+   margin: 10px 5px 20px 5px;
    padding: 4px 10px;
    font-weight: bold;
    width: 110px;

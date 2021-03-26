@@ -3,10 +3,10 @@ li.project-container {
    border-radius: 10px;
    width: 90%;
    margin: 15px auto;
+   border-bottom: 1px solid var(--LIGHT_GREY);
 }
 
 .project-content {
-   background: red;
    display: block;
    width: 100%;
    border-radius: 10px;
@@ -21,8 +21,29 @@ figure.project-picwrap {
    overflow: hidden;
 }
 
+figure.project-picwrap::after {
+   background-color: var(--DARK_BLUE);
+   color: var(--WHITE);
+   content: attr(data-category);
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   margin-right: 5%;
+   padding: 6px 8px;
+   max-width: calc((100%) - 60px);
+   font-size: 12px;
+   font-weight: bold;
+}
+
+.test {
+   margin: 5px;
+   width: max-content;
+   /* max-width: calc((100%) - 75%); */
+   font-size: 14px;
+   font-weight: bold;
+}
+
 img.project-image {
-   background: green;
    position: absolute;
    top: 0;
    right: 0;
@@ -42,16 +63,14 @@ img.project-image:hover {
 }
 
 .project-description-box {
-   background: cyan;
    padding: 5px;
 }
 
 .project-description {
-   background: yellow;
 }
 
 hr.horizontal-bar__projects {
-   margin: 20px 0;
+   margin: 30px 0 15px 0;
    border: 2px solid var(--GREY);
    border-radius: 5px;
 }
