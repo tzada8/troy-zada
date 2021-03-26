@@ -14,90 +14,36 @@ function App() {
          <Router>
             <div id="content-container">
                <Switch>
+                  {/* MAYBE FACTOR STUFF FROM INSIDE <SWITCH> OUT AND SIMPLIFY CODE??? */}
+
                   <Route exact path="/">
-                     <RenderCards
-                        home={true}
-                        portfolio={false}
-                        skills={false}
-                        experience={false}
-                        blog={false}
-                        contact={false}
-                        pageNotFound={false}
-                     />
+                     <RenderCards home={true} />
                      <Navbar startPos={true} />
                   </Route>
                   <Route exact path="/experience">
-                     <RenderCards
-                        home={false}
-                        portfolio={false}
-                        skills={false}
-                        experience={true}
-                        blog={false}
-                        contact={false}
-                        pageNotFound={false}
-                     />
-                     <Navbar startPos={false} />
+                     <RenderCards experience={true} />
+                     <Navbar />
                   </Route>
                   <Route exact path="/skills">
-                     <RenderCards
-                        home={false}
-                        portfolio={false}
-                        skills={true}
-                        experience={false}
-                        blog={false}
-                        contact={false}
-                        pageNotFound={false}
-                     />
-                     <Navbar startPos={false} />
+                     <RenderCards skills={true} />
+                     <Navbar />
                   </Route>
                   <Route exact path="/portfolio">
-                     <RenderCards
-                        home={false}
-                        portfolio={true}
-                        skills={false}
-                        experience={false}
-                        blog={false}
-                        contact={false}
-                        pageNotFound={false}
-                     />
-                     <Navbar startPos={false} />
+                     <RenderCards portfolio={true} />
+                     <Navbar />
                   </Route>
                   <Route exact path="/blog">
-                     <RenderCards
-                        home={false}
-                        portfolio={false}
-                        skills={false}
-                        experience={false}
-                        blog={true}
-                        contact={false}
-                        pageNotFound={false}
-                     />
-                     <Navbar startPos={false} />
+                     <RenderCards blog={true} />
+                     <Navbar />
                   </Route>
                   <Route exact path="/contact">
-                     <RenderCards
-                        home={false}
-                        portfolio={false}
-                        skills={false}
-                        experience={false}
-                        blog={false}
-                        contact={true}
-                        pageNotFound={false}
-                     />
-                     <Navbar startPos={false} />
+                     <RenderCards contact={true} />
+                     <Navbar />
                   </Route>
                   {/* IN CASE USER TYPES A LINK IN URL THAT DOES NOT EXIST */}
                   <Route>
-                     <RenderCards
-                        home={false}
-                        portfolio={false}
-                        skills={false}
-                        experience={false}
-                        blog={false}
-                        contact={false}
-                        pageNotFound={true}
-                     />
-                     <Navbar startPos={false} />
+                     <RenderCards pageNotFound={true} />
+                     <Navbar />
                   </Route>
                </Switch>
             </div>
