@@ -2,12 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
-// NAVIGATION
-import Navbar from "./components/navbar/Navbar";
-
-// RENDER CARDS
-import RenderCards from "./components/cards/RenderCards";
-import RenderSubcards from "./components/cards/content/portfolio/subcards/RenderSubcards";
+// DISPLAY CORRESPONDING COMPONENTS
+import Display from "./Display";
 
 function App() {
    return (
@@ -18,44 +14,37 @@ function App() {
                   {/* MAYBE FACTOR STUFF FROM INSIDE <SWITCH> OUT AND SIMPLIFY CODE??? */}
 
                   <Route exact path="/">
-                     <RenderCards home={true} />
-                     <Navbar startPos={true} />
+                     <Display home={true} startPos={true} />
                   </Route>
+
                   <Route exact path="/experience">
-                     <RenderCards experience={true} />
-                     <Navbar />
+                     <Display experience={true} />
                   </Route>
+
                   <Route exact path="/skills">
-                     <RenderCards skills={true} />
-                     <Navbar />
+                     <Display skills={true} />
                   </Route>
+
                   <Route exact path="/portfolio">
-                     <RenderCards portfolio={true} />
-                     <Navbar />
-                     <RenderSubcards />
+                     <Display portfolio={true} />
                   </Route>
                   <Route exact path="/portfolio/moodivity">
-                     <RenderCards portfolio={true} />
-                     <Navbar />
-                     <RenderSubcards moodivity={true} />
+                     <Display portfolio={true} moodivity={true} />
                   </Route>
                   <Route exact path="/portfolio/sudoku-solver">
-                     <RenderCards portfolio={true} />
-                     <Navbar />
-                     <RenderSubcards sudokuSolver={true} />
+                     <Display portfolio={true} sudokuSolver={true} />
                   </Route>
+
                   <Route exact path="/blog">
-                     <RenderCards blog={true} />
-                     <Navbar />
+                     <Display blog={true} />
                   </Route>
                   <Route exact path="/contact">
-                     <RenderCards contact={true} />
-                     <Navbar />
+                     <Display contact={true} />
                   </Route>
+
                   {/* IN CASE USER TYPES A LINK IN URL THAT DOES NOT EXIST */}
                   <Route>
-                     <RenderCards pageNotFound={true} />
-                     <Navbar />
+                     <Display pageNotFound={true} />
                   </Route>
                </Switch>
             </div>
