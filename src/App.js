@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/Navbar";
 
 // RENDER CARDS
 import RenderCards from "./components/cards/RenderCards";
+import RenderSubcards from "./components/cards/content/portfolio/subcards/RenderSubcards";
 
 function App() {
    return (
@@ -31,6 +32,17 @@ function App() {
                   <Route exact path="/portfolio">
                      <RenderCards portfolio={true} />
                      <Navbar />
+                     <RenderSubcards />
+                  </Route>
+                  <Route exact path="/portfolio/moodivity">
+                     <RenderCards portfolio={true} />
+                     <Navbar />
+                     <RenderSubcards moodivity={true} />
+                  </Route>
+                  <Route exact path="/portfolio/sudoku-solver">
+                     <RenderCards portfolio={true} />
+                     <Navbar />
+                     <RenderSubcards sudokuSolver={true} />
                   </Route>
                   <Route exact path="/blog">
                      <RenderCards blog={true} />

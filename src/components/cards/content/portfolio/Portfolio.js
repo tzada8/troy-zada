@@ -21,7 +21,7 @@ function Portfolio() {
                text="This project was made in November 2020 using the React Framework as well as Django"
             />
             <ProjectCard
-               path="/portfolio/sudoko-solver"
+               path="/portfolio/sudoku-solver"
                projectTitle="Sudoku Solver"
                src={item2_SudokuSolver}
                text="This project was made using the Backtracking algorithm and can solve any sudoku board"
