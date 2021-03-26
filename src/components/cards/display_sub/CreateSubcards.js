@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./CreateSubcards.css";
 
 // CREATES CARD FRAME WITH APPROPRIATE CONTENT
@@ -8,6 +9,10 @@ function CreateSubcards(props) {
          className={props.isActive ? "card-box-top other-page" : "card-box-top"}
       >
          <div className="card-container">
+            <Link to="/portfolio">
+               <i className="fas fa-times close-menu" />
+            </Link>
+
             {/* TITLE OF CARD */}
             <div className="card-title">
                <h1>{props.title}</h1>

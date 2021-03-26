@@ -53,6 +53,12 @@ div::-webkit-scrollbar-thumb:hover {
    margin: 30px;
 }
 
+i.close-menu {
+   font-size: 32px;
+   margin-right: 2px;
+   float: right;
+}
+
 .card-title {
    color: var(--REG_BLUE);
    text-align: left;
