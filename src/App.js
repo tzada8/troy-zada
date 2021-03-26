@@ -29,10 +29,10 @@ function App() {
                      <Display portfolio={true} />
                   </Route>
                   <Route exact path="/portfolio/moodivity">
-                     <Display portfolio={true} moodivity={true} />
+                     <Display portfolio={false} moodivity={true} />
                   </Route>
                   <Route exact path="/portfolio/sudoku-solver">
-                     <Display portfolio={true} sudokuSolver={true} />
+                     <Display portfolio={false} sudokuSolver={true} />
                   </Route>
 
                   <Route exact path="/blog">
