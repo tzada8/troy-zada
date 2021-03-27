@@ -1,11 +1,19 @@
-.home-img-round {
+.headshot1 {
+   background: url("../../../images/headshot_1.png") top -8px center/cover no-repeat;
+}
+
+.headshot2 {
    background: url("../../../images/headshot_2.png") top -8px center/cover no-repeat;
+}
+
+.home-img-round {
    position: block;
    height: 150px;
    width: 150px;
    margin: auto;
    border-radius: 50%;
    border: 4px solid var(--DARK_BLUE);
+   transition: var(--COMMON_TRANSITION);
 }
 
 .home-intro-title {
@@ -60,7 +68,7 @@
 }
 
 .social-icon:hover {
-   transition: all 0.4s linear;
+   transition: var(--COMMON_TRANSITION);
    color: var(--DARK_BLUE);
 }
 

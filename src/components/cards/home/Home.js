@@ -7,6 +7,8 @@ import {
    LINKEDIN_LINK,
    FULL_NAME,
 } from "../../Constants";
+import headshot_1 from "../../../images/headshot_1.png";
+import headshot_2 from "../../../images/headshot_2.png";
 
 // FIX EMAIL HOVER ICON
 // CHANGING TEXT (I AM ... / ... / ...)
@@ -22,7 +24,13 @@ function Home(props) {
       >
          <div className="card-container">
             {/* ROUND HEADSHOT IMAGE */}
-            <div className="home-img-round" />
+            <div
+               className={
+                  props.isOnlyComp
+                     ? "headshot1 home-img-round"
+                     : "headshot2 home-img-round"
+               }
+            />
             {/* TITLE OF CARD */}
             <div className="home-intro-title">
                <h2 className="home-hello-welcome">Hello & Welcome, I am</h2>

@@ -10,6 +10,10 @@
 
    /* FONTS */
    --FONT: "Montserrat", Arial, sans-serif;
+
+   /* COMMON TRANSITION */
+   --COMMON_TRANSITION: all 0.5s linear;
+
    /* ----- BELOW WILL NEED FIXING ----- */
    --CARD_HEADING_FONT: 28px;
 

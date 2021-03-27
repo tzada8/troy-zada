@@ -38,7 +38,7 @@ function App() {
                      <Display portfolio={false} sudokuSolver={true} />
                   </Route>
                   <Route exact path="/portfolio/blackjack">
-                     <Display portfolio={false} blackjack={true} />
+                     <Display portfolio={false} blackJack={true} />
                   </Route>
                   <Route exact path="/portfolio/canastampi">
                      <Display portfolio={false} canastampi={true} />
