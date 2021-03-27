@@ -56,6 +56,13 @@ function App() {
                   <Route exact path="/blog">
                      <Display blog={true} />
                   </Route>
+                  <Route exact path="/blog/creating-this-website">
+                     <Display blog={false} creatingThisWebsite={true} />
+                  </Route>
+                  <Route exact path="/blog/first-work-term">
+                     <Display blog={false} firstWorkTerm={true} />
+                  </Route>
+
                   <Route exact path="/contact">
                      <Display contact={true} />
                   </Route>

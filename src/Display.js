@@ -29,6 +29,8 @@ function Display(props) {
             dss={props.dss}
             literatureFair={props.literatureFair}
             industry4={props.industry4}
+            creatingThisWebsite={props.creatingThisWebsite}
+            firstWorkTerm={props.firstWorkTerm}
          />
       </div>
    );
