@@ -9,18 +9,20 @@ function Blog() {
    return (
       <div>
          <Subtitle icon="fas fa-blog" label="Recent Posts" />
-         <BlogCard
-            path="/blog/creating-this-website"
-            src={item1_CreatingThisWebsite}
-            date="March 27, 2021"
-            blogTitle="How I Created This Website"
-         />
-         <BlogCard
-            path="/blog/first-work-term"
-            src={item2_FirstWorkTerm}
-            date="March 26, 2021"
-            blogTitle="My First Coop Work Term"
-         />
+         <ul>
+            <BlogCard
+               path="/blog/creating-this-website"
+               src={item1_CreatingThisWebsite}
+               date="March 27, 2021"
+               blogTitle="How I Created This Website"
+            />
+            <BlogCard
+               path="/blog/first-work-term"
+               src={item2_FirstWorkTerm}
+               date="March 26, 2021"
+               blogTitle="My First Coop Work Term"
+            />
+         </ul>
       </div>
    );
 }
