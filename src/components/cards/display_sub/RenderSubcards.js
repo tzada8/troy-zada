@@ -24,61 +24,53 @@ function RenderSubcards(props) {
          {/* CODING PROJECTS */}
          <CreateSubcards
             isActive={props.troyZada}
+            backTo="/portfolio"
             title="Troy Zada Website"
             content={<TroyZada />}
-            quotation="Something about experience/learning"
-            author="Insert author here"
          />
          <CreateSubcards
             isActive={props.moodivity}
+            backTo="/portfolio"
             title="Moodivity"
             content={<Moodivity />}
-            quotation="Something about experience/learning"
-            author="Insert author here"
          />
          <CreateSubcards
             isActive={props.sudokuSolver}
+            backTo="/portfolio"
             title="Sudoku Solver"
             content={<SudokuSolver />}
-            quotation="Something about experience/learning"
-            author="Insert author here"
          />
          <CreateSubcards
             isActive={props.blackJack}
+            backTo="/portfolio"
             title="BlackJack"
             content={<BlackJack />}
-            quotation="Something about experience/learning"
-            author="Insert author here"
          />
          <CreateSubcards
             isActive={props.canastampi}
+            backTo="/portfolio"
             title="Canastampi Website"
             content={<Canastampi />}
-            quotation="Something about experience/learning"
-            author="Insert author here"
          />
          <CreateSubcards
             isActive={props.dss}
+            backTo="/portfolio"
             title="Decision Support System"
             content={<DSS />}
-            quotation="Something about experience/learning"
-            author="Insert author here"
          />
 
          {/* COMMUNICATION PROJECTS */}
          <CreateSubcards
             isActive={props.literatureFair}
+            backTo="/portfolio"
             title="Literature Fair"
             content={<LiteratureFair />}
-            quotation="Something about experience/learning"
-            author="Insert author here"
          />
          <CreateSubcards
             isActive={props.industry4}
+            backTo="/portfolio"
             title="Design Team: Industry 4.0"
             content={<Industry4 />}
-            quotation="Something about experience/learning"
-            author="Insert author here"
          />
       </div>
    );

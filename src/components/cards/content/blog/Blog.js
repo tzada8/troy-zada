@@ -1,24 +1,26 @@
 import React from "react";
 import Subtitle from "../extra_components/subtitle/Subtitle";
-import "./Blog.css";
+import BlogCard from "./blog_card/BlogCard";
+
+import item1_CreatingThisWebsite from "../../../../images/headshot_1.png";
+import item2_FirstWorkTerm from "../../../../images/headshot_2.png";
 
 function Blog() {
    return (
       <div>
-         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
-            aliquam inventore ipsam vel eveniet reprehenderit, voluptates
-            excepturi tempora, accusantium hic, sed quod distinctio sequi?
-            Eveniet dicta incidunt voluptatum quis quasi voluptate at quidem
-            dolor natus architecto sed sequi ut corporis iste minus maxime
-            delectus, mollitia cum neque consectetur ad! Rem cumque praesentium
-            libero reiciendis animi culpa. Cupiditate similique, perferendis,
-            doloribus commodi optio fugiat suscipit tempora, quisquam officiis
-            nihil corrupti! Libero perspiciatis earum totam pariatur,
-            voluptatibus architecto odit molestiae labore qui hic cum culpa odio
-            expedita a sint consequuntur est, fuga accusamus ducimus dolore
-            laborum numquam. Sit incidunt blanditiis quod ea?
-         </p>
+         <Subtitle icon="fas fa-blog" label="Recent Posts" />
+         <BlogCard
+            path="/blog/creating-this-website"
+            src={item1_CreatingThisWebsite}
+            date="March 27, 2021"
+            blogTitle="How I Created This Website"
+         />
+         <BlogCard
+            path="/blog/first-work-term"
+            src={item2_FirstWorkTerm}
+            date="March 26, 2021"
+            blogTitle="My First Coop Work Term"
+         />
       </div>
    );
 }
