@@ -28,14 +28,29 @@ function App() {
                   <Route exact path="/portfolio">
                      <Display portfolio={true} />
                   </Route>
+                  <Route exact path="/portfolio/troy-zada">
+                     <Display portfolio={false} troyZada={true} />
+                  </Route>
                   <Route exact path="/portfolio/moodivity">
                      <Display portfolio={false} moodivity={true} />
                   </Route>
                   <Route exact path="/portfolio/sudoku-solver">
                      <Display portfolio={false} sudokuSolver={true} />
                   </Route>
+                  <Route exact path="/portfolio/blackjack">
+                     <Display portfolio={false} blackjack={true} />
+                  </Route>
+                  <Route exact path="/portfolio/canastampi">
+                     <Display portfolio={false} canastampi={true} />
+                  </Route>
+                  <Route exact path="/portfolio/decision-support-system">
+                     <Display portfolio={false} dss={true} />
+                  </Route>
                   <Route exact path="/portfolio/literature-fair">
                      <Display portfolio={false} literatureFair={true} />
+                  </Route>
+                  <Route exact path="/portfolio/industry4">
+                     <Display portfolio={false} industry4={true} />
                   </Route>
 
                   <Route exact path="/blog">

@@ -21,9 +21,14 @@ function Display(props) {
          />
          <Navbar startPos={props.startPos} />
          <RenderSubcards
+            troyZada={props.troyZada}
             moodivity={props.moodivity}
             sudokuSolver={props.sudokuSolver}
+            blackJack={props.blackJack}
+            canastampi={props.canastampi}
+            dss={props.dss}
             literatureFair={props.literatureFair}
+            industry4={props.industry4}
          />
       </div>
    );
