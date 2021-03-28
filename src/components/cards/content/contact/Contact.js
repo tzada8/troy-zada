@@ -3,6 +3,8 @@ import emailjs from "emailjs-com";
 import Subtitle from "../extra_components/subtitle/Subtitle";
 import "./Contact.css";
 
+// STILL NEED "YOUR MESSAGE HAS BEEN SUBMITTED" COMMENT
+
 function Contact() {
    function sendEmail(e) {
       e.preventDefault();
