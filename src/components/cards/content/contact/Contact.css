@@ -3,38 +3,56 @@
    font-size: 14px;
 }
 
-form {
-   margin-top: 50px;
-   transition: all 4s ease-in-out;
+#contact-form {
+   width: 90%;
+   margin: 15px auto 0;
 }
 
-.form-control {
-   width: 600px;
+form .form-control {
    background: transparent;
-   border: none;
+   color: var(--BLACK);
+   border: 1px solid var(--DARK_BLUE);
    outline: none;
-   border-bottom: 1px solid grey;
-   color: black;
-   font-size: 18px;
-   margin-bottom: 16px;
+   width: 100%;
+   height: 30px;
+   margin: 5px 0;
+   font-size: 14px;
+   letter-spacing: 0.1mm;
 }
 
-input {
-   height: 45px;
+form .form-control[type="text"],
+form .form-control[type="email"] {
+   padding-left: 8px;
+}
+
+textarea.message {
+   height: 100px;
+}
+
+form .form-control:hover {
+   box-shadow: 0 0 6px var(--DARK_BLUE), 0 0 6px var(--DARK_BLUE),
+      0 0 6px var(--DARK_BLUE);
+}
+form .form-control:focus {
+   box-shadow: 0 0 6px var(--REG_BLUE), 0 0 6px var(--REG_BLUE),
+      0 0 6px var(--REG_BLUE);
 }
 
 form .submit {
-   background: #ff5722;
+   background: var(--REG_BLUE);
    border-color: transparent;
-   color: black;
-   font-size: 20px;
+   color: var(--WHITE);
+   font-size: 16px;
    font-weight: bold;
    letter-spacing: 2px;
-   height: 50px;
-   margin-top: 20px;
+   height: 40px;
+   width: 80%;
+   margin-top: 5px;
+   transition: background 0.5s ease;
 }
 
 form .submit:hover {
-   background: #f44336;
+   background: var(--DARK_BLUE);
    cursor: pointer;
+   transition: background 0.5s ease;
 }
