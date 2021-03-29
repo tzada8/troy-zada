@@ -77,7 +77,7 @@ function Navbar(props) {
                            handleNavLocation("EXPERIENCE-MENU");
                         }}
                      >
-                        {/* WORK AND PROJECTS */}
+                        {/* DOWNLOAD RESUME, EDUCATION, WORK, AWARDS */}
                         {EXPERIENCE}
                      </NavLink>
                   </li>
@@ -107,7 +107,7 @@ function Navbar(props) {
                            handleNavLocation("PORTFOLIO-MENU");
                         }}
                      >
-                        {/* BUTTON TO DOWNLOAD RESUME, EDUCATION, AWARDS */}
+                        {/* PROJECTS */}
                         {PORTFOLIO}
                      </NavLink>
                   </li>

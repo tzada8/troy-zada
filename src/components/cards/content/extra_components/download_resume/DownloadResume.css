@@ -1,0 +1,27 @@
+.download-resume {
+   color: var(--WHITE);
+   display: block;
+   margin: 10px auto 20px;
+   padding: 4px 10px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   width: 90%;
+   border: 2px solid var(--GREY);
+
+   background: linear-gradient(
+      to right,
+      var(--DARK_BLUE) 50%,
+      var(--REG_BLUE) 50%
+   );
+   background-size: 200% 100%;
+   background-position: right bottom;
+   transition: background-position 0.4s linear;
+}
+
+.download-resume:hover {
+   background-position: left bottom;
+}
+
+.fa-file-download {
+   margin-right: 8px;
+}
