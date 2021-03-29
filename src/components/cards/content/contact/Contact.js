@@ -1,6 +1,7 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import Subtitle from "../extra_components/subtitle/Subtitle";
+import DownloadResume from "../extra_components/download_resume/DownloadResume";
 import "./Contact.css";
 
 // STILL NEED "YOUR MESSAGE HAS BEEN SUBMITTED" COMMENT
@@ -29,6 +30,7 @@ function Contact() {
 
    return (
       <div>
+         <DownloadResume />
          <Subtitle icon="fas fa-inbox" label="Send Me a Message" />
          <div className="contact-me-container">
             <form id="contact-form" onSubmit={sendEmail}>

@@ -1,0 +1,25 @@
+div.work-card-container {
+   width: 90%;
+   margin: 15px auto 0;
+   padding: 10px;
+   border: 1px double black;
+}
+
+.work-title-company {
+   color: var(--REG_BLUE);
+   font-size: 16px;
+   margin-bottom: 2px;
+   text-align: left;
+}
+
+.work-duration {
+   color: var(--DARK_BLUE);
+   font-size: 12px;
+   text-align: left;
+}
+
+hr.horizontal-bar__work {
+   margin: 5px 0 8px 0;
+   border: 1px solid var(--GREY);
+   border-radius: 5px;
+}
