@@ -2,11 +2,7 @@ import React from "react";
 import Subtitle from "../extra_components/subtitle/Subtitle";
 import ProjectCard from "./project_card/ProjectCard";
 import GroupsDivider from "../extra_components/groups_divider/GroupsDivider";
-
-// PICTURES FOR EACH PROJECT PREVIEW
-import item1_Moodivity from "../../../../images/Solo.JPG";
-import item2_SudokuSolver from "../../../../images/headshot_1.png";
-import item3_LiteratureFair from "../../../../images/headshot_2.png";
+import { portfolioData } from "./PortfolioData";
 
 function Portfolio() {
    return (
@@ -16,38 +12,38 @@ function Portfolio() {
          <ul>
             <ProjectCard
                path="/portfolio/troy-zada"
-               projectTitle="Troy Zada Website"
-               src={item3_LiteratureFair}
+               projectTitle={portfolioData.troyZadaWebsite.title}
+               src={portfolioData.troyZadaWebsite.image}
                text="This project was made using HTML, CSS, JavaScript, and the React framework in order to make this website"
             />
             <ProjectCard
                path="/portfolio/moodivity"
-               projectTitle="Moodivity"
-               src={item1_Moodivity}
+               projectTitle={portfolioData.moodivity.title}
+               src={portfolioData.moodivity.image}
                text="This project was made in November 2020 using the React Framework as well as Django"
             />
             <ProjectCard
                path="/portfolio/sudoku-solver"
-               projectTitle="Sudoku Solver"
-               src={item2_SudokuSolver}
+               projectTitle={portfolioData.sudokuSolver.title}
+               src={portfolioData.sudokuSolver.image}
                text="This project was made using the Backtracking algorithm and can solve any sudoku board"
             />
             <ProjectCard
                path="/portfolio/blackjack"
-               projectTitle="BlackJack"
-               src={item3_LiteratureFair}
+               projectTitle={portfolioData.blackJack.title}
+               src={portfolioData.blackJack.image}
                text="This project was made using Python in addition to Python's GUI framework Tkinter"
             />
             <ProjectCard
                path="/portfolio/canastampi"
-               projectTitle="Canastampi"
-               src={item1_Moodivity}
+               projectTitle={portfolioData.canastampi.title}
+               src={portfolioData.canastampi.image}
                text="This website was made for the company Canastampi using HTML, CSS, JavaScript, and the React framework"
             />
             <ProjectCard
                path="/portfolio/decision-support-system"
-               projectTitle="Decision Support System"
-               src={item2_SudokuSolver}
+               projectTitle={portfolioData.dss.title}
+               src={portfolioData.dss.image}
                text="This project was made using Excel VBA in order to make a project tool that aids user completing group projcets in an efficient manner"
             />
          </ul>
@@ -59,14 +55,14 @@ function Portfolio() {
          <ul>
             <ProjectCard
                path="/portfolio/literature-fair"
-               projectTitle="Literature Fair"
-               src={item3_LiteratureFair}
+               projectTitle={portfolioData.literatureFair.title}
+               src={portfolioData.literatureFair.image}
                text="This project focuses on the literary theory of existentialism involving how each individual is in charge of their own lives based on their own decisions"
             />
             <ProjectCard
                path="/portfolio/industry4"
-               projectTitle="Industry4.0"
-               src={item1_Moodivity}
+               projectTitle={portfolioData.industry4.title}
+               src={portfolioData.industry4.image}
                text="This project involved marketing and reaching out to fellow high school about a competition regarding optimization of factory procedures"
             />
          </ul>

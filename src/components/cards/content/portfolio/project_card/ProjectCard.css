@@ -57,9 +57,6 @@ img.project-image:hover {
    padding: 5px;
 }
 
-.project-description {
-}
-
 hr.horizontal-bar__projects {
    margin: 30px 0 15px 0;
    border: 2px solid var(--GREY);

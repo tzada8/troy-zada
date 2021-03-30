@@ -1,9 +1,17 @@
 import React from "react";
+import ProjectPost from "../project_post/ProjectPost";
+import "./ProjectContent.css";
+import { portfolioData } from "../PortfolioData";
 
 function TroyZada() {
    return (
       <div>
-         <h1>Troy Zada Website</h1>
+         <ProjectPost
+            projectTitle={portfolioData.troyZadaWebsite.title}
+            src={portfolioData.troyZadaWebsite.image}
+            date={portfolioData.troyZadaWebsite.date}
+            github={portfolioData.troyZadaWebsite.github}
+         />
          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
             voluptatibus, aperiam nisi nesciunt in labore praesentium, qui id

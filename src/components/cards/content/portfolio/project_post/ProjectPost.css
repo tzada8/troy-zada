@@ -1,0 +1,19 @@
+div.project-github-date {
+   display: flex;
+}
+
+.hide-github-link {
+   display: hidden;
+}
+
+.project-date {
+   margin-top: 23px;
+   margin-left: 55px;
+   padding-right: 0;
+}
+
+hr.horizontal-bar__project-posts {
+   margin: 0 0 15px;
+   border: 2px solid var(--GREY);
+   border-radius: 5px;
+}
