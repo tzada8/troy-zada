@@ -4,9 +4,10 @@ import "./ProgressBar.css";
 function ProgressBar(props) {
    return (
       <li className="progress-container">
-         <h4 className="progress-header">{props.skillTitle}</h4>
-         <h4 className="percentage">{props.percent}</h4>
-         <br />
+         <h4 className="progress-header">
+            {props.skillTitle}{" "}
+            <span className="percentage">{props.percent}</span>
+         </h4>
          <div className="progress-bar__border">
             <div
                className="progress-bar__progress"

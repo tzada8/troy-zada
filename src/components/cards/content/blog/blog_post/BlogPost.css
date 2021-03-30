@@ -6,11 +6,6 @@ img.post-specific:hover {
    transform: none;
 }
 
-div.blog-date-author {
-   display: flex;
-}
-
-h4.blog-post-date,
 h4.blog-author {
    color: var(--GREY);
    padding-top: 6px;
@@ -18,7 +13,7 @@ h4.blog-author {
 }
 
 .blog-post-date {
-   margin-left: 103px;
+   float: right;
 }
 
 hr.hr-blog-margin-adjust {

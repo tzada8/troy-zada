@@ -5,7 +5,7 @@
 
 .progress-header {
    color: var(--GREY);
-   float: left;
+   text-align: left;
 }
 
 .percentage {
