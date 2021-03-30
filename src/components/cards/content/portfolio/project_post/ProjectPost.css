@@ -1,15 +1,35 @@
-div.project-github-date {
-   display: flex;
+.github-link {
+   color: var(--WHITE);
+   display: block;
+   margin: 10px 5px 10px 5px;
+   padding: 4px 10px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   width: 110px;
+   border: 2px solid var(--GREY);
+
+   background: linear-gradient(
+      to right,
+      var(--DARK_BLUE) 50%,
+      var(--REG_BLUE) 50%
+   );
+   background-size: 200% 100%;
+   background-position: right bottom;
+   transition: background-position 0.4s linear;
 }
 
-.hide-github-link {
-   display: hidden;
+.github-link:hover {
+   background-position: left bottom;
+}
+
+i.fa-github {
+   padding-right: 3px;
 }
 
 .project-date {
-   margin-top: 23px;
-   margin-left: 55px;
-   padding-right: 0;
+   margin-top: 11px;
+   padding-right: 4px;
+   float: right;
 }
 
 hr.horizontal-bar__project-posts {

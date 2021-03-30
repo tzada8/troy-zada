@@ -13,11 +13,17 @@ function ProjectPost(props) {
             />
          </figure>
          <div className="project-github-date">
-            <GithubLink
-               className={props.isCodingProject ? "" : "hide-github-link"}
-               path={props.github}
-            />
             <h4 className="project-date">{props.date}</h4>
+            <a
+               className="github-link"
+               href={props.github}
+               target="_blank"
+               rel="noreferrer"
+               aria-label="Github"
+            >
+               <i className="fab fa-github" />
+               Github
+            </a>
          </div>
          <hr className="horizontal-bar__project-posts hr-blog-margin-adjust" />
       </div>
