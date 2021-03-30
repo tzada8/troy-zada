@@ -12,13 +12,14 @@ function Skills() {
          {/* GROUP OF INTERPERSONAL SKILLS */}
          <Subtitle icon="fas fa-users" label="Interpersonal Skills" />
          <ul>
-            <ProgressBar skillTitle="Communcation" percent="30%" />
-            <ProgressBar skillTitle="Problem Solving" percent="30%" />
-            <ProgressBar skillTitle="Time Management" percent="30%" />
-            <ProgressBar skillTitle="Punctuality" percent="30%" />
-            <ProgressBar skillTitle="Detail-Oriented" percent="30%" />
-            <ProgressBar skillTitle="Cross-Functional" percent="30%" />
-            <ProgressBar skillTitle="Teamwork" percent="30%" />
+            <ProgressBar skillTitle="Communcation" percent="94%" />
+            <ProgressBar skillTitle="Problem Solving" percent="88%" />
+            <ProgressBar skillTitle="Willingness to Learn" percent="100%" />
+            <ProgressBar skillTitle="Time Management" percent="90%" />
+            <ProgressBar skillTitle="Punctuality" percent="86%" />
+            <ProgressBar skillTitle="Detail-Oriented" percent="96%" />
+            <ProgressBar skillTitle="Cross-Functional" percent="82%" />
+            <ProgressBar skillTitle="Teamwork" percent="89%" />
          </ul>
 
          <GroupsDivider />
@@ -26,13 +27,14 @@ function Skills() {
          {/* GROUP OF PROFESSIONAL SKILLS */}
          <Subtitle icon="fas fa-cogs" label="Professional Skills" />
          <ul>
-            <ProgressBar skillTitle="Java" percent="30%" />
-            <ProgressBar skillTitle="Python" percent="30%" />
-            <ProgressBar skillTitle="Excel VBA" percent="30%" />
-            <ProgressBar skillTitle="HTML" percent="30%" />
-            <ProgressBar skillTitle="CSS" percent="30%" />
-            <ProgressBar skillTitle="JavaScript" percent="30%" />
-            <ProgressBar skillTitle="R" percent="30%" />
+            <ProgressBar skillTitle="Java" percent="76%" />
+            <ProgressBar skillTitle="Python" percent="74%" />
+            <ProgressBar skillTitle="HTML" percent="84%" />
+            <ProgressBar skillTitle="CSS" percent="80%" />
+            <ProgressBar skillTitle="Excel VBA" percent="46%" />
+            <ProgressBar skillTitle="React" percent="74%" />
+            <ProgressBar skillTitle="JavaScript" percent="68%" />
+            <ProgressBar skillTitle="R" percent="33%" />
          </ul>
       </div>
    );
