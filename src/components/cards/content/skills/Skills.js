@@ -13,9 +13,9 @@ function Skills() {
          <Subtitle icon="fas fa-users" label="Interpersonal Skills" />
          <ul>
             <ProgressBar skillTitle="Communcation" percent="94%" />
-            <ProgressBar skillTitle="Problem Solving" percent="88%" />
+            <ProgressBar skillTitle="Problem Solving" percent="92%" />
             <ProgressBar skillTitle="Willingness to Learn" percent="100%" />
-            <ProgressBar skillTitle="Time Management" percent="90%" />
+            <ProgressBar skillTitle="Time Management" percent="89%" />
             <ProgressBar skillTitle="Punctuality" percent="86%" />
             <ProgressBar skillTitle="Detail-Oriented" percent="96%" />
             <ProgressBar skillTitle="Cross-Functional" percent="82%" />

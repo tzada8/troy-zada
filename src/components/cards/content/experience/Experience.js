@@ -11,10 +11,10 @@ function Experience() {
          <LinkToContact />
          <Subtitle icon="fas fa-university" label="Education" />
          <WorkCard
-            title="Management Engineer"
+            title="Management Engineering"
             company="University of Waterloo"
             duration=", Sept 2019 - Present"
-            description="Program to receive a Bachelor of Applied Science that focus on increasing efficiency and effectiveness of various processes by optimizing them. Some important courses to highlight include: Algorithms and Data Structures (Java), Statistics (R), Organizational Behaviour, and Facilities Planning"
+            description="Bachelor of Applied Science candidate developing expertise in data analytics, information systems, operations management, and organizational behaviour. Some important courses to highlight include: Algorithms and Data Structures (Java), Statistics (R), Organizational Behaviour, and Facilities Planning"
          />
 
          <GroupsDivider />
@@ -36,7 +36,7 @@ function Experience() {
             title="Design and Manufacturing Technician"
             company="EngineeringCPR"
             duration=", Apr 2020 - Sept 2020"
-            description="Program to receive a Bachelor of Applied Science that focus on increasing efficiency and effectiveness of various processes by optimizing them. Some important courses to highlight include: Algorithms and Data Structures (Java), Statistics (R), Organizational Behaviour, and Facilities Planning"
+            description="Worked in a manufacturing environment assembling fixtures by soldering, comprehending electrical schematics, and optimizing component placements."
          />
          <WorkCard
             title="Machine Shop Assistant"
@@ -51,17 +51,17 @@ function Experience() {
          <WorkCard
             title="Gonzaga Leadership Award"
             duration="June 2019"
-            description="Awarded for being a great problem solver in the school community"
+            description="Awarded out of 500 students for being an effective, responsible, and confident problem solver within the school community"
          />
          <WorkCard
             title="Michael Kim Award"
             duration="June 2019"
-            description="Awarded for being athletic"
+            description="Awarded out of 400 student-athletes for outstanding contributions and commitment to the athletic community"
          />
          <WorkCard
             title="Knights of Colombus - St. Faustina Award"
             duration="June 2019"
-            description="Awarded for being a an ethical student"
+            description="Awarded out of 500 students for consistently demonstrating an exemplary ethical attitude towards fellow students"
          />
 
          <GroupsDivider />

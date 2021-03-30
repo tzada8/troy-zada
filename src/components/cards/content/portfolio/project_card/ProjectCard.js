@@ -21,7 +21,7 @@ function ProjectCard(props) {
                   />
                </figure>
                <div className="project-description-box">
-                  <p className="project-description">{props.text}</p>
+                  <p className="project-description">{props.text}...</p>
                </div>
             </Link>
             <SeeMoreLink path={props.path} />

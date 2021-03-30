@@ -14,7 +14,7 @@ function WorkCard(props) {
             {props.duration}
          </h4>
          <hr className="horizontal-bar__work" />
-         <p>{props.description}</p>
+         <p>{props.description}.</p>
       </div>
    );
 }
