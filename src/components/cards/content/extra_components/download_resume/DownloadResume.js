@@ -1,13 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./DownloadResume.css";
+import TroyZadaResume from "../../../../../files/Troy_Zada_Resume.pdf";
 
-function DownloadResume(props) {
+function DownloadResume() {
    return (
-      <Link className="download-resume" to={props.path}>
+      <a
+         className="download-resume"
+         href={TroyZadaResume}
+         download="Troy Zada Resume.pdf"
+      >
          <i className="fas fa-file-download" />
          DOWNLOAD RESUME
-      </Link>
+      </a>
    );
 }
 

@@ -29,7 +29,7 @@ function Experience() {
          <WorkCard
             title="Web Designer"
             company="Canastampi"
-            duration=", March 2021 - April 2021"
+            duration=", Mar 2021 - Apr 2021"
             description="Program to receive a Bachelor of Applied Science that focus on increasing efficiency and effectiveness of various processes by optimizing them. Some important courses to highlight include: Algorithms and Data Structures (Java), Statistics (R), Organizational Behaviour, and Facilities Planning"
          />
          <WorkCard

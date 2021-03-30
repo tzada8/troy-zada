@@ -2,7 +2,7 @@ div.work-card-container {
    width: 90%;
    margin: 15px auto 0;
    padding: 10px;
-   border: 1px double black;
+   border: 1px double var(--LIGHT_GREY);
 }
 
 .work-title-company {
