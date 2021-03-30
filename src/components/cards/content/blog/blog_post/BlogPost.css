@@ -6,6 +6,21 @@ img.post-specific:hover {
    transform: none;
 }
 
+div.blog-date-author {
+   display: flex;
+}
+
+h4.blog-post-date,
+h4.blog-author {
+   color: var(--GREY);
+   padding-top: 6px;
+   font-size: 12px;
+}
+
+.blog-post-date {
+   margin-left: 103px;
+}
+
 hr.hr-blog-margin-adjust {
    margin-bottom: 20px;
 }
