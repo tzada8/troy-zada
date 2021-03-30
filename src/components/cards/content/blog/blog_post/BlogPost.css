@@ -1,0 +1,11 @@
+img.post-specific {
+   border-radius: 10px;
+}
+
+img.post-specific:hover {
+   transform: none;
+}
+
+hr.hr-blog-margin-adjust {
+   margin-bottom: 20px;
+}
