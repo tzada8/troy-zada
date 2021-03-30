@@ -33,48 +33,49 @@ function RenderCards(props) {
             isActive={props.experience}
             title={EXPERIENCE}
             content={<Experience />}
-            quotation="Something about experience/learning"
-            author="Insert author here"
+            quotation="The only source of knowledge is experience"
+            author="Albert Einstein"
          />
          {/* SKILLS */}
          <CreateCards
             isActive={props.skills}
             title={SKILLS}
             content={<Skills />}
-            quotation="An eye for an eye will leave the whole world blind"
-            author="M.K. Ghandi"
+            quotation="Tell me and I forget, teach me and I may remember, involve me and I learn"
+            author="Benjamin Franklin"
          />
          {/* PORTFOLIO */}
          <CreateCards
             isActive={props.portfolio}
             title={PORTFOLIO}
             content={<Portfolio />}
-            quotation="Something about something here"
-            author="Insert author here"
+            quotation="As practice makes perfect, I cannot but make progress; each drawing one makes, each study one paints, is a step forward"
+            author="Vincent Van Gogh"
          />
          {/* BLOG */}
+         {/* "A capacity, and taste, for reading gives access to whatever has already been discovered by others" - Abraham Lincoln */}
          <CreateCards
             isActive={props.blog}
             title={BLOG}
             content={<Blog />}
-            quotation="Something about reading"
-            author="Insert author here"
+            quotation="The reading of all good books is like a conversation with the finest minds of past centuries"
+            author="Rene Descartes"
          />
          {/* CONTACT */}
          <CreateCards
             isActive={props.contact}
             title={CONTACT}
             content={<Contact />}
-            quotation="Something about reaching out/discussion"
-            author="Insert author here"
+            quotation="The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience"
+            author="Eleanor Roosevelt"
          />
          {/* PAGE NOT FOUND */}
          <CreateCards
             isActive={props.pageNotFound}
             title={PAGE_NOT_FOUND}
             content={<PageNotFound />}
-            quotation="Something about unable to find"
-            author="Insert author here"
+            quotation="Understanding a question is half the answer"
+            author="Socrates"
          />
       </div>
    );
