@@ -29,10 +29,10 @@
    height: 8px;
    margin-top: 0;
    border-radius: 10px 0 0 10px;
-   animation: animateBar 2s;
+   animation: showProgress 2s;
 }
 
-@keyframes animateBar {
+@keyframes showProgress {
    0% {
       width: 0%;
    }

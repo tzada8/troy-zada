@@ -5,7 +5,7 @@ function ProgressBar(props) {
    return (
       <li className="progress-container">
          <h4 className="progress-header">
-            {props.skillTitle}{" "}
+            {props.skillTitle}
             <span className="percentage">{props.percent}</span>
          </h4>
          <div className="progress-bar__border">

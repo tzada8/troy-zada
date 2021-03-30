@@ -34,7 +34,7 @@ function Skills() {
             <ProgressBar skillTitle="Excel VBA" percent="46%" />
             <ProgressBar skillTitle="React" percent="74%" />
             <ProgressBar skillTitle="JavaScript" percent="68%" />
-            <ProgressBar skillTitle="R" percent="33%" />
+            <ProgressBar skillTitle="R" percent="38%" />
          </ul>
       </div>
    );
