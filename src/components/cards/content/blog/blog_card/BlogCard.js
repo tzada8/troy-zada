@@ -11,8 +11,8 @@ function BlogCard(props) {
                   <img className="blog-image" src={props.src} alt="Blog Post" />
                </figure>
                <div className="blog-description-box">
-                  <h4 className="blog-date">{props.date}</h4>
                   <h3 className="blog-title">{props.blogTitle}</h3>
+                  <h4 className="blog-date">{props.date}</h4>
                </div>
             </Link>
 
