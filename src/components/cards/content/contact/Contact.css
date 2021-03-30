@@ -8,6 +8,11 @@
    margin: 15px auto 0;
 }
 
+h4.form-field-headers {
+   margin-top: 5px;
+   text-align: left;
+}
+
 form .form-control {
    background: transparent;
    color: var(--BLACK);

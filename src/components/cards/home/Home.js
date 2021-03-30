@@ -7,11 +7,10 @@ import {
    LINKEDIN_LINK,
    FULL_NAME,
 } from "../../Constants";
-import headshot_1 from "../../../images/headshot_1.png";
-import headshot_2 from "../../../images/headshot_2.png";
 
 // FIX EMAIL HOVER ICON
 // CHANGING TEXT (I AM ... / ... / ...)
+// MAYBE ADD MORE PERSONAL STUFF TO PARAGRAPH?
 
 function Home(props) {
    return (
@@ -45,7 +44,7 @@ function Home(props) {
 
             {/* BRIEF OVERALL DESCRIPTION */}
             <p id="home-paragraph">
-               Motivated and hard-working engineering student with a passion for
+               Dedicated and hard-working engineering student with a passion for
                programming, innovation, and optimizing processes. I enjoy
                learning and being able to work out and find solutions to
                difficult problems. "Live as if you were to die tomorrow. Learn

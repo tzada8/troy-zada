@@ -1,14 +1,14 @@
 import React from "react";
 import Subtitle from "../extra_components/subtitle/Subtitle";
 import GroupsDivider from "../extra_components/groups_divider/GroupsDivider";
-import DownloadResume from "../extra_components/download_resume/DownloadResume";
+import LinkToContact from "../extra_components/link_to_contact/LinkToContact";
 import WorkCard from "./work_card/WorkCard";
 import "./Experience.css";
 
 function Experience() {
    return (
       <div>
-         <DownloadResume />
+         <LinkToContact />
          <Subtitle icon="fas fa-university" label="Education" />
          <WorkCard
             title="Management Engineer"
@@ -66,7 +66,7 @@ function Experience() {
 
          <GroupsDivider />
 
-         <DownloadResume />
+         <LinkToContact />
       </div>
    );
 }

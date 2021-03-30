@@ -1,4 +1,4 @@
-.download-resume {
+.link-to-contact {
    color: var(--WHITE);
    display: block;
    margin: 10px auto 20px;
@@ -18,7 +18,7 @@
    transition: background-position 0.4s linear;
 }
 
-.download-resume:hover {
+.link-to-contact:hover {
    background-position: left bottom;
 }
 
