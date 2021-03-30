@@ -22,7 +22,7 @@ form .form-control {
 
 form .form-control[type="text"],
 form .form-control[type="email"] {
-   padding-left: 8px;
+   padding: 5px 8px;
 }
 
 textarea.message {
