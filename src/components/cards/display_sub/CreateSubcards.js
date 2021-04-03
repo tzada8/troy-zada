@@ -6,7 +6,9 @@ import "./CreateSubcards.css";
 function CreateSubcards(props) {
    return (
       <div
-         className={props.isActive ? "card-box-top other-page" : "card-box-top"}
+         className={
+            props.isActive ? "card-box-top other-page-top" : "card-box-top"
+         }
       >
          <div className="card-container">
             {/* HEADER FOR BACK TO PREVIOUS PAGE */}

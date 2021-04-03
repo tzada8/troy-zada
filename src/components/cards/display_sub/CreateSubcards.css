@@ -7,9 +7,8 @@
    position: absolute;
    display: block;
    width: var(--CARD_WIDTH);
-   max-width: 500px;
-   min-height: calc(var(--MIN_SCREEN_HEIGHT) - 50px);
-   height: 550px;
+   max-width: 400px;
+   height: 525px;
    text-align: center;
    align-content: center;
    overflow-y: auto;
@@ -21,8 +20,8 @@
 }
 
 /* LOCATION FOR ALL OTHER CARDS */
-.other-page {
-   margin: 32px calc(50% + 4% + 8px);
+.other-page-top {
+   margin: 26px calc(50% + 4% + 8px);
    z-index: 9;
    opacity: 1;
 }
@@ -51,34 +50,23 @@ hr.horizontal-bar__subcard-bottom {
 
 /* IF SCREEN IS DESKTOP-SMALL VERSION, THEN HAVE FOLLOWING STYLES */
 @media screen and (max-width: 960px) {
-   .card-box {
-      margin: 0 5%;
+   .card-box-top {
+      display: none;
+      margin: 75px 4%;
       max-width: none;
-      width: 90%;
+      width: 92%;
       height: auto;
+      transition: none;
    }
 
-   .home-vis {
-      opacity: 1;
-   }
-
-   .home-loc {
-      margin: 0 5%;
-      opacity: 0;
-   }
-
-   .other-page {
-      margin: 0 5%;
+   .other-page-top {
+      display: block;
    }
 }
 
 /* IF SCREEN IS MOBILE VERSION, THEN HAVE FOLLOWING STYLES */
 @media screen and (max-width: 480px) {
-}
-
-/* IF SCREEN HEIGHT IS SUPER BIG, THEN CENTER CONTENT VERTICALLY */
-/* @media screen and (min-height: 600px) {
-   .home {
-      margin: 5% calc(50% - (35% / 2));
+   .card-box {
+      margin: 70px 4%;
    }
-} */
+}

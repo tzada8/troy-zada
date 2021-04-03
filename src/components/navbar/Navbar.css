@@ -160,8 +160,8 @@ nav {
       display: block;
       top: 50px;
       right: -100%;
-      width: 30%;
-      height: calc(var(--NAV_MENU_SIZE) + 5px);
+      width: 35%;
+      height: calc(var(--NAV_MENU_SIZE) + 4px);
       z-index: 1;
       border-left: 3px solid var(--GREY);
       border-bottom: 3px solid var(--GREY);

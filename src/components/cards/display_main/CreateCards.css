@@ -7,14 +7,13 @@
    position: absolute;
    display: block;
    width: var(--CARD_WIDTH);
-   max-width: 500px;
-   min-height: calc(var(--MIN_SCREEN_HEIGHT) - 50px);
-   height: 550px;
+   max-width: 400px;
+   height: 525px;
    text-align: center;
    align-content: center;
    overflow-y: auto;
    border: 2px solid var(--BLACK);
-   margin: 32px calc(50% - (var(--CARD_WIDTH) / 2));
+   margin: 26px calc(50% - (var(--CARD_WIDTH) / 2));
    z-index: 8;
    opacity: 0;
    transition: var(--COMMON_TRANSITION);
@@ -27,12 +26,12 @@
 
 /* LOCATION FOR HOME CARD */
 .home-loc {
-   margin: 32px calc(50% - (var(--CARD_WIDTH) - 4%) - 8px);
+   margin: 26px calc(50% - (var(--CARD_WIDTH) - 5%) - 16px);
 }
 
 /* LOCATION FOR ALL OTHER CARDS */
 .other-page {
-   margin: 32px calc(50% + 4% + 8px);
+   margin: 26px calc(50% + 4% + 8px);
    z-index: 9;
    opacity: 1;
 }
@@ -91,36 +90,47 @@ span.author {
    font-style: italic;
 }
 
+/* IF SCREEN IS AVERAGE DESKTOP VERSION, THEN HAVE FOLLOWING STYLES */
+@media screen and (min-width: 1200px) {
+   .card-box {
+      max-width: 533px;
+      height: 700px;
+   }
+   .home-loc {
+      margin: 26px calc(50% - (var(--CARD_WIDTH) - 5%) - 16px);
+   }
+   .other-page {
+      margin: 26px calc(50% + 6%);
+   }
+}
+
 /* IF SCREEN IS DESKTOP-SMALL VERSION, THEN HAVE FOLLOWING STYLES */
 @media screen and (max-width: 960px) {
    .card-box {
-      margin: 0 5%;
+      display: none;
       max-width: none;
-      width: 90%;
+      width: 92%;
+      margin: 75px 4%;
       height: auto;
    }
 
    .home-vis {
-      opacity: 1;
+      display: block;
    }
 
    .home-loc {
-      margin: 0 5%;
-      opacity: 0;
+      display: none;
    }
 
    .other-page {
-      margin: 0 5%;
+      display: block;
    }
 }
 
 /* IF SCREEN IS MOBILE VERSION, THEN HAVE FOLLOWING STYLES */
 @media screen and (max-width: 480px) {
-}
-
-/* IF SCREEN HEIGHT IS SUPER BIG, THEN CENTER CONTENT VERTICALLY */
-/* @media screen and (min-height: 600px) {
-   .home {
-      margin: 5% calc(50% - (35% / 2));
+   .card-box {
+      margin: 70px 4%;
+      width: 92%;
    }
-} */
+}

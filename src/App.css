@@ -16,9 +16,6 @@
 
    /* ----- BELOW WILL NEED FIXING ----- */
    --CARD_HEADING_FONT: 28px;
-
-   /* MIN SCREEN HEIGHT */
-   --MIN_SCREEN_HEIGHT: 600px;
 }
 
 * {
@@ -74,24 +71,12 @@ hr.horizontal-bar__fade {
    );
 }
 
-/* BACKGROUND FOR ALL MAIN CONTENT */
-#content-container {
-   background: url("./images/background/mountain2.jpg") center center/cover
-      no-repeat;
-   background-attachment: fixed;
-   position: block;
-   height: 100vh;
-   min-height: var(--MIN_SCREEN_HEIGHT);
-   width: 100%;
-}
-
-/* IF SCREEN IS DESKTOP-SMALL VERSION, THEN HAVE FOLLOWING STYLES */
-@media screen and (max-width: 960px) {
-   .content-container {
-      padding-top: calc(50px + 10%);
-   }
-}
-
-/* IF SCREEN IS MOBILE VERSION, THEN HAVE FOLLOWING STYLES */
-@media screen and (max-width: 480px) {
+/* IMAGE BACKGROUND */
+html {
+   background: url("./images/background/mountain2.jpg") no-repeat center center
+      fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
