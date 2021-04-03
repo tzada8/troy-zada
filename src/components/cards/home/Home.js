@@ -34,7 +34,7 @@ function Home(props) {
             <div className="home-intro-title">
                <h2 className="home-hello-welcome">Hello & Welcome, I am</h2>
                {/* Troy Zada, a Student, a Programmer, ... */}
-               <h1 className="home-intro-name">{FULL_NAME}!</h1>
+               <h1 className="home-intro-name">{FULL_NAME}</h1>
                {/* CURRENT ROLE/POSITION */}
                <h4 className="home-intro-program">
                   Management Engineering Student @ University of Waterloo

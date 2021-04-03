@@ -14,7 +14,7 @@ function Experience() {
             title="Management Engineering"
             company="University of Waterloo"
             duration=", Sept 2019 - Present"
-            description="Bachelor of Applied Science candidate developing expertise in data analytics, information systems, operations management, and organizational behaviour. Some important courses to highlight include: Algorithms and Data Structures (Java), Statistics (R), Organizational Behaviour, and Facilities Planning"
+            description="Bachelor of Applied Science candidate developing expertise in data analytics, information systems, operations management, and organizational behaviour. Some important courses to highlight include: Algorithms and Data Structures (Java), Databases and Software Design (SQL), Statistics (R), Organizational Behaviour, and Optimization"
          />
 
          <GroupsDivider />
