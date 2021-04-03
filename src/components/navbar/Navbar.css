@@ -12,7 +12,7 @@ nav {
    justify-content: center;
    align-items: center;
    margin-top: 32px;
-   font-size: 1rem;
+   font-size: 16px;
    z-index: 999;
    font-weight: bold;
    transition: margin-left 0.5s linear;
@@ -106,7 +106,7 @@ nav {
       position: fixed;
       margin-top: 0;
       width: 100vw;
-      font-size: 1.2rem;
+      font-size: 19px;
       transition: none;
    }
 
@@ -145,13 +145,13 @@ nav {
       position: absolute;
       display: block;
       top: 20%;
-      right: 5%;
-      font-size: 1.8rem;
+      right: 15px;
+      font-size: 29px;
       cursor: pointer;
    }
 
    .fa-times {
-      font-size: 2rem;
+      font-size: 32px;
    }
 
    .nav-menu {
@@ -201,6 +201,10 @@ nav {
       height: calc(var(--NAV_MENU_SIZE) + 4px);
       border-left: 0;
       transition: right 0.5s ease;
+   }
+
+   .menu-icon {
+      right: 30px;
    }
 
    .nav-links {
