@@ -27,8 +27,8 @@
 .progress-bar__progress {
    background: var(--DARK_BLUE);
    height: 8px;
-   margin-top: 0;
-   border-radius: 10px 0 0 10px;
+   margin: 0;
+   border-radius: 10px;
    animation: showProgress 2s;
 }
 
