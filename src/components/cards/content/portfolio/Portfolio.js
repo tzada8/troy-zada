@@ -29,16 +29,16 @@ function Portfolio() {
                text="This project was made using the Backtracking algorithm and can solve any sudoku board"
             />
             <ProjectCard
-               path="/portfolio/blackjack"
-               projectTitle={portfolioData.blackJack.title}
-               src={portfolioData.blackJack.image}
-               text="This project was made using Python in addition to Python's GUI framework Tkinter"
-            />
-            <ProjectCard
                path="/portfolio/pathfinding"
                projectTitle={portfolioData.pathfinding.title}
                src={portfolioData.pathfinding.image}
                text="Used Java including the Swing GUI to create a program that visually compares pathfinding algorithms"
+            />
+            <ProjectCard
+               path="/portfolio/blackjack"
+               projectTitle={portfolioData.blackJack.title}
+               src={portfolioData.blackJack.image}
+               text="This project was made using Python in addition to Python's GUI framework Tkinter"
             />
             <ProjectCard
                path="/portfolio/decision-support-system"
