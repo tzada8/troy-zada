@@ -58,7 +58,8 @@ img.project-image:hover {
 }
 
 hr.horizontal-bar__projects {
-   margin: 30px 0 15px 0;
+   background: var(--GREY);
    border: 2px solid var(--GREY);
+   margin: 30px 0 15px 0;
    border-radius: 5px;
 }

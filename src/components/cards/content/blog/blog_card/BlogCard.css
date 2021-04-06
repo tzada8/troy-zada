@@ -52,7 +52,8 @@ img.blog-image:hover {
 }
 
 hr.horizontal-bar__blog-posts {
-   margin: 5px 0 30px 0;
+   background: var(--GREY);
    border: 2px solid var(--GREY);
+   margin: 5px 0 30px 0;
    border-radius: 5px;
 }

@@ -5,7 +5,8 @@
 }
 
 hr.horizontal-bar__project-posts {
-   margin: 0 0 15px;
+   background: var(--GREY);
    border: 2px solid var(--GREY);
+   margin: 0 0 15px;
    border-radius: 5px;
 }

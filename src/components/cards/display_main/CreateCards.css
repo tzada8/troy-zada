@@ -130,7 +130,6 @@ span.author {
 /* IF SCREEN IS MOBILE VERSION, THEN HAVE FOLLOWING STYLES */
 @media screen and (max-width: 480px) {
    .card-box {
-      margin: 70px 4%;
       width: 92%;
    }
 }

@@ -145,7 +145,7 @@ nav {
       position: absolute;
       display: block;
       top: 20%;
-      right: 15px;
+      right: 30px;
       font-size: 29px;
       cursor: pointer;
    }
@@ -201,10 +201,6 @@ nav {
       height: calc(var(--NAV_MENU_SIZE) + 4px);
       border-left: 0;
       transition: right 0.5s ease;
-   }
-
-   .menu-icon {
-      right: 30px;
    }
 
    .nav-links {
