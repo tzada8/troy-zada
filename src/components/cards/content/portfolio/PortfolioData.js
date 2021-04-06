@@ -29,8 +29,8 @@ export const portfolioData = {
       date: "March 27, 2021",
       github: githubStart + "BlackJack",
    },
-   canastampi: {
-      title: "Canastampi",
+   pathfinding: {
+      title: "Pathfinding Algorithms",
       image: item1_CreatingThisWebsite,
       date: "March 27, 2021",
       github: "www.github.com",

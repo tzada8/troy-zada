@@ -25,7 +25,7 @@ function Display(props) {
             moodivity={props.moodivity}
             sudokuSolver={props.sudokuSolver}
             blackJack={props.blackJack}
-            canastampi={props.canastampi}
+            pathfinding={props.pathfinding}
             dss={props.dss}
             literatureFair={props.literatureFair}
             industry4={props.industry4}

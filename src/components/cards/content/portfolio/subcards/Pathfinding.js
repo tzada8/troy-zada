@@ -3,14 +3,14 @@ import ProjectPost from "../project_post/ProjectPost";
 import { portfolioData } from "../PortfolioData";
 import "./ProjectContent.css";
 
-function Canastampi() {
+function Pathfinding() {
    return (
       <div>
          <ProjectPost
-            projectTitle={portfolioData.canastampi.title}
-            src={portfolioData.canastampi.image}
-            date={portfolioData.canastampi.date}
-            github={portfolioData.canastampi.github}
+            projectTitle={portfolioData.pathfinding.title}
+            src={portfolioData.pathfinding.image}
+            date={portfolioData.pathfinding.date}
+            github={portfolioData.pathfinding.github}
          />
          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, iste?
@@ -31,4 +31,4 @@ function Canastampi() {
    );
 }
 
-export default Canastampi;
+export default Pathfinding;

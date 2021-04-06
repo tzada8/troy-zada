@@ -39,8 +39,8 @@ function App() {
                <Route exact path="/portfolio/blackjack">
                   <Display portfolio={false} blackJack={true} />
                </Route>
-               <Route exact path="/portfolio/canastampi">
-                  <Display portfolio={false} canastampi={true} />
+               <Route exact path="/portfolio/pathfinding">
+                  <Display portfolio={false} pathfinding={true} />
                </Route>
                <Route exact path="/portfolio/decision-support-system">
                   <Display portfolio={false} dss={true} />

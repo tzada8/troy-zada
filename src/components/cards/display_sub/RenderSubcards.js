@@ -10,7 +10,7 @@ import TroyZada from "../content/portfolio/subcards/TroyZada";
 import Moodivity from "../content/portfolio/subcards/Moodivity";
 import SudokuSolver from "../content/portfolio/subcards/SudokuSolver";
 import BlackJack from "../content/portfolio/subcards/BlackJack";
-import Canastampi from "../content/portfolio/subcards/Canastampi";
+import Pathfinding from "../content/portfolio/subcards/Pathfinding";
 import DSS from "../content/portfolio/subcards/DSS";
 
 import LiteratureFair from "../content/portfolio/subcards/LiteratureFair";
@@ -50,9 +50,9 @@ function RenderSubcards(props) {
                content={<BlackJack />}
             />
             <CreateSubcards
-               isActive={props.canastampi}
+               isActive={props.pathfinding}
                backTo={backToPortfolio}
-               content={<Canastampi />}
+               content={<Pathfinding />}
             />
             <CreateSubcards
                isActive={props.dss}
