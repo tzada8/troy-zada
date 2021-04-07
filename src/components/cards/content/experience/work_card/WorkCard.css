@@ -5,6 +5,11 @@ div.work-card-container {
    border: 1px double var(--LIGHT_GREY);
 }
 
+div.work-card-container:hover {
+   box-shadow: 0 0 6px var(--REG_BLUE), 0 0 6px var(--REG_BLUE),
+      0 0 6px var(--REG_BLUE);
+}
+
 .work-title-company {
    color: var(--REG_BLUE);
    font-size: 16px;
