@@ -79,4 +79,5 @@ html {
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
+   height: calc(var(--CARD_HEIGHT) + 52px);
 }

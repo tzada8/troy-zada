@@ -1,14 +1,10 @@
-:root {
-   --CARD_WIDTH: 35%;
-}
-
 .card-box-top {
    background: var(--WHITE);
    position: absolute;
    display: block;
    width: var(--CARD_WIDTH);
    max-width: 400px;
-   height: 525px;
+   height: var(--CARD_HEIGHT);
    text-align: center;
    align-content: center;
    overflow-y: auto;
