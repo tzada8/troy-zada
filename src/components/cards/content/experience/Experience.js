@@ -14,7 +14,7 @@ function Experience() {
             title="Management Engineering"
             company="University of Waterloo"
             duration=", Sept 2019 - Present"
-            description="Bachelor of Applied Science candidate developing expertise in data analytics, information systems, operations management, and organizational behaviour. Some important courses to highlight include: Algorithms and Data Structures (Java), Databases and Software Design (SQL), Statistics (R), Organizational Behaviour, and Optimization"
+            description="Bachelor of Applied Science candidate developing expertise in data analytics, information systems, operations management, and organizational behaviour. Some important courses to highlight include: Algorithms and Data Structures (Java), Databases and Software Design (SQL), Statistics (R), Optimization, and Organizational Behaviour"
          />
 
          <GroupsDivider />
@@ -24,19 +24,19 @@ function Experience() {
             title="Programming (Java) Teaching Assistant"
             company="University of Waterloo"
             duration=", Jan 2021 - Apr 2021"
-            description="Program to receive a Bachelor of Applied Science that focus on increasing efficiency and effectiveness of various processes by optimizing them. Some important courses to highlight include: Algorithms and Data Structures (Java), Statistics (R), Organizational Behaviour, and Facilities Planning"
+            description="Generated unique content and explanations to teach complex Java programming concepts to students. Validated all content released from the teaching end to ensure the content was sound. Reviewed student's assessments to ensure answers were correct, and if not, spent time discussing and explaining the correct approach to them"
          />
          <WorkCard
             title="Design and Manufacturing Technician"
             company="EngineeringCPR"
             duration=", Apr 2020 - Sept 2020"
-            description="Worked in a manufacturing environment assembling fixtures by soldering, comprehending electrical schematics, and optimizing component placements."
+            description="Worked in a manufacturing environment assembling fixtures through soldering, comprehending electrical schematics, and optimizing component placements. Primary focus involved manufacturing test fixtures as well as creating corresponding work instructions in order to test 1200 ventilator systems (being required due to COVID-19)"
          />
          <WorkCard
             title="Machine Shop Assistant"
-            company="Canastampi"
+            company="CANASTAMPI inc."
             duration=", June 2019 - Aug 2019"
-            description="Program to receive a Bachelor of Applied Science that focus on increasing efficiency and effectiveness of various processes by optimizing them. Some important courses to highlight include: Algorithms and Data Structures (Java), Statistics (R), Organizational Behaviour, and Facilities Planning"
+            description="Operated and programmed numerous machines including a CNC Milling Machine, Lathe, Drill Press, and Pantograph to engrave, polish, and mill various parts. Then, validated that each part precisely met drawing specifications"
          />
 
          <GroupsDivider />
