@@ -32,8 +32,7 @@ function Home(props) {
             />
             {/* TITLE OF CARD */}
             <div className="home-intro-title">
-               <h2 className="home-hello-welcome">Hello & Welcome, I am</h2>
-               {/* Troy Zada, a Student, a Programmer, ... */}
+               {/* Troy Zada, an Engineering Student, a Programmer, Lifelong Learner, ... */}
                <h1 className="home-intro-name">{FULL_NAME}</h1>
                {/* CURRENT ROLE/POSITION */}
                <h4 className="home-intro-program">
@@ -45,44 +44,49 @@ function Home(props) {
             {/* BRIEF OVERALL DESCRIPTION */}
             <p id="home-paragraph">
                Dedicated and hard-working engineering student with a passion for
-               programming, innovation, and optimizing processes. I enjoy
-               learning and being able to work out and find solutions to
-               difficult problems. "Live as if you were to die tomorrow. Learn
-               as if you were to live forever." - M.K. Gandhi
+               programming, innovation, optimization, and learning. "Live as if
+               you were to die tomorrow. Learn as if you were to live forever."
+               - M.K. Gandhi
             </p>
 
             {/* SOCIAL ICON LINKS */}
             <div className="social-media">
                <div className="social-media-container">
                   {/* ICON FOR FACEBOOK */}
-                  <a
-                     href={FACEBOOK_LINK}
-                     target="_blank"
-                     rel="noreferrer"
-                     aria-label="Facebook"
-                  >
-                     <i className="fab fa-facebook-square social-icon" />
-                  </a>
+                  <div className="icon-frame">
+                     <a
+                        href={FACEBOOK_LINK}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Facebook"
+                     >
+                        <i className="fab fa-facebook-square social-icon" />
+                     </a>
+                  </div>
                   {/* ICON FOR EMAIL */}
-                  <a
-                     id="envelope-icon"
-                     href="mailto:tzada@uwaterloo.ca"
-                     target="_blank"
-                     rel="noreferrer"
-                     aria-label="Email"
-                  >
-                     <p id="email-text">{EMAIL}</p>
-                     <i className="fas fa-envelope-square social-icon" />
-                  </a>
+                  <div className="icon-frame">
+                     <span id="email-text">{EMAIL}</span>
+                     <a
+                        id="envelope-icon"
+                        href="mailto:tzada@uwaterloo.ca"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Email"
+                     >
+                        <i className="fas fa-envelope-square social-icon" />
+                     </a>
+                  </div>
                   {/* ICON FOR LINKEDIN */}
-                  <a
-                     href={LINKEDIN_LINK}
-                     target="_blank"
-                     rel="noreferrer"
-                     aria-label="LinkedIn"
-                  >
-                     <i className="fab fa-linkedin social-icon" />
-                  </a>
+                  <div className="icon-frame">
+                     <a
+                        href={LINKEDIN_LINK}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="LinkedIn"
+                     >
+                        <i className="fab fa-linkedin social-icon" />
+                     </a>
+                  </div>
                </div>
             </div>
 

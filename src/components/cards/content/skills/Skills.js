@@ -3,16 +3,13 @@ import Subtitle from "../extra_components/subtitle/Subtitle";
 import ProgressBar from "./progress_bar/ProgressBar";
 import GroupsDivider from "../extra_components/groups_divider/GroupsDivider";
 
-// WHEN CARD IS FIRST OPENED, HAVE ANIMATION THAT BRINGS ALL BARS TO RESPECTIVE PERCENT
-// FIX PERCENT VALUES FOR ALL SKILLS
-
 function Skills() {
    return (
       <div>
          {/* GROUP OF INTERPERSONAL SKILLS */}
          <Subtitle icon="fas fa-users" label="Interpersonal Skills" />
          <ul>
-            <ProgressBar skillTitle="Communcation" percent="94%" />
+            <ProgressBar skillTitle="Communcation" percent="96%" />
             <ProgressBar skillTitle="Problem Solving" percent="92%" />
             <ProgressBar skillTitle="Willingness to Learn" percent="100%" />
             <ProgressBar skillTitle="Time Management" percent="89%" />

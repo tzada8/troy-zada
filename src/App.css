@@ -37,6 +37,7 @@ h1 {
 p {
    color: var(--GREY);
    line-height: 17px;
+   letter-spacing: 0.2px;
    font-size: 12px;
    text-align: left;
 }
