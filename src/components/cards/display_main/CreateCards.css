@@ -95,7 +95,7 @@ span.author {
 @media screen and (min-width: 1200px) {
    .card-box {
       max-width: 533px;
-      height: 700px;
+      height: 600px;
    }
    .home-loc {
       margin: 26px calc(50% - (var(--CARD_WIDTH) - 5%) - 16px);

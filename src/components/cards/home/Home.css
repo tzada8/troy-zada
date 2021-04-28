@@ -20,10 +20,6 @@
    margin-top: 10px;
 }
 
-.home-hello-welcome {
-   font-size: 20px;
-}
-
 .home-intro-name {
    padding: 0 0 10px;
    font-size: 35px;
@@ -76,6 +72,7 @@
    transition: opacity 0.6s ease;
 }
 
+/* FOR TRIANGLE POINTER */
 .icon-frame #email-text::before {
    background: var(--REG_BLUE);
    content: "";
@@ -89,7 +86,6 @@
 }
 
 .social-icon {
-   /* background: red; */
    padding: 0 5px;
    margin-top: 35px;
    font-size: 35px;
@@ -106,24 +102,48 @@
    opacity: 1;
 }
 
-.fa-facebook-square {
-   background-size: 65% 98%;
-}
-
-.fa-linkedin {
-   background-size: 80% 95%;
-}
-
-.fa-envelope-square {
-   background-size: 80% 95%;
-}
-
-/* ALSO CAN INCREASE OVERALL CARD SIZE */
-
 /* IF SCREEN IS VERY WIDE, INCREASE SIZE OF CONTENT IN CARD */
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
    .home-img-round {
-      height: 300px;
-      width: 300px;
+      height: 175px;
+      width: 175px;
    }
-} */
+
+   .home-intro-name {
+      font-size: 50px;
+   }
+
+   .home-intro-program {
+      font-size: 18px;
+   }
+
+   .social-media {
+      height: 80px;
+   }
+
+   .social-icon {
+      padding: 0 8px;
+      margin-top: 35px;
+      font-size: 45px;
+   }
+
+   .icon-frame #email-text {
+      padding: 5px 10px;
+      transform: translateX(-51px);
+   }
+
+   #home-paragraph,
+   #copyright {
+      font-size: 13px;
+   }
+
+   #copyright {
+      margin-top: 10px;
+   }
+
+   hr.horizontal-bar__fade {
+      margin: 25px 0;
+      height: 2px;
+      border-radius: 50%;
+   }
+}
