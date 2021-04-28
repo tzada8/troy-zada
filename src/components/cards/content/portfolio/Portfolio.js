@@ -23,16 +23,16 @@ function Portfolio() {
                text="This project was made in November 2020 using the React Framework as well as Django"
             />
             <ProjectCard
-               path="/portfolio/sudoku-solver"
-               projectTitle={portfolioData.sudokuSolver.title}
-               src={portfolioData.sudokuSolver.image}
-               text="This project was made using the Backtracking algorithm and can solve any sudoku board"
-            />
-            <ProjectCard
                path="/portfolio/pathfinding"
                projectTitle={portfolioData.pathfinding.title}
                src={portfolioData.pathfinding.image}
                text="Used Java including the Swing GUI to create a program that visually compares pathfinding algorithms"
+            />
+            <ProjectCard
+               path="/portfolio/sudoku-solver"
+               projectTitle={portfolioData.sudokuSolver.title}
+               src={portfolioData.sudokuSolver.image}
+               text="This project was made using the Backtracking algorithm and can solve any sudoku board"
             />
             <ProjectCard
                path="/portfolio/blackjack"
