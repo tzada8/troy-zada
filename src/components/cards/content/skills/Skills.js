@@ -16,10 +16,10 @@ function Skills() {
             <ProgressBar skillTitle="Problem Solving" percent="92%" />
             <ProgressBar skillTitle="Willingness to Learn" percent="100%" />
             <ProgressBar skillTitle="Time Management" percent="89%" />
-            <ProgressBar skillTitle="Punctuality" percent="86%" />
-            <ProgressBar skillTitle="Detail-Oriented" percent="96%" />
-            <ProgressBar skillTitle="Cross-Functional" percent="82%" />
-            <ProgressBar skillTitle="Teamwork" percent="89%" />
+            <ProgressBar skillTitle="Punctuality" percent="88%" />
+            <ProgressBar skillTitle="Detail-Oriented" percent="98%" />
+            <ProgressBar skillTitle="Cross-Functional" percent="86%" />
+            <ProgressBar skillTitle="Teamwork" percent="90%" />
          </ul>
 
          <GroupsDivider />
@@ -27,14 +27,14 @@ function Skills() {
          {/* GROUP OF PROFESSIONAL SKILLS */}
          <Subtitle icon="fas fa-cogs" label="Professional Skills" />
          <ul>
-            <ProgressBar skillTitle="Java" percent="76%" />
+            <ProgressBar skillTitle="Java" percent="82%" />
             <ProgressBar skillTitle="Python" percent="74%" />
             <ProgressBar skillTitle="HTML" percent="84%" />
             <ProgressBar skillTitle="CSS" percent="80%" />
-            <ProgressBar skillTitle="Excel VBA" percent="46%" />
-            <ProgressBar skillTitle="React" percent="74%" />
+            <ProgressBar skillTitle="Excel VBA" percent="58%" />
+            <ProgressBar skillTitle="React" percent="78%" />
             <ProgressBar skillTitle="JavaScript" percent="68%" />
-            <ProgressBar skillTitle="R" percent="38%" />
+            <ProgressBar skillTitle="R" percent="48%" />
          </ul>
       </div>
    );
