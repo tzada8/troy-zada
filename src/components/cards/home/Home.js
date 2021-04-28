@@ -85,6 +85,10 @@ function Home(props) {
                   </a>
                </div>
             </div>
+
+            <p id="copyright">
+               Copyright © 2021 Troy Zada. All Rights Reserved.
+            </p>
          </div>
       </div>
    );

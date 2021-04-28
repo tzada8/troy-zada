@@ -34,8 +34,13 @@
    font-size: 14px;
 }
 
-#home-paragraph {
+#home-paragraph,
+#copyright {
    text-align: center;
+}
+
+#copyright {
+   font-weight: bold;
 }
 
 .social-media {
