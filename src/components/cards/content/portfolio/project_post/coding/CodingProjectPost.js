@@ -1,8 +1,9 @@
 import React from "react";
-import GithubLink from "../../extra_components/github_link/GithubLink";
-import "./ProjectPost.css";
+import GithubLink from "../../../extra_components/github_link/GithubLink";
+import YoutubeLink from "../../../extra_components/youtube_link/YoutubeLink";
+import "./CodingProjectPost.css";
 
-function ProjectPost(props) {
+function CodingProjectPost(props) {
    return (
       <div>
          <figure className="project-picwrap" data-category={props.projectTitle}>
@@ -15,10 +16,11 @@ function ProjectPost(props) {
          <div className="project-github-date">
             <h4 className="project-date">{props.date}</h4>
             <GithubLink path={props.github} />
+            <YoutubeLink path={props.youtube} />
          </div>
          <hr className="horizontal-bar__project-posts hr-blog-margin-adjust" />
       </div>
    );
 }
 
-export default ProjectPost;
+export default CodingProjectPost;

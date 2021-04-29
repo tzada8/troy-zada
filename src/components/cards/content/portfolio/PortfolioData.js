@@ -25,6 +25,7 @@ export const portfolioData = {
       image: moodivityImage,
       date: "December 8, 2020",
       github: github + "s6eskand/Moodivity",
+      youtube: "www.youtube.com",
    },
    pathfinding: {
       title: "Pathfinding Algorithms",

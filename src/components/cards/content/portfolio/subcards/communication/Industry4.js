@@ -1,16 +1,15 @@
 import React from "react";
-import ProjectPost from "../project_post/ProjectPost";
-import { portfolioData } from "../PortfolioData";
-import "./ProjectContent.css";
+import ComProjectPost from "../../project_post/communication/ComProjectPost";
+import { portfolioData } from "../../PortfolioData";
+import "../ProjectContent.css";
 
 function Industry4() {
    return (
       <div>
-         <ProjectPost
+         <ComProjectPost
             projectTitle={portfolioData.industry4.title}
             src={portfolioData.industry4.image}
             date={portfolioData.industry4.date}
-            github={portfolioData.industry4.github}
          />
          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,

@@ -6,15 +6,15 @@ import React from "react";
 import CreateSubcards from "./CreateSubcards";
 
 // PORTFOLIO
-import TroyZada from "../content/portfolio/subcards/TroyZada";
-import Moodivity from "../content/portfolio/subcards/Moodivity";
-import SudokuSolver from "../content/portfolio/subcards/SudokuSolver";
-import BlackJack from "../content/portfolio/subcards/BlackJack";
-import Pathfinding from "../content/portfolio/subcards/Pathfinding";
-import DSS from "../content/portfolio/subcards/DSS";
+import TroyZada from "../content/portfolio/subcards/coding/TroyZada";
+import Moodivity from "../content/portfolio/subcards/coding/Moodivity";
+import SudokuSolver from "../content/portfolio/subcards/coding/SudokuSolver";
+import BlackJack from "../content/portfolio/subcards/coding/BlackJack";
+import Pathfinding from "../content/portfolio/subcards/coding/Pathfinding";
+import DSS from "../content/portfolio/subcards/coding/DSS";
 
-import LiteratureFair from "../content/portfolio/subcards/LiteratureFair";
-import Industry4 from "../content/portfolio/subcards/Industry4";
+import LiteratureFair from "../content/portfolio/subcards/communication/LiteratureFair";
+import Industry4 from "../content/portfolio/subcards/communication/Industry4";
 
 // BLOG
 import CreatingThisWebsite from "../content/blog/subcards/CreatingThisWebsite";

@@ -1,12 +1,12 @@
 import React from "react";
-import ProjectPost from "../project_post/ProjectPost";
-import { portfolioData } from "../PortfolioData";
-import "./ProjectContent.css";
+import CodingProjectPost from "../../project_post/coding/CodingProjectPost";
+import { portfolioData } from "../../PortfolioData";
+import "../ProjectContent.css";
 
 function Pathfinding() {
    return (
       <div>
-         <ProjectPost
+         <CodingProjectPost
             projectTitle={portfolioData.pathfinding.title}
             src={portfolioData.pathfinding.image}
             date={portfolioData.pathfinding.date}

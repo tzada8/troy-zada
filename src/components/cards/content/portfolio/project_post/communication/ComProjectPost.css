@@ -1,0 +1,18 @@
+.project-date {
+   margin-top: 11px;
+   padding-right: 4px;
+   float: right;
+   display: block;
+}
+
+.project-date-container {
+   /* background: blue; */
+   height: 60px;
+}
+
+hr.horizontal-bar__project-posts {
+   background: var(--GREY);
+   border: 2px solid var(--GREY);
+   margin: 0 0 15px;
+   border-radius: 5px;
+}

@@ -1,16 +1,17 @@
 import React from "react";
-import ProjectPost from "../project_post/ProjectPost";
-import { portfolioData } from "../PortfolioData";
-import "./ProjectContent.css";
+import CodingProjectPost from "../../project_post/coding/CodingProjectPost";
+import { portfolioData } from "../../PortfolioData";
+import "../ProjectContent.css";
 
 function Moodivity() {
    return (
       <div>
-         <ProjectPost
+         <CodingProjectPost
             projectTitle={portfolioData.moodivity.title}
             src={portfolioData.moodivity.image}
             date={portfolioData.moodivity.date}
             github={portfolioData.moodivity.github}
+            youtube={portfolioData.moodivity.youtube}
          />
          <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.

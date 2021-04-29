@@ -11,7 +11,7 @@ function GithubLink(props) {
          aria-label="Github"
       >
          <i className="fab fa-github" />
-         Github
+         GitHub
       </a>
    );
 }

@@ -1,16 +1,17 @@
 import React from "react";
-import ProjectPost from "../project_post/ProjectPost";
-import { portfolioData } from "../PortfolioData";
-import "./ProjectContent.css";
+import CodingProjectPost from "../../project_post/coding/CodingProjectPost";
+import { portfolioData } from "../../PortfolioData";
+import "../ProjectContent.css";
 
 function BlackJack() {
    return (
       <div>
-         <ProjectPost
+         <CodingProjectPost
             projectTitle={portfolioData.blackJack.title}
             src={portfolioData.blackJack.image}
             date={portfolioData.blackJack.date}
             github={portfolioData.blackJack.github}
+            youtube={portfolioData.blackJack.youtube}
          />
          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quam

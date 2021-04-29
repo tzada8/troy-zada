@@ -1,16 +1,15 @@
 import React from "react";
-import ProjectPost from "../project_post/ProjectPost";
-import { portfolioData } from "../PortfolioData";
-import "./ProjectContent.css";
+import ComProjectPost from "../../project_post/communication/ComProjectPost";
+import { portfolioData } from "../../PortfolioData";
+import "../ProjectContent.css";
 
 function LiteratureFair() {
    return (
       <div>
-         <ProjectPost
+         <ComProjectPost
             projectTitle={portfolioData.literatureFair.title}
             src={portfolioData.literatureFair.image}
             date={portfolioData.literatureFair.date}
-            github={portfolioData.literatureFair.github}
          />
          <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
