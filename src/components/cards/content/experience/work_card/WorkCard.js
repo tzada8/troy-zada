@@ -2,10 +2,6 @@ import React from "react";
 import "./WorkCard.css";
 
 function WorkCard(props) {
-   // title
-   // company
-   // duration
-   // description
    return (
       <div className="work-card-container">
          <h3 className="work-title-company">{props.title}</h3>
