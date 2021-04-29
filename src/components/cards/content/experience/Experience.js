@@ -24,7 +24,7 @@ function Experience() {
             title="Programming (Java) Teaching Assistant"
             company="University of Waterloo"
             duration=", Jan 2021 - Apr 2021"
-            description="Generated unique content and explanations to teach complex Java programming concepts to students. Validated all content released from the teaching end to ensure the content was sound. Reviewed student's assessments to ensure answers were correct, and if not, spent time discussing and explaining the correct approach to them"
+            description="Generated unique content and explanations to teach complex Java programming concepts to students. Validated all content released from the teaching end to ensure all content was sound. Reviewed student's assessments to ensure answers were correct, and if not, spent time discussing and explaining the correct approach to them"
          />
          <WorkCard
             title="Design and Manufacturing Technician"
