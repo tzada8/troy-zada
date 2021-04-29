@@ -11,16 +11,16 @@ function Portfolio() {
          <Subtitle icon="fas fa-code" label="Coding Projects" />
          <ul>
             <ProjectCard
-               path="/portfolio/troy-zada"
-               projectTitle={portfolioData.troyZadaWebsite.title}
-               src={portfolioData.troyZadaWebsite.image}
-               text="This project was made using HTML, CSS, JavaScript, and the React framework in order to make this website"
-            />
-            <ProjectCard
                path="/portfolio/moodivity"
                projectTitle={portfolioData.moodivity.title}
                src={portfolioData.moodivity.image}
                text="This project was made in November 2020 using the React Framework as well as Django"
+            />
+            <ProjectCard
+               path="/portfolio/troy-zada"
+               projectTitle={portfolioData.troyZadaWebsite.title}
+               src={portfolioData.troyZadaWebsite.image}
+               text="This project was made using HTML, CSS, JavaScript, and the React framework in order to make this website"
             />
             <ProjectCard
                path="/portfolio/pathfinding"
