@@ -11,6 +11,7 @@ function SudokuSolver() {
             src={portfolioData.sudokuSolver.image}
             date={portfolioData.sudokuSolver.date}
             github={portfolioData.sudokuSolver.github}
+            youtube={portfolioData.sudokuSolver.youtube}
          />
          <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil

@@ -11,6 +11,7 @@ function TroyZada() {
             src={portfolioData.troyZadaWebsite.image}
             date={portfolioData.troyZadaWebsite.date}
             github={portfolioData.troyZadaWebsite.github}
+            youtube={portfolioData.troyZadaWebsite.youtube}
          />
          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores

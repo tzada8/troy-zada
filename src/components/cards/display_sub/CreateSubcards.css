@@ -44,6 +44,20 @@ hr.horizontal-bar__subcard-bottom {
    border-left: 0;
 }
 
+/* IF SCREEN IS AVERAGE DESKTOP VERSION, THEN HAVE FOLLOWING STYLES */
+@media screen and (min-width: 1200px) {
+   .card-box-top {
+      max-width: 533px;
+      height: 600px;
+   }
+   .home-loc {
+      margin: 26px calc(50% - (var(--CARD_WIDTH) - 5%) - 16px);
+   }
+   .other-page-top {
+      margin: 26px calc(50% + 6%);
+   }
+}
+
 /* IF SCREEN IS DESKTOP-SMALL VERSION, THEN HAVE FOLLOWING STYLES */
 @media screen and (max-width: 960px) {
    .card-box-top {
@@ -62,7 +76,7 @@ hr.horizontal-bar__subcard-bottom {
 
 /* IF SCREEN IS MOBILE VERSION, THEN HAVE FOLLOWING STYLES */
 @media screen and (max-width: 480px) {
-   .card-box {
-      margin: 70px 4%;
+   .card-box-top {
+      width: 92%;
    }
 }

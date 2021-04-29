@@ -1,10 +1,11 @@
-.project-date {
+.project-date-coding {
    margin-top: 11px;
+   padding-top: 40px;
    padding-right: 4px;
    float: right;
 }
 
-hr.horizontal-bar__project-posts {
+hr.horizontal-bar__coding-project-posts {
    background: var(--GREY);
    border: 2px solid var(--GREY);
    margin: 0 0 15px;

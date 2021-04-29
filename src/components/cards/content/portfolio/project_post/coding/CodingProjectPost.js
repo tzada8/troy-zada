@@ -14,11 +14,11 @@ function CodingProjectPost(props) {
             />
          </figure>
          <div className="project-github-date">
-            <h4 className="project-date">{props.date}</h4>
+            <h4 className="project-date-coding">{props.date}</h4>
             <GithubLink path={props.github} />
             <YoutubeLink path={props.youtube} />
          </div>
-         <hr className="horizontal-bar__project-posts hr-blog-margin-adjust" />
+         <hr className="horizontal-bar__coding-project-posts hr-blog-margin-adjust" />
       </div>
    );
 }

@@ -12,9 +12,9 @@ function ComProjectPost(props) {
             />
          </figure>
          <div className="project-date-container">
-            <h4 className="project-date">{props.date}</h4>
+            <h4 className="project-date-com">{props.date}</h4>
          </div>
-         <hr className="horizontal-bar__project-posts hr-blog-margin-adjust" />
+         <hr className="horizontal-bar__com-project-posts hr-blog-margin-adjust" />
       </div>
    );
 }

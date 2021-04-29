@@ -11,6 +11,7 @@ function Pathfinding() {
             src={portfolioData.pathfinding.image}
             date={portfolioData.pathfinding.date}
             github={portfolioData.pathfinding.github}
+            youtube={portfolioData.pathfinding.youtube}
          />
          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, iste?
