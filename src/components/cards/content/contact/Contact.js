@@ -3,11 +3,10 @@ import emailjs from "emailjs-com";
 import Subtitle from "../extra_components/subtitle/Subtitle";
 import "./Contact.css";
 
-// STILL NEED "YOUR MESSAGE HAS BEEN SUBMITTED" COMMENT
-
 function Contact() {
    function sendEmail(e) {
       e.preventDefault();
+      showThankYouMessage(); // SHOW THANK YOU MESSAGE FOR 3 SECONDS
 
       emailjs
          .sendForm(
@@ -25,6 +24,14 @@ function Contact() {
             }
          );
       e.target.reset();
+   }
+
+   function showThankYouMessage() {
+      const message = document.getElementById("thank-you-container");
+      message.style.visibility = "visible"; // SHOW MESSAGE
+      setTimeout(function () {
+         message.style.visibility = "hidden"; // AFTER 3s HIDE MESSAGE
+      }, 3000);
    }
 
    return (
@@ -69,8 +76,21 @@ function Contact() {
                   required
                ></textarea>
                <br />
-               <input type="submit" className="submit" value="SEND MESSAGE" />
+               <input
+                  id="submit-button"
+                  type="submit"
+                  className="submit"
+                  value="SEND MESSAGE"
+               />
             </form>
+
+            <div id={"thank-you-container"}>
+               <i className="far fa-check-circle checkmark-icon" />
+               <h2 className="thank-you-word">Thank you!</h2>
+               <h4 className="thank-you-message">
+                  Your message has been sent.
+               </h4>
+            </div>
          </div>
       </div>
    );
