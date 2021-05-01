@@ -9,12 +9,14 @@ li.project-container {
 .project-content {
    display: block;
    width: 100%;
-   border-radius: 10px;
    overflow: hidden;
 }
 
 figure.project-picwrap {
    position: relative;
+   border: 1px solid var(--DARK_BLUE);
+   border-radius: 10px;
+
    width: 100%;
    padding-top: 75%;
    overflow: hidden;
