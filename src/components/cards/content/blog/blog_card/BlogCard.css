@@ -10,6 +10,7 @@ li.blog-container {
 
 figure.blog-picwrap {
    position: relative;
+   border: 1px solid var(--DARK_BLUE);
    width: 100%;
    padding-top: 75%;
    overflow: hidden;

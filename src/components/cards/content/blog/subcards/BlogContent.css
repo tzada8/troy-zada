@@ -1,3 +1,8 @@
 p.indent-paragraph {
    text-indent: 30px;
 }
+
+h3.blog-content-subheading {
+   text-align: left;
+   text-decoration: underline;
+}

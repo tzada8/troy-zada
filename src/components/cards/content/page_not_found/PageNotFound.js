@@ -1,14 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { HOME } from "../../../Constants";
 
 function PageNotFound() {
    return (
       <div>
-         <p>
-            This page does not exist. Please choose one of the pages from the
-            menu, or return back to the homepage here:{" "}
-            <Link to="/">{HOME}</Link>.
+         <h3>Oh no, this page doesn't exist!</h3>
+         <br />
+         <p style={{ textAlign: "center", marginBottom: -10 + "px" }}>
+            Please choose one of the pages from the menu on the left.
          </p>
       </div>
    );
