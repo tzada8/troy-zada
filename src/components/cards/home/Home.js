@@ -64,7 +64,7 @@ function Home(props) {
                      <span id="email-text">{EMAIL}</span>
                      <a
                         id="envelope-icon"
-                        href="mailto:tzada@uwaterloo.ca"
+                        href={"mailto:" + EMAIL}
                         target="_blank"
                         rel="noreferrer"
                         aria-label="Email"
