@@ -1,6 +1,7 @@
 import React from "react";
 import BlogPost from "../blog_post/BlogPost";
 import { blogData } from "../BlogData";
+import BlogSubheading from "./BlogSubheading";
 import BlogParagraph from "./BlogParagraph";
 
 function FirstWorkTerm() {
@@ -18,7 +19,7 @@ function FirstWorkTerm() {
             main responsibility involves manufacturing and designing medical
             devices."
          />
-         <h3 className="blog-content-subheading">Responsibilities</h3>
+         <BlogSubheading subheading="Responsibilities" />
          <BlogParagraph
             content="My initial responsibilities while working at EngineeringCPR involved
             validating the quality of all parts that endured the receiving,

@@ -1,9 +1,10 @@
 import React from "react";
+import "./BlogContent.css";
 
-function BlogSubheading() {
+function BlogSubheading(props) {
    return (
       <div>
-         <h3>Subheading</h3>
+         <h3 className="blog-content-subheading">{props.subheading}</h3>
       </div>
    );
 }
