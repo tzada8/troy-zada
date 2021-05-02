@@ -1,7 +1,3 @@
-img.post-specific {
-   border-radius: 10px;
-}
-
 img.post-specific:hover {
    transform: none;
 }
