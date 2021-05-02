@@ -69,27 +69,17 @@ form .submit:hover {
 
 #thank-you-container {
    background: var(--WHITE);
-   width: 70%;
-   transform: translateX(8.5%) translateY(-340%);
    position: absolute;
-   padding: 5px 10px;
    border: 2px solid var(--CHECK_GREEN);
+   top: 50%;
+   left: 15%;
+   width: 70%;
+   right: 15%;
+   padding: 5px 10px;
    visibility: hidden;
 }
 
 .checkmark-icon {
    color: var(--CHECK_GREEN);
    font-size: 40px;
-}
-
-.thank-you-message {
-}
-
-/* IF SCREEN IS DESKTOP-SMALL VERSION, THEN HAVE FOLLOWING STYLES */
-@media screen and (max-width: 960px) {
-   #thank-you-container {
-      margin: 0 5.5%;
-      width: 70%;
-      /* transform: translateX(12.5%) translateY(-340%); */
-   }
 }
