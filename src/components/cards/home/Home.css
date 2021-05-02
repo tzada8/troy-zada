@@ -41,53 +41,18 @@
 
 .social-media {
    display: flex;
+   width: 100%;
    height: 60px;
    justify-content: center;
    align-items: center;
-}
-
-.social-media-container {
-   position: absolute;
-   justify-content: space-between;
-   align-items: center;
-   padding: 0;
-   height: 105px;
 }
 
 .icon-frame {
    display: inline-block;
 }
 
-.icon-frame #email-text {
-   background: var(--REG_BLUE);
-   position: absolute;
-   color: var(--WHITE);
-   padding: 5px 10px;
-   margin-bottom: 10px;
-   text-align: center;
-   border-radius: 8px;
-   transform: translateX(-58px);
-   display: block;
-   opacity: 0;
-   transition: opacity 0.6s ease;
-}
-
-/* FOR TRIANGLE POINTER */
-.icon-frame #email-text::before {
-   background: var(--REG_BLUE);
-   content: "";
-   width: 10px;
-   height: 10px;
-   position: absolute;
-   bottom: -4px;
-   z-index: -1;
-   right: 68px;
-   transform: translateX(-50%) rotate(45deg);
-}
-
 .social-icon {
-   padding: 0 5px;
-   margin-top: 35px;
+   margin: 0 5px;
    font-size: 35px;
    color: var(--REG_BLUE);
    transition: all 0.4s ease;
@@ -98,8 +63,34 @@
    color: var(--DARK_BLUE);
 }
 
-.icon-frame:hover > #email-text {
-   opacity: 1;
+#email-text {
+   background: var(--REG_BLUE);
+   position: absolute;
+   display: block;
+   color: var(--WHITE);
+   padding: 5px 10px;
+   text-align: center;
+   border-radius: 10px;
+   right: 50%;
+   transform: translateX(50%) translateY(9px);
+   visibility: hidden;
+}
+
+/* FOR TRIANGLE POINTER */
+#email-text::before {
+   background: var(--REG_BLUE);
+   position: absolute;
+   content: "";
+   width: 10px;
+   height: 10px;
+   top: -5px;
+   z-index: -1;
+   right: 50%;
+   transform: translateX(50%) rotate(45deg);
+}
+
+#envelope-icon:hover + #email-text {
+   visibility: visible;
 }
 
 /* IF SCREEN IS VERY WIDE, INCREASE SIZE OF CONTENT IN CARD */
@@ -122,13 +113,8 @@
    }
 
    .social-icon {
-      padding: 0 8px;
-      margin-top: 35px;
+      margin: 0 8px;
       font-size: 45px;
-   }
-
-   .icon-frame #email-text {
-      transform: translateX(-51px);
    }
 
    #home-paragraph,
@@ -136,8 +122,8 @@
       font-size: 13px;
    }
 
-   #copyright {
-      margin-top: 10px;
+   #email-text {
+      font-size: 15px;
    }
 
    hr.horizontal-bar__fade {
