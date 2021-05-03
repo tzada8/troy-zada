@@ -1,7 +1,7 @@
 import React from "react";
-import "./BlogContent.css";
+import "./ParagraphContent.css";
 
-function BlogParagraph(props) {
+function Paragraph(props) {
    return (
       <div>
          <p className="indent-paragraph">{props.content}</p>
@@ -10,4 +10,4 @@ function BlogParagraph(props) {
    );
 }
 
-export default BlogParagraph;
+export default Paragraph;

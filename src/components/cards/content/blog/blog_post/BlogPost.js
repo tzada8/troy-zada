@@ -14,8 +14,8 @@ function BlogPost(props) {
          <div className="blog-description-box">
             <h3 className="blog-title">{props.blogTitle}</h3>
             <h4 className="blog-author">
-               By: Troy Zada{" "}
-               <span className="blog-post-date">{props.date}</span>{" "}
+               By: Troy Zada
+               <span className="blog-post-date">{props.date}</span>
             </h4>
          </div>
          <hr className="horizontal-bar__blog-posts hr-blog-margin-adjust" />

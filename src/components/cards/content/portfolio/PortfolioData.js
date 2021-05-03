@@ -20,7 +20,7 @@ export const portfolioData = {
       title: "Moodivity",
       image: moodivityImage,
       briefDescription:
-         "This project was made in November 2020 using the React Framework as well as Django",
+         "Moodivity is a web application that improves productivity for users while guiding them to be more in tune with their mental health",
       date: "December 8, 2020",
       github: github + "s6eskand/Moodivity",
       youtube: youtube,
