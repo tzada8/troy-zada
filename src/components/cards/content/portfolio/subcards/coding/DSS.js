@@ -1,7 +1,8 @@
 import React from "react";
 import CodingProjectPost from "../../project_post/coding/CodingProjectPost";
 import { portfolioData } from "../../PortfolioData";
-import "../ProjectContent.css";
+import Subheading from "../../../extra_components/paragraph/Subheading";
+import Paragraph from "../../../extra_components/paragraph/Paragraph";
 
 function DSS() {
    return (
@@ -13,19 +14,8 @@ function DSS() {
             github={portfolioData.dss.github}
             youtube={portfolioData.dss.youtube}
          />
-         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui
-            quos, quam suscipit ut dolores, facilis, voluptatibus aut quia velit
-            laboriosam? Illo incidunt adipisci dolorum dolorem voluptatum,
-            tenetur suscipit? Iusto officia et sit asperiores eaque aut id nisi
-            porro perspiciatis ad, architecto fugiat maxime quasi at magnam,
-            facilis natus ducimus suscipit! Adipisci reiciendis delectus, porro
-            aliquam, necessitatibus labore tempore perferendis numquam velit
-            voluptate modi beatae praesentium cum magnam minus. Animi sed
-            numquam, autem quam repellat aut, nisi saepe facere dolor, soluta
-            natus harum laboriosam voluptate. Facere quasi modi eaque laboriosam
-            optio nam saepe tenetur autem, deleniti, dolorem est qui aspernatur!
-         </p>
+         <Subheading subheading="About the Application" />
+         <Paragraph content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam reiciendis, optio adipisci molestiae quo, quam atque eaque distinctio tempore aspernatur culpa voluptate voluptatum repellendus facilis nesciunt doloremque modi cupiditate?" />
       </div>
    );
 }

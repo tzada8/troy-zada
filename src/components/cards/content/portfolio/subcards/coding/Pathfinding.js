@@ -1,7 +1,8 @@
 import React from "react";
 import CodingProjectPost from "../../project_post/coding/CodingProjectPost";
 import { portfolioData } from "../../PortfolioData";
-import "../ProjectContent.css";
+import Subheading from "../../../extra_components/paragraph/Subheading";
+import Paragraph from "../../../extra_components/paragraph/Paragraph";
 
 function Pathfinding() {
    return (
@@ -13,21 +14,8 @@ function Pathfinding() {
             github={portfolioData.pathfinding.github}
             youtube={portfolioData.pathfinding.youtube}
          />
-         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, iste?
-            Dolore, dolorum? Id totam nobis deleniti repellendus aliquid illo
-            eligendi asperiores. Praesentium deserunt temporibus expedita hic
-            vitae perspiciatis tempore corporis similique aspernatur! Impedit
-            enim excepturi delectus itaque odio deleniti odit, provident
-            accusamus distinctio voluptas mollitia culpa ullam sapiente soluta!
-            Dolores labore suscipit eius placeat consequatur inventore
-            repellendus maxime asperiores eaque reprehenderit, vitae
-            voluptatibus adipisci hic sunt quo doloribus sapiente eum iure dicta
-            ex fuga! Non animi impedit molestiae quisquam tempora ad, quam ut
-            labore exercitationem excepturi placeat reiciendis dignissimos
-            necessitatibus corrupti, odit fugit corporis ducimus explicabo quas
-            voluptate atque perspiciatis.
-         </p>
+         <Subheading subheading="About the Application" />
+         <Paragraph content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam reiciendis, optio adipisci molestiae quo, quam atque eaque distinctio tempore aspernatur culpa voluptate voluptatum repellendus facilis nesciunt doloremque modi cupiditate?" />
       </div>
    );
 }

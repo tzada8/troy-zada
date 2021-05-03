@@ -1,7 +1,8 @@
 import React from "react";
 import CodingProjectPost from "../../project_post/coding/CodingProjectPost";
 import { portfolioData } from "../../PortfolioData";
-import "../ProjectContent.css";
+import Subheading from "../../../extra_components/paragraph/Subheading";
+import Paragraph from "../../../extra_components/paragraph/Paragraph";
 
 function SudokuSolver() {
    return (
@@ -13,20 +14,8 @@ function SudokuSolver() {
             github={portfolioData.sudokuSolver.github}
             youtube={portfolioData.sudokuSolver.youtube}
          />
-         <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-            repudiandae aspernatur atque delectus fugit? Eaque deserunt
-            obcaecati ad perferendis nam, debitis temporibus? Delectus beatae
-            alias velit eos id reiciendis libero? Totam, iste praesentium
-            debitis dicta quibusdam nihil ducimus maiores minima ipsum! Iure
-            neque assumenda itaque voluptatum expedita accusantium non animi
-            doloribus magni ratione. Animi autem fugit dolore! Deleniti
-            voluptates dolor ut libero eum, architecto officia quidem delectus
-            vero, animi nobis repellendus dicta quibusdam dolores, consequuntur
-            ducimus commodi facere exercitationem! Tempora eum sunt quam itaque,
-            hic vero eius odio libero quisquam placeat reiciendis nostrum.
-            Beatae at aperiam accusantium! In, nobis dolor?
-         </p>
+         <Subheading subheading="About the Application" />
+         <Paragraph content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam reiciendis, optio adipisci molestiae quo, quam atque eaque distinctio tempore aspernatur culpa voluptate voluptatum repellendus facilis nesciunt doloremque modi cupiditate?" />
       </div>
    );
 }

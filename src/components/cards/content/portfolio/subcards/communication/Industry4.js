@@ -1,7 +1,8 @@
 import React from "react";
 import ComProjectPost from "../../project_post/communication/ComProjectPost";
 import { portfolioData } from "../../PortfolioData";
-import "../ProjectContent.css";
+import Subheading from "../../../extra_components/paragraph/Subheading";
+import Paragraph from "../../../extra_components/paragraph/Paragraph";
 
 function Industry4() {
    return (
@@ -11,20 +12,8 @@ function Industry4() {
             src={portfolioData.industry4.image}
             date={portfolioData.industry4.date}
          />
-         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            assumenda veritatis, quasi inventore nostrum voluptas rem unde
-            tempora maxime reprehenderit nobis laudantium quas, consequuntur
-            perferendis accusamus perspiciatis nemo. Nulla, magnam. Debitis,
-            accusantium! Ratione veniam hic quidem, non, eius dignissimos optio
-            consequatur aperiam quaerat aspernatur sapiente ullam officia
-            incidunt id alias ab sequi atque itaque porro? Consectetur neque,
-            laudantium odit nobis qui dolorem. Ex voluptatum nisi quos sapiente
-            ullam veritatis, iure totam dolores ipsum soluta quae quis esse,
-            aliquid eum deserunt illo ut praesentium repellat reiciendis
-            cupiditate fugiat omnis cumque! Minus modi perspiciatis temporibus
-            exercitationem soluta! Eum debitis consequuntur accusantium quos!
-         </p>
+         <Subheading subheading="About the Application" />
+         <Paragraph content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam reiciendis, optio adipisci molestiae quo, quam atque eaque distinctio tempore aspernatur culpa voluptate voluptatum repellendus facilis nesciunt doloremque modi cupiditate?" />
       </div>
    );
 }
