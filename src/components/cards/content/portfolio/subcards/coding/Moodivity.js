@@ -6,8 +6,6 @@ import Paragraph from "../../../extra_components/paragraph/Paragraph";
 import TypeOfTech from "./tech_stack/TypeOfTech";
 import TechListItem from "./tech_stack/TechListItem";
 
-import "./tech_stack/ProjectContent.css";
-
 function Moodivity() {
    return (
       <div>
