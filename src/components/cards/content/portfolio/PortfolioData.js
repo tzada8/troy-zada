@@ -23,7 +23,7 @@ export const portfolioData = {
          "Moodivity is a web application that improves productivity for users while guiding them to be more in tune with their mental health",
       date: "December 8, 2020",
       github: github + "s6eskand/Moodivity",
-      youtube: youtube,
+      youtube: youtube + "watch?v=g_i8N4H7MDQ",
    },
    troyZadaWebsite: {
       title: "Troy Zada Website",
