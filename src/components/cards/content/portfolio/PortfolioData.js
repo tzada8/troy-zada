@@ -47,7 +47,7 @@ export const portfolioData = {
       title: "Sudoku Solver",
       image: sudokuSolverImage,
       briefDescription:
-         "This project was made using the Backtracking algorithm and can solve any sudoku board",
+         "Uses the backtracking algorithm to solve any valid sudoku board",
       date: "January 31, 2021",
       github: githubMyProfile + "SudokuSolver",
       youtube: youtube,
@@ -56,7 +56,7 @@ export const portfolioData = {
       title: "BlackJack",
       image: blackJackImage,
       briefDescription:
-         "This project was made using Python in addition to Python's GUI framework Tkinter",
+         "Play through a game of BlackJack against the dealer, starting with a given $1000",
       date: "January 24, 2021",
       github: githubMyProfile + "BlackJack",
       youtube: youtube,
@@ -65,7 +65,7 @@ export const portfolioData = {
       title: "Decision Support System",
       image: decisionSupportSystemImage,
       briefDescription:
-         "This project was made using Excel VBA in order to make a project tool that aids user completing group projcets in an efficient manner",
+         "Simplifies university group projects by helping maintain a high degree of organization for the group while also aiding in decision making",
       date: "December 16, 2019",
       github: githubMyProfile + "DecisionSupportSystem",
       youtube: youtube,
@@ -74,14 +74,14 @@ export const portfolioData = {
       title: "Literature Fair",
       image: literatureFairImage,
       briefDescription:
-         "This project focuses on the literary theory of existentialism involving how each individual is in charge of their own lives based on their own decisions",
+         "Focuses on the literary theory of existentialism, being that each individual is viewed as a free and responsible agent capable of decision-making to determine their lives",
       date: "June 6, 2019",
    },
    industry4: {
       title: "Industry 4.0",
       image: industry4Image,
       briefDescription:
-         "This project involved marketing and reaching out to fellow high school about a competition regarding optimization of factory procedures",
+         "A high school level analytic-based competition revolving around the fourth industrial revolution and automatization of production",
       date: "February 17, 2021",
    },
 };
