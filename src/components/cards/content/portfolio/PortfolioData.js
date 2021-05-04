@@ -29,7 +29,7 @@ export const portfolioData = {
       title: "Troy Zada Website",
       image: troyZadaImage,
       briefDescription:
-         "This project was made using HTML, CSS, JavaScript, and the React framework in order to make this website",
+         "A website explaining who I am including experiences, qualities I possess, contact information, and more",
       date: "TODAY",
       github: githubMyProfile + "TroyZada",
       youtube: youtube,
@@ -38,7 +38,7 @@ export const portfolioData = {
       title: "Pathfinding Algorithms",
       image: pathfindingAlgorithmsImage,
       briefDescription:
-         "Used Java including the Swing GUI to create a program that visually compares pathfinding algorithms",
+         "Compares various pathfinding algorithms including Breadth-First Search, Depth-First Search, A*, and Dijkstra",
       date: "April 27, 2021",
       github: githubMyProfile + "PathfindingAlgorithms",
       youtube: youtube,
