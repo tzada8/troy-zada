@@ -21,7 +21,7 @@ export const portfolioData = {
       image: moodivityImage,
       briefDescription:
          "Moodivity is a web application that improves productivity for users while guiding them to be more in tune with their mental health",
-      date: "December 8, 2020",
+      date: "November 22, 2020",
       github: github + "s6eskand/Moodivity",
       youtube: youtube + "watch?v=g_i8N4H7MDQ",
    },
@@ -65,7 +65,7 @@ export const portfolioData = {
       title: "Decision Support System",
       image: decisionSupportSystemImage,
       briefDescription:
-         "Simplifies university group projects by helping maintain a high degree of organization for the group while also aiding in decision making",
+         "Simplifies university group projects by aiding in decision making while also maintaining a high degree of organization for the group",
       date: "December 16, 2019",
       github: githubMyProfile + "DecisionSupportSystem",
       youtube: youtube,
