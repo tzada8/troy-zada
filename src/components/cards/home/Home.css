@@ -1,134 +1,137 @@
 .headshot1 {
-   background: url("../../../images/home/headshot1.png") top -8px center/cover no-repeat;
+	background: url("../../../images/home/headshot1.png") top -8px center/cover no-repeat;
 }
 
 .headshot2 {
-   background: url("../../../images/home/headshot2.png") top -8px center/cover no-repeat;
+	background: url("../../../images/home/headshot2.png") top -8px center/cover no-repeat;
 }
 
 .home-img-round {
-   position: block;
-   height: 150px;
-   width: 150px;
-   margin: auto;
-   border-radius: 50%;
-   border: 4px solid var(--DARK_BLUE);
-   transition: var(--COMMON_TRANSITION);
+	position: block;
+	height: 150px;
+	width: 150px;
+	margin: auto;
+	border-radius: 50%;
+	border: 4px solid var(--DARK_BLUE);
+	transition: var(--COMMON_TRANSITION);
 }
 
 .home-intro-title {
-   margin-top: 10px;
+	margin-top: 10px;
 }
 
 .home-intro-name {
-   padding: 0 0 10px;
-   font-size: 35px;
-   color: var(--REG_BLUE);
+	padding: 0 0 10px;
+	font-size: 35px;
+	color: var(--REG_BLUE);
 }
 
 .home-intro-program {
-   font-size: 14px;
+	font-size: 14px;
 }
 
 #home-paragraph,
 #copyright {
-   text-align: center;
+	text-align: center;
 }
 
 #copyright {
-   font-weight: bold;
+	font-weight: bold;
 }
 
 .social-media {
-   display: flex;
-   width: 100%;
-   height: 60px;
-   justify-content: center;
-   align-items: center;
+	display: flex;
+	width: 100%;
+	height: 60px;
+	justify-content: center;
+	align-items: center;
 }
 
 .icon-frame {
-   display: inline-block;
+	display: inline-block;
 }
 
 .social-icon {
-   margin: 0 5px;
-   font-size: 35px;
-   color: var(--REG_BLUE);
-   transition: all 0.4s ease;
+	margin: 0 5px;
+	font-size: 35px;
+	color: var(--REG_BLUE);
+	transition: all 0.4s ease;
 }
 
 .social-icon:hover {
-   transition: var(--COMMON_TRANSITION);
-   color: var(--DARK_BLUE);
+	transition: var(--COMMON_TRANSITION);
+	color: var(--DARK_BLUE);
 }
 
 #email-text {
-   background: var(--REG_BLUE);
-   position: absolute;
-   display: block;
-   color: var(--WHITE);
-   padding: 5px 10px;
-   text-align: center;
-   border-radius: 10px;
-   right: 50%;
-   transform: translateX(50%) translateY(9px);
-   visibility: hidden;
+	background: var(--REG_BLUE);
+	position: absolute;
+	display: block;
+	color: var(--WHITE);
+	padding: 5px 10px;
+	text-align: center;
+	border-radius: 10px;
+	right: 50%;
+	transform: translateX(50%) translateY(9px);
+	visibility: hidden;
+	opacity: 0;
 }
 
 /* FOR TRIANGLE POINTER */
 #email-text::before {
-   background: var(--REG_BLUE);
-   position: absolute;
-   content: "";
-   width: 10px;
-   height: 10px;
-   top: -5px;
-   z-index: -1;
-   right: 50%;
-   transform: translateX(50%) rotate(45deg);
+	background: var(--REG_BLUE);
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 10px;
+	top: -5px;
+	z-index: -1;
+	right: 50%;
+	transform: translateX(50%) rotate(45deg);
 }
 
 #envelope-icon:hover + #email-text {
-   visibility: visible;
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.4s linear;
 }
 
 /* IF SCREEN IS VERY WIDE, INCREASE SIZE OF CONTENT IN CARD */
 @media screen and (min-width: 1200px) {
-   .home-img-round {
-      height: 175px;
-      width: 175px;
-   }
+	.home-img-round {
+		height: 175px;
+		width: 175px;
+	}
 
-   .home-intro-name {
-      font-size: 50px;
-   }
+	.home-intro-name {
+		font-size: 50px;
+	}
 
-   .home-intro-program {
-      font-size: 18px;
-   }
+	.home-intro-program {
+		font-size: 18px;
+	}
 
-   .social-media {
-      height: 80px;
-   }
+	.social-media {
+		height: 80px;
+	}
 
-   .social-icon {
-      margin: 0 8px;
-      font-size: 45px;
-   }
+	.social-icon {
+		margin: 0 8px;
+		font-size: 45px;
+	}
 
-   #home-paragraph,
-   #copyright {
-      font-size: 13px;
-   }
+	#home-paragraph,
+	#copyright {
+		font-size: 13px;
+	}
 
-   #email-text {
-      font-size: 15px;
-   }
+	#email-text {
+		font-size: 15px;
+	}
 
-   hr.horizontal-bar__fade {
-      margin: 25px 0;
-      height: 2px;
-      border-radius: 50%;
-   }
+	hr.horizontal-bar__fade {
+		margin: 25px 0;
+		height: 2px;
+		border-radius: 50%;
+	}
 }

@@ -82,6 +82,6 @@ export const portfolioData = {
       image: industry4Image,
       briefDescription:
          "A high school level analytic-based competition revolving around the fourth industrial revolution and automatization of production",
-      date: "February 17, 2021",
+      date: "February 7, 2020",
    },
 };
