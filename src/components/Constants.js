@@ -9,7 +9,7 @@ export const PAGE_NOT_FOUND = "PAGE NOT FOUND";
 
 // SOCIAL MEDIA LINKS / CONTACT
 export const LINKEDIN_LINK = "https://www.linkedin.com/in/troy-zada";
-export const FACEBOOK_LINK = "https://www.facebook.com/Troy.M.Zada";
+export const FACEBOOK_LINK = "https://www.facebook.com/troy.m.zada";
 export const EMAIL = "tzada8@gmail.com";
 
 // NAME
