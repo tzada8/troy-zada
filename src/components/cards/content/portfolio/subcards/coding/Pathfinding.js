@@ -1,20 +1,21 @@
 import React from "react";
 import CodingProjectPost from "../../project_post/coding/CodingProjectPost";
-import { portfolioData } from "../../PortfolioData";
+import { portfolioCodingData } from "../../PortfolioData";
 import Subheading from "../../../extra_components/paragraph/Subheading";
 import Paragraph from "../../../extra_components/paragraph/Paragraph";
 import TypeOfTech from "./tech_stack/TypeOfTech";
 import TechListItem from "./tech_stack/TechListItem";
 
 function Pathfinding() {
+	const pathfinding = portfolioCodingData.pathfinding;
 	return (
 		<div>
 			<CodingProjectPost
-				projectTitle={portfolioData.pathfinding.title}
-				src={portfolioData.pathfinding.image}
-				date={portfolioData.pathfinding.date}
-				github={portfolioData.pathfinding.github}
-				youtube={portfolioData.pathfinding.youtube}
+				projectTitle={pathfinding.title}
+				src={pathfinding.image}
+				date={pathfinding.date}
+				github={pathfinding.github}
+				youtube={pathfinding.youtube}
 			/>
 
 			<Subheading subheading="About the Application" />
