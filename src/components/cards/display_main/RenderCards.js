@@ -1,74 +1,56 @@
 import React from "react";
 
 // MENU CONSTANTS FOR CARD TITLES
-import { navbarCategories, PAGE_NOT_FOUND } from "../../Constants";
-
-// CARDS
-import Home from "../home/Home";
+import { navbarCategories, pageNotFound } from "../../Constants";
 import CreateCards from "./CreateCards";
-
-// CONTENT
-import Portfolio from "../content/portfolio/Portfolio";
-import Skills from "../content/skills/Skills";
-import Experience from "../content/experience/Experience";
-import Blog from "../content/blog/Blog";
-import Contact from "../content/contact/Contact";
-import PageNotFound from "../content/page_not_found/PageNotFound";
+import Home from "../home/Home";
 
 // DETERMINES WHICH CARD SHOULD BE RENDERED TO/VISIBLE ON THE SCREEN
 function RenderCards(props) {
 	return (
 		<div>
-			{/* HOME */}
 			<Home isOnlyComp={props.home} />
-			{/* EXPERIENCE */}
 			<CreateCards
 				isActive={props.experience}
 				title={navbarCategories.experience.label}
-				content={<Experience />}
-				quotation="The only source of knowledge is experience"
-				author="Albert Einstein"
+				content={navbarCategories.experience.component}
+				quotation={navbarCategories.experience.quotation}
+				author={navbarCategories.experience.author}
 			/>
-			{/* SKILLS */}
 			<CreateCards
 				isActive={props.skills}
 				title={navbarCategories.skills.label}
-				content={<Skills />}
-				quotation="Tell me and I forget, teach me and I may remember, involve me and I learn"
-				author="Benjamin Franklin"
+				content={navbarCategories.skills.component}
+				quotation={navbarCategories.skills.quotation}
+				author={navbarCategories.skills.author}
 			/>
-			{/* PORTFOLIO */}
 			<CreateCards
 				isActive={props.portfolio}
 				title={navbarCategories.portfolio.label}
-				content={<Portfolio />}
-				quotation="As practice makes perfect, I cannot but make progress; each drawing one makes, each study one paints, is a step forward"
-				author="Vincent Van Gogh"
+				content={navbarCategories.portfolio.component}
+				quotation={navbarCategories.portfolio.quotation}
+				author={navbarCategories.portfolio.author}
 			/>
-			{/* BLOG */}
-			{/* "A capacity, and taste, for reading gives access to whatever has already been discovered by others" - Abraham Lincoln */}
 			<CreateCards
 				isActive={props.blog}
 				title={navbarCategories.blog.label}
-				content={<Blog />}
-				quotation="The reading of all good books is like a conversation with the finest minds of past centuries"
-				author="Rene Descartes"
+				content={navbarCategories.blog.component}
+				quotation={navbarCategories.blog.quotation}
+				author={navbarCategories.blog.author}
 			/>
-			{/* CONTACT */}
 			<CreateCards
 				isActive={props.contact}
 				title={navbarCategories.contact.label}
-				content={<Contact />}
-				quotation="The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience"
-				author="Eleanor Roosevelt"
+				content={navbarCategories.contact.component}
+				quotation={navbarCategories.contact.quotation}
+				author={navbarCategories.contact.author}
 			/>
-			{/* PAGE NOT FOUND */}
 			<CreateCards
 				isActive={props.pageNotFound}
-				title={PAGE_NOT_FOUND}
-				content={<PageNotFound />}
-				quotation="Understanding a question is half the answer"
-				author="Socrates"
+				title={pageNotFound.label}
+				content={pageNotFound.component}
+				quotation={pageNotFound.quotation}
+				author={pageNotFound.author}
 			/>
 		</div>
 	);

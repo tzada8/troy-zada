@@ -21,7 +21,6 @@ function Portfolio() {
 			</ul>
 		);
 	}
-
 	const codingProjectCardsDisplay = displayProjectData(portfolioCodingData);
 	const comProjectCardsDisplay = displayProjectData(portfolioComData);
 
@@ -29,9 +28,7 @@ function Portfolio() {
 		<div>
 			<Subtitle icon="fas fa-code" label="Coding Projects" />
 			{codingProjectCardsDisplay}
-
 			<GroupsDivider />
-
 			<Subtitle icon="fas fa-comments" label="Communication Projects" />
 			{comProjectCardsDisplay}
 		</div>
