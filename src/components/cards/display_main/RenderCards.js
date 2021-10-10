@@ -1,7 +1,7 @@
 import React from "react";
 
 // MENU CONSTANTS FOR CARD TITLES
-import { NAVBAR_CATEGORIES, PAGE_NOT_FOUND } from "../../Constants";
+import { navbarCategories, PAGE_NOT_FOUND } from "../../Constants";
 
 // CARDS
 import Home from "../home/Home";
@@ -24,7 +24,7 @@ function RenderCards(props) {
 			{/* EXPERIENCE */}
 			<CreateCards
 				isActive={props.experience}
-				title={NAVBAR_CATEGORIES[1].label}
+				title={navbarCategories.experience.label}
 				content={<Experience />}
 				quotation="The only source of knowledge is experience"
 				author="Albert Einstein"
@@ -32,7 +32,7 @@ function RenderCards(props) {
 			{/* SKILLS */}
 			<CreateCards
 				isActive={props.skills}
-				title={NAVBAR_CATEGORIES[2].label}
+				title={navbarCategories.skills.label}
 				content={<Skills />}
 				quotation="Tell me and I forget, teach me and I may remember, involve me and I learn"
 				author="Benjamin Franklin"
@@ -40,7 +40,7 @@ function RenderCards(props) {
 			{/* PORTFOLIO */}
 			<CreateCards
 				isActive={props.portfolio}
-				title={NAVBAR_CATEGORIES[3].label}
+				title={navbarCategories.portfolio.label}
 				content={<Portfolio />}
 				quotation="As practice makes perfect, I cannot but make progress; each drawing one makes, each study one paints, is a step forward"
 				author="Vincent Van Gogh"
@@ -49,7 +49,7 @@ function RenderCards(props) {
 			{/* "A capacity, and taste, for reading gives access to whatever has already been discovered by others" - Abraham Lincoln */}
 			<CreateCards
 				isActive={props.blog}
-				title={NAVBAR_CATEGORIES[4].label}
+				title={navbarCategories.blog.label}
 				content={<Blog />}
 				quotation="The reading of all good books is like a conversation with the finest minds of past centuries"
 				author="Rene Descartes"
@@ -57,7 +57,7 @@ function RenderCards(props) {
 			{/* CONTACT */}
 			<CreateCards
 				isActive={props.contact}
-				title={NAVBAR_CATEGORIES[5].label}
+				title={navbarCategories.contact.label}
 				content={<Contact />}
 				quotation="The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience"
 				author="Eleanor Roosevelt"

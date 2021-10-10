@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { NAVBAR_CATEGORIES } from "../Constants";
+import { navbarCategories } from "../Constants";
 import "./Navbar.css";
 
 function Navbar(props) {
@@ -11,12 +11,13 @@ function Navbar(props) {
 	const closeMobileMenu = () => setClick(false);
 
 	const navlinkIdMenu = "-MENU";
-	const homeId = NAVBAR_CATEGORIES[0].label + navlinkIdMenu;
+	const homeData = navbarCategories.home;
+	const homeId = homeData.label + navlinkIdMenu;
 
 	const navbarLogoDisplay = (
 		<Link
 			exact
-			to={NAVBAR_CATEGORIES[0].path}
+			to={homeData.path}
 			className="navbar-logo"
 			onClick={() => {
 				closeMobileMenu();
@@ -27,7 +28,7 @@ function Navbar(props) {
 		</Link>
 	);
 
-	const navbarMobileIcon = (
+	const navbarMobileIconDisplay = (
 		<div className="menu-icon" onClick={handleClick}>
 			<i className={click ? "fas fa-times" : "fas fa-bars"} />
 		</div>
@@ -35,14 +36,16 @@ function Navbar(props) {
 
 	const navbarDisplay = (
 		<ul className={click ? "nav-menu active" : "nav-menu"}>
-			{NAVBAR_CATEGORIES.map((item) => {
-				const itemId = item.label + navlinkIdMenu;
+			{Object.keys(navbarCategories).map((key) => {
+				const itemLabel = navbarCategories[key].label;
+				const itemPath = navbarCategories[key].path;
+				const itemId = itemLabel + navlinkIdMenu;
 				return (
 					<NavLink
-						key={item.label}
+						key={itemLabel}
 						id={itemId}
 						exact
-						to={item.path}
+						to={itemPath}
 						className="nav-links"
 						activeClassName="nav-links-active"
 						onClick={() => {
@@ -50,7 +53,7 @@ function Navbar(props) {
 							handleNavLocation(itemId);
 						}}
 					>
-						{item.label}
+						{itemLabel}
 					</NavLink>
 				);
 			})}
@@ -73,7 +76,7 @@ function Navbar(props) {
 					{/* TROY ZADA HEADER/LOGO */}
 					{navbarLogoDisplay}
 					{/* FOR MOBILE VIEW, HAVE 3 BARS ICON WITH NAVBAR ITEMS BELOW */}
-					{navbarMobileIcon}
+					{navbarMobileIconDisplay}
 					{/* LIST OF NAVBAR ITEMS */}
 					{navbarDisplay}
 				</div>
