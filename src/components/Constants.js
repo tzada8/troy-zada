@@ -1,11 +1,14 @@
 // NAVBAR CATEGORIES
-export const HOME = "HOME";
-export const PORTFOLIO = "PORTFOLIO";
-export const SKILLS = "SKILLS";
-export const EXPERIENCE = "EXPERIENCE";
-export const BLOG = "BLOG";
-export const CONTACT = "CONTACT";
 export const PAGE_NOT_FOUND = "PAGE NOT FOUND";
+
+export const NAVBAR_CATEGORIES = [
+	{ label: "HOME", path: "/" },
+	{ label: "EXPERIENCE", path: "/experience" },
+	{ label: "SKILLS", path: "/skills" },
+	{ label: "PORTFOLIO", path: "/portfolio" },
+	{ label: "BLOG", path: "/blog" },
+	{ label: "CONTACT", path: "/contact" },
+];
 
 // SOCIAL MEDIA LINKS / CONTACT
 export const LINKEDIN_LINK = "https://www.linkedin.com/in/troy-zada";

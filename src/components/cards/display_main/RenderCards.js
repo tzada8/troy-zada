@@ -1,14 +1,7 @@
 import React from "react";
 
 // MENU CONSTANTS FOR CARD TITLES
-import {
-   EXPERIENCE,
-   SKILLS,
-   PORTFOLIO,
-   BLOG,
-   CONTACT,
-   PAGE_NOT_FOUND,
-} from "../../Constants";
+import { NAVBAR_CATEGORIES, PAGE_NOT_FOUND } from "../../Constants";
 
 // CARDS
 import Home from "../home/Home";
@@ -24,61 +17,61 @@ import PageNotFound from "../content/page_not_found/PageNotFound";
 
 // DETERMINES WHICH CARD SHOULD BE RENDERED TO/VISIBLE ON THE SCREEN
 function RenderCards(props) {
-   return (
-      <div>
-         {/* HOME */}
-         <Home isOnlyComp={props.home} />
-         {/* EXPERIENCE */}
-         <CreateCards
-            isActive={props.experience}
-            title={EXPERIENCE}
-            content={<Experience />}
-            quotation="The only source of knowledge is experience"
-            author="Albert Einstein"
-         />
-         {/* SKILLS */}
-         <CreateCards
-            isActive={props.skills}
-            title={SKILLS}
-            content={<Skills />}
-            quotation="Tell me and I forget, teach me and I may remember, involve me and I learn"
-            author="Benjamin Franklin"
-         />
-         {/* PORTFOLIO */}
-         <CreateCards
-            isActive={props.portfolio}
-            title={PORTFOLIO}
-            content={<Portfolio />}
-            quotation="As practice makes perfect, I cannot but make progress; each drawing one makes, each study one paints, is a step forward"
-            author="Vincent Van Gogh"
-         />
-         {/* BLOG */}
-         {/* "A capacity, and taste, for reading gives access to whatever has already been discovered by others" - Abraham Lincoln */}
-         <CreateCards
-            isActive={props.blog}
-            title={BLOG}
-            content={<Blog />}
-            quotation="The reading of all good books is like a conversation with the finest minds of past centuries"
-            author="Rene Descartes"
-         />
-         {/* CONTACT */}
-         <CreateCards
-            isActive={props.contact}
-            title={CONTACT}
-            content={<Contact />}
-            quotation="The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience"
-            author="Eleanor Roosevelt"
-         />
-         {/* PAGE NOT FOUND */}
-         <CreateCards
-            isActive={props.pageNotFound}
-            title={PAGE_NOT_FOUND}
-            content={<PageNotFound />}
-            quotation="Understanding a question is half the answer"
-            author="Socrates"
-         />
-      </div>
-   );
+	return (
+		<div>
+			{/* HOME */}
+			<Home isOnlyComp={props.home} />
+			{/* EXPERIENCE */}
+			<CreateCards
+				isActive={props.experience}
+				title={NAVBAR_CATEGORIES[1].label}
+				content={<Experience />}
+				quotation="The only source of knowledge is experience"
+				author="Albert Einstein"
+			/>
+			{/* SKILLS */}
+			<CreateCards
+				isActive={props.skills}
+				title={NAVBAR_CATEGORIES[2].label}
+				content={<Skills />}
+				quotation="Tell me and I forget, teach me and I may remember, involve me and I learn"
+				author="Benjamin Franklin"
+			/>
+			{/* PORTFOLIO */}
+			<CreateCards
+				isActive={props.portfolio}
+				title={NAVBAR_CATEGORIES[3].label}
+				content={<Portfolio />}
+				quotation="As practice makes perfect, I cannot but make progress; each drawing one makes, each study one paints, is a step forward"
+				author="Vincent Van Gogh"
+			/>
+			{/* BLOG */}
+			{/* "A capacity, and taste, for reading gives access to whatever has already been discovered by others" - Abraham Lincoln */}
+			<CreateCards
+				isActive={props.blog}
+				title={NAVBAR_CATEGORIES[4].label}
+				content={<Blog />}
+				quotation="The reading of all good books is like a conversation with the finest minds of past centuries"
+				author="Rene Descartes"
+			/>
+			{/* CONTACT */}
+			<CreateCards
+				isActive={props.contact}
+				title={NAVBAR_CATEGORIES[5].label}
+				content={<Contact />}
+				quotation="The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience"
+				author="Eleanor Roosevelt"
+			/>
+			{/* PAGE NOT FOUND */}
+			<CreateCards
+				isActive={props.pageNotFound}
+				title={PAGE_NOT_FOUND}
+				content={<PageNotFound />}
+				quotation="Understanding a question is half the answer"
+				author="Socrates"
+			/>
+		</div>
+	);
 }
 
 export default RenderCards;
