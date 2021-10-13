@@ -9,12 +9,14 @@ function Portfolio() {
 		return (
 			<ul>
 				{Object.keys(data).map((key) => {
+					const currentProject = data[key];
 					return (
 						<ProjectCard
-							path={data[key].path}
-							projectTitle={data[key].title}
-							src={data[key].image}
-							text={data[key].briefDescription}
+							path={currentProject.path}
+							projectTitle={currentProject.title}
+							src={currentProject.image}
+							text={currentProject.briefDescription}
+							key={key}
 						/>
 					);
 				})}
