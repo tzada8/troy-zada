@@ -1,68 +1,102 @@
 import React from "react";
 import Subtitle from "../extra_components/subtitle/Subtitle";
-import GroupsDivider from "../extra_components/groups_divider/GroupsDivider";
-import LinkToContact from "../extra_components/link_to_contact/LinkToContact";
 import WorkCard from "./work_card/WorkCard";
+import LinkToContact from "../extra_components/link_to_contact/LinkToContact";
+import GroupsDivider from "../extra_components/groups_divider/GroupsDivider";
+import { experienceData } from "../../../../data/ExperienceData";
 import "./Experience.css";
 
 function Experience() {
-   return (
-      <div>
-         <LinkToContact />
-         <Subtitle icon="fas fa-university" label="Education" />
-         <WorkCard
-            title="Management Engineering"
-            company="University of Waterloo"
-            duration=", Sept 2019 - Present"
-            description="Bachelor of Applied Science candidate developing expertise in data analytics, information systems, operations management, and organizational behaviour. Some important courses to highlight include: Algorithms and Data Structures (Java), Databases and Software Design (SQL), Statistics (R), Optimization, and Organizational Behaviour"
-         />
+	return (
+		<div>
+			<LinkToContact />
+			<Subtitle icon="fas fa-university" label="Education" />
+			<WorkCard
+				title={experienceData.education.managementEngineering.title}
+				company={experienceData.education.managementEngineering.company}
+				duration={experienceData.education.managementEngineering.duration}
+				description={
+					experienceData.education.managementEngineering.description
+				}
+			/>
 
-         <GroupsDivider />
+			<GroupsDivider />
 
-         <Subtitle icon="fas fa-briefcase" label="Work Experience" />
-         <WorkCard
-            title="Programming (Java) Teaching Assistant"
-            company="University of Waterloo"
-            duration=", Jan 2021 - Apr 2021"
-            description="Generated unique content and explanations to teach complex Java programming concepts to students. Validated all content released from the teaching end to ensure all content was sound. Reviewed student's assessments to ensure answers were correct, and if not, spent time discussing and explaining the correct approach to them"
-         />
-         <WorkCard
-            title="Design and Manufacturing Technician"
-            company="EngineeringCPR"
-            duration=", Apr 2020 - Sept 2020"
-            description="Worked in a manufacturing environment assembling fixtures through soldering, comprehending electrical schematics, and optimizing component placements. Primary focus involved manufacturing test fixtures as well as creating corresponding work instructions in order to test 1200 ventilator systems (being required due to COVID-19)"
-         />
-         <WorkCard
-            title="Machine Shop Assistant"
-            company="CANASTAMPI inc."
-            duration=", June 2019 - Aug 2019"
-            description="Operated and programmed numerous machines including a CNC Milling Machine, Lathe, Drill Press, and Pantograph to engrave, polish, and mill various parts. Then, validated that each part precisely met drawing specifications"
-         />
+			<Subtitle icon="fas fa-briefcase" label="Work Experience" />
+			<WorkCard
+				title={
+					experienceData.workExperience.programmingTeachingAssistant.title
+				}
+				company={
+					experienceData.workExperience.programmingTeachingAssistant
+						.company
+				}
+				duration={
+					experienceData.workExperience.programmingTeachingAssistant
+						.duration
+				}
+				description={
+					experienceData.workExperience.programmingTeachingAssistant
+						.description
+				}
+			/>
+			<WorkCard
+				title={
+					experienceData.workExperience.designAndManufacturingTechnician
+						.title
+				}
+				company={
+					experienceData.workExperience.designAndManufacturingTechnician
+						.company
+				}
+				duration={
+					experienceData.workExperience.designAndManufacturingTechnician
+						.duration
+				}
+				description={
+					experienceData.workExperience.designAndManufacturingTechnician
+						.description
+				}
+			/>
+			<WorkCard
+				title={experienceData.workExperience.machineShopAssistant.title}
+				company={experienceData.workExperience.machineShopAssistant.company}
+				duration={
+					experienceData.workExperience.machineShopAssistant.duration
+				}
+				description={
+					experienceData.workExperience.machineShopAssistant.description
+				}
+			/>
 
-         <GroupsDivider />
+			<GroupsDivider />
 
-         <Subtitle icon="fas fa-award" label="Awards" />
-         <WorkCard
-            title="Gonzaga Leadership Award"
-            duration="June 2019"
-            description="Awarded out of 500 students for being an effective, responsible, and confident problem solver within the school community"
-         />
-         <WorkCard
-            title="Michael Kim Award"
-            duration="June 2019"
-            description="Awarded out of 400 student-athletes for outstanding contributions and commitment to the athletic community"
-         />
-         <WorkCard
-            title="Knights of Colombus - St. Faustina Award"
-            duration="June 2019"
-            description="Awarded out of 500 students for consistently demonstrating an exemplary ethical attitude towards fellow students"
-         />
+			<Subtitle icon="fas fa-award" label="Awards" />
+			<WorkCard
+				title={experienceData.awards.gonzagaLeadershipAward.title}
+				duration={experienceData.awards.gonzagaLeadershipAward.duration}
+				description={
+					experienceData.awards.gonzagaLeadershipAward.description
+				}
+			/>
+			<WorkCard
+				title={experienceData.awards.michaelKimAward.title}
+				duration={experienceData.awards.michaelKimAward.duration}
+				description={experienceData.awards.michaelKimAward.description}
+			/>
+			<WorkCard
+				title={experienceData.awards.knightsOfColombusAward.title}
+				duration={experienceData.awards.knightsOfColombusAward.duration}
+				description={
+					experienceData.awards.knightsOfColombusAward.description
+				}
+			/>
 
-         <GroupsDivider />
+			<GroupsDivider />
 
-         <LinkToContact />
-      </div>
-   );
+			<LinkToContact />
+		</div>
+	);
 }
 
 export default Experience;
