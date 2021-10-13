@@ -1,7 +1,7 @@
 import React from "react";
 
 // MENU CONSTANTS FOR CARD TITLES
-import { navbarCategories, pageNotFound } from "../../Constants";
+import { navbarCategories, pageNotFound } from "../../../data/Constants";
 import CreateCards from "./CreateCards";
 import Home from "../home/Home";
 

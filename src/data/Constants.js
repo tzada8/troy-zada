@@ -1,10 +1,10 @@
-import Home from "./cards/home/Home";
-import Portfolio from "./cards/content/portfolio/Portfolio";
-import Skills from "./cards/content/skills/Skills";
-import Experience from "./cards/content/experience/Experience";
-import Blog from "./cards/content/blog/Blog";
-import Contact from "./cards/content/contact/Contact";
-import PageNotFound from "./cards/content/page_not_found/PageNotFound";
+import Home from "../components/cards/home/Home";
+import Portfolio from "../components/cards/content/portfolio/Portfolio";
+import Skills from "../components/cards/content/skills/Skills";
+import Experience from "../components/cards/content/experience/Experience";
+import Blog from "../components/cards/content/blog/Blog";
+import Contact from "../components/cards/content/contact/Contact";
+import PageNotFound from "../components/cards/content/page_not_found/PageNotFound";
 
 export const pageNotFound = {
 	label: "PAGE NOT FOUND",

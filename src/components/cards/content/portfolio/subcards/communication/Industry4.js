@@ -1,6 +1,6 @@
 import React from "react";
 import ComProjectPost from "../../project_post/communication/ComProjectPost";
-import { portfolioComData } from "../../PortfolioData";
+import { portfolioComData } from "../../../../../../data/PortfolioData";
 import Subheading from "../../../extra_components/paragraph/Subheading";
 import Paragraph from "../../../extra_components/paragraph/Paragraph";
 

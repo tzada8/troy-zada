@@ -1,6 +1,6 @@
 import React from "react";
 import CodingProjectPost from "../../project_post/coding/CodingProjectPost";
-import { portfolioCodingData } from "../../PortfolioData";
+import { portfolioCodingData } from "../../../../../../data/PortfolioData";
 import Subheading from "../../../extra_components/paragraph/Subheading";
 import Paragraph from "../../../extra_components/paragraph/Paragraph";
 import TypeOfTech from "./tech_stack/TypeOfTech";

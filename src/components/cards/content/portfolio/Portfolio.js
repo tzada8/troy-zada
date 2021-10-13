@@ -2,7 +2,10 @@ import React from "react";
 import Subtitle from "../extra_components/subtitle/Subtitle";
 import ProjectCard from "./project_card/ProjectCard";
 import GroupsDivider from "../extra_components/groups_divider/GroupsDivider";
-import { portfolioCodingData, portfolioComData } from "./PortfolioData";
+import {
+	portfolioCodingData,
+	portfolioComData,
+} from "../../../../data/PortfolioData";
 
 function Portfolio() {
 	function displayProjectData(data) {
