@@ -34,7 +34,7 @@ function Navbar(props) {
 		</div>
 	);
 
-	const navbarDisplay = (
+	const navbarItemsDisplay = (
 		<ul className={click ? "nav-menu active" : "nav-menu"}>
 			{Object.keys(navbarCategories).map((key) => {
 				const itemLabel = navbarCategories[key].label;
@@ -60,25 +60,22 @@ function Navbar(props) {
 		</ul>
 	);
 
-	// HAVE NAVMENU LOCATION MOVE DEPENDING ON ACTIVE COMPONENT
-	function handleNavLocation(id) {
+	// Move nav menu to center/left of screen depending on active component
+	const handleNavLocation = (id) => {
 		if (document.getElementById(id).id === homeId) {
 			setMidNavLocation(true);
 		} else {
 			setMidNavLocation(false);
 		}
-	}
+	};
 
 	return (
 		<div>
 			<nav className={midNavLocation ? "middle" : "left"}>
 				<div className="navbar-container">
-					{/* TROY ZADA HEADER/LOGO */}
 					{navbarLogoDisplay}
-					{/* FOR MOBILE VIEW, HAVE 3 BARS ICON WITH NAVBAR ITEMS BELOW */}
 					{navbarMobileIconDisplay}
-					{/* LIST OF NAVBAR ITEMS */}
-					{navbarDisplay}
+					{navbarItemsDisplay}
 				</div>
 			</nav>
 		</div>
