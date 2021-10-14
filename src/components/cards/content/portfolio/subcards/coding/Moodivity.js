@@ -1,13 +1,13 @@
 import React from "react";
 import CodingProjectPost from "../../project_post/coding/CodingProjectPost";
-import { portfolioCodingData } from "../../../../../../data/PortfolioData";
+import { portfolioData } from "../../../../../../data/PortfolioData";
 import Subheading from "../../../extra_components/paragraph/Subheading";
 import Paragraph from "../../../extra_components/paragraph/Paragraph";
 import TypeOfTech from "./tech_stack/TypeOfTech";
 import TechListItem from "./tech_stack/TechListItem";
 
 function Moodivity() {
-	const moodivity = portfolioCodingData.moodivity;
+	const moodivity = portfolioData.coding.moodivity;
 	return (
 		<div>
 			<CodingProjectPost

@@ -2,10 +2,7 @@ import React from "react";
 import Subtitle from "../extra_components/subtitle/Subtitle";
 import ProjectCard from "./project_card/ProjectCard";
 import GroupsDivider from "../extra_components/groups_divider/GroupsDivider";
-import {
-	portfolioCodingData,
-	portfolioComData,
-} from "../../../../data/PortfolioData";
+import { portfolioData } from "../../../../data/PortfolioData";
 
 function Portfolio() {
 	function displayProjectData(data) {
@@ -26,8 +23,10 @@ function Portfolio() {
 			</ul>
 		);
 	}
-	const codingProjectCardsDisplay = displayProjectData(portfolioCodingData);
-	const comProjectCardsDisplay = displayProjectData(portfolioComData);
+	const codingProjectCardsDisplay = displayProjectData(portfolioData.coding);
+	const comProjectCardsDisplay = displayProjectData(
+		portfolioData.communication
+	);
 
 	return (
 		<div>

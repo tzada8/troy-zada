@@ -1,11 +1,11 @@
 import React from "react";
 import CodingProjectPost from "../../project_post/coding/CodingProjectPost";
-import { portfolioCodingData } from "../../../../../../data/PortfolioData";
+import { portfolioData } from "../../../../../../data/PortfolioData";
 import Subheading from "../../../extra_components/paragraph/Subheading";
 import Paragraph from "../../../extra_components/paragraph/Paragraph";
 
 function BlackJack() {
-	const blackJack = portfolioCodingData.blackJack;
+	const blackJack = portfolioData.coding.blackJack;
 	return (
 		<div>
 			<CodingProjectPost

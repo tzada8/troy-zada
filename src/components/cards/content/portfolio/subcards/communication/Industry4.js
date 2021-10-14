@@ -1,11 +1,11 @@
 import React from "react";
 import ComProjectPost from "../../project_post/communication/ComProjectPost";
-import { portfolioComData } from "../../../../../../data/PortfolioData";
+import { portfolioData } from "../../../../../../data/PortfolioData";
 import Subheading from "../../../extra_components/paragraph/Subheading";
 import Paragraph from "../../../extra_components/paragraph/Paragraph";
 
 function Industry4() {
-	const industry4 = portfolioComData.industry4;
+	const industry4 = portfolioData.communication.industry4;
 	return (
 		<div>
 			<ComProjectPost

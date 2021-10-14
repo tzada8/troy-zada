@@ -1,11 +1,11 @@
 import React from "react";
 import ComProjectPost from "../../project_post/communication/ComProjectPost";
-import { portfolioComData } from "../../../../../../data/PortfolioData";
+import { portfolioData } from "../../../../../../data/PortfolioData";
 import Subheading from "../../../extra_components/paragraph/Subheading";
 import Paragraph from "../../../extra_components/paragraph/Paragraph";
 
 function LiteratureFair() {
-	const literatureFair = portfolioComData.literatureFair;
+	const literatureFair = portfolioData.communication.literatureFair;
 	return (
 		<div>
 			<ComProjectPost
