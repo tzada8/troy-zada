@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // --------------------------------------------------------------------------------------------
 // PERHAPS WILL COMBINE blogData, portfolioData, experienceData, etc. all into navbarCategories
 // --------------------------------------------------------------------------------------------
+// comment to test repo rename from 'TroyZada' to 'troy-zada'
 import { navbarCategories } from "./data/Constants";
 import { blogData } from "./data/BlogData";
 import { portfolioData } from "./data/PortfolioData";
