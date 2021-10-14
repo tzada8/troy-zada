@@ -9,6 +9,8 @@ import pathfindingAlgorithmsImage from "../images/portfolio/coding/pathfinding-a
 import literatureFairImage from "../images/portfolio/communication/literature-fair.png";
 import industry4Image from "../images/portfolio/communication/industry4.png";
 
+import { routes } from "./Routes";
+
 // General GitHub links
 const github = "https://github.com/";
 const githubTroyProfile = github + "tzada8/";
@@ -21,7 +23,7 @@ export const portfolioData = {
 	coding: {
 		moodivity: {
 			title: "Moodivity",
-			path: "/portfolio/moodivity",
+			path: routes.portfolio.moodivity.path,
 			image: moodivityImage,
 			briefDescription:
 				"Moodivity is a web application that improves productivity for users while guiding them to be more in tune with their mental health",
@@ -31,7 +33,7 @@ export const portfolioData = {
 		},
 		troyZadaWebsite: {
 			title: "Troy Zada Website",
-			path: "/portfolio/troy-zada",
+			path: routes.portfolio.troyZada.path,
 			image: troyZadaImage,
 			briefDescription:
 				"A website explaining who I am including experiences, qualities I possess, contact information, and more",
@@ -41,7 +43,7 @@ export const portfolioData = {
 		},
 		pathfinding: {
 			title: "Pathfinding Algorithms",
-			path: "/portfolio/pathfinding",
+			path: routes.portfolio.pathfinding.path,
 			image: pathfindingAlgorithmsImage,
 			briefDescription:
 				"Compares various pathfinding algorithms including Breadth-First Search, Depth-First Search, A*, and Dijkstra",
@@ -51,7 +53,7 @@ export const portfolioData = {
 		},
 		sudokuSolver: {
 			title: "Sudoku Solver",
-			path: "/portfolio/sudoku-solver",
+			path: routes.portfolio.sudokuSolver.path,
 			image: sudokuSolverImage,
 			briefDescription:
 				"Uses the backtracking algorithm to solve any valid sudoku board",
@@ -61,7 +63,7 @@ export const portfolioData = {
 		},
 		blackJack: {
 			title: "BlackJack",
-			path: "/portfolio/blackjack",
+			path: routes.portfolio.blackJack.path,
 			image: blackJackImage,
 			briefDescription:
 				"Play through a game of BlackJack against the dealer, starting with a given $1000",
@@ -71,7 +73,7 @@ export const portfolioData = {
 		},
 		dss: {
 			title: "Decision Support System",
-			path: "/portfolio/decision-support-system",
+			path: routes.portfolio.dss.path,
 			image: decisionSupportSystemImage,
 			briefDescription:
 				"Simplifies university group projects by aiding in decision making while also maintaining a high degree of organization for the group",
@@ -83,7 +85,7 @@ export const portfolioData = {
 	communication: {
 		literatureFair: {
 			title: "Literature Fair",
-			path: "/portfolio/literature-fair",
+			path: routes.portfolio.literatureFair.path,
 			image: literatureFairImage,
 			briefDescription:
 				"Focuses on the literary theory of existentialism, being that each individual is viewed as a free and responsible agent capable of decision-making to determine their lives",
@@ -91,7 +93,7 @@ export const portfolioData = {
 		},
 		industry4: {
 			title: "Industry 4.0",
-			path: "/portfolio/industry4",
+			path: routes.portfolio.industry4.path,
 			image: industry4Image,
 			briefDescription:
 				"A high school level analytic-based competition revolving around the fourth industrial revolution and automatization of production",

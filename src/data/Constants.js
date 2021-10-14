@@ -5,6 +5,7 @@ import Experience from "../components/cards/content/experience/Experience";
 import Blog from "../components/cards/content/blog/Blog";
 import Contact from "../components/cards/content/contact/Contact";
 import PageNotFound from "../components/cards/content/page_not_found/PageNotFound";
+import { routes } from "./Routes";
 
 export const pageNotFound = {
 	label: "PAGE NOT FOUND",
@@ -16,19 +17,19 @@ export const pageNotFound = {
 export const navbarCategories = {
 	home: {
 		label: "HOME",
-		path: "/",
+		path: routes.home.path,
 		component: <Home />,
 	},
 	experience: {
 		label: "EXPERIENCE",
-		path: "/experience",
+		path: routes.experience.path,
 		component: <Experience />,
 		quotation: "The only source of knowledge is experience",
 		author: "Albert Einstein",
 	},
 	skills: {
 		label: "SKILLS",
-		path: "/skills",
+		path: routes.skills.path,
 		component: <Skills />,
 		quotation:
 			"Tell me and I forget, teach me and I may remember, involve me and I learn",
@@ -36,7 +37,7 @@ export const navbarCategories = {
 	},
 	portfolio: {
 		label: "PORTFOLIO",
-		path: "/portfolio",
+		path: routes.portfolio.path,
 		component: <Portfolio />,
 		quotation:
 			"As practice makes perfect, I cannot but make progress; each drawing one makes, each study one paints, is a step forward",
@@ -44,7 +45,7 @@ export const navbarCategories = {
 	},
 	blog: {
 		label: "BLOG",
-		path: "/blog",
+		path: routes.blog.path,
 		component: <Blog />,
 		quotation:
 			"The reading of all good books is like a conversation with the finest minds of past centuries",
@@ -52,7 +53,7 @@ export const navbarCategories = {
 	},
 	contact: {
 		label: "CONTACT",
-		path: "/contact",
+		path: routes.contact.path,
 		component: <Contact />,
 		quotation:
 			"The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience",
