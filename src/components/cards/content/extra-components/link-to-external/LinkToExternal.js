@@ -3,17 +3,15 @@ import "./LinkToExternal.css";
 
 function LinkToExternal(props) {
 	return (
-		<div>
-			<a
-				className="link-to-external background-change"
-				href={props.path}
-				target="_blank"
-				rel="noreferrer"
-			>
-				{props.label}
-				<i className={"icon-link " + props.icon} />
-			</a>
-		</div>
+		<a
+			className="link-to-external background-change"
+			href={props.path}
+			target="_blank"
+			rel="noreferrer"
+		>
+			{props.label}
+			<i className={"icon-link " + props.icon} />
+		</a>
 	);
 }
 
