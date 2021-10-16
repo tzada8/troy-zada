@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SeeMoreLink from "../../extra-components/see-more-link/SeeMoreLink";
 import "./ProjectCard.css";
+import ImageWithLabel from "../../extra-components/image-with-label/ImageWithLabel";
 
 function ProjectCard(props) {
 	return (
@@ -10,13 +11,11 @@ function ProjectCard(props) {
 
 			<li className="project-container">
 				<Link className="project-content" to={props.path}>
-					<figure className="project-picwrap" data-category={props.label}>
-						<img
-							className="project-image"
-							src={props.src}
-							alt="Project"
-						/>
-					</figure>
+					<ImageWithLabel
+						label={props.label}
+						imageOnHover="zoom-in"
+						src={props.src}
+					/>
 					<div className="project-description-box">
 						<p className="project-description">{props.text}...</p>
 					</div>

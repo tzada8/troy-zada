@@ -1,18 +1,17 @@
 import React from "react";
-import GithubLink from "../../../extra-components/github-link/GithubLink";
-import YoutubeLink from "../../../extra-components/youtube-link/YoutubeLink";
+import ImageWithLabel from "../../extra-components/image-with-label/ImageWithLabel";
+import GithubLink from "../../extra-components/github-link/GithubLink";
+import YoutubeLink from "../../extra-components/youtube-link/YoutubeLink";
 import "./CodingProjectPost.css";
 
 function CodingProjectPost(props) {
 	return (
 		<div>
-			<figure className="project-picwrap" data-category={props.label}>
-				<img
-					className="project-image post-specific"
-					src={props.src}
-					alt="Project Post"
-				/>
-			</figure>
+			<ImageWithLabel
+				label={props.label}
+				imageOnHover="no-zoom-in"
+				src={props.src}
+			/>
 			<div className="project-github-youtube">
 				<div className="project-gh">
 					<GithubLink path={props.github} />

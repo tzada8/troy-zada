@@ -1,5 +1,5 @@
 import React from "react";
-import ComProjectPost from "../../../components/cards/content/portfolio/project-post/communication/ComProjectPost";
+import ComProjectPost from "../../../components/cards/content/portfolio/project-post/ComProjectPost";
 import { portfolioData } from "../PortfolioData";
 import Subheading from "../../components/Subheading";
 import Paragraph from "../../components/Paragraph";
