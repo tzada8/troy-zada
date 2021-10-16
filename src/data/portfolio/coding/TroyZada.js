@@ -1,5 +1,5 @@
 import React from "react";
-import CodingProjectPost from "../../../components/cards/content/portfolio/project-post/CodingProjectPost";
+import ProjectPost from "../../../components/cards/content/portfolio/project-post/ProjectPost";
 import { portfolioData } from "../PortfolioData";
 import Subheading from "../../components/Subheading";
 import Paragraph from "../../components/Paragraph";
@@ -10,12 +10,13 @@ function TroyZada() {
 	const troyZadaWebsite = portfolioData.coding.troyZadaWebsite;
 	return (
 		<div>
-			<CodingProjectPost
+			<ProjectPost
 				label={troyZadaWebsite.label}
 				src={troyZadaWebsite.image}
 				date={troyZadaWebsite.date}
 				github={troyZadaWebsite.github}
 				youtube={troyZadaWebsite.youtube}
+				isCoding={true}
 			/>
 
 			<Subheading subheading="About the Application" />

@@ -1,5 +1,5 @@
 import React from "react";
-import CodingProjectPost from "../../../components/cards/content/portfolio/project-post/CodingProjectPost";
+import ProjectPost from "../../../components/cards/content/portfolio/project-post/ProjectPost";
 import { portfolioData } from "../PortfolioData";
 import Subheading from "../../components/Subheading";
 import Paragraph from "../../components/Paragraph";
@@ -10,12 +10,13 @@ function Moodivity() {
 	const moodivity = portfolioData.coding.moodivity;
 	return (
 		<div>
-			<CodingProjectPost
+			<ProjectPost
 				label={moodivity.label}
 				src={moodivity.image}
 				date={moodivity.date}
 				github={moodivity.github}
 				youtube={moodivity.youtube}
+				isCoding={true}
 			/>
 
 			<Subheading subheading="About the Application" />

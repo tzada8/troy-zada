@@ -1,5 +1,5 @@
 import React from "react";
-import CodingProjectPost from "../../../components/cards/content/portfolio/project-post/CodingProjectPost";
+import ProjectPost from "../../../components/cards/content/portfolio/project-post/ProjectPost";
 import { portfolioData } from "../PortfolioData";
 import Subheading from "../../components/Subheading";
 import Paragraph from "../../components/Paragraph";
@@ -10,12 +10,13 @@ function Pathfinding() {
 	const pathfinding = portfolioData.coding.pathfinding;
 	return (
 		<div>
-			<CodingProjectPost
+			<ProjectPost
 				label={pathfinding.label}
 				src={pathfinding.image}
 				date={pathfinding.date}
 				github={pathfinding.github}
 				youtube={pathfinding.youtube}
+				isCoding={true}
 			/>
 
 			<Subheading subheading="About the Application" />
