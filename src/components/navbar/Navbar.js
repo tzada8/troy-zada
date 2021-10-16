@@ -46,7 +46,7 @@ function Navbar(props) {
 						id={itemId}
 						exact
 						to={itemPath}
-						className="nav-links"
+						className="nav-links background-change"
 						activeClassName="nav-links-active"
 						onClick={() => {
 							closeMobileMenu();

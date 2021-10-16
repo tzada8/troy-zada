@@ -1,0 +1,14 @@
+.background-change {
+	background: linear-gradient(
+		to right,
+		var(--DARK_BLUE) 50%,
+		var(--REG_BLUE) 50%
+	);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: background-position 0.4s linear;
+}
+
+.background-change:hover {
+	background-position: left bottom;
+}

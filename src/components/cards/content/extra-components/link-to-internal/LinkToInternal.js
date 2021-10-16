@@ -4,7 +4,7 @@ import "./LinkToInternal.css";
 
 function LinkToInternal(props) {
 	return (
-		<Link className="link-to-internal" to={props.path}>
+		<Link className="link-to-internal background-change" to={props.path}>
 			{props.label}
 			<i className={"icon-link " + props.icon} />
 		</Link>

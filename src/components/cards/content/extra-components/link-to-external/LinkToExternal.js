@@ -5,7 +5,7 @@ function LinkToExternal(props) {
 	return (
 		<div>
 			<a
-				className="link-to-external"
+				className="link-to-external background-change"
 				href={props.path}
 				target="_blank"
 				rel="noreferrer"

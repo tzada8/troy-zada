@@ -1,3 +1,5 @@
+@import "../../../../../styles/HoverBackgroundChange.css";
+
 .link-to-internal {
 	color: var(--WHITE);
 	display: block;
@@ -7,19 +9,6 @@
 	letter-spacing: 1px;
 	width: 100%;
 	border: 2px solid var(--GREY);
-
-	background: linear-gradient(
-		to right,
-		var(--DARK_BLUE) 50%,
-		var(--REG_BLUE) 50%
-	);
-	background-size: 200% 100%;
-	background-position: right bottom;
-	transition: background-position 0.4s linear;
-}
-
-.link-to-internal:hover {
-	background-position: left bottom;
 }
 
 i.icon-link {

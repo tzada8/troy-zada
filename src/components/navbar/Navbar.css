@@ -1,211 +1,199 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+@import "../../styles/HoverBackgroundChange.css";
 
 /* GLOBAL VARIABLE FOR NUMBER OF ITEMS */
 :root {
-   --NUM_OF_ITEMS: 6;
-   --NAV_MENU_SIZE: calc(var(--NUM_OF_ITEMS) * 30px);
+	--NUM_OF_ITEMS: 6;
+	--NAV_MENU_SIZE: calc(var(--NUM_OF_ITEMS) * 30px);
 }
 
 nav {
-   position: absolute;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 32px;
-   font-size: 16px;
-   z-index: 999;
-   font-weight: bold;
-   transition: margin-left 0.5s linear;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 32px;
+	font-size: 16px;
+	z-index: 999;
+	font-weight: bold;
+	transition: margin-left 0.5s linear;
 }
 
 .middle {
-   margin-left: calc(50% - (135px / 2 + 25.5%));
+	margin-left: calc(50% - (135px / 2 + 25.5%));
 }
 
 .left {
-   margin-left: calc(50% - (135px + 33%));
+	margin-left: calc(50% - (135px + 33%));
 }
 
 .navbar-container {
-   display: flex;
-   height: var(--NAV_MENU_SIZE);
-   max-width: 1500px;
-   display: table-column;
+	display: flex;
+	height: var(--NAV_MENU_SIZE);
+	max-width: 1500px;
+	display: table-column;
 }
 
 /* LOGO AS "TZ" */
 .navbar-logo {
-   background: linear-gradient(45deg, #056ba7 20%, #1fbcf5 50%, #056ba7 80%);
-   color: var(--WHITE);
-   font-family: "Merienda One", "Montserrat", Arial, sans-serif;
-   font-size: 50px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 90px;
-   width: 90px;
-   border-radius: 50%;
-   margin: 15px auto;
-   border: 2px solid var(--GREY);
-   transition: color 1s linear;
+	background: linear-gradient(45deg, #056ba7 20%, #1fbcf5 50%, #056ba7 80%);
+	color: var(--WHITE);
+	font-family: "Merienda One", "Montserrat", Arial, sans-serif;
+	font-size: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	margin: 15px auto;
+	border: 2px solid var(--GREY);
+	transition: color 1s linear;
 }
 
 .navbar-logo:hover {
-   color: #c7c1c1;
-   transition: color 1s linear;
+	color: #c7c1c1;
+	transition: color 1s linear;
 }
 
 .menu-icon {
-   display: none;
+	display: none;
 }
 
 .nav-menu {
-   justify-content: center;
-   align-items: center;
-   width: 135px;
-   text-align: left;
-   display: table;
+	justify-content: center;
+	align-items: center;
+	width: 135px;
+	text-align: left;
+	display: table;
 }
 
 .nav-item {
-   height: calc(var(--NAV_MENU_SIZE) / var(--NUM_OF_ITEMS));
+	height: calc(var(--NAV_MENU_SIZE) / var(--NUM_OF_ITEMS));
 }
 
 .nav-links {
-   color: var(--WHITE);
-   display: block;
-   margin-top: 5px;
-   padding: 4px 10px;
-   font-weight: normal;
-   border: 2px solid var(--GREY);
-
-   background: linear-gradient(
-      to right,
-      var(--DARK_BLUE) 50%,
-      var(--REG_BLUE) 50%
-   );
-   background-size: 200% 100%;
-   background-position: right bottom;
-   transition: background-position 0.4s linear;
-}
-
-.nav-links:hover {
-   background-position: left bottom;
+	color: var(--WHITE);
+	display: block;
+	margin-top: 5px;
+	padding: 4px 10px;
+	font-weight: normal;
+	border: 2px solid var(--GREY);
 }
 
 .nav-links-active {
-   background-position: left bottom;
+	background-position: left bottom;
 }
 
 /* MIGHT NEED TO ADJUST THE MAX-WIDTH DEPENDING ON CARD SIZES */
 
 /* IF SCREEN IS DESKTOP-SMALL VERSION, THEN HAVE FOLLOWING STYLES */
 @media screen and (max-width: 960px) {
-   nav {
-      background: var(--GREY);
-      position: fixed;
-      margin-top: 0;
-      width: 100vw;
-      font-size: 19px;
-      transition: none;
-   }
+	nav {
+		background: var(--GREY);
+		position: fixed;
+		margin-top: 0;
+		width: 100vw;
+		font-size: 19px;
+		transition: none;
+	}
 
-   .middle,
-   .left {
-      margin-left: 0;
-   }
+	.middle,
+	.left {
+		margin-left: 0;
+	}
 
-   .navbar-container {
-      height: 50px;
-      display: flex;
-   }
+	.navbar-container {
+		height: 50px;
+		display: flex;
+	}
 
-   /* LOGO AS "TZ" */
-   .navbar-logo {
-      background: linear-gradient(45deg, #056ba7 25%, #1fbcf5 50%, #056ba7 75%);
-      color: var(--WHITE);
-      font-family: "Merienda One";
-      position: absolute;
-      display: flex;
-      font-size: 21px;
-      align-items: center;
-      justify-content: center;
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      top: 0;
-      left: 0;
-      margin: 0 15px;
-      transform: translateY(13%);
-      border: 1px solid var(--BLACK);
-   }
+	/* LOGO AS "TZ" */
+	.navbar-logo {
+		background: linear-gradient(45deg, #056ba7 25%, #1fbcf5 50%, #056ba7 75%);
+		color: var(--WHITE);
+		font-family: "Merienda One";
+		position: absolute;
+		display: flex;
+		font-size: 21px;
+		align-items: center;
+		justify-content: center;
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+		top: 0;
+		left: 0;
+		margin: 0 15px;
+		transform: translateY(13%);
+		border: 1px solid var(--BLACK);
+	}
 
-   .menu-icon {
-      color: var(--WHITE);
-      position: absolute;
-      display: block;
-      top: 20%;
-      right: 30px;
-      font-size: 29px;
-      cursor: pointer;
-   }
+	.menu-icon {
+		color: var(--WHITE);
+		position: absolute;
+		display: block;
+		top: 20%;
+		right: 30px;
+		font-size: 29px;
+		cursor: pointer;
+	}
 
-   .fa-times {
-      font-size: 32px;
-   }
+	.fa-times {
+		font-size: 32px;
+	}
 
-   .nav-menu {
-      background: var(--REG_BLUE);
-      position: absolute;
-      display: block;
-      top: 50px;
-      right: -100%;
-      width: 35%;
-      height: calc(var(--NAV_MENU_SIZE) + 4px);
-      z-index: 1;
-      border-left: 3px solid var(--GREY);
-      border-bottom: 3px solid var(--GREY);
-      transition: right 0.5s linear;
-   }
+	.nav-menu {
+		background: var(--REG_BLUE);
+		position: absolute;
+		display: block;
+		top: 50px;
+		right: -100%;
+		width: 35%;
+		height: calc(var(--NAV_MENU_SIZE) + 4px);
+		z-index: 1;
+		border-left: 3px solid var(--GREY);
+		border-bottom: 3px solid var(--GREY);
+		transition: right 0.5s linear;
+	}
 
-   .nav-menu.active {
-      right: 0;
-      transition: right 0.5s ease;
-   }
+	.nav-menu.active {
+		right: 0;
+		transition: right 0.5s ease;
+	}
 
-   .nav-item {
-      padding: 0;
-   }
+	.nav-item {
+		padding: 0;
+	}
 
-   .nav-links {
-      background: var(--REG_BLUE);
-      margin-top: 0;
-      display: block;
-      align-content: center;
-      align-items: center;
-      text-align: right;
-      padding-right: 18%;
-      border: none;
-   }
+	.nav-links {
+		background: var(--REG_BLUE);
+		margin-top: 0;
+		display: block;
+		align-content: center;
+		align-items: center;
+		text-align: right;
+		padding-right: 18%;
+		border: none;
+	}
 
-   .nav-links:hover,
-   .nav-links-active {
-      background: var(--DARK_BLUE);
-   }
+	.nav-links:hover,
+	.nav-links-active {
+		background: var(--DARK_BLUE);
+	}
 }
 
 /* IF SCREEN IS MOBILE VERSION, THEN HAVE FOLLOWING STYLES */
 @media screen and (max-width: 480px) {
-   .nav-menu {
-      width: 100%;
-      height: calc(var(--NAV_MENU_SIZE) + 4px);
-      border-left: 0;
-      transition: right 0.5s ease;
-   }
+	.nav-menu {
+		width: 100%;
+		height: calc(var(--NAV_MENU_SIZE) + 4px);
+		border-left: 0;
+		transition: right 0.5s ease;
+	}
 
-   .nav-links {
-      display: block;
-      text-align: center;
-      padding-right: 0;
-   }
+	.nav-links {
+		display: block;
+		text-align: center;
+		padding-right: 0;
+	}
 }
