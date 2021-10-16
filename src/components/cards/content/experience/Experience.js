@@ -1,15 +1,20 @@
 import React from "react";
 import Subtitle from "../extra-components/subtitle/Subtitle";
 import WorkCard from "./work-card/WorkCard";
-import LinkToContact from "../extra-components/link-to-contact/LinkToContact";
+import LinkToInternal from "../extra-components/link-to-internal/LinkToInternal";
 import GroupsDivider from "../extra-components/groups-divider/GroupsDivider";
 import { experienceData } from "../../../../data/experience/ExperienceData";
+import { navbarData } from "../../../../data/NavbarData";
 import "./Experience.css";
 
 function Experience() {
 	return (
 		<div>
-			<LinkToContact />
+			<LinkToInternal
+				path={navbarData.contact.path}
+				label="GET IN TOUCH"
+				icon="fas fa-file-download"
+			/>
 			<Subtitle icon="fas fa-university" label="Education" />
 			<WorkCard
 				label={experienceData.education.managementEngineering.label}
@@ -94,7 +99,11 @@ function Experience() {
 
 			<GroupsDivider />
 
-			<LinkToContact />
+			<LinkToInternal
+				path={navbarData.contact.path}
+				label="GET IN TOUCH"
+				icon="fas fa-file-download"
+			/>
 		</div>
 	);
 }

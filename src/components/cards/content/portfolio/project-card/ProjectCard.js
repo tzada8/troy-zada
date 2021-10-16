@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SeeMoreLink from "../../extra-components/see-more-link/SeeMoreLink";
-import "./ProjectCard.css";
 import ImageWithLabel from "../../extra-components/image-with-label/ImageWithLabel";
+import LinkToInternal from "../../extra-components/link-to-internal/LinkToInternal";
+import "./ProjectCard.css";
 
 function ProjectCard(props) {
 	return (
@@ -20,7 +20,11 @@ function ProjectCard(props) {
 						<p className="project-description">{props.text}...</p>
 					</div>
 				</Link>
-				<SeeMoreLink path={props.path} />
+				<LinkToInternal
+					path={props.path}
+					label="SEE MORE"
+					icon="fas fa-angle-right"
+				/>
 			</li>
 		</>
 	);

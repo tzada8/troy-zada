@@ -1,7 +1,6 @@
 import React from "react";
 import ImageWithLabel from "../../extra-components/image-with-label/ImageWithLabel";
-import GithubLink from "../../extra-components/github-link/GithubLink";
-import YoutubeLink from "../../extra-components/youtube-link/YoutubeLink";
+import LinkToExternal from "../../extra-components/link-to-external/LinkToExternal";
 import "./CodingProjectPost.css";
 
 function CodingProjectPost(props) {
@@ -14,10 +13,18 @@ function CodingProjectPost(props) {
 			/>
 			<div className="project-github-youtube">
 				<div className="project-gh">
-					<GithubLink path={props.github} />
+					<LinkToExternal
+						path={props.github}
+						label="GitHub"
+						icon="fab fa-github"
+					/>
 				</div>
 				<div className="project-yt">
-					<YoutubeLink path={props.youtube} />
+					<LinkToExternal
+						path={props.youtube}
+						label="YouTube"
+						icon="fab fa-youtube"
+					/>
 				</div>
 				<h4 className="project-date-coding">{props.date}</h4>
 			</div>
