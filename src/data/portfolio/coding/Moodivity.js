@@ -1,10 +1,10 @@
 import React from "react";
-import CodingProjectPost from "../../project_post/coding/CodingProjectPost";
-import { portfolioData } from "../../../../../../data/PortfolioData";
-import Subheading from "../../../extra_components/paragraph/Subheading";
-import Paragraph from "../../../extra_components/paragraph/Paragraph";
-import TypeOfTech from "./tech_stack/TypeOfTech";
-import TechListItem from "./tech_stack/TechListItem";
+import CodingProjectPost from "../../../components/cards/content/portfolio/project_post/coding/CodingProjectPost";
+import { portfolioData } from "../PortfolioData";
+import Subheading from "../../components/Subheading";
+import Paragraph from "../../components/Paragraph";
+import TypeOfTech from "../../components/TypeOfTech";
+import TechListItem from "../../components/TechListItem";
 
 function Moodivity() {
 	const moodivity = portfolioData.coding.moodivity;

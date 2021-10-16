@@ -3,7 +3,7 @@ import Subtitle from "../extra_components/subtitle/Subtitle";
 import WorkCard from "./work_card/WorkCard";
 import LinkToContact from "../extra_components/link_to_contact/LinkToContact";
 import GroupsDivider from "../extra_components/groups_divider/GroupsDivider";
-import { experienceData } from "../../../../data/ExperienceData";
+import { experienceData } from "../../../../data/experience/ExperienceData";
 import "./Experience.css";
 
 function Experience() {

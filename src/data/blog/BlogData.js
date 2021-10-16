@@ -1,12 +1,12 @@
 // Images
-import firstWorkTermImage from "../images/blog/first-work-term.png";
-import creatingThisWebsiteImage from "../images/blog/creating-this-website.jpg";
+import firstWorkTermImage from "../../images/blog/first-work-term.png";
+import creatingThisWebsiteImage from "../../images/blog/creating-this-website.jpg";
 
 // Components
-import FirstWorkTerm from "../components/cards/content/blog/subcards/FirstWorkTerm";
-import CreatingThisWebsite from "../components/cards/content/blog/subcards/CreatingThisWebsite";
+import FirstWorkTerm from "./FirstWorkTerm";
+import CreatingThisWebsite from "./CreatingThisWebsite";
 
-import { routes } from "./Routes";
+import { routes } from "../Routes";
 
 export const blogData = {
 	firstWorkTerm: {

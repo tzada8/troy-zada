@@ -7,8 +7,8 @@ import { navbarData } from "../../../data/NavbarData";
 // SUBCARDS
 import CreateSubcards from "./CreateSubcards";
 
-import { portfolioData } from "../../../data/PortfolioData";
-import { blogData } from "../../../data/BlogData";
+import { portfolioData } from "../../../data/portfolio/PortfolioData";
+import { blogData } from "../../../data/blog/BlogData";
 
 // DETERMINES WHICH SUBCARD SHOULD BE RENDERED TO/VISIBLE ON THE SCREEN
 function RenderSubcards(props) {

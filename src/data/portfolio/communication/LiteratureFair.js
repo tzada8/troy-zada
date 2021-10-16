@@ -1,8 +1,8 @@
 import React from "react";
-import ComProjectPost from "../../project_post/communication/ComProjectPost";
-import { portfolioData } from "../../../../../../data/PortfolioData";
-import Subheading from "../../../extra_components/paragraph/Subheading";
-import Paragraph from "../../../extra_components/paragraph/Paragraph";
+import ComProjectPost from "../../../components/cards/content/portfolio/project_post/communication/ComProjectPost";
+import { portfolioData } from "../PortfolioData";
+import Subheading from "../../components/Subheading";
+import Paragraph from "../../components/Paragraph";
 
 function LiteratureFair() {
 	const literatureFair = portfolioData.communication.literatureFair;

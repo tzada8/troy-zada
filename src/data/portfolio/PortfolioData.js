@@ -1,24 +1,24 @@
 // Images
-import moodivityImage from "../images/portfolio/coding/moodivity.png";
-import troyZadaImage from "../images/portfolio/coding/troy-zada.png";
-import pathfindingAlgorithmsImage from "../images/portfolio/coding/pathfinding-algorithms.png";
-import sudokuSolverImage from "../images/portfolio/coding/sudoku-solver.png";
-import blackJackImage from "../images/portfolio/coding/blackjack.png";
-import decisionSupportSystemImage from "../images/portfolio/coding/decision-support-system.png";
-import literatureFairImage from "../images/portfolio/communication/literature-fair.png";
-import industry4Image from "../images/portfolio/communication/industry4.png";
+import moodivityImage from "../../images/portfolio/coding/moodivity.png";
+import troyZadaImage from "../../images/portfolio/coding/troy-zada.png";
+import pathfindingAlgorithmsImage from "../../images/portfolio/coding/pathfinding-algorithms.png";
+import sudokuSolverImage from "../../images/portfolio/coding/sudoku-solver.png";
+import blackJackImage from "../../images/portfolio/coding/blackjack.png";
+import decisionSupportSystemImage from "../../images/portfolio/coding/decision-support-system.png";
+import literatureFairImage from "../../images/portfolio/communication/literature-fair.png";
+import industry4Image from "../../images/portfolio/communication/industry4.png";
 
 // Components
-import Moodivity from "../components/cards/content/portfolio/subcards/coding/Moodivity";
-import TroyZada from "../components/cards/content/portfolio/subcards/coding/TroyZada";
-import Pathfinding from "../components/cards/content/portfolio/subcards/coding/Pathfinding";
-import SudokuSolver from "../components/cards/content/portfolio/subcards/coding/SudokuSolver";
-import BlackJack from "../components/cards/content/portfolio/subcards/coding/BlackJack";
-import DSS from "../components/cards/content/portfolio/subcards/coding/DSS";
-import LiteratureFair from "../components/cards/content/portfolio/subcards/communication/LiteratureFair";
-import Industry4 from "../components/cards/content/portfolio/subcards/communication/Industry4";
+import Moodivity from "./coding/Moodivity";
+import TroyZada from "./coding/TroyZada";
+import Pathfinding from "./coding/Pathfinding";
+import SudokuSolver from "./coding/SudokuSolver";
+import BlackJack from "./coding/BlackJack";
+import DSS from "./coding/DSS";
+import LiteratureFair from "./communication/LiteratureFair";
+import Industry4 from "./communication/Industry4";
 
-import { routes } from "./Routes";
+import { routes } from "../Routes";
 
 // General GitHub links
 const github = "https://github.com/";

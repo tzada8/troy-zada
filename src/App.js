@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { navbarData } from "./data/NavbarData";
-import { blogData } from "./data/BlogData";
-import { portfolioData } from "./data/PortfolioData";
+import { blogData } from "./data/blog/BlogData";
+import { portfolioData } from "./data/portfolio/PortfolioData";
 import "./App.css";
 
 // DISPLAY CORRESPONDING COMPONENTS

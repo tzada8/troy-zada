@@ -1,8 +1,8 @@
 import React from "react";
-import BlogPost from "../blog_post/BlogPost";
-import { blogData } from "../../../../../data/BlogData";
-import Subheading from "../../extra_components/paragraph/Subheading";
-import Paragraph from "../../extra_components/paragraph/Paragraph";
+import BlogPost from "../../components/cards/content/blog/blog_post/BlogPost";
+import { blogData } from "./BlogData";
+import Subheading from "../components/Subheading";
+import Paragraph from "../components/Paragraph";
 
 function FirstWorkTerm() {
 	return (
