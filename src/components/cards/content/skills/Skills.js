@@ -4,37 +4,37 @@ import ProgressBar from "./progress_bar/ProgressBar";
 import GroupsDivider from "../extra_components/groups_divider/GroupsDivider";
 
 function Skills() {
-   return (
-      <div>
-         {/* GROUP OF INTERPERSONAL SKILLS */}
-         <Subtitle icon="fas fa-users" label="Interpersonal Skills" />
-         <ul>
-            <ProgressBar skillTitle="Communcation" percent="96%" />
-            <ProgressBar skillTitle="Problem Solving" percent="92%" />
-            <ProgressBar skillTitle="Willingness to Learn" percent="100%" />
-            <ProgressBar skillTitle="Time Management" percent="89%" />
-            <ProgressBar skillTitle="Punctuality" percent="88%" />
-            <ProgressBar skillTitle="Detail-Oriented" percent="98%" />
-            <ProgressBar skillTitle="Cross-Functional" percent="86%" />
-            <ProgressBar skillTitle="Teamwork" percent="90%" />
-         </ul>
+	return (
+		<div>
+			{/* GROUP OF INTERPERSONAL SKILLS */}
+			<Subtitle icon="fas fa-users" label="Interpersonal Skills" />
+			<ul>
+				<ProgressBar label="Communcation" percent="96%" />
+				<ProgressBar label="Problem Solving" percent="92%" />
+				<ProgressBar label="Willingness to Learn" percent="100%" />
+				<ProgressBar label="Time Management" percent="89%" />
+				<ProgressBar label="Punctuality" percent="88%" />
+				<ProgressBar label="Detail-Oriented" percent="98%" />
+				<ProgressBar label="Cross-Functional" percent="86%" />
+				<ProgressBar label="Teamwork" percent="90%" />
+			</ul>
 
-         <GroupsDivider />
+			<GroupsDivider />
 
-         {/* GROUP OF PROFESSIONAL SKILLS */}
-         <Subtitle icon="fas fa-cogs" label="Professional Skills" />
-         <ul>
-            <ProgressBar skillTitle="Java" percent="82%" />
-            <ProgressBar skillTitle="Python" percent="74%" />
-            <ProgressBar skillTitle="HTML" percent="84%" />
-            <ProgressBar skillTitle="CSS" percent="80%" />
-            <ProgressBar skillTitle="Excel VBA" percent="58%" />
-            <ProgressBar skillTitle="React" percent="78%" />
-            <ProgressBar skillTitle="JavaScript" percent="68%" />
-            <ProgressBar skillTitle="R" percent="48%" />
-         </ul>
-      </div>
-   );
+			{/* GROUP OF PROFESSIONAL SKILLS */}
+			<Subtitle icon="fas fa-cogs" label="Professional Skills" />
+			<ul>
+				<ProgressBar label="Java" percent="82%" />
+				<ProgressBar label="Python" percent="74%" />
+				<ProgressBar label="HTML" percent="84%" />
+				<ProgressBar label="CSS" percent="80%" />
+				<ProgressBar label="Excel VBA" percent="58%" />
+				<ProgressBar label="React" percent="78%" />
+				<ProgressBar label="JavaScript" percent="68%" />
+				<ProgressBar label="R" percent="48%" />
+			</ul>
+		</div>
+	);
 }
 
 export default Skills;

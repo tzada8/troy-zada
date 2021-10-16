@@ -9,7 +9,7 @@ function DSS() {
 	return (
 		<div>
 			<CodingProjectPost
-				projectTitle={dss.title}
+				label={dss.label}
 				src={dss.image}
 				date={dss.date}
 				github={dss.github}

@@ -9,7 +9,7 @@ function LiteratureFair() {
 	return (
 		<div>
 			<ComProjectPost
-				projectTitle={literatureFair.title}
+				label={literatureFair.label}
 				src={literatureFair.image}
 				date={literatureFair.date}
 			/>

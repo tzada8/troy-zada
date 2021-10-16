@@ -12,7 +12,7 @@ function Experience() {
 			<LinkToContact />
 			<Subtitle icon="fas fa-university" label="Education" />
 			<WorkCard
-				title={experienceData.education.managementEngineering.title}
+				label={experienceData.education.managementEngineering.label}
 				company={experienceData.education.managementEngineering.company}
 				duration={experienceData.education.managementEngineering.duration}
 				description={
@@ -24,8 +24,8 @@ function Experience() {
 
 			<Subtitle icon="fas fa-briefcase" label="Work Experience" />
 			<WorkCard
-				title={
-					experienceData.workExperience.programmingTeachingAssistant.title
+				label={
+					experienceData.workExperience.programmingTeachingAssistant.label
 				}
 				company={
 					experienceData.workExperience.programmingTeachingAssistant
@@ -41,9 +41,9 @@ function Experience() {
 				}
 			/>
 			<WorkCard
-				title={
+				label={
 					experienceData.workExperience.designAndManufacturingTechnician
-						.title
+						.label
 				}
 				company={
 					experienceData.workExperience.designAndManufacturingTechnician
@@ -59,7 +59,7 @@ function Experience() {
 				}
 			/>
 			<WorkCard
-				title={experienceData.workExperience.machineShopAssistant.title}
+				label={experienceData.workExperience.machineShopAssistant.label}
 				company={experienceData.workExperience.machineShopAssistant.company}
 				duration={
 					experienceData.workExperience.machineShopAssistant.duration
@@ -73,19 +73,19 @@ function Experience() {
 
 			<Subtitle icon="fas fa-award" label="Awards" />
 			<WorkCard
-				title={experienceData.awards.gonzagaLeadershipAward.title}
+				label={experienceData.awards.gonzagaLeadershipAward.label}
 				duration={experienceData.awards.gonzagaLeadershipAward.duration}
 				description={
 					experienceData.awards.gonzagaLeadershipAward.description
 				}
 			/>
 			<WorkCard
-				title={experienceData.awards.michaelKimAward.title}
+				label={experienceData.awards.michaelKimAward.label}
 				duration={experienceData.awards.michaelKimAward.duration}
 				description={experienceData.awards.michaelKimAward.description}
 			/>
 			<WorkCard
-				title={experienceData.awards.knightsOfColombusAward.title}
+				label={experienceData.awards.knightsOfColombusAward.label}
 				duration={experienceData.awards.knightsOfColombusAward.duration}
 				description={
 					experienceData.awards.knightsOfColombusAward.description

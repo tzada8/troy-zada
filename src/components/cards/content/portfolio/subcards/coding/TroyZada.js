@@ -11,7 +11,7 @@ function TroyZada() {
 	return (
 		<div>
 			<CodingProjectPost
-				projectTitle={troyZadaWebsite.title}
+				label={troyZadaWebsite.label}
 				src={troyZadaWebsite.image}
 				date={troyZadaWebsite.date}
 				github={troyZadaWebsite.github}

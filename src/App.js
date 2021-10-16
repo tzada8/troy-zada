@@ -1,10 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// --------------------------------------------------------------------------------------------
-// PERHAPS WILL COMBINE blogData, portfolioData, experienceData, etc. all into navbarCategories
-// --------------------------------------------------------------------------------------------
-// comment to test repo rename from 'TroyZada' to 'troy-zada'
-import { navbarCategories } from "./data/Constants";
+
+import { navbarData } from "./data/NavbarData";
 import { blogData } from "./data/BlogData";
 import { portfolioData } from "./data/PortfolioData";
 import "./App.css";
@@ -19,19 +16,19 @@ function App() {
 				<Switch>
 					{/* MAYBE FACTOR STUFF FROM INSIDE <SWITCH> OUT AND SIMPLIFY CODE??? */}
 
-					<Route exact path={navbarCategories.home.path}>
+					<Route exact path={navbarData.home.path}>
 						<Display home={true} startPos={true} />
 					</Route>
 
-					<Route exact path={navbarCategories.experience.path}>
+					<Route exact path={navbarData.experience.path}>
 						<Display experience={true} />
 					</Route>
 
-					<Route exact path={navbarCategories.skills.path}>
+					<Route exact path={navbarData.skills.path}>
 						<Display skills={true} />
 					</Route>
 
-					<Route exact path={navbarCategories.portfolio.path}>
+					<Route exact path={navbarData.portfolio.path}>
 						<Display portfolio={true} />
 					</Route>
 					<Route exact path={portfolioData.coding.troyZadaWebsite.path}>
@@ -62,7 +59,7 @@ function App() {
 						<Display portfolio={false} industry4={true} />
 					</Route>
 
-					<Route exact path={navbarCategories.blog.path}>
+					<Route exact path={navbarData.blog.path}>
 						<Display blog={true} />
 					</Route>
 					<Route exact path={blogData.creatingThisWebsite.path}>
@@ -72,7 +69,7 @@ function App() {
 						<Display blog={false} firstWorkTerm={true} />
 					</Route>
 
-					<Route exact path={navbarCategories.contact.path}>
+					<Route exact path={navbarData.contact.path}>
 						<Display contact={true} />
 					</Route>
 

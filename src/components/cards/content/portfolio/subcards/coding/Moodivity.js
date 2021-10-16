@@ -11,7 +11,7 @@ function Moodivity() {
 	return (
 		<div>
 			<CodingProjectPost
-				projectTitle={moodivity.title}
+				label={moodivity.label}
 				src={moodivity.image}
 				date={moodivity.date}
 				github={moodivity.github}

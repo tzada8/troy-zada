@@ -9,7 +9,7 @@ function SudokuSolver() {
 	return (
 		<div>
 			<CodingProjectPost
-				projectTitle={sudokuSolver.title}
+				label={sudokuSolver.label}
 				src={sudokuSolver.image}
 				date={sudokuSolver.date}
 				github={sudokuSolver.github}

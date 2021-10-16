@@ -9,13 +9,13 @@ function Blog() {
 			<Subtitle icon="fas fa-blog" label="Recent Posts" />
 			<ul>
 				<BlogCard
-					blogTitle={blogData.firstWorkTerm.title}
+					label={blogData.firstWorkTerm.label}
 					path={blogData.firstWorkTerm.path}
 					src={blogData.firstWorkTerm.image}
 					date={blogData.firstWorkTerm.date}
 				/>
 				<BlogCard
-					blogTitle={blogData.creatingThisWebsite.title}
+					label={blogData.creatingThisWebsite.label}
 					path={blogData.creatingThisWebsite.path}
 					src={blogData.creatingThisWebsite.image}
 					date={blogData.creatingThisWebsite.date}

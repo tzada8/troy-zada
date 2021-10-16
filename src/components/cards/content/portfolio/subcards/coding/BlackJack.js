@@ -9,7 +9,7 @@ function BlackJack() {
 	return (
 		<div>
 			<CodingProjectPost
-				projectTitle={blackJack.title}
+				label={blackJack.label}
 				src={blackJack.image}
 				date={blackJack.date}
 				github={blackJack.github}

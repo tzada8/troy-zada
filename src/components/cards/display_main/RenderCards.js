@@ -1,7 +1,7 @@
 import React from "react";
 
 // MENU CONSTANTS FOR CARD TITLES
-import { navbarCategories, pageNotFound } from "../../../data/Constants";
+import { navbarData, pageNotFound } from "../../../data/NavbarData";
 import CreateCards from "./CreateCards";
 import Home from "../home/Home";
 
@@ -12,42 +12,42 @@ function RenderCards(props) {
 			<Home isOnlyComp={props.home} />
 			<CreateCards
 				isActive={props.experience}
-				title={navbarCategories.experience.label}
-				content={navbarCategories.experience.component}
-				quotation={navbarCategories.experience.quotation}
-				author={navbarCategories.experience.author}
+				label={navbarData.experience.label}
+				content={navbarData.experience.component}
+				quotation={navbarData.experience.quotation}
+				author={navbarData.experience.author}
 			/>
 			<CreateCards
 				isActive={props.skills}
-				title={navbarCategories.skills.label}
-				content={navbarCategories.skills.component}
-				quotation={navbarCategories.skills.quotation}
-				author={navbarCategories.skills.author}
+				label={navbarData.skills.label}
+				content={navbarData.skills.component}
+				quotation={navbarData.skills.quotation}
+				author={navbarData.skills.author}
 			/>
 			<CreateCards
 				isActive={props.portfolio}
-				title={navbarCategories.portfolio.label}
-				content={navbarCategories.portfolio.component}
-				quotation={navbarCategories.portfolio.quotation}
-				author={navbarCategories.portfolio.author}
+				label={navbarData.portfolio.label}
+				content={navbarData.portfolio.component}
+				quotation={navbarData.portfolio.quotation}
+				author={navbarData.portfolio.author}
 			/>
 			<CreateCards
 				isActive={props.blog}
-				title={navbarCategories.blog.label}
-				content={navbarCategories.blog.component}
-				quotation={navbarCategories.blog.quotation}
-				author={navbarCategories.blog.author}
+				label={navbarData.blog.label}
+				content={navbarData.blog.component}
+				quotation={navbarData.blog.quotation}
+				author={navbarData.blog.author}
 			/>
 			<CreateCards
 				isActive={props.contact}
-				title={navbarCategories.contact.label}
-				content={navbarCategories.contact.component}
-				quotation={navbarCategories.contact.quotation}
-				author={navbarCategories.contact.author}
+				label={navbarData.contact.label}
+				content={navbarData.contact.component}
+				quotation={navbarData.contact.quotation}
+				author={navbarData.contact.author}
 			/>
 			<CreateCards
 				isActive={props.pageNotFound}
-				title={pageNotFound.label}
+				label={pageNotFound.label}
 				content={pageNotFound.component}
 				quotation={pageNotFound.quotation}
 				author={pageNotFound.author}

@@ -9,7 +9,7 @@ function Industry4() {
 	return (
 		<div>
 			<ComProjectPost
-				projectTitle={industry4.title}
+				label={industry4.label}
 				src={industry4.image}
 				date={industry4.date}
 			/>

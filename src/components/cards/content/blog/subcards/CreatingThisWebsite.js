@@ -9,7 +9,7 @@ function CreatingThisWebsite() {
 		<div>
 			<BlogPost
 				src={blogData.creatingThisWebsite.image}
-				blogTitle={blogData.creatingThisWebsite.title}
+				label={blogData.creatingThisWebsite.label}
 				date={blogData.creatingThisWebsite.date}
 			/>
 

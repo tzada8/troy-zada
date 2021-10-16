@@ -13,7 +13,7 @@ function Portfolio() {
 					return (
 						<ProjectCard
 							path={currentProject.path}
-							projectTitle={currentProject.title}
+							label={currentProject.label}
 							src={currentProject.image}
 							text={currentProject.briefDescription}
 							key={key}

@@ -11,7 +11,7 @@ function Pathfinding() {
 	return (
 		<div>
 			<CodingProjectPost
-				projectTitle={pathfinding.title}
+				label={pathfinding.label}
 				src={pathfinding.image}
 				date={pathfinding.date}
 				github={pathfinding.github}

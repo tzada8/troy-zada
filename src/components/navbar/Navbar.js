@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { navbarCategories } from "../../data/Constants";
+import { navbarData } from "../../data/NavbarData";
 import "./Navbar.css";
 
 function Navbar(props) {
@@ -11,7 +11,7 @@ function Navbar(props) {
 	const closeMobileMenu = () => setClick(false);
 
 	const navlinkIdMenu = "-MENU";
-	const homeData = navbarCategories.home;
+	const homeData = navbarData.home;
 	const homeId = homeData.label + navlinkIdMenu;
 
 	const navbarLogoDisplay = (
@@ -36,9 +36,9 @@ function Navbar(props) {
 
 	const navbarItemsDisplay = (
 		<ul className={click ? "nav-menu active" : "nav-menu"}>
-			{Object.keys(navbarCategories).map((key) => {
-				const itemLabel = navbarCategories[key].label;
-				const itemPath = navbarCategories[key].path;
+			{Object.keys(navbarData).map((key) => {
+				const itemLabel = navbarData[key].label;
+				const itemPath = navbarData[key].path;
 				const itemId = itemLabel + navlinkIdMenu;
 				return (
 					<NavLink

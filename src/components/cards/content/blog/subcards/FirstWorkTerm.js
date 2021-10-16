@@ -9,7 +9,7 @@ function FirstWorkTerm() {
 		<div>
 			<BlogPost
 				src={blogData.firstWorkTerm.image}
-				blogTitle={blogData.firstWorkTerm.title}
+				label={blogData.firstWorkTerm.label}
 				date={blogData.firstWorkTerm.date}
 			/>
 			<Paragraph content="My first coop work term took place over the Spring 2020 term (May 2020 – August 2020), which also ended up being the first few months that COVID-19 emerged. The company I was working for is called EngineeringCPR, and their main responsibility involves designing and manufacturing medical devices. " />
