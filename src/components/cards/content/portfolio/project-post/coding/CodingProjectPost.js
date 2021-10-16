@@ -1,6 +1,6 @@
 import React from "react";
-import GithubLink from "../../../extra_components/github_link/GithubLink";
-import YoutubeLink from "../../../extra_components/youtube_link/YoutubeLink";
+import GithubLink from "../../../extra-components/github-link/GithubLink";
+import YoutubeLink from "../../../extra-components/youtube-link/YoutubeLink";
 import "./CodingProjectPost.css";
 
 function CodingProjectPost(props) {

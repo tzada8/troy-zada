@@ -1,8 +1,8 @@
 import React from "react";
-import Subtitle from "../extra_components/subtitle/Subtitle";
-import WorkCard from "./work_card/WorkCard";
-import LinkToContact from "../extra_components/link_to_contact/LinkToContact";
-import GroupsDivider from "../extra_components/groups_divider/GroupsDivider";
+import Subtitle from "../extra-components/subtitle/Subtitle";
+import WorkCard from "./work-card/WorkCard";
+import LinkToContact from "../extra-components/link-to-contact/LinkToContact";
+import GroupsDivider from "../extra-components/groups-divider/GroupsDivider";
 import { experienceData } from "../../../../data/experience/ExperienceData";
 import "./Experience.css";
 

@@ -1,7 +1,7 @@
 import React from "react";
-import Subtitle from "../extra_components/subtitle/Subtitle";
-import ProgressBar from "./progress_bar/ProgressBar";
-import GroupsDivider from "../extra_components/groups_divider/GroupsDivider";
+import Subtitle from "../extra-components/subtitle/Subtitle";
+import ProgressBar from "./progress-bar/ProgressBar";
+import GroupsDivider from "../extra-components/groups-divider/GroupsDivider";
 
 function Skills() {
 	return (

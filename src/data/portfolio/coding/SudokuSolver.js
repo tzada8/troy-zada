@@ -1,5 +1,5 @@
 import React from "react";
-import CodingProjectPost from "../../../components/cards/content/portfolio/project_post/coding/CodingProjectPost";
+import CodingProjectPost from "../../../components/cards/content/portfolio/project-post/coding/CodingProjectPost";
 import { portfolioData } from "../PortfolioData";
 import Subheading from "../../components/Subheading";
 import Paragraph from "../../components/Paragraph";

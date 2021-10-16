@@ -5,7 +5,7 @@ import Experience from "../components/cards/content/experience/Experience";
 import Portfolio from "../components/cards/content/portfolio/Portfolio";
 import Blog from "../components/cards/content/blog/Blog";
 import Contact from "../components/cards/content/contact/Contact";
-import PageNotFound from "../components/cards/content/page_not_found/PageNotFound";
+import PageNotFound from "../components/cards/content/page-not-found/PageNotFound";
 
 import { routes } from "./Routes";
 

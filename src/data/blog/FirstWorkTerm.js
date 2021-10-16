@@ -1,5 +1,5 @@
 import React from "react";
-import BlogPost from "../../components/cards/content/blog/blog_post/BlogPost";
+import BlogPost from "../../components/cards/content/blog/blog-post/BlogPost";
 import { blogData } from "./BlogData";
 import Subheading from "../components/Subheading";
 import Paragraph from "../components/Paragraph";

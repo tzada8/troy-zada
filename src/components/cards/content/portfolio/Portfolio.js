@@ -1,7 +1,7 @@
 import React from "react";
-import Subtitle from "../extra_components/subtitle/Subtitle";
-import ProjectCard from "./project_card/ProjectCard";
-import GroupsDivider from "../extra_components/groups_divider/GroupsDivider";
+import Subtitle from "../extra-components/subtitle/Subtitle";
+import ProjectCard from "./project-card/ProjectCard";
+import GroupsDivider from "../extra-components/groups-divider/GroupsDivider";
 import { portfolioData } from "../../../../data/portfolio/PortfolioData";
 
 function Portfolio() {

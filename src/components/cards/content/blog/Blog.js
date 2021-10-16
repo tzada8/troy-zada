@@ -1,6 +1,6 @@
 import React from "react";
-import Subtitle from "../extra_components/subtitle/Subtitle";
-import BlogCard from "./blog_card/BlogCard";
+import Subtitle from "../extra-components/subtitle/Subtitle";
+import BlogCard from "./blog-card/BlogCard";
 import { blogData } from "../../../../data/blog/BlogData";
 
 function Blog() {
