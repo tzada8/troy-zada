@@ -9,7 +9,7 @@ function Skills() {
 		return (
 			<ul>
 				{data.map((i) => (
-					<ProgressBar label={i.label} percent={i.percent} />
+					<ProgressBar label={i.label} percent={i.percent} key={i.label} />
 				))}
 			</ul>
 		);
