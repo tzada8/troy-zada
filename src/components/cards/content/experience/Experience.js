@@ -29,72 +29,49 @@ function Experience() {
 
 			<Subtitle icon="fas fa-briefcase" label="Work Experience" />
 			<WorkCard
-				label={
-					experienceData.workExperience.programmingTeachingAssistant.label
-				}
-				company={
-					experienceData.workExperience.programmingTeachingAssistant
-						.company
-				}
-				duration={
-					experienceData.workExperience.programmingTeachingAssistant
-						.duration
-				}
+				label={experienceData.work.programmingTeachingAssistant.label}
+				company={experienceData.work.programmingTeachingAssistant.company}
+				duration={experienceData.work.programmingTeachingAssistant.duration}
 				description={
-					experienceData.workExperience.programmingTeachingAssistant
-						.description
+					experienceData.work.programmingTeachingAssistant.description
 				}
 			/>
 			<WorkCard
-				label={
-					experienceData.workExperience.designAndManufacturingTechnician
-						.label
-				}
+				label={experienceData.work.designAndManufacturingTechnician.label}
 				company={
-					experienceData.workExperience.designAndManufacturingTechnician
-						.company
+					experienceData.work.designAndManufacturingTechnician.company
 				}
 				duration={
-					experienceData.workExperience.designAndManufacturingTechnician
-						.duration
+					experienceData.work.designAndManufacturingTechnician.duration
 				}
 				description={
-					experienceData.workExperience.designAndManufacturingTechnician
-						.description
+					experienceData.work.designAndManufacturingTechnician.description
 				}
 			/>
 			<WorkCard
-				label={experienceData.workExperience.machineShopAssistant.label}
-				company={experienceData.workExperience.machineShopAssistant.company}
-				duration={
-					experienceData.workExperience.machineShopAssistant.duration
-				}
-				description={
-					experienceData.workExperience.machineShopAssistant.description
-				}
+				label={experienceData.work.machineShopAssistant.label}
+				company={experienceData.work.machineShopAssistant.company}
+				duration={experienceData.work.machineShopAssistant.duration}
+				description={experienceData.work.machineShopAssistant.description}
 			/>
 
 			<GroupsDivider />
 
 			<Subtitle icon="fas fa-award" label="Awards" />
 			<WorkCard
-				label={experienceData.awards.gonzagaLeadershipAward.label}
-				duration={experienceData.awards.gonzagaLeadershipAward.duration}
-				description={
-					experienceData.awards.gonzagaLeadershipAward.description
-				}
+				label={experienceData.awards.gonzagaLeadership.label}
+				duration={experienceData.awards.gonzagaLeadership.duration}
+				description={experienceData.awards.gonzagaLeadership.description}
 			/>
 			<WorkCard
-				label={experienceData.awards.michaelKimAward.label}
-				duration={experienceData.awards.michaelKimAward.duration}
-				description={experienceData.awards.michaelKimAward.description}
+				label={experienceData.awards.michaelKim.label}
+				duration={experienceData.awards.michaelKim.duration}
+				description={experienceData.awards.michaelKim.description}
 			/>
 			<WorkCard
-				label={experienceData.awards.knightsOfColombusAward.label}
-				duration={experienceData.awards.knightsOfColombusAward.duration}
-				description={
-					experienceData.awards.knightsOfColombusAward.description
-				}
+				label={experienceData.awards.knightsOfColombus.label}
+				duration={experienceData.awards.knightsOfColombus.duration}
+				description={experienceData.awards.knightsOfColombus.description}
 			/>
 
 			<GroupsDivider />
