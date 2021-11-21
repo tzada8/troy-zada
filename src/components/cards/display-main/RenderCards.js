@@ -10,41 +10,17 @@ function RenderCards(props) {
 	return (
 		<div>
 			<Home isOnlyComp={props.home} />
-			<CreateCards
-				isActive={props.experience}
-				label={navbarData.experience.label}
-				content={navbarData.experience.component}
-				quotation={navbarData.experience.quotation}
-				author={navbarData.experience.author}
-			/>
-			<CreateCards
-				isActive={props.skills}
-				label={navbarData.skills.label}
-				content={navbarData.skills.component}
-				quotation={navbarData.skills.quotation}
-				author={navbarData.skills.author}
-			/>
-			<CreateCards
-				isActive={props.portfolio}
-				label={navbarData.portfolio.label}
-				content={navbarData.portfolio.component}
-				quotation={navbarData.portfolio.quotation}
-				author={navbarData.portfolio.author}
-			/>
-			<CreateCards
-				isActive={props.blog}
-				label={navbarData.blog.label}
-				content={navbarData.blog.component}
-				quotation={navbarData.blog.quotation}
-				author={navbarData.blog.author}
-			/>
-			<CreateCards
-				isActive={props.contact}
-				label={navbarData.contact.label}
-				content={navbarData.contact.component}
-				quotation={navbarData.contact.quotation}
-				author={navbarData.contact.author}
-			/>
+			{Object.keys(navbarData).map((key) => {
+				return (
+					<CreateCards
+						label={navbarData[key].label}
+						path={navbarData[key].path}
+						content={navbarData[key].component}
+						quotation={navbarData[key].quotation}
+						author={navbarData[key].author}
+					/>
+				);
+			})}
 			<CreateCards
 				isActive={props.pageNotFound}
 				label={pageNotFound.label}
