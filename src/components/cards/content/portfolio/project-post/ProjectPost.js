@@ -1,5 +1,5 @@
 import React from "react";
-import ImageWithLabel from "../../extra-components/image-with-label/ImageWithLabel";
+import ImageWithLabel from "../image-with-label/ImageWithLabel";
 import TwoExternalLinks from "../../extra-components/link-to-external/TwoExternalLinks";
 import "./ProjectPost.css";
 

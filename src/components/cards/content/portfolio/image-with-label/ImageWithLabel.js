@@ -7,6 +7,7 @@ function ImageWithLabel(props) {
 			<img
 				className={"project-image " + props.imageOnHover}
 				src={props.src}
+				alt="Project"
 			/>
 		</figure>
 	);

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ImageWithLabel from "../../extra-components/image-with-label/ImageWithLabel";
+import ImageWithLabel from "../image-with-label/ImageWithLabel";
 import LinkToInternal from "../../extra-components/link-to-internal/LinkToInternal";
 import "./ProjectCard.css";
 
