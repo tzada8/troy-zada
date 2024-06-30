@@ -1,10 +1,19 @@
 import React from "react";
+import { routes } from "../../../data/Routes";
 import "./CreateCards.css";
 
 // CREATES CARD FRAME WITH APPROPRIATE CONTENT
 function CreateCards(props) {
+	const isActive = () => {
+		const currentPath = window.location.pathname;
+
+		return currentPath === props.path && currentPath !== routes.home.path
+			? true
+			: false;
+	};
+
 	return (
-		<div className={props.isActive ? "card-box other-page" : "card-box"}>
+		<div className={isActive() ? "card-box other-page" : "card-box"}>
 			<div className="card-container">
 				{/* TITLE OF CARD */}
 				<div className="card-title">
@@ -18,9 +27,8 @@ function CreateCards(props) {
 				{/* FOOTER FOR QUOTATION */}
 				<hr className="horizontal-bar__footer" />
 				<p className="footer-quote">
-					{'"'}
-					{props.quotation}
-					{'"'} - <span className="author">{props.author}</span>
+					"{props.quotation}" -{" "}
+					<span className="author">{props.author}</span>
 				</p>
 			</div>
 		</div>
