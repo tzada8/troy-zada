@@ -1,5 +1,5 @@
 import React from "react";
-import Subtitle from "../extra-components/subtitle/Subtitle";
+import Subtitle from "../../../subtitle/Subtitle";
 import ProjectCard from "./project-card/ProjectCard";
 import GroupsDivider from "../extra-components/groups-divider/GroupsDivider";
 import { portfolioData } from "../../../../data/portfolio/PortfolioData";

@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import Subtitle from "../extra-components/subtitle/Subtitle";
+import Subtitle from "../../../subtitle/Subtitle";
 import "./Contact.css";
 
 function Contact() {

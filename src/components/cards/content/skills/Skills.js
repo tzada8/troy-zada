@@ -1,5 +1,5 @@
 import React from "react";
-import Subtitle from "../extra-components/subtitle/Subtitle";
+import Subtitle from "../../../subtitle/Subtitle";
 import ProgressBar from "./progress-bar/ProgressBar";
 import GroupsDivider from "../extra-components/groups-divider/GroupsDivider";
 import { skillsData } from "../../../../data/skills/SkillsData";

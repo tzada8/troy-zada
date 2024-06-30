@@ -1,5 +1,5 @@
 import React from "react";
-import Subtitle from "../extra-components/subtitle/Subtitle";
+import Subtitle from "../../../subtitle/Subtitle";
 import WorkCard from "./work-card/WorkCard";
 import LinkToInternal from "../extra-components/link-to-internal/LinkToInternal";
 import GroupsDivider from "../extra-components/groups-divider/GroupsDivider";
