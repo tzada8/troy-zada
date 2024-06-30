@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+
 import { navbarData } from "../../data/NavbarData";
+
+import Logo from "../logo/Logo";
 import "./Navbar.css";
 
 function Navbar(props) {
@@ -24,7 +27,7 @@ function Navbar(props) {
 				handleNavLocation(homeId);
 			}}
 		>
-			TZ
+			<Logo />
 		</Link>
 	);
 

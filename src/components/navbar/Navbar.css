@@ -34,26 +34,11 @@ nav {
 	display: table-column;
 }
 
-/* LOGO AS "TZ" */
 .navbar-logo {
-	background: linear-gradient(45deg, #056ba7 20%, #1fbcf5 50%, #056ba7 80%);
-	color: var(--WHITE);
-	font-family: "Merienda One", "Montserrat", Arial, sans-serif;
-	font-size: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 90px;
-	width: 90px;
-	border-radius: 50%;
 	margin: 15px auto;
-	border: 2px solid var(--GREY);
-	transition: color 1s linear;
-}
-
-.navbar-logo:hover {
-	color: #c7c1c1;
-	transition: color 1s linear;
 }
 
 .menu-icon {
@@ -108,24 +93,11 @@ nav {
 		display: flex;
 	}
 
-	/* LOGO AS "TZ" */
 	.navbar-logo {
-		background: linear-gradient(45deg, #056ba7 25%, #1fbcf5 50%, #056ba7 75%);
-		color: var(--WHITE);
-		font-family: "Merienda One";
 		position: absolute;
-		display: flex;
-		font-size: 21px;
-		align-items: center;
-		justify-content: center;
-		height: 40px;
-		width: 40px;
-		border-radius: 50%;
-		top: 0;
-		left: 0;
-		margin: 0 15px;
+		left: 30px;
+		margin: 0;
 		transform: translateY(13%);
-		border: 1px solid var(--BLACK);
 	}
 
 	.menu-icon {
