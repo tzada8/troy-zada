@@ -2,7 +2,7 @@ import React from "react";
 
 import { blogData } from "../../../data/blog/BlogData";
 
-import BlogPost from "../../../components/cards/content/blog/blog-post/BlogPost";
+import BlogPost from "../../../components/blog-post/BlogPost";
 import Paragraph from "../../../data/components/Paragraph";
 import Subheading from "../../../data/components/Subheading";
 
