@@ -1,7 +1,8 @@
 import React from "react";
+
 import "./ProgressBar.css";
 
-function ProgressBar(props) {
+export default function ProgressBar(props) {
 	const numberAsPercent = props.percent + "%";
 
 	return (
@@ -19,5 +20,3 @@ function ProgressBar(props) {
 		</li>
 	);
 }
-
-export default ProgressBar;

@@ -3,8 +3,8 @@ import React from "react";
 import { experienceData } from "../../data/experience/ExperienceData";
 import { navbarData } from "../../data/NavbarData";
 
-import GroupsDivider from "../../components/cards/content/extra-components/groups-divider/GroupsDivider";
 import RoutingButton from "../../components/button/RoutingButton";
+import SectionSpacer from "../../components/section-spacer/SectionSpacer";
 import Subtitle from "../../components/subtitle/Subtitle";
 import WorkInfo from "../../components/work-info/WorkInfo";
 import "./Experience.css";
@@ -27,7 +27,7 @@ export default function Experience() {
 				}
 			/>
 
-			<GroupsDivider />
+			<SectionSpacer />
 
 			<Subtitle icon="fas fa-briefcase" label="Work Experience" />
 			<WorkInfo
@@ -57,7 +57,7 @@ export default function Experience() {
 				description={experienceData.work.machineShopAssistant.description}
 			/>
 
-			<GroupsDivider />
+			<SectionSpacer />
 
 			<Subtitle icon="fas fa-award" label="Awards" />
 			<WorkInfo
@@ -76,7 +76,7 @@ export default function Experience() {
 				description={experienceData.awards.knightsOfColombus.description}
 			/>
 
-			<GroupsDivider />
+			<SectionSpacer />
 
 			<RoutingButton
 				path={navbarData.contact.path}

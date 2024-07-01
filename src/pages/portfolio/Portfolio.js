@@ -2,8 +2,8 @@ import React from "react";
 
 import { portfolioData } from "../../data/portfolio/PortfolioData";
 
-import GroupsDivider from "../../components/cards/content/extra-components/groups-divider/GroupsDivider";
 import ProjectCard from "../../components/cards/content/portfolio/project-card/ProjectCard";
+import SectionSpacer from "../../components/section-spacer/SectionSpacer";
 import Subtitle from "../../components/subtitle/Subtitle";
 import "./Portfolio.css";
 
@@ -35,7 +35,7 @@ export default function Portfolio() {
 		<div>
 			<Subtitle icon="fas fa-code" label="Coding Projects" />
 			{codingProjectCardsDisplay}
-			<GroupsDivider />
+			<SectionSpacer />
 			<Subtitle icon="fas fa-comments" label="Communication Projects" />
 			{comProjectCardsDisplay}
 		</div>
