@@ -9,14 +9,14 @@ import literatureFairImage from "../../images/portfolio/communication/literature
 import industry4Image from "../../images/portfolio/communication/industry4.png";
 
 // Components
-import Moodivity from "./coding/Moodivity";
-import TroyZada from "./coding/TroyZada";
-import Pathfinding from "./coding/Pathfinding";
-import SudokuSolver from "./coding/SudokuSolver";
-import BlackJack from "./coding/BlackJack";
-import DSS from "./coding/DSS";
-import LiteratureFair from "./communication/LiteratureFair";
-import Industry4 from "./communication/Industry4";
+import Moodivity from "../../pages/portfolio/projects/Moodivity";
+import TroyZada from "../../pages/portfolio/projects/TroyZada";
+import Pathfinding from "../../pages/portfolio/projects/Pathfinding";
+import SudokuSolver from "../../pages/portfolio/projects/SudokuSolver";
+import BlackJack from "../../pages/portfolio/projects/BlackJack";
+import DSS from "../../pages/portfolio/projects/DSS";
+import LiteratureFair from "../../pages/portfolio/projects/LiteratureFair";
+import Industry4 from "../../pages/portfolio/projects/Industry4";
 
 import { routes } from "../Routes";
 

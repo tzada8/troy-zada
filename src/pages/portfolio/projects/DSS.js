@@ -1,10 +1,12 @@
 import React from "react";
-import ProjectPost from "../../../components/cards/content/portfolio/project-post/ProjectPost";
-import { portfolioData } from "../PortfolioData";
-import Subheading from "../../components/Subheading";
-import Paragraph from "../../components/Paragraph";
 
-function DSS() {
+import { portfolioData } from "../../../data/portfolio/PortfolioData";
+
+import Paragraph from "../../../data/components/Paragraph";
+import ProjectPost from "../../../components/cards/content/portfolio/project-post/ProjectPost";
+import Subheading from "../../../data/components/Subheading";
+
+export default function DSS() {
 	const dss = portfolioData.coding.dss;
 	return (
 		<div>
@@ -21,5 +23,3 @@ function DSS() {
 		</div>
 	);
 }
-
-export default DSS;

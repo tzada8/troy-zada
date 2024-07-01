@@ -1,12 +1,14 @@
 import React from "react";
-import ProjectPost from "../../../components/cards/content/portfolio/project-post/ProjectPost";
-import { portfolioData } from "../PortfolioData";
-import Subheading from "../../components/Subheading";
-import Paragraph from "../../components/Paragraph";
-import TypeOfTech from "../../components/TypeOfTech";
-import TechListItem from "../../components/TechListItem";
 
-function TroyZada() {
+import { portfolioData } from "../../../data/portfolio/PortfolioData";
+
+import Paragraph from "../../../data/components/Paragraph";
+import ProjectPost from "../../../components/cards/content/portfolio/project-post/ProjectPost";
+import Subheading from "../../../data/components/Subheading";
+import TechListItem from "../../../data/components/TechListItem";
+import TypeOfTech from "../../../data/components/TypeOfTech";
+
+export default function TroyZada() {
 	const troyZadaWebsite = portfolioData.coding.troyZadaWebsite;
 	return (
 		<div>
@@ -78,5 +80,3 @@ function TroyZada() {
 		</div>
 	);
 }
-
-export default TroyZada;
