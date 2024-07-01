@@ -1,9 +1,12 @@
 import React from "react";
-import Subtitle from "../../../subtitle/Subtitle";
-import BlogCard from "./blog-card/BlogCard";
-import { blogData } from "../../../../data/blog/BlogData";
 
-function Blog() {
+import { blogData } from "../../data/blog/BlogData";
+
+import BlogCard from "../../components/cards/content/blog/blog-card/BlogCard";
+import Subtitle from "../../components/subtitle/Subtitle";
+import "./Blog.css";
+
+export default function Blog() {
 	return (
 		<div>
 			<Subtitle icon="fas fa-blog" label="Recent Posts" />
@@ -24,5 +27,3 @@ function Blog() {
 		</div>
 	);
 }
-
-export default Blog;

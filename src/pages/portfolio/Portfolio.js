@@ -1,10 +1,13 @@
 import React from "react";
-import Subtitle from "../../../subtitle/Subtitle";
-import ProjectCard from "./project-card/ProjectCard";
-import GroupsDivider from "../extra-components/groups-divider/GroupsDivider";
-import { portfolioData } from "../../../../data/portfolio/PortfolioData";
 
-function Portfolio() {
+import { portfolioData } from "../../data/portfolio/PortfolioData";
+
+import GroupsDivider from "../../components/cards/content/extra-components/groups-divider/GroupsDivider";
+import ProjectCard from "../../components/cards/content/portfolio/project-card/ProjectCard";
+import Subtitle from "../../components/subtitle/Subtitle";
+import "./Portfolio.css";
+
+export default function Portfolio() {
 	function displayProjectData(data) {
 		return (
 			<ul>
@@ -38,5 +41,3 @@ function Portfolio() {
 		</div>
 	);
 }
-
-export default Portfolio;

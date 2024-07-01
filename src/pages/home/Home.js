@@ -1,12 +1,12 @@
 import React from "react";
 
-import { FULL_NAME, socials } from "../../../data/Constants";
+import { FULL_NAME, socials } from "../../data/Constants";
 
-import SocialIcon from "../../social-icon/SocialIcon";
-import "../display-main/CreateCards.css";
+import SocialIcon from "../../components/social-icon/SocialIcon";
+import "../../components/cards/display-main/CreateCards.css";
 import "./Home.css";
 
-function Home(props) {
+export default function Home(props) {
 	return (
 		<div
 			className={
@@ -56,5 +56,3 @@ function Home(props) {
 		</div>
 	);
 }
-
-export default Home;

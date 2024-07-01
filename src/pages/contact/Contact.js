@@ -1,9 +1,10 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import Subtitle from "../../../subtitle/Subtitle";
+
+import Subtitle from "../../components/subtitle/Subtitle";
 import "./Contact.css";
 
-function Contact() {
+export default function Contact() {
 	function sendEmail(e) {
 		e.preventDefault();
 		showThankYouMessage(); // SHOW THANK YOU MESSAGE FOR 3 SECONDS
@@ -95,5 +96,3 @@ function Contact() {
 		</div>
 	);
 }
-
-export default Contact;

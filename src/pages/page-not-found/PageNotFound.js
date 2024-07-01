@@ -1,6 +1,8 @@
 import React from "react";
 
-function PageNotFound() {
+import "./PageNotFound.css";
+
+export default function PageNotFound() {
    return (
       <div>
          <h3>Oh no, this page doesn't exist!</h3>
@@ -11,5 +13,3 @@ function PageNotFound() {
       </div>
    );
 }
-
-export default PageNotFound;

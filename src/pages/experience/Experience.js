@@ -1,15 +1,15 @@
 import React from "react";
 
-import { experienceData } from "../../../../data/experience/ExperienceData";
-import { navbarData } from "../../../../data/NavbarData";
+import { experienceData } from "../../data/experience/ExperienceData";
+import { navbarData } from "../../data/NavbarData";
 
-import GroupsDivider from "../extra-components/groups-divider/GroupsDivider";
-import RoutingButton from "../../../button/RoutingButton";
-import Subtitle from "../../../subtitle/Subtitle";
-import WorkInfo from "../../../work-info/WorkInfo";
+import GroupsDivider from "../../components/cards/content/extra-components/groups-divider/GroupsDivider";
+import RoutingButton from "../../components/button/RoutingButton";
+import Subtitle from "../../components/subtitle/Subtitle";
+import WorkInfo from "../../components/work-info/WorkInfo";
 import "./Experience.css";
 
-function Experience() {
+export default function Experience() {
 	return (
 		<div>
 			<RoutingButton
@@ -86,5 +86,3 @@ function Experience() {
 		</div>
 	);
 }
-
-export default Experience;

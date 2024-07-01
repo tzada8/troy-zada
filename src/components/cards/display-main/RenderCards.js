@@ -3,7 +3,7 @@ import React from "react";
 // MENU CONSTANTS FOR CARD TITLES
 import { navbarData, pageNotFound } from "../../../data/NavbarData";
 import CreateCards from "./CreateCards";
-import Home from "../home/Home";
+import Home from "../../../pages/home/Home";
 
 // DETERMINES WHICH CARD SHOULD BE RENDERED TO/VISIBLE ON THE SCREEN
 function RenderCards(props) {

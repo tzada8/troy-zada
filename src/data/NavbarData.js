@@ -1,11 +1,11 @@
 // Components
-import Home from "../components/cards/home/Home";
-import Skills from "../components/cards/content/skills/Skills";
-import Experience from "../components/cards/content/experience/Experience";
-import Portfolio from "../components/cards/content/portfolio/Portfolio";
-import Blog from "../components/cards/content/blog/Blog";
-import Contact from "../components/cards/content/contact/Contact";
-import PageNotFound from "../components/cards/content/page-not-found/PageNotFound";
+import Home from "../pages/home/Home";
+import Skills from "../pages/skills/Skills";
+import Experience from "../pages/experience/Experience";
+import Portfolio from "../pages/portfolio/Portfolio";
+import Blog from "../pages/blog/Blog";
+import Contact from "../pages/contact/Contact";
+import PageNotFound from "../pages/page-not-found/PageNotFound";
 
 import { routes } from "./Routes";
 

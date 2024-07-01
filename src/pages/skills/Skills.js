@@ -1,10 +1,13 @@
 import React from "react";
-import Subtitle from "../../../subtitle/Subtitle";
-import ProgressBar from "./progress-bar/ProgressBar";
-import GroupsDivider from "../extra-components/groups-divider/GroupsDivider";
-import { skillsData } from "../../../../data/skills/SkillsData";
 
-function Skills() {
+import { skillsData } from "../../data/skills/SkillsData";
+
+import GroupsDivider from "../../components/cards/content/extra-components/groups-divider/GroupsDivider";
+import ProgressBar from "../../components/cards/content/skills/progress-bar/ProgressBar";
+import Subtitle from "../../components/subtitle/Subtitle";
+import "./Skills.css";
+
+export default function Skills() {
 	function displaySkillsData(data) {
 		return (
 			<ul>
@@ -28,5 +31,3 @@ function Skills() {
 		</div>
 	);
 }
-
-export default Skills;
