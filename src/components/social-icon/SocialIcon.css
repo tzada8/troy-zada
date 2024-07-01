@@ -1,0 +1,41 @@
+.icon-frame {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+	font-size: 45px;
+	color: var(--REG_BLUE);
+	transition: color 0.4s ease;
+}
+
+.social-icon:hover {
+	color: var(--DARK_BLUE);
+}
+
+.social-tooltip {
+    /* TODO: Add transition to make tooltip appearance more subtle. */
+    color: var(--WHITE);
+    background: var(--DARK_BLUE);
+    position: absolute;
+    /* TODO: Adjust width as needed. */
+    width: 200px;
+    margin-top: 6px;
+    padding: 8px;
+    border-radius: 4px;
+    z-index: 999;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.social-tooltip::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    bottom: 99%;
+    left: 5%;
+    border-width: 8px;
+    border-color: transparent transparent var(--DARK_BLUE) transparent;
+}

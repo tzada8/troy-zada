@@ -1,12 +1,10 @@
 import React from "react";
-import "./Home.css";
+
+import { FULL_NAME, socials } from "../../../data/Constants";
+
+import SocialIcon from "../../social-icon/SocialIcon";
 import "../display-main/CreateCards.css";
-import {
-	EMAIL,
-	FACEBOOK_LINK,
-	LINKEDIN_LINK,
-	FULL_NAME,
-} from "../../../data/Constants";
+import "./Home.css";
 
 function Home(props) {
 	return (
@@ -45,43 +43,10 @@ function Home(props) {
 					- M.K. Gandhi
 				</p>
 
-				{/* SOCIAL ICON LINKS */}
 				<div className="social-media">
-					{/* ICON FOR FACEBOOK */}
-					<div className="icon-frame">
-						<a
-							href={FACEBOOK_LINK}
-							target="_blank"
-							rel="noreferrer"
-							aria-label="Facebook"
-						>
-							<i className="fab fa-facebook-square social-icon" />
-						</a>
-					</div>
-					{/* ICON FOR EMAIL */}
-					<div className="icon-frame">
-						<a
-							id="envelope-icon"
-							href={"mailto:" + EMAIL}
-							target="_blank"
-							rel="noreferrer"
-							aria-label="Email"
-						>
-							<i className="fas fa-envelope-square social-icon" />
-						</a>
-						<span id="email-text">{EMAIL}</span>
-					</div>
-					{/* ICON FOR LINKEDIN */}
-					<div className="icon-frame">
-						<a
-							href={LINKEDIN_LINK}
-							target="_blank"
-							rel="noreferrer"
-							aria-label="LinkedIn"
-						>
-							<i className="fab fa-linkedin social-icon" />
-						</a>
-					</div>
+					{socials.map((s, k) => (
+						<SocialIcon key={k} link={s.link} icon={s.icon} tooltip={s.tooltip} />
+					))}
 				</div>
 
 				<p id="copyright">

@@ -1,9 +1,14 @@
-// SOCIAL MEDIA LINKS / CONTACT
-export const LINKEDIN_LINK = "https://www.linkedin.com/in/troy-zada";
-export const FACEBOOK_LINK = "https://www.facebook.com/troy.m.zada";
-export const EMAIL = "tzada8@gmail.com";
+export const FULL_NAME = "Troy Zada";
 
-// NAME
-export const FIRST_NAME = "Troy";
-export const LAST_NAME = "Zada";
-export const FULL_NAME = FIRST_NAME + " " + LAST_NAME;
+const LINKEDIN_LINK = "https://www.linkedin.com/in/troy-zada";
+const FACEBOOK_LINK = "https://www.facebook.com/troy.m.zada";
+const GITHUB_LINK = "https://github.com/tzada8";
+const EMAIL = "tzada8@gmail.com";
+
+// TODO: Update icons to react-icons version.
+export const socials = [
+    {link: `mailto:${EMAIL}`, icon: "fas fa-envelope-square", tooltip: EMAIL},
+    {link: FACEBOOK_LINK, icon: "fab fa-facebook-square"},
+    {link: LINKEDIN_LINK, icon: "fab fa-linkedin"},
+    {link: GITHUB_LINK, icon: "fab fa-linkedin"},
+]
