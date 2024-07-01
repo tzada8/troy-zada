@@ -6,7 +6,7 @@ import { navbarData } from "../../../../data/NavbarData";
 import GroupsDivider from "../extra-components/groups-divider/GroupsDivider";
 import RoutingButton from "../../../button/RoutingButton";
 import Subtitle from "../../../subtitle/Subtitle";
-import WorkCard from "./work-card/WorkCard";
+import WorkInfo from "../../../work-info/WorkInfo";
 import "./Experience.css";
 
 function Experience() {
@@ -18,7 +18,7 @@ function Experience() {
 				icon="fas fa-file-download"
 			/>
 			<Subtitle icon="fas fa-university" label="Education" />
-			<WorkCard
+			<WorkInfo
 				label={experienceData.education.managementEngineering.label}
 				company={experienceData.education.managementEngineering.company}
 				duration={experienceData.education.managementEngineering.duration}
@@ -30,7 +30,7 @@ function Experience() {
 			<GroupsDivider />
 
 			<Subtitle icon="fas fa-briefcase" label="Work Experience" />
-			<WorkCard
+			<WorkInfo
 				label={experienceData.work.programmingTeachingAssistant.label}
 				company={experienceData.work.programmingTeachingAssistant.company}
 				duration={experienceData.work.programmingTeachingAssistant.duration}
@@ -38,7 +38,7 @@ function Experience() {
 					experienceData.work.programmingTeachingAssistant.description
 				}
 			/>
-			<WorkCard
+			<WorkInfo
 				label={experienceData.work.designAndManufacturingTechnician.label}
 				company={
 					experienceData.work.designAndManufacturingTechnician.company
@@ -50,7 +50,7 @@ function Experience() {
 					experienceData.work.designAndManufacturingTechnician.description
 				}
 			/>
-			<WorkCard
+			<WorkInfo
 				label={experienceData.work.machineShopAssistant.label}
 				company={experienceData.work.machineShopAssistant.company}
 				duration={experienceData.work.machineShopAssistant.duration}
@@ -60,17 +60,17 @@ function Experience() {
 			<GroupsDivider />
 
 			<Subtitle icon="fas fa-award" label="Awards" />
-			<WorkCard
+			<WorkInfo
 				label={experienceData.awards.gonzagaLeadership.label}
 				duration={experienceData.awards.gonzagaLeadership.duration}
 				description={experienceData.awards.gonzagaLeadership.description}
 			/>
-			<WorkCard
+			<WorkInfo
 				label={experienceData.awards.michaelKim.label}
 				duration={experienceData.awards.michaelKim.duration}
 				description={experienceData.awards.michaelKim.description}
 			/>
-			<WorkCard
+			<WorkInfo
 				label={experienceData.awards.knightsOfColombus.label}
 				duration={experienceData.awards.knightsOfColombus.duration}
 				description={experienceData.awards.knightsOfColombus.description}

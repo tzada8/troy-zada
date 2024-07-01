@@ -1,0 +1,30 @@
+.work-info-container {
+    width: 90%;
+    margin: 15px auto 0;
+    padding: 10px;
+    border: 1px solid var(--LIGHT_GREY);
+}
+
+.work-role {
+    color: var(--REG_BLUE);
+    font-size: 16px;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+.work-duration {
+    color: var(--DARK_BLUE);
+    font-size: 12px;
+    text-align: left;
+}
+
+hr.horizontal-bar__work {
+    border: 1px solid var(--GREY);
+    margin: 5px 0 8px 0;
+    border-radius: 8px;
+}
+
+/* li.work-detail {
+    list-style: initial;
+    margin-left: 5%;
+} */
