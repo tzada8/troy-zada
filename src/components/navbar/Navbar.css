@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
-@import "../../styles/HoverBackgroundChange.css";
-
 /* GLOBAL VARIABLE FOR NUMBER OF ITEMS */
 :root {
 	--NUM_OF_ITEMS: 6;
@@ -95,7 +92,7 @@ nav {
 
 	.navbar-logo {
 		position: absolute;
-		left: 30px;
+		left: 15px;
 		margin: 0;
 		transform: translateY(13%);
 	}
@@ -117,15 +114,14 @@ nav {
 	.nav-menu {
 		background: var(--REG_BLUE);
 		position: absolute;
-		display: block;
 		top: 50px;
 		right: -100%;
-		width: 35%;
+		width: 100%;
 		height: calc(var(--NAV_MENU_SIZE) + 4px);
 		z-index: 1;
-		border-left: 3px solid var(--GREY);
-		border-bottom: 3px solid var(--GREY);
-		transition: right 0.5s linear;
+		border: 3px solid var(--GREY);
+		border-top: none;
+		transition: right 0.5s ease;
 	}
 
 	.nav-menu.active {
@@ -151,21 +147,5 @@ nav {
 	.nav-links:hover,
 	.nav-links-active {
 		background: var(--DARK_BLUE);
-	}
-}
-
-/* IF SCREEN IS MOBILE VERSION, THEN HAVE FOLLOWING STYLES */
-@media screen and (max-width: 480px) {
-	.nav-menu {
-		width: 100%;
-		height: calc(var(--NAV_MENU_SIZE) + 4px);
-		border-left: 0;
-		transition: right 0.5s ease;
-	}
-
-	.nav-links {
-		display: block;
-		text-align: center;
-		padding-right: 0;
 	}
 }

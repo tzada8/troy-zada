@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import CloseButton from "../../button/CloseButton";
 import "./CreateSubcards.css";
 
 // CREATES CARD FRAME WITH APPROPRIATE CONTENT
@@ -12,9 +13,9 @@ function CreateSubcards(props) {
       >
          <div className="card-container">
             {/* HEADER FOR BACK TO PREVIOUS PAGE */}
-            <Link to={props.backTo}>
-               <i className="fas fa-times close-menu" />
-            </Link>
+            <div className="close-card-button">
+               <CloseButton backTo={props.backTo} />
+            </div>
             <hr className="horizontal-bar__subcard-top" />
 
             {/* REST OF CONTENT */}

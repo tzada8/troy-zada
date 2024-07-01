@@ -1,19 +1,20 @@
 import React from "react";
-import LinkToExternal from "./LinkToExternal";
+
+import RoutingButton from "../../../../button/RoutingButton";
 import "./TwoExternalLinks.css";
 
 function TwoExternalLinks(props) {
 	return (
 		<div>
 			<div className="project-gh">
-				<LinkToExternal
+				<RoutingButton
 					path={props.github}
 					label="GitHub"
 					icon="fab fa-github"
 				/>
 			</div>
 			<div className="project-yt">
-				<LinkToExternal
+				<RoutingButton
 					path={props.youtube}
 					label="YouTube"
 					icon="fab fa-youtube"

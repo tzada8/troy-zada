@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { navbarData } from "../../data/NavbarData";
 
 import Logo from "../logo/Logo";
+import NavButton from "../button/NavButton";
 import "./Navbar.css";
 
 function Navbar(props) {
@@ -41,23 +42,18 @@ function Navbar(props) {
 		<ul className={click ? "nav-menu active" : "nav-menu"}>
 			{Object.keys(navbarData).map((key) => {
 				const itemLabel = navbarData[key].label;
-				const itemPath = navbarData[key].path;
 				const itemId = itemLabel + navlinkIdMenu;
 				return (
-					<NavLink
-						key={itemLabel}
+					<NavButton
+						key={itemId}
 						id={itemId}
-						exact
-						to={itemPath}
-						className="nav-links background-change"
-						activeClassName="nav-links-active"
+						label={itemLabel}
+						path={navbarData[key].path}
 						onClick={() => {
 							closeMobileMenu();
 							handleNavLocation(itemId);
 						}}
-					>
-						{itemLabel}
-					</NavLink>
+					/>
 				);
 			})}
 		</ul>

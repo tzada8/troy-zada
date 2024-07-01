@@ -22,8 +22,7 @@
    opacity: 1;
 }
 
-i.close-menu {
-   font-size: 32px;
+.close-card-button {
    margin-right: 2px;
    float: right;
 }
