@@ -3,8 +3,8 @@ import firstWorkTermImage from "../../images/blog/first-work-term.png";
 import creatingThisWebsiteImage from "../../images/blog/creating-this-website.jpg";
 
 // Components
-import FirstWorkTerm from "./FirstWorkTerm";
-import CreatingThisWebsite from "./CreatingThisWebsite";
+import FirstWorkTerm from "../../pages/blog/posts/FirstWorkTerm";
+import CreatingThisWebsite from "../../pages/blog/posts/CreatingThisWebsite";
 
 import { routes } from "../Routes";
 

@@ -1,10 +1,12 @@
 import React from "react";
-import BlogPost from "../../components/cards/content/blog/blog-post/BlogPost";
-import { blogData } from "./BlogData";
-import Subheading from "../components/Subheading";
-import Paragraph from "../components/Paragraph";
 
-function CreatingThisWebsite() {
+import { blogData } from "../../../data/blog/BlogData";
+
+import BlogPost from "../../../components/cards/content/blog/blog-post/BlogPost";
+import Paragraph from "../../../data/components/Paragraph";
+import Subheading from "../../../data/components/Subheading";
+
+export default function CreatingThisWebsite() {
 	return (
 		<div>
 			<BlogPost
@@ -34,5 +36,3 @@ function CreatingThisWebsite() {
 		</div>
 	);
 }
-
-export default CreatingThisWebsite;
