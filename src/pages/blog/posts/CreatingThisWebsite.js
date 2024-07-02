@@ -2,17 +2,17 @@ import React from "react";
 
 import { blogData } from "../../../data/blog/BlogData";
 
-import BlogPost from "../../../components/blog-post/BlogPost";
+import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
 import Subheading from "../../../data/components/Subheading";
 
 export default function CreatingThisWebsite() {
 	return (
 		<div>
-			<BlogPost
+			<DetailedPost
 				src={blogData.creatingThisWebsite.image}
 				label={blogData.creatingThisWebsite.label}
-				date={blogData.creatingThisWebsite.date}
+				details={`Troy Zada \u00A0|\u00A0 ${blogData.creatingThisWebsite.date}`}
 			/>
 
 			<Paragraph

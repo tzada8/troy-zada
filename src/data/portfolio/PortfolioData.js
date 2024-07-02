@@ -35,8 +35,7 @@ export const portfolioData = {
 			path: routes.portfolio.moodivity.path,
 			component: <Moodivity />,
 			image: moodivityImage,
-			briefDescription:
-				"Moodivity is a web application that improves productivity for users while guiding them to be more in tune with their mental health",
+			briefDescription: "Boost productivity while balancing mental health",
 			date: "November 22, 2020",
 			github: githubSamProfile + "Moodivity",
 			youtube: youtube + "watch?v=g_i8N4H7MDQ",
@@ -46,8 +45,7 @@ export const portfolioData = {
 			path: routes.portfolio.troyZada.path,
 			component: <TroyZada />,
 			image: troyZadaImage,
-			briefDescription:
-				"A website explaining who I am including experiences, qualities I possess, contact information, and more",
+			briefDescription: "Discover my experiences, qualities, and overall portfolio",
 			date: "TODAY",
 			github: githubTroyProfile + "TroyZada",
 			youtube: youtube,
@@ -57,8 +55,7 @@ export const portfolioData = {
 			path: routes.portfolio.pathfinding.path,
 			component: <Pathfinding />,
 			image: pathfindingAlgorithmsImage,
-			briefDescription:
-				"Compares various pathfinding algorithms including Breadth-First Search, Depth-First Search, A*, and Dijkstra",
+			briefDescription: "Visually compare various shortest path algorithms",
 			date: "April 27, 2021",
 			github: githubTroyProfile + "PathfindingAlgorithms",
 			youtube: youtube,
@@ -68,8 +65,7 @@ export const portfolioData = {
 			path: routes.portfolio.sudokuSolver.path,
 			component: <SudokuSolver />,
 			image: sudokuSolverImage,
-			briefDescription:
-				"Uses the backtracking algorithm to solve any valid sudoku board",
+			briefDescription: "Solve any sudoku board with ease",
 			date: "January 31, 2021",
 			github: githubTroyProfile + "SudokuSolver",
 			youtube: youtube,
@@ -79,8 +75,7 @@ export const portfolioData = {
 			path: routes.portfolio.blackJack.path,
 			component: <BlackJack />,
 			image: blackJackImage,
-			briefDescription:
-				"Play through a game of BlackJack against the dealer, starting with a given $1000",
+			briefDescription: "Compete in BlackJack against the dealer",
 			date: "January 24, 2021",
 			github: githubTroyProfile + "BlackJack",
 			youtube: youtube,
@@ -90,8 +85,7 @@ export const portfolioData = {
 			path: routes.portfolio.dss.path,
 			component: <DSS />,
 			image: decisionSupportSystemImage,
-			briefDescription:
-				"Simplifies university group projects by aiding in decision making while also maintaining a high degree of organization for the group",
+			briefDescription: "Streamline group decision-making and organization",
 			date: "December 16, 2019",
 			github: githubTroyProfile + "DecisionSupportSystem",
 			youtube: youtube,
@@ -103,8 +97,7 @@ export const portfolioData = {
 			path: routes.portfolio.literatureFair.path,
 			component: <LiteratureFair />,
 			image: literatureFairImage,
-			briefDescription:
-				"Focuses on the literary theory of existentialism, being that each individual is viewed as a free and responsible agent capable of decision-making to determine their lives",
+			briefDescription: "Exploring the literary theory of existentialism",
 			date: "June 6, 2019",
 		},
 		industry4: {
@@ -112,8 +105,7 @@ export const portfolioData = {
 			path: routes.portfolio.industry4.path,
 			component: <Industry4 />,
 			image: industry4Image,
-			briefDescription:
-				"A high school level analytic-based competition revolving around the fourth industrial revolution and automatization of production",
+			briefDescription: "Analyzing the fourth industrial revolution",
 			date: "February 7, 2020",
 		},
 	},

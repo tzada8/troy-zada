@@ -2,8 +2,8 @@ import React from "react";
 
 import { portfolioData } from "../../../data/portfolio/PortfolioData";
 
+import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
-import ProjectPost from "../../../components/cards/content/portfolio/project-post/ProjectPost";
 import Subheading from "../../../data/components/Subheading";
 import TechListItem from "../../../data/components/TechListItem";
 import TypeOfTech from "../../../data/components/TypeOfTech";
@@ -12,14 +12,15 @@ export default function Moodivity() {
 	const moodivity = portfolioData.coding.moodivity;
 	return (
 		<div>
-			<ProjectPost
+			{/* TODO: Move DetailedPost to CreateSubcards component. */}
+			<DetailedPost
 				label={moodivity.label}
 				src={moodivity.image}
-				date={moodivity.date}
+				details={`Troy Zada \u00A0|\u00A0 ${moodivity.date}`}
 				github={moodivity.github}
-				youtube={moodivity.youtube}
-				isCoding={true}
 			/>
+
+			{/* TODO: Can add tagline (briefDescription) here. Think of the Juxtapose README. */}
 
 			<Subheading subheading="About the Application" />
 			<Paragraph content="Everybody struggles with the stresses of everyday life, and for the most part, mental health is sacrificed for productivity. This quickly leads individuals down a vicious cycle of being unproductive and overwhelmed because of their deteriorating mental health and wellbeing." />

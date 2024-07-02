@@ -2,7 +2,7 @@ import React from "react";
 
 import { blogData } from "../../data/blog/BlogData";
 
-import BlogPost from "../../components/blog-post/BlogPost";
+import DetailedPost from "../../components/detailed-post/DetailedPost";
 import Subtitle from "../../components/subtitle/Subtitle";
 import "./Blog.css";
 
@@ -10,17 +10,17 @@ export default function Blog() {
 	return (
 		<div>
 			<Subtitle icon="fas fa-blog" label="Recent Posts" />
-			<BlogPost
+			<DetailedPost
 				label={blogData.firstWorkTerm.label}
 				path={blogData.firstWorkTerm.path}
 				src={blogData.firstWorkTerm.image}
-				date={blogData.firstWorkTerm.date}
+				details={`Troy Zada \u00A0|\u00A0 ${blogData.firstWorkTerm.date}`}
 			/>
-			<BlogPost
+			<DetailedPost
 				label={blogData.creatingThisWebsite.label}
 				path={blogData.creatingThisWebsite.path}
 				src={blogData.creatingThisWebsite.image}
-				date={blogData.creatingThisWebsite.date}
+				details={`Troy Zada \u00A0|\u00A0 ${blogData.creatingThisWebsite.date}`}
 			/>
 		</div>
 	);

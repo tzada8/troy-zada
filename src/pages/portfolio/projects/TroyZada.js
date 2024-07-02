@@ -2,8 +2,8 @@ import React from "react";
 
 import { portfolioData } from "../../../data/portfolio/PortfolioData";
 
+import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
-import ProjectPost from "../../../components/cards/content/portfolio/project-post/ProjectPost";
 import Subheading from "../../../data/components/Subheading";
 import TechListItem from "../../../data/components/TechListItem";
 import TypeOfTech from "../../../data/components/TypeOfTech";
@@ -12,13 +12,11 @@ export default function TroyZada() {
 	const troyZadaWebsite = portfolioData.coding.troyZadaWebsite;
 	return (
 		<div>
-			<ProjectPost
+			<DetailedPost
 				label={troyZadaWebsite.label}
 				src={troyZadaWebsite.image}
-				date={troyZadaWebsite.date}
+				details={`Troy Zada \u00A0|\u00A0 ${troyZadaWebsite.date}`}
 				github={troyZadaWebsite.github}
-				youtube={troyZadaWebsite.youtube}
-				isCoding={true}
 			/>
 
 			<Subheading subheading="About the Application" />

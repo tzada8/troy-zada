@@ -2,7 +2,7 @@ import React from "react";
 
 import { portfolioData } from "../../data/portfolio/PortfolioData";
 
-import ProjectCard from "../../components/cards/content/portfolio/project-card/ProjectCard";
+import DetailedPost from "../../components/detailed-post/DetailedPost";
 import SectionSpacer from "../../components/section-spacer/SectionSpacer";
 import Subtitle from "../../components/subtitle/Subtitle";
 import "./Portfolio.css";
@@ -14,11 +14,11 @@ export default function Portfolio() {
 				{Object.keys(data).map((key) => {
 					const currentProject = data[key];
 					return (
-						<ProjectCard
+						<DetailedPost
 							path={currentProject.path}
 							label={currentProject.label}
 							src={currentProject.image}
-							text={currentProject.briefDescription}
+							details={currentProject.briefDescription}
 							key={key}
 						/>
 					);
