@@ -18,6 +18,7 @@
 
 .home-intro-title {
 	margin-top: 10px;
+	margin-bottom: 15px;
 }
 
 .home-intro-name {
@@ -28,6 +29,7 @@
 
 .home-intro-program {
 	font-size: 14px;
+	margin-bottom: 15px;
 }
 
 #home-paragraph,
@@ -61,11 +63,5 @@
 	#home-paragraph,
 	#copyright {
 		font-size: 13px;
-	}
-
-	hr.horizontal-bar__fade {
-		margin: 25px 0;
-		height: 2px;
-		border-radius: 50%;
 	}
 }

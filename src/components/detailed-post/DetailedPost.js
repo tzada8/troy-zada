@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import HorizontalBar from "../horizontal-bar/HorizontalBar";
 import PostImage from "../post-image/PostImage";
 import "./DetailedPost.css";
 
@@ -27,9 +28,9 @@ export default function DetailedPost(props) {
     );
 
 	return (
-		<div>
+		<div className="post-container">
 			{isClickable ? <Link to={props.path} className="post-content">{content}</Link> : content}
-			<hr className="horizontal-bar__post" />
+			<HorizontalBar thick />
 		</div>
 	);
 }

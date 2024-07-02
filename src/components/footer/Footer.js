@@ -1,11 +1,12 @@
 import React from "react";
 
+import HorizontalBar from "../horizontal-bar/HorizontalBar";
 import "./Footer.css";
 
 function Footer(props) {
     return (
         <div className="footer-container">
-            <hr className="horizontal-bar__footer" />
+            <HorizontalBar light />
             <p className="footer-quote">
                 "{props.quote}" - <span className="footer-author">{props.author}</span>
             </p>

@@ -7,8 +7,3 @@
     text-align: left;
     margin-bottom: 5px;
 }
-
-hr.horizontal-bar__title {
-    border-top: 1px solid var(--GREY);
-    border-left: 0;
-}

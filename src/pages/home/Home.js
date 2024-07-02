@@ -2,6 +2,7 @@ import React from "react";
 
 import { FULL_NAME, socials } from "../../data/Constants";
 
+import HorizontalBar from "../../components/horizontal-bar/HorizontalBar";
 import SocialIcon from "../../components/social-icon/SocialIcon";
 import "../../components/cards/display-main/CreateCards.css";
 import "./Home.css";
@@ -32,7 +33,7 @@ export default function Home(props) {
 					<h4 className="home-intro-program">
 						Management Engineering Student @ University of Waterloo
 					</h4>
-					<hr className="horizontal-bar__fade" />
+					<HorizontalBar gradient />
 				</div>
 
 				{/* BRIEF OVERALL DESCRIPTION */}

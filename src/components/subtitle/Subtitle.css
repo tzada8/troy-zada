@@ -6,8 +6,3 @@
 i.subtitle-icon {
    margin-right: 8px;
 }
-
-hr.horizontal-bar__subtitle {
-   border-top: 1px dotted var(--BLACK);
-   border-left: 0;
-}

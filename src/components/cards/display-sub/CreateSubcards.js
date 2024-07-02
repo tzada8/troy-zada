@@ -1,6 +1,7 @@
 import React from "react";
 
 import CloseButton from "../../button/CloseButton";
+import HorizontalBar from "../../horizontal-bar/HorizontalBar";
 import "./CreateSubcards.css";
 
 // CREATES CARD FRAME WITH APPROPRIATE CONTENT
@@ -16,12 +17,12 @@ function CreateSubcards(props) {
             <div className="close-card-button">
                <CloseButton backTo={props.backTo} />
             </div>
-            <hr className="horizontal-bar__subcard-top" />
+            <HorizontalBar light />
 
             {/* REST OF CONTENT */}
             <div className="card-content">{props.content}</div>
 
-            <hr className="horizontal-bar__subcard-bottom" />
+            <HorizontalBar light />
          </div>
       </div>
    );

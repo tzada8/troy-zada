@@ -24,23 +24,12 @@
 
 .close-card-button {
    margin-right: 2px;
-   float: right;
+   margin-bottom: 5px;
+   text-align: right;
 }
 
-hr.horizontal-bar__subcard-top {
-   padding-top: 5px;
-   margin: 5px 0 30px 0;
-   width: 100%;
-   border-bottom: 1px solid var(--LIGHT_GREY);
-   border-left: 0;
-   border-top: 0;
-   border-right: 0;
-}
-
-hr.horizontal-bar__subcard-bottom {
-   margin: 35px 0 5px 0;
-   border-top: 1px solid var(--LIGHT_GREY);
-   border-left: 0;
+.card-content {
+   margin: 35px 0;
 }
 
 /* IF SCREEN IS AVERAGE DESKTOP VERSION, THEN HAVE FOLLOWING STYLES */

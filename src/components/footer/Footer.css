@@ -2,11 +2,6 @@
     margin-top: 35px;
 }
 
-hr.horizontal-bar__footer {
-    border-top: 1px solid var(--LIGHT_GREY);
-    border-left: 0;
-}
-
 p.footer-quote {
     color: var(--BLACK);
     font-size: 11px;

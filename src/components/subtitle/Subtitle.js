@@ -1,5 +1,6 @@
 import React from "react";
 
+import HorizontalBar from "../horizontal-bar/HorizontalBar";
 import "./Subtitle.css";
 
 export default function Subtitle(props) {
@@ -9,7 +10,7 @@ export default function Subtitle(props) {
             <i className={`subtitle-icon ${props.icon}`} />
             {props.label}
          </h3>
-         <hr className="horizontal-bar__subtitle" />
+         <HorizontalBar dotted />
       </div>
    );
 }

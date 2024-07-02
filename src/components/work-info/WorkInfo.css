@@ -16,12 +16,11 @@
     color: var(--DARK_BLUE);
     font-size: 12px;
     text-align: left;
+    margin-bottom: 5px;
 }
 
-hr.horizontal-bar__work {
-    border: 1px solid var(--GREY);
-    margin: 5px 0 8px 0;
-    border-radius: 8px;
+.work-description {
+    margin-top: 8px;
 }
 
 /* li.work-detail {
