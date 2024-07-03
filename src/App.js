@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { blog, portfolio, routes } from "./routes/routes";
 
-import "./App.css";
-
-// DISPLAY CORRESPONDING COMPONENTS
 import Display from "./Display";
+import "./App.css";
+import "./styles/scrollbar.css";
+
 
 function App() {
 	return (
