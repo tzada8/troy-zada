@@ -7,7 +7,7 @@ import Subheading from "../../../components/text-details/Subheading";
 export default function Moodivity() {
 	return (
 		<div>
-			{/* TODO: Can add tagline (briefDescription) here. Think of the Juxtapose README. */}
+			{/* TODO: Can add "tagline" here. Think of the Juxtapose README. */}
 
 			<Subheading label="About the Application" />
 			<Paragraph content="Everybody struggles with the stresses of everyday life, and for the most part, mental health is sacrificed for productivity. This quickly leads individuals down a vicious cycle of being unproductive and overwhelmed because of their deteriorating mental health and wellbeing." />

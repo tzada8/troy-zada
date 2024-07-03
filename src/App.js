@@ -30,32 +30,23 @@ function App() {
 					<Route exact path={routes[3].path}>
 						<Display portfolio={true} />
 					</Route>
-					<Route exact path={routes[portfolio].subroutes.coding[1].path}>
+					<Route exact path={routes[portfolio].subroutes[1].path}>
 						<Display portfolio={false} troyZada={true} />
 					</Route>
-					<Route exact path={routes[portfolio].subroutes.coding[0].path}>
+					<Route exact path={routes[portfolio].subroutes[0].path}>
 						<Display portfolio={false} moodivity={true} />
 					</Route>
-					<Route exact path={routes[portfolio].subroutes.coding[3].path}>
+					<Route exact path={routes[portfolio].subroutes[3].path}>
 						<Display portfolio={false} sudokuSolver={true} />
 					</Route>
-					<Route exact path={routes[portfolio].subroutes.coding[4].path}>
+					<Route exact path={routes[portfolio].subroutes[4].path}>
 						<Display portfolio={false} blackJack={true} />
 					</Route>
-					<Route exact path={routes[portfolio].subroutes.coding[2].path}>
+					<Route exact path={routes[portfolio].subroutes[2].path}>
 						<Display portfolio={false} pathfinding={true} />
 					</Route>
-					<Route exact path={routes[portfolio].subroutes.coding[5].path}>
+					<Route exact path={routes[portfolio].subroutes[5].path}>
 						<Display portfolio={false} dss={true} />
-					</Route>
-					<Route
-						exact
-						path={routes[portfolio].subroutes.communication[0].path}
-					>
-						<Display portfolio={false} literatureFair={true} />
-					</Route>
-					<Route exact path={routes[portfolio].subroutes.communication[1].path}>
-						<Display portfolio={false} industry4={true} />
 					</Route>
 
 					<Route exact path={routes[4].path}>
