@@ -1,6 +1,6 @@
 import React from "react";
 
-import { routes } from "../../../data/Routes";
+import { routes, home } from "../../../routes/routes";
 
 import Footer from "../../footer/Footer";
 import Header from "../../header/Header";
@@ -11,7 +11,7 @@ function CreateCards(props) {
 	const isActive = () => {
 		const currentPath = window.location.pathname;
 
-		return currentPath === props.path && currentPath !== routes.home.path
+		return currentPath === props.path && currentPath !== routes[home].path
 			? true
 			: false;
 	};
@@ -21,7 +21,7 @@ function CreateCards(props) {
 			<div className="card-container">
 				<Header label={props.label} />
 				<div className="card-content">{props.content}</div>
-				<Footer quote={props.quotation} author={props.author} />
+				<Footer quote={props.quote} author={props.author} />
 			</div>
 		</div>
 	);

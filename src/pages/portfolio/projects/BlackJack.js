@@ -1,13 +1,13 @@
 import React from "react";
 
-import { portfolioData } from "../../../data/portfolio/PortfolioData";
+import { portfolio, routes } from "../../../routes/routes";
 
 import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
 import Subheading from "../../../data/components/Subheading";
 
 export default function BlackJack() {
-	const blackJack = portfolioData.coding.blackJack;
+	const blackJack = routes[portfolio].subroutes.coding[4];
 	return (
 		<div>
 			<DetailedPost

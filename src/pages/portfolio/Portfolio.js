@@ -1,6 +1,6 @@
 import React from "react";
 
-import { portfolioData } from "../../data/portfolio/PortfolioData";
+import { portfolio, routes } from "../../routes/routes";
 
 import DetailedPost from "../../components/detailed-post/DetailedPost";
 import SectionSpacer from "../../components/section-spacer/SectionSpacer";
@@ -26,10 +26,8 @@ export default function Portfolio() {
 			</ul>
 		);
 	}
-	const codingProjectCardsDisplay = displayProjectData(portfolioData.coding);
-	const comProjectCardsDisplay = displayProjectData(
-		portfolioData.communication
-	);
+	const codingProjectCardsDisplay = displayProjectData(routes[portfolio].subroutes.coding);
+	const comProjectCardsDisplay = displayProjectData(routes[portfolio].subroutes.communication);
 
 	return (
 		<div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { portfolioData } from "../../../data/portfolio/PortfolioData";
+import { portfolio, routes } from "../../../routes/routes";
 
 import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
@@ -9,7 +9,7 @@ import TechListItem from "../../../data/components/TechListItem";
 import TypeOfTech from "../../../data/components/TypeOfTech";
 
 export default function TroyZada() {
-	const troyZadaWebsite = portfolioData.coding.troyZadaWebsite;
+	const troyZadaWebsite = routes[portfolio].subroutes.coding[1];
 	return (
 		<div>
 			<DetailedPost

@@ -1,13 +1,13 @@
 import React from "react";
 
-import { portfolioData } from "../../../data/portfolio/PortfolioData";
+import { portfolio, routes } from "../../../routes/routes";
 
 import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
 import Subheading from "../../../data/components/Subheading";
 
 export default function SudokuSolver() {
-	const sudokuSolver = portfolioData.coding.sudokuSolver;
+	const sudokuSolver = routes[portfolio].subroutes.coding[3];
 	return (
 		<div>
 			<DetailedPost

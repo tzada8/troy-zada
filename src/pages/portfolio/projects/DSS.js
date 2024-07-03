@@ -1,13 +1,13 @@
 import React from "react";
 
-import { portfolioData } from "../../../data/portfolio/PortfolioData";
+import { portfolio, routes } from "../../../routes/routes";
 
 import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
 import Subheading from "../../../data/components/Subheading";
 
 export default function DSS() {
-	const dss = portfolioData.coding.dss;
+	const dss = routes[portfolio].subroutes.coding[5];
 	return (
 		<div>
 			<DetailedPost

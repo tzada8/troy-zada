@@ -1,65 +1,60 @@
 import React from "react";
 
-// MENU CONSTANTS FOR SUBCARD TITLES
+import { blog, portfolio, routes } from "../../../routes/routes";
 
-import { navbarData } from "../../../data/NavbarData";
-
-// SUBCARDS
 import CreateSubcards from "./CreateSubcards";
-
-import { portfolioData } from "../../../data/portfolio/PortfolioData";
-import { blogData } from "../../../data/blog/BlogData";
 
 // DETERMINES WHICH SUBCARD SHOULD BE RENDERED TO/VISIBLE ON THE SCREEN
 function RenderSubcards(props) {
-	const backToPortfolio = navbarData.portfolio.path;
-	const backToBlog = navbarData.blog.path;
+	const backToPortfolio = routes[portfolio].path;
+	const backToBlog = routes[blog].path;
 
 	return (
 		<div>
+			{/* TODO: Render these by using a loop. */}
 			<div className="portfolio-subcards">
 				{/* CODING PROJECTS */}
 				<CreateSubcards
 					isActive={props.troyZada}
 					backTo={backToPortfolio}
-					content={portfolioData.coding.troyZadaWebsite.component}
+					content={routes[portfolio].subroutes.coding[1].element}
 				/>
 				<CreateSubcards
 					isActive={props.moodivity}
 					backTo={backToPortfolio}
-					content={portfolioData.coding.moodivity.component}
+					content={routes[portfolio].subroutes.coding[0].element}
 				/>
 				<CreateSubcards
 					isActive={props.sudokuSolver}
 					backTo={backToPortfolio}
-					content={portfolioData.coding.sudokuSolver.component}
+					content={routes[portfolio].subroutes.coding[3].element}
 				/>
 				<CreateSubcards
 					isActive={props.blackJack}
 					backTo={backToPortfolio}
-					content={portfolioData.coding.blackJack.component}
+					content={routes[portfolio].subroutes.coding[4].element}
 				/>
 				<CreateSubcards
 					isActive={props.pathfinding}
 					backTo={backToPortfolio}
-					content={portfolioData.coding.pathfinding.component}
+					content={routes[portfolio].subroutes.coding[2].element}
 				/>
 				<CreateSubcards
 					isActive={props.dss}
 					backTo={backToPortfolio}
-					content={portfolioData.coding.dss.component}
+					content={routes[portfolio].subroutes.coding[5].element}
 				/>
 
 				{/* COMMUNICATION PROJECTS */}
 				<CreateSubcards
 					isActive={props.literatureFair}
 					backTo={backToPortfolio}
-					content={portfolioData.communication.literatureFair.component}
+					content={routes[portfolio].subroutes.communication[0].element}
 				/>
 				<CreateSubcards
 					isActive={props.industry4}
 					backTo={backToPortfolio}
-					content={portfolioData.communication.industry4.component}
+					content={routes[portfolio].subroutes.communication[1].element}
 				/>
 			</div>
 
@@ -67,12 +62,12 @@ function RenderSubcards(props) {
 				<CreateSubcards
 					isActive={props.creatingThisWebsite}
 					backTo={backToBlog}
-					content={blogData.creatingThisWebsite.component}
+					content={routes[blog].subroutes[1].element}
 				/>
 				<CreateSubcards
 					isActive={props.firstWorkTerm}
 					backTo={backToBlog}
-					content={blogData.firstWorkTerm.component}
+					content={routes[blog].subroutes[0].element}
 				/>
 			</div>
 		</div>

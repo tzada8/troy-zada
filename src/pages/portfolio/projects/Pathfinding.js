@@ -1,6 +1,6 @@
 import React from "react";
 
-import { portfolioData } from "../../../data/portfolio/PortfolioData";
+import { portfolio, routes } from "../../../routes/routes";
 
 import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
@@ -9,7 +9,7 @@ import TechListItem from "../../../data/components/TechListItem";
 import TypeOfTech from "../../../data/components/TypeOfTech";
 
 export default function Pathfinding() {
-	const pathfinding = portfolioData.coding.pathfinding;
+	const pathfinding = routes[portfolio].subroutes.coding[2];
 	return (
 		<div>
 			<DetailedPost

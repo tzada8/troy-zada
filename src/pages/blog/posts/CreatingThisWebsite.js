@@ -1,6 +1,6 @@
 import React from "react";
 
-import { blogData } from "../../../data/blog/BlogData";
+import { blog, routes } from "../../../routes/routes";
 
 import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
@@ -10,9 +10,9 @@ export default function CreatingThisWebsite() {
 	return (
 		<div>
 			<DetailedPost
-				src={blogData.creatingThisWebsite.image}
-				label={blogData.creatingThisWebsite.label}
-				details={`Troy Zada \u00A0|\u00A0 ${blogData.creatingThisWebsite.date}`}
+				src={routes[blog].subroutes[1].image}
+				label={routes[blog].subroutes[1].label}
+				details={`Troy Zada \u00A0|\u00A0 ${routes[blog].subroutes[1].date}`}
 			/>
 
 			<Paragraph

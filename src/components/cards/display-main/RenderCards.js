@@ -1,7 +1,7 @@
 import React from "react";
 
-// MENU CONSTANTS FOR CARD TITLES
-import { navbarData, pageNotFound } from "../../../data/NavbarData";
+import { pageNotFound, routes } from "../../../routes/routes";
+
 import CreateCards from "./CreateCards";
 import Home from "../../../pages/home/Home";
 
@@ -10,22 +10,23 @@ function RenderCards(props) {
 	return (
 		<div>
 			<Home isOnlyComp={props.home} />
-			{Object.keys(navbarData).map((key) => {
+			{routes.map((r, k) => {
 				return (
 					<CreateCards
-						label={navbarData[key].label}
-						path={navbarData[key].path}
-						content={navbarData[key].component}
-						quotation={navbarData[key].quotation}
-						author={navbarData[key].author}
+						key={k}
+						label={r.label}
+						path={r.path}
+						content={r.element}
+						quote={r.quote}
+						author={r.author}
 					/>
 				);
 			})}
 			<CreateCards
 				isActive={props.pageNotFound}
 				label={pageNotFound.label}
-				content={pageNotFound.component}
-				quotation={pageNotFound.quotation}
+				content={pageNotFound.element}
+				quote={pageNotFound.quote}
 				author={pageNotFound.author}
 			/>
 		</div>

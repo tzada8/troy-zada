@@ -1,13 +1,13 @@
 import React from "react";
 
-import { portfolioData } from "../../../data/portfolio/PortfolioData";
+import { portfolio, routes } from "../../../routes/routes";
 
 import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
 import Subheading from "../../../data/components/Subheading";
 
 export default function Industry4() {
-	const industry4 = portfolioData.communication.industry4;
+	const industry4 = routes[portfolio].subroutes.communication[1];
 	return (
 		<div>
 			<DetailedPost

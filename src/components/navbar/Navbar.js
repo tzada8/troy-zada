@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { navbarData } from "../../data/NavbarData";
+import { routes, home } from "../../routes/routes";
 
 import Logo from "../logo/Logo";
 import NavButton from "../button/NavButton";
@@ -14,9 +14,9 @@ function Navbar(props) {
 	const handleClick = () => setClick(!click);
 	const closeMobileMenu = () => setClick(false);
 
-	const navlinkIdMenu = "-MENU";
-	const homeData = navbarData.home;
-	const homeId = homeData.label + navlinkIdMenu;
+	const navlinkIdMenu = "MENU";
+	const homeData = routes[home];
+	const homeId = `${homeData.label}-${navlinkIdMenu}`;
 
 	const navbarLogoDisplay = (
 		<Link
@@ -40,15 +40,14 @@ function Navbar(props) {
 
 	const navbarItemsDisplay = (
 		<ul className={click ? "nav-menu active" : "nav-menu"}>
-			{Object.keys(navbarData).map((key) => {
-				const itemLabel = navbarData[key].label;
-				const itemId = itemLabel + navlinkIdMenu;
+			{routes.map((r, k) => {
+				const itemId = `${r.label}-${navlinkIdMenu}`;
 				return (
 					<NavButton
-						key={itemId}
+						key={k}
 						id={itemId}
-						label={itemLabel}
-						path={navbarData[key].path}
+						label={r.label}
+						path={r.path}
 						onClick={() => {
 							closeMobileMenu();
 							handleNavLocation(itemId);

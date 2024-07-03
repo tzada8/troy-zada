@@ -1,7 +1,7 @@
 import React from "react";
 
 import { experienceData } from "../../data/experience/ExperienceData";
-import { navbarData } from "../../data/NavbarData";
+import { contact, routes } from "../../routes/routes";
 
 import RoutingButton from "../../components/button/RoutingButton";
 import SectionSpacer from "../../components/section-spacer/SectionSpacer";
@@ -13,7 +13,7 @@ export default function Experience() {
 	return (
 		<div>
 			<RoutingButton
-				path={navbarData.contact.path}
+				path={routes[contact].path}
 				label="GET IN TOUCH"
 				icon="fas fa-file-download"
 			/>
@@ -79,7 +79,7 @@ export default function Experience() {
 			<SectionSpacer />
 
 			<RoutingButton
-				path={navbarData.contact.path}
+				path={routes[contact].path}
 				label="GET IN TOUCH"
 				icon="fas fa-file-download"
 			/>
