@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import HorizontalBar from "../horizontal-bar/HorizontalBar";
+import Icon from "../icon/Icon";
 import PostImage from "../post-image/PostImage";
 import "./DetailedPost.css";
 
@@ -9,11 +10,10 @@ export default function DetailedPost(props) {
 	const isClickable = props.path ? true : false;
 
     // TODO: Maybe adjust RoutingButton component to also work for just icons.
-    // TODO: Add icon hover functionality too.
     const detailsIcon = isClickable
-        ? <i className="post-icon fas fa-angle-right" />
+        ? <Icon image="fas fa-angle-right" className="post-icon" clickable />
         : props.github ? <a href={props.github} target="_blank" rel="noreferrer" className="post-icon">
-                <i className="fab fa-github" />
+				<Icon image="fab fa-github" className="post-icon" clickable />
             </a> : <></>;
 
     const content = (

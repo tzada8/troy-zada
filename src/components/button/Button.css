@@ -1,13 +1,3 @@
-.close-menu {
-    color: var(--BLACK);
-    font-size: 32px;
-    cursor: pointer;
-}
-
-.close-menu:active {
-    color: var(--GREY);
-}
-
 .background-change {
     background: linear-gradient(
 		to right,
@@ -53,7 +43,7 @@
     letter-spacing: 0.5px;
 }
 
-i.button-icon {
+.button-icon {
     margin-left: 4px;
 }
 

@@ -1,0 +1,33 @@
+i.generic-icon {
+    color: var(--BLACK);
+    font-size: 32px;
+}
+
+i.large {
+    font-size: 48px;
+}
+
+i.small {
+    font-size: 16px;
+}
+
+i.white-color {
+    color: var(--WHITE);
+}
+
+i.blue-color {
+    color: var(--REG_BLUE);
+}
+
+i.clickable-blue, i.clickable-grey {
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+i.clickable-blue:hover {
+    color: var(--DARK_BLUE);
+}
+
+i.clickable-grey:hover {
+    color: var(--LIGHT_GREY);
+}

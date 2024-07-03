@@ -98,17 +98,10 @@ nav {
 	}
 
 	.menu-icon {
-		color: var(--WHITE);
 		position: absolute;
 		display: block;
 		top: 20%;
 		right: 30px;
-		font-size: 29px;
-		cursor: pointer;
-	}
-
-	.fa-times {
-		font-size: 32px;
 	}
 
 	.nav-menu {

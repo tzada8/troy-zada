@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Icon from "../icon/Icon";
 import "./Button.css";
 
 export default function RoutingButton(props) {
@@ -12,7 +13,7 @@ export default function RoutingButton(props) {
     const linkContent = (
         <p className="button-text">
             {props.label}
-            <i className={`button-icon ${props.icon}`} />
+            <Icon image={props.icon} className="button-icon" small white />
         </p>
     );
 

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import { routes, home } from "../../routes/routes";
 
+import Icon from "../icon/Icon";
 import Logo from "../logo/Logo";
 import NavButton from "../button/NavButton";
 import "./Navbar.css";
@@ -34,7 +35,7 @@ function Navbar(props) {
 
 	const navbarMobileIconDisplay = (
 		<div className="menu-icon" onClick={handleClick}>
-			<i className={click ? "fas fa-times" : "fas fa-bars"} />
+			<Icon image={click ? "fas fa-times" : "fas fa-bars"} white clickable />
 		</div>
 	);
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import Icon from "../icon/Icon";
 import "./SocialIcon.css";
 
 export default function SocialIcon(props) {
@@ -13,7 +14,7 @@ export default function SocialIcon(props) {
         >
             <a href={props.link} target="_blank" rel="noreferrer">
                 {/* TODO: Reminder to convert all these to react-icons: <FaEnvelope />. */}
-                <i className={`social-icon ${props.icon}`} />
+                <Icon image={props.icon} blue large clickable />
             </a>
             {props.tooltip && isTooltipVisible && <div className="social-tooltip">{props.tooltip}</div>}
         </div>

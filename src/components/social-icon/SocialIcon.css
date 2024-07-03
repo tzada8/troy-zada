@@ -3,18 +3,6 @@
     margin: 0 5px;
 }
 
-.social-icon {
-    display: flex;
-    align-items: center;
-	font-size: 45px;
-	color: var(--REG_BLUE);
-	transition: color 0.4s ease;
-}
-
-.social-icon:hover {
-	color: var(--DARK_BLUE);
-}
-
 .social-tooltip {
     /* TODO: Add transition to make tooltip appearance more subtle. */
     color: var(--WHITE);
