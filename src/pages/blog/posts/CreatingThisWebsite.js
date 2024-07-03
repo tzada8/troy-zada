@@ -1,7 +1,7 @@
 import React from "react";
 
-import Paragraph from "../../../data/components/Paragraph";
-import Subheading from "../../../data/components/Subheading";
+import Paragraph from "../../../components/text-details/Paragraph";
+import Subheading from "../../../components/text-details/Subheading";
 
 export default function CreatingThisWebsite() {
 	return (
@@ -15,7 +15,7 @@ export default function CreatingThisWebsite() {
             doloremque exercitationem et maxime id, nesciunt magnam delectus."
 			/>
 
-			<Subheading subheading="This is my next paragraph" />
+			<Subheading label="This is my next paragraph" />
 			<Paragraph
 				content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
             ea corporis esse ipsam minima, sapiente exercitationem numquam vitae

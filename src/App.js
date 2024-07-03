@@ -6,7 +6,7 @@ import { blog, portfolio, routes } from "./routes/routes";
 import Display from "./Display";
 import "./App.css";
 import "./styles/scrollbar.css";
-
+import "./styles/text.css";
 
 function App() {
 	return (

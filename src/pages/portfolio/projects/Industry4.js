@@ -1,12 +1,12 @@
 import React from "react";
 
-import Paragraph from "../../../data/components/Paragraph";
-import Subheading from "../../../data/components/Subheading";
+import Paragraph from "../../../components/text-details/Paragraph";
+import Subheading from "../../../components/text-details/Subheading";
 
 export default function Industry4() {
 	return (
 		<div>
-			<Subheading subheading="About the Application" />
+			<Subheading label="About the Application" />
 			<Paragraph content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam reiciendis, optio adipisci molestiae quo, quam atque eaque distinctio tempore aspernatur culpa voluptate voluptatum repellendus facilis nesciunt doloremque modi cupiditate?" />
 		</div>
 	);
