@@ -1,7 +1,3 @@
-:root {
-   --CHECK_GREEN: #39e039;
-}
-
 .email-address {
    padding-top: 5px;
    font-size: 14px;
@@ -20,7 +16,7 @@ h4.form-field-headers {
 form .form-control {
    background: transparent;
    color: var(--BLACK);
-   border: 1px solid var(--DARK_BLUE);
+   border: 1px solid var(--BLACK);
    outline: none;
    width: 100%;
    height: 30px;
@@ -40,16 +36,16 @@ textarea.message {
 }
 
 form .form-control:hover {
-   box-shadow: 0 0 6px var(--DARK_BLUE), 0 0 6px var(--DARK_BLUE),
-      0 0 6px var(--DARK_BLUE);
+   box-shadow: 0 0 6px var(--DARK-BLUE), 0 0 6px var(--DARK-BLUE),
+      0 0 6px var(--DARK-BLUE);
 }
 form .form-control:focus {
-   box-shadow: 0 0 6px var(--REG_BLUE), 0 0 6px var(--REG_BLUE),
-      0 0 6px var(--REG_BLUE);
+   box-shadow: 0 0 6px var(--BLUE), 0 0 6px var(--BLUE),
+      0 0 6px var(--BLUE);
 }
 
 form .submit {
-   background: var(--REG_BLUE);
+   background: var(--BLUE);
    border-color: transparent;
    color: var(--WHITE);
    font-size: 16px;
@@ -62,7 +58,7 @@ form .submit {
 }
 
 form .submit:hover {
-   background: var(--DARK_BLUE);
+   background: var(--DARK-BLUE);
    cursor: pointer;
    transition: background 0.5s ease;
 }
@@ -70,8 +66,8 @@ form .submit:hover {
 #thank-you-container {
    background: var(--WHITE);
    position: absolute;
-   border: 2px solid var(--CHECK_GREEN);
-   top: 50%;
+   border: 2px solid var(--GREEN);
+   top: 30%;
    left: 15%;
    width: 70%;
    right: 15%;

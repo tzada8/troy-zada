@@ -6,7 +6,7 @@
 .social-tooltip {
     /* TODO: Add transition to make tooltip appearance more subtle. */
     color: var(--WHITE);
-    background: var(--DARK_BLUE);
+    background: var(--DARK-BLUE);
     position: absolute;
     /* TODO: Adjust width as needed. */
     width: 200px;
@@ -25,5 +25,5 @@
     bottom: 99%;
     left: 5%;
     border-width: 8px;
-    border-color: transparent transparent var(--DARK_BLUE) transparent;
+    border-color: transparent transparent var(--DARK-BLUE) transparent;
 }

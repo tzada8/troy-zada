@@ -1,8 +1,8 @@
 .background-change {
     background: linear-gradient(
 		to right,
-		var(--DARK_BLUE) 50%,
-		var(--REG_BLUE) 50%
+		var(--DARK-BLUE) 50%,
+		var(--BLUE) 50%
 	);
 	background-size: 200% 100%;
 	background-position: right bottom;
@@ -17,7 +17,7 @@
     color: var(--WHITE);
     display: block;
     padding: 4px 10px;
-    border: 2px solid var(--GREY);
+    border: 2px solid var(--BLACK);
 }
 
 .button-link {
@@ -52,6 +52,6 @@
 
     .nav-link:hover,
 	.nav-link-active {
-		background: var(--DARK_BLUE);
+		background: var(--DARK-BLUE);
 	}
 }

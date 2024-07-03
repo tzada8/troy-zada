@@ -12,13 +12,12 @@
     grid-column: 1;
     padding-top: 2px;
     font-size: 18px;
-    color: var(--REG_BLUE);
+    color: var(--BLUE);
 }
 
 .post-details {
     grid-row: 2;
     grid-column: 1;
-    color: var(--GREY);
     padding-top: 6px;
     font-size: 12px;
 }

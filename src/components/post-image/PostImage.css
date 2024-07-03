@@ -1,6 +1,6 @@
 figure.post-image-container {
     position: relative;
-    border: 1px solid var(--DARK_BLUE);
+    border: 1px solid var(--BLACK);
     border-radius: 10px;
     width: 100%;
     padding-top: 75%;

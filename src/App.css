@@ -1,13 +1,20 @@
-/* GLOBAL VARIABLES */
 :root {
-   /* TODO: Use other colours. */
    /* COLOURS */
-   --BLACK: #000;
-   --WHITE: #f9f9f9;
-   --GREY: #3d3d3d;
-   --LIGHT_GREY: #c4c4c4;
-   --REG_BLUE: #009ad0;
-   --DARK_BLUE: #004e7c;
+   --BLACK: #2D3748;
+   --WHITE: #FEFEFE;
+   --DARK-GREY: #3D3D3D;
+   --GREY: #C4C4C4;
+   --LIGHT-GREY: #E7E7E7;
+   --HOVER-GREY: #C7C1C1;
+
+   --DARK-BLUE: #004E7C;
+   --BLUE: #009AD0;
+
+   --LOGO-OUT-BLUE: #056BA7;
+   --LOGO-IN-BLUE: #1FBCF5;
+
+   --GREEN: #52C41A;
+   --RED: #FF4D4F;
 
    /* FONTS */
    --FONT: "Montserrat", Arial, sans-serif;

@@ -1,6 +1,6 @@
 /* TODO: Figure out where I'm text-align: center by default and revert it to left. */
 p, li, p.quote-text {
-    color: var(--GREY);
+    color: var(--BLACK);
     font-family: var(--FONT);
     line-height: 17px;
     letter-spacing: 0.2px;

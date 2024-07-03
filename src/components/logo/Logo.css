@@ -2,7 +2,12 @@
 
 .personal-logo {
 	color: var(--WHITE);
-    background: linear-gradient(45deg, #056ba7 20%, #1fbcf5 50%, #056ba7 80%);
+    background: linear-gradient(
+		45deg,
+		var(--LOGO-OUT-BLUE) 20%,
+		var(--LOGO-IN-BLUE) 50%,
+		var(--LOGO-OUT-BLUE) 80%
+	);
 	font-family: "Merienda One", "Montserrat", Arial, sans-serif;
 	font-size: 50px;
 	display: flex;
@@ -11,13 +16,13 @@
 	height: 90px;
 	width: 90px;
 	border-radius: 50%;
-	border: 2px solid var(--GREY);
+	border: 2px solid var(--BLACK);
 	transition: color 1s linear;
 }
 
 .personal-logo:hover {
     /* TODO: Maybe have gradient do a rotation. */
-	color: #c7c1c1;
+	color: var(--HOVER-GREY);
 }
 
 
@@ -26,6 +31,5 @@
         font-size: 21px;
         height: 40px;
         width: 40px;
-        border: 1px solid var(--BLACK);
     }
 }

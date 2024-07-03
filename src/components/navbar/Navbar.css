@@ -54,25 +54,12 @@ nav {
 	height: calc(var(--NAV_MENU_SIZE) / var(--NUM_OF_ITEMS));
 }
 
-.nav-links {
-	color: var(--WHITE);
-	display: block;
-	margin-top: 5px;
-	padding: 4px 10px;
-	font-weight: normal;
-	border: 2px solid var(--GREY);
-}
-
-.nav-links-active {
-	background-position: left bottom;
-}
-
 /* MIGHT NEED TO ADJUST THE MAX-WIDTH DEPENDING ON CARD SIZES */
 
 /* IF SCREEN IS DESKTOP-SMALL VERSION, THEN HAVE FOLLOWING STYLES */
 @media screen and (max-width: 960px) {
 	nav {
-		background: var(--GREY);
+		background: var(--DARK-GREY);
 		position: fixed;
 		margin-top: 0;
 		width: 100vw;
@@ -105,14 +92,13 @@ nav {
 	}
 
 	.nav-menu {
-		background: var(--REG_BLUE);
 		position: absolute;
 		top: 50px;
 		right: -100%;
 		width: 100%;
 		height: calc(var(--NAV_MENU_SIZE) + 4px);
 		z-index: 1;
-		border: 3px solid var(--GREY);
+		border: 3px solid var(--DARK-GREY);
 		border-top: none;
 		transition: right 0.5s ease;
 	}
@@ -124,21 +110,5 @@ nav {
 
 	.nav-item {
 		padding: 0;
-	}
-
-	.nav-links {
-		background: var(--REG_BLUE);
-		margin-top: 0;
-		display: block;
-		align-content: center;
-		align-items: center;
-		text-align: right;
-		padding-right: 18%;
-		border: none;
-	}
-
-	.nav-links:hover,
-	.nav-links-active {
-		background: var(--DARK_BLUE);
 	}
 }

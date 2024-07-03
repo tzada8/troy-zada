@@ -2,18 +2,18 @@
     width: 90%;
     margin: 15px auto 0;
     padding: 10px;
-    border: 1px solid var(--LIGHT_GREY);
+    border: 1px solid var(--GREY);
 }
 
 .work-role {
-    color: var(--REG_BLUE);
+    color: var(--BLUE);
     font-size: 16px;
     margin-bottom: 2px;
     text-align: left;
 }
 
 .work-duration {
-    color: var(--DARK_BLUE);
+    color: var(--DARK-BLUE);
     font-size: 12px;
     text-align: left;
     margin-bottom: 5px;

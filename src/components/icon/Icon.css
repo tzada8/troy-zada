@@ -16,11 +16,11 @@ i.white-color {
 }
 
 i.blue-color {
-    color: var(--REG_BLUE);
+    color: var(--BLUE);
 }
 
 i.green-color {
-    color: var(--CHECK_GREEN);
+    color: var(--GREEN);
 }
 
 i.clickable-blue, i.clickable-grey {
@@ -29,9 +29,9 @@ i.clickable-blue, i.clickable-grey {
 }
 
 i.clickable-blue:hover {
-    color: var(--DARK_BLUE);
+    color: var(--DARK-BLUE);
 }
 
 i.clickable-grey:hover {
-    color: var(--LIGHT_GREY);
+    color: var(--GREY);
 }
