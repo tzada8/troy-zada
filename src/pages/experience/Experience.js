@@ -1,6 +1,6 @@
 import React from "react";
 
-import { experienceData } from "../../data/ExperienceData";
+import { experienceData } from "../../data/experience-data";
 import { contact, routes } from "../../routes/routes";
 
 import RoutingButton from "../../components/button/RoutingButton";
@@ -18,20 +18,18 @@ export default function Experience() {
 	return (
 		<div>
 			{getInTouchButton}
-			{Object.keys(experienceData).map(k => {
-				return (
-					<div>
-						<Subtitle icon={experienceData[k].icon} label={experienceData[k].label} />
-						{experienceData[k].data.map((w, kk) => <WorkInfo
-							key={kk}
-							label={w.label}
-							company={w.company}
-							duration={w.duration}
-							description={w.description}
-						/>)}
-					</div>
-				);
-			})}
+			{Object.keys(experienceData).map(k => (
+				<div>
+					<Subtitle icon={experienceData[k].icon} label={experienceData[k].label} />
+					{experienceData[k].data.map((w, kk) => <WorkInfo
+						key={kk}
+						label={w.label}
+						company={w.company}
+						duration={w.duration}
+						description={w.description}
+					/>)}
+				</div>
+			))}
 			{getInTouchButton}
 		</div>
 	);
