@@ -5,9 +5,7 @@
 
 .percentage {
    float: right;
-   font-weight: normal;
    padding-top: 2px;
-   font-size: 13px;
 }
 
 .progress-bar__border {
@@ -21,7 +19,6 @@
 .progress-bar__progress {
    background: var(--DARK-BLUE);
    height: 8px;
-   margin: 0;
    border-radius: 10px;
    animation: showProgress 2s;
 }

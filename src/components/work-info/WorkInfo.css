@@ -7,13 +7,10 @@
 
 .work-role {
     color: var(--BLUE);
-    font-size: 16px;
     margin-bottom: 2px;
 }
 
 .work-duration {
-    color: var(--DARK-BLUE);
-    font-size: 12px;
     margin-bottom: 5px;
 }
 

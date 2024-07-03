@@ -18,9 +18,9 @@ export default function Home(props) {
 				<div className="home-intro-title">
 					{/* Troy Zada, an Engineering Student, a Programmer, Lifelong Learner, ... */}
 					<h1 className="home-intro-name">{FULL_NAME}</h1>
-					<h4 className="home-intro-program">
+					<h3 className="home-intro-program">
 						Management Engineering Student @ University of Waterloo
-					</h4>
+					</h3>
 					<HorizontalBar gradient />
 				</div>
 

@@ -41,7 +41,7 @@ export default function Contact() {
 			<Subtitle icon="fas fa-inbox" label="Send Me a Message" />
 			<div className="contact-me-container">
 				<form id="contact-form" onSubmit={sendEmail}>
-					<h4 className="form-field-headers">Name:</h4>
+					<h4 className="form-field-headers">NAME</h4>
 					<input
 						name="name"
 						type="text"
@@ -50,7 +50,7 @@ export default function Contact() {
 						required
 					/>
 					<br />
-					<h4 className="form-field-headers">Email:</h4>
+					<h4 className="form-field-headers">EMAIL</h4>
 					<input
 						name="email"
 						type="email"
@@ -59,7 +59,7 @@ export default function Contact() {
 						required
 					/>
 					<br />
-					<h4 className="form-field-headers">Subject:</h4>
+					<h4 className="form-field-headers">SUBJECT</h4>
 					<input
 						name="subject"
 						type="text"
@@ -68,7 +68,7 @@ export default function Contact() {
 						required
 					/>
 					<br />
-					<h4 className="form-field-headers">Message:</h4>
+					<h4 className="form-field-headers">MESSAGE</h4>
 					<textarea
 						name="message"
 						type="text"
@@ -81,17 +81,15 @@ export default function Contact() {
 					<input
 						id="submit-button"
 						type="submit"
-						className="submit"
+						className="button-font bold submit"
 						value="SEND MESSAGE"
 					/>
 				</form>
 
 				<div id="thank-you-container" className="center">
 					<Icon image="far fa-check-circle" green />
-					<h2 className="thank-you-word">Thank you!</h2>
-					<h4 className="thank-you-message">
-						Your message has been sent.
-					</h4>
+					<h3>Thank you!</h3>
+					<p>Your message has been sent.</p>
 				</div>
 			</div>
 		</div>

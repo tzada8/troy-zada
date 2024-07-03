@@ -13,10 +13,10 @@ export default function RoutingButton(props) {
         <Icon image={props.icon} blue={props.blue} large={props.blue} clickable />
     );
     const textButton = (
-        <p className="button-text">
+        <div className="button-font">
             {props.label}
             <Icon image={props.icon} className="button-icon" small white />
-        </p>
+        </div>
     );
 
     const linkClass = "button-link background-change";

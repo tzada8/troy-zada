@@ -6,7 +6,7 @@ import "./Header.css";
 export default function Header(props) {
     return (
         <div className="header-container">
-            <h1 className="header-title">{props.label}</h1>
+            <h2 className="header-title">{props.label}</h2>
             <HorizontalBar />
         </div>
     )

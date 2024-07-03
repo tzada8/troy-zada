@@ -9,7 +9,7 @@ export default function NavButton(props) {
             id={props.id}
             exact
             to={props.path}
-            className="nav-link background-change"
+            className="button-font nav-link background-change"
             activeClassName="nav-link-active"
             onClick={props.onClick}
         >

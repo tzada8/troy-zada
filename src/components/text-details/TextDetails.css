@@ -3,12 +3,7 @@ li.list-item {
     list-style: initial;
 }
 
-p.indent-paragraph {
-    text-indent: 30px;
-}
-
 h3.content-subheading {
-    font-size: 14px;
+    color: var(--DARK-BLUE);
     padding-bottom: 3px;
-    text-decoration: underline;
 }

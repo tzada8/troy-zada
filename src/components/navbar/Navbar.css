@@ -10,9 +10,7 @@ nav {
 	justify-content: center;
 	align-items: center;
 	margin-top: 32px;
-	font-size: 16px;
 	z-index: 999;
-	font-weight: bold;
 	transition: margin-left 0.5s linear;
 }
 
@@ -62,7 +60,6 @@ nav {
 		position: fixed;
 		margin-top: 0;
 		width: 100vw;
-		font-size: 19px;
 		transition: none;
 	}
 

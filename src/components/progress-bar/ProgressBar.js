@@ -3,14 +3,14 @@ import React from "react";
 import "./ProgressBar.css";
 
 export default function ProgressBar(props) {
-	const numberAsPercent = props.percent + "%";
+	const numberAsPercent = `${props.percent}%`;
 
 	return (
 		<li className="progress-container">
-			<h4>
+			<p>
 				{props.label}
 				<span className="percentage">{numberAsPercent}</span>
-			</h4>
+			</p>
 			<div className="progress-bar__border">
 				<div
 					className="progress-bar__progress"

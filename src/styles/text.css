@@ -1,14 +1,64 @@
-p, li, p.quote-text {
+/* LOGO */
+.logo-text {
+    color: var(--WHITE);
+    font-family: var(--LOGO-FONT);
+    font-weight: 800;
+    font-size: 50px;
+}
+
+/* HEADER */
+h1, h2, h3, h4 {
+    font-family: var(--HEADING-FONT);
+    font-weight: 700;
+    line-height: 120%;
+}
+
+/* TODO: Need to determine actual sizes. */
+/* TODO: Need to use media queries to make sizes bigger/smaller depending on screen. */
+h1 {
+    color: var(--BLUE);
+    font-size: 48px;
+}
+
+h2 {
+    color: var(--BLUE);
+    font-size: 28px;
+}
+
+h3 {
     color: var(--BLACK);
-    font-family: var(--FONT);
-    line-height: 17px;
+    font-size: 16px;
+}
+
+h4 {
+    color: var(--DARK-BLUE);
+    font-size: 12px;
+}
+
+/* BODY */
+p, li {
+    color: var(--BLACK);
+    font-family: var(--BODY-FONT);
+    line-height: 140%;
     letter-spacing: 0.2px;
     font-size: 12px;
     font-weight: 400;
 }
 
+p.body-small {
+    font-size: 11px;
+}
+
+/* BUTTON */
+.button-font {
+    color: var(--WHITE);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* MISC */
 .bold {
-    /* TODO: Confirm this works. */
     font-weight: 600;
 }
 
@@ -18,4 +68,14 @@ p, li, p.quote-text {
 
 .justify {
     text-align: justify;
+}
+
+.indent {
+    text-indent: 30px;
+}
+
+@media screen and (max-width: 960px) {
+    .logo-text {
+        font-size: 21px;
+    }
 }

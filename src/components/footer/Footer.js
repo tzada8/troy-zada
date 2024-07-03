@@ -7,7 +7,7 @@ function Footer(props) {
     return (
         <div className="footer-container">
             <HorizontalBar light />
-            <p className="footer-quote">
+            <p className="body-small footer-quote">
                 "{props.quote}" - <span className="footer-author">{props.author}</span>
             </p>
         </div>

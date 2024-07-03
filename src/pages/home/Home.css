@@ -22,13 +22,10 @@
 }
 
 .home-intro-name {
-	padding: 0 0 10px;
-	font-size: 35px;
-	color: var(--BLUE);
+	margin-bottom: 10px;
 }
 
 .home-intro-program {
-	font-size: 14px;
 	margin-bottom: 15px;
 }
 
@@ -41,13 +38,5 @@
 	.home-img-round {
 		height: 175px;
 		width: 175px;
-	}
-
-	.home-intro-name {
-		font-size: 50px;
-	}
-
-	.home-intro-program {
-		font-size: 18px;
 	}
 }

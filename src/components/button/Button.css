@@ -14,7 +14,6 @@
 }
 
 .button-link, .nav-link {
-    color: var(--WHITE);
     display: block;
     padding: 4px 10px;
     border: 2px solid var(--BLACK);
@@ -26,15 +25,6 @@
 
 .nav-link {
     margin-top: 5px;
-}
-
-.button-text {
-    color: var(--WHITE);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    letter-spacing: 0.5px;
 }
 
 .button-icon {
