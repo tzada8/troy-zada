@@ -78,8 +78,3 @@ form .submit:hover {
    padding: 5px 10px;
    visibility: hidden;
 }
-
-.checkmark-icon {
-   color: var(--CHECK_GREEN);
-   font-size: 40px;
-}

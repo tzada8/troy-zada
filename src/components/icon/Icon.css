@@ -19,6 +19,10 @@ i.blue-color {
     color: var(--REG_BLUE);
 }
 
+i.green-color {
+    color: var(--CHECK_GREEN);
+}
+
 i.clickable-blue, i.clickable-grey {
     cursor: pointer;
     transition: color 0.4s ease;

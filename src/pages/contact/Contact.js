@@ -1,6 +1,7 @@
 import React from "react";
 import emailjs from "emailjs-com";
 
+import Icon from "../../components/icon/Icon";
 import Subtitle from "../../components/subtitle/Subtitle";
 import "./Contact.css";
 
@@ -86,7 +87,7 @@ export default function Contact() {
 				</form>
 
 				<div id={"thank-you-container"}>
-					<i className="far fa-check-circle checkmark-icon" />
+					<Icon image="far fa-check-circle" green />
 					<h2 className="thank-you-word">Thank you!</h2>
 					<h4 className="thank-you-message">
 						Your message has been sent.
