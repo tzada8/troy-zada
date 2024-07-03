@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FULL_NAME, socials } from "../../data/Constants";
+import { FULL_NAME, socials } from "../../data/constants";
 
 import HorizontalBar from "../../components/horizontal-bar/HorizontalBar";
 import SocialIcon from "../../components/social-icon/SocialIcon";

@@ -1,24 +1,13 @@
 import React from "react";
 
-import { portfolio, routes } from "../../../routes/routes";
-
-import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
 import Subheading from "../../../data/components/Subheading";
 import TechListItem from "../../../data/components/TechListItem";
 import TypeOfTech from "../../../data/components/TypeOfTech";
 
 export default function Pathfinding() {
-	const pathfinding = routes[portfolio].subroutes.coding[2];
 	return (
 		<div>
-			<DetailedPost
-				label={pathfinding.label}
-				src={pathfinding.image}
-				details={`Troy Zada \u00A0|\u00A0 ${pathfinding.date}`}
-				github={pathfinding.github}
-			/>
-
 			<Subheading subheading="About the Application" />
 			<Paragraph content="Determining the shortest distance between two points is a crucial aspect in day to day life. This application does exactly that. It determines the shortest distance between two points in any given obstacle using different approaches." />
 			<Paragraph content="With this Pathfinding Algorithms application, users can draw unique obstacles or choose one of the preset ones, and the shortest path between the start point and endpoint will be determined. " />

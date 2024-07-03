@@ -1,24 +1,13 @@
 import React from "react";
 
-import { portfolio, routes } from "../../../routes/routes";
-
-import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
 import Subheading from "../../../data/components/Subheading";
 import TechListItem from "../../../data/components/TechListItem";
 import TypeOfTech from "../../../data/components/TypeOfTech";
 
 export default function TroyZada() {
-	const troyZadaWebsite = routes[portfolio].subroutes.coding[1];
 	return (
 		<div>
-			<DetailedPost
-				label={troyZadaWebsite.label}
-				src={troyZadaWebsite.image}
-				details={`Troy Zada \u00A0|\u00A0 ${troyZadaWebsite.date}`}
-				github={troyZadaWebsite.github}
-			/>
-
 			<Subheading subheading="About the Application" />
 			<Paragraph content="Every individual has their own story to tell, and thus, this application explains my story. Ranging from basic contact information to my past experiences, to skills I possess, to projects I’ve worked on, and lastly, to some shared blog posts. All this explains who Troy Zada is." />
 			<Paragraph content="With this Troy Zada Website, users can view information about me in one of six categories, being Home, Experience, Skills, Portfolio, Blog, and Contact. " />

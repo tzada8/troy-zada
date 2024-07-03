@@ -17,44 +17,44 @@ function RenderSubcards(props) {
 				<CreateSubcards
 					isActive={props.troyZada}
 					backTo={backToPortfolio}
-					content={routes[portfolio].subroutes.coding[1].element}
+					content={routes[portfolio].subroutes.coding[1]}
 				/>
 				<CreateSubcards
 					isActive={props.moodivity}
 					backTo={backToPortfolio}
-					content={routes[portfolio].subroutes.coding[0].element}
+					content={routes[portfolio].subroutes.coding[0]}
 				/>
 				<CreateSubcards
 					isActive={props.sudokuSolver}
 					backTo={backToPortfolio}
-					content={routes[portfolio].subroutes.coding[3].element}
+					content={routes[portfolio].subroutes.coding[3]}
 				/>
 				<CreateSubcards
 					isActive={props.blackJack}
 					backTo={backToPortfolio}
-					content={routes[portfolio].subroutes.coding[4].element}
+					content={routes[portfolio].subroutes.coding[4]}
 				/>
 				<CreateSubcards
 					isActive={props.pathfinding}
 					backTo={backToPortfolio}
-					content={routes[portfolio].subroutes.coding[2].element}
+					content={routes[portfolio].subroutes.coding[2]}
 				/>
 				<CreateSubcards
 					isActive={props.dss}
 					backTo={backToPortfolio}
-					content={routes[portfolio].subroutes.coding[5].element}
+					content={routes[portfolio].subroutes.coding[5]}
 				/>
 
 				{/* COMMUNICATION PROJECTS */}
 				<CreateSubcards
 					isActive={props.literatureFair}
 					backTo={backToPortfolio}
-					content={routes[portfolio].subroutes.communication[0].element}
+					content={routes[portfolio].subroutes.communication[0]}
 				/>
 				<CreateSubcards
 					isActive={props.industry4}
 					backTo={backToPortfolio}
-					content={routes[portfolio].subroutes.communication[1].element}
+					content={routes[portfolio].subroutes.communication[1]}
 				/>
 			</div>
 
@@ -62,12 +62,12 @@ function RenderSubcards(props) {
 				<CreateSubcards
 					isActive={props.creatingThisWebsite}
 					backTo={backToBlog}
-					content={routes[blog].subroutes[1].element}
+					content={routes[blog].subroutes[1]}
 				/>
 				<CreateSubcards
 					isActive={props.firstWorkTerm}
 					backTo={backToBlog}
-					content={routes[blog].subroutes[0].element}
+					content={routes[blog].subroutes[0]}
 				/>
 			</div>
 		</div>

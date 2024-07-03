@@ -1,19 +1,11 @@
 import React from "react";
 
-import { blog, routes } from "../../../routes/routes";
-
-import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
 import Subheading from "../../../data/components/Subheading";
 
 export default function FirstWorkTerm() {
 	return (
 		<div>
-			<DetailedPost
-				src={routes[blog].subroutes[0].image}
-				label={routes[blog].subroutes[0].label}
-				details={`Troy Zada \u00A0|\u00A0 ${routes[blog].subroutes[0].date}`}
-			/>
 			<Paragraph content="My first coop work term took place over the Spring 2020 term (May 2020 – August 2020), which also ended up being the first few months that COVID-19 emerged. The company I was working for is called EngineeringCPR, and their main responsibility involves designing and manufacturing medical devices. " />
 
 			<Subheading subheading="Changing Roles" />

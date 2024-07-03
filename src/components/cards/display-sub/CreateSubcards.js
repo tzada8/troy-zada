@@ -1,6 +1,9 @@
 import React from "react";
 
+import { FULL_NAME } from "../../../data/constants";
+
 import CloseButton from "../../button/CloseButton";
+import DetailedPost from "../../detailed-post/DetailedPost";
 import HorizontalBar from "../../horizontal-bar/HorizontalBar";
 import "./CreateSubcards.css";
 
@@ -19,8 +22,15 @@ function CreateSubcards(props) {
             </div>
             <HorizontalBar light />
 
-            {/* REST OF CONTENT */}
-            <div className="card-content">{props.content}</div>
+            <div className="card-content">
+               <DetailedPost
+                  label={props.content.label}
+                  src={props.content.image}
+                  details={`${FULL_NAME} \u00A0|\u00A0 ${props.content.date}`}
+                  github={props.content.github}
+               />
+               {props.content.element}
+            </div>
 
             <HorizontalBar light />
          </div>

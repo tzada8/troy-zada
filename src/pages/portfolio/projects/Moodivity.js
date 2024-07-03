@@ -1,25 +1,13 @@
 import React from "react";
 
-import { portfolio, routes } from "../../../routes/routes";
-
-import DetailedPost from "../../../components/detailed-post/DetailedPost";
 import Paragraph from "../../../data/components/Paragraph";
 import Subheading from "../../../data/components/Subheading";
 import TechListItem from "../../../data/components/TechListItem";
 import TypeOfTech from "../../../data/components/TypeOfTech";
 
 export default function Moodivity() {
-	const moodivity = routes[portfolio].subroutes.coding[0];
 	return (
 		<div>
-			{/* TODO: Move DetailedPost to CreateSubcards component. */}
-			<DetailedPost
-				label={moodivity.label}
-				src={moodivity.image}
-				details={`Troy Zada \u00A0|\u00A0 ${moodivity.date}`}
-				github={moodivity.github}
-			/>
-
 			{/* TODO: Can add tagline (briefDescription) here. Think of the Juxtapose README. */}
 
 			<Subheading subheading="About the Application" />
