@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Icon from "../icon/Icon";
+import RoutingButton from "../button/RoutingButton";
 import "./SocialIcon.css";
 
 export default function SocialIcon(props) {
@@ -12,10 +12,8 @@ export default function SocialIcon(props) {
             onMouseEnter={() => setIsTooltipVisible(true)}
             onMouseLeave={() => setIsTooltipVisible(false)}
         >
-            <a href={props.link} target="_blank" rel="noreferrer">
-                {/* TODO: Reminder to convert all these to react-icons: <FaEnvelope />. */}
-                <Icon image={props.icon} blue large clickable />
-            </a>
+            {/* TODO: Reminder to convert all these to react-icons: <FaEnvelope />. */}
+            <RoutingButton path={props.link} icon={props.icon} blue />
             {props.tooltip && isTooltipVisible && <div className="social-tooltip">{props.tooltip}</div>}
         </div>
     )

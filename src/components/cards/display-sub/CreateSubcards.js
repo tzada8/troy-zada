@@ -2,9 +2,9 @@ import React from "react";
 
 import { FULL_NAME } from "../../../data/constants";
 
-import CloseButton from "../../button/CloseButton";
 import DetailedPost from "../../detailed-post/DetailedPost";
 import HorizontalBar from "../../horizontal-bar/HorizontalBar";
+import RoutingButton from "../../button/RoutingButton";
 import "./CreateSubcards.css";
 
 // CREATES CARD FRAME WITH APPROPRIATE CONTENT
@@ -18,7 +18,7 @@ function CreateSubcards(props) {
          <div className="card-container">
             {/* HEADER FOR BACK TO PREVIOUS PAGE */}
             <div className="close-card-button">
-               <CloseButton backTo={props.backTo} />
+               <RoutingButton path={props.backTo} icon="fas fa-times" />
             </div>
             <HorizontalBar light />
 

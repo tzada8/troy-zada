@@ -20,14 +20,8 @@
     border: 2px solid var(--GREY);
 }
 
-.external-margin {
-    width: 110px;
-    margin: 10px 5px;
-}
-
-.internal-margin {
-    width: 100%;
-    margin: 10px auto 20px;
+.button-link {
+    margin: 20px auto;
 }
 
 .nav-link {
