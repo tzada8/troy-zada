@@ -26,7 +26,7 @@ export default function Experience() {
 						label={w.label}
 						company={w.company}
 						duration={w.duration}
-						description={w.description}
+						details={w.details}
 					/>)}
 				</div>
 			))}

@@ -1,3 +1,14 @@
+/* TODO: Figure out where I'm text-align: center by default and revert it to left. */
+p, li, p.quote-text {
+    color: var(--GREY);
+    font-family: var(--FONT);
+    line-height: 17px;
+    letter-spacing: 0.2px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+}
+
 .bold {
     /* TODO: Confirm this works. */
     font-weight: 600;

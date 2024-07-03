@@ -13,11 +13,9 @@ export default function WorkInfo(props) {
             <h3 className="work-role">{props.label}</h3>
             <h4 className="work-duration">{companyAndDuration}</h4>
             <HorizontalBar />
-            <p className="work-description">{props.description}.</p>
-            {/* TODO: Make description in bulleted list. */}
-            {/* <ul>
+            <ul className="work-description">
                 {props.details.map((d, k) => <li key={k} className="work-detail">{d}</li>)}
-            </ul> */}
+            </ul>
         </div>
     )
 }

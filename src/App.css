@@ -35,14 +35,6 @@ h1 {
    font-size: var(--CARD_HEADING_FONT);
 }
 
-p {
-   color: var(--GREY);
-   line-height: 17px;
-   letter-spacing: 0.2px;
-   font-size: 12px;
-   text-align: left;
-}
-
 li {
    list-style: none;
 }
