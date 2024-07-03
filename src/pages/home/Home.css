@@ -32,10 +32,6 @@
 	margin-bottom: 15px;
 }
 
-#copyright {
-	font-weight: bold;
-}
-
 .social-media {
 	margin: 20px 0;
 }
@@ -53,10 +49,5 @@
 
 	.home-intro-program {
 		font-size: 18px;
-	}
-
-	#home-paragraph,
-	#copyright {
-		font-size: 13px;
 	}
 }

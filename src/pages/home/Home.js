@@ -1,8 +1,10 @@
 import React from "react";
 
 import { FULL_NAME, socials } from "../../data/constants";
+import { contact, routes } from "../../routes/routes";
 
 import HorizontalBar from "../../components/horizontal-bar/HorizontalBar";
+import RoutingButton from "../../components/button/RoutingButton";
 import SocialIcon from "../../components/social-icon/SocialIcon";
 import "../../components/cards/display-main/CreateCards.css";
 import "./Home.css";
@@ -11,21 +13,18 @@ export default function Home(props) {
 	return (
 		<div className={`card-box home-vis center ${!props.isOnlyComp && "home-loc"}`}>
 			<div className="card-container">
-				{/* ROUND HEADSHOT IMAGE */}
 				<div className={`home-img-round ${props.isOnlyComp ? "headshot1" : "headshot2"}`} />
-				{/* TITLE OF CARD */}
+
 				<div className="home-intro-title">
 					{/* Troy Zada, an Engineering Student, a Programmer, Lifelong Learner, ... */}
 					<h1 className="home-intro-name">{FULL_NAME}</h1>
-					{/* CURRENT ROLE/POSITION */}
 					<h4 className="home-intro-program">
 						Management Engineering Student @ University of Waterloo
 					</h4>
 					<HorizontalBar gradient />
 				</div>
 
-				{/* BRIEF OVERALL DESCRIPTION */}
-				<p id="home-paragraph">
+				<p>
 					Dedicated and hard-working engineering student with a passion for
 					programming, innovation, optimization, and learning. "Live as if
 					you were to die tomorrow. Learn as if you were to live forever."
@@ -38,9 +37,11 @@ export default function Home(props) {
 					))}
 				</div>
 
-				<p id="copyright">
-					Copyright © 2021 Troy Zada. All Rights Reserved.
-				</p>
+				<RoutingButton
+					path={routes[contact].path}
+					label="GET IN TOUCH"
+					icon="fas fa-file-download"
+				/>
 			</div>
 		</div>
 	);

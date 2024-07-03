@@ -52,7 +52,7 @@ form .submit {
    letter-spacing: 2px;
    height: 40px;
    width: 80%;
-   margin-top: 5px;
+   margin: 5px 10% 0;
    transition: background 0.5s ease;
 }
 
