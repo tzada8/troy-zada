@@ -7,7 +7,7 @@ export default function ProgressBar(props) {
 
 	return (
 		<li className="progress-container">
-			<h4 className="progress-header">
+			<h4>
 				{props.label}
 				<span className="percentage">{numberAsPercent}</span>
 			</h4>

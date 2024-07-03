@@ -9,22 +9,10 @@ import "./Home.css";
 
 export default function Home(props) {
 	return (
-		<div
-			className={
-				props.isOnlyComp
-					? "card-box home-vis"
-					: "card-box home-vis home-loc"
-			}
-		>
+		<div className={`card-box home-vis center ${!props.isOnlyComp && "home-loc"}`}>
 			<div className="card-container">
 				{/* ROUND HEADSHOT IMAGE */}
-				<div
-					className={
-						props.isOnlyComp
-							? "headshot1 home-img-round"
-							: "headshot2 home-img-round"
-					}
-				/>
+				<div className={`home-img-round ${props.isOnlyComp ? "headshot1" : "headshot2"}`} />
 				{/* TITLE OF CARD */}
 				<div className="home-intro-title">
 					{/* Troy Zada, an Engineering Student, a Programmer, Lifelong Learner, ... */}

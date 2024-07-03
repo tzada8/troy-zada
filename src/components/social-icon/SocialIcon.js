@@ -14,7 +14,7 @@ export default function SocialIcon(props) {
         >
             {/* TODO: Reminder to convert all these to react-icons: <FaEnvelope />. */}
             <RoutingButton path={props.link} icon={props.icon} blue />
-            {props.tooltip && isTooltipVisible && <div className="social-tooltip">{props.tooltip}</div>}
+            {props.tooltip && isTooltipVisible && <div className="social-tooltip center">{props.tooltip}</div>}
         </div>
     )
 }

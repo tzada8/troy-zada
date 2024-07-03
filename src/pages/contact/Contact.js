@@ -86,7 +86,7 @@ export default function Contact() {
 					/>
 				</form>
 
-				<div id={"thank-you-container"}>
+				<div id="thank-you-container" className="center">
 					<Icon image="far fa-check-circle" green />
 					<h2 className="thank-you-word">Thank you!</h2>
 					<h4 className="thank-you-message">
