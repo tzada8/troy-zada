@@ -4,7 +4,6 @@ import { experienceData } from "../../data/ExperienceData";
 import { contact, routes } from "../../routes/routes";
 
 import RoutingButton from "../../components/button/RoutingButton";
-import SectionSpacer from "../../components/section-spacer/SectionSpacer";
 import Subtitle from "../../components/subtitle/Subtitle";
 import WorkInfo from "../../components/work-info/WorkInfo";
 import "./Experience.css";
@@ -30,7 +29,6 @@ export default function Experience() {
 							duration={w.duration}
 							description={w.description}
 						/>)}
-						<SectionSpacer />
 					</div>
 				);
 			})}

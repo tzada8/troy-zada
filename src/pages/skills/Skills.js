@@ -3,7 +3,6 @@ import React from "react";
 import { skillsData } from "../../data/skills/SkillsData";
 
 import ProgressBar from "../../components/progress-bar/ProgressBar";
-import SectionSpacer from "../../components/section-spacer/SectionSpacer";
 import Subtitle from "../../components/subtitle/Subtitle";
 import "./Skills.css";
 
@@ -25,7 +24,6 @@ export default function Skills() {
 		<div>
 			<Subtitle icon="fas fa-users" label="Interpersonal Skills" />
 			{displayInterpersonalData}
-			<SectionSpacer />
 			<Subtitle icon="fas fa-cogs" label="Technical Skills" />
 			{displayTechnicalData}
 		</div>

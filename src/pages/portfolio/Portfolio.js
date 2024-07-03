@@ -3,7 +3,6 @@ import React from "react";
 import { portfolio, routes } from "../../routes/routes";
 
 import DetailedPost from "../../components/detailed-post/DetailedPost";
-import SectionSpacer from "../../components/section-spacer/SectionSpacer";
 import Subtitle from "../../components/subtitle/Subtitle";
 import "./Portfolio.css";
 
@@ -33,7 +32,6 @@ export default function Portfolio() {
 		<div>
 			<Subtitle icon="fas fa-code" label="Coding Projects" />
 			{codingProjectCardsDisplay}
-			<SectionSpacer />
 			<Subtitle icon="fas fa-comments" label="Communication Projects" />
 			{comProjectCardsDisplay}
 		</div>

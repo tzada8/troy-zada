@@ -5,7 +5,7 @@ import "./Subtitle.css";
 
 export default function Subtitle(props) {
    return (
-      <div>
+      <div className="subtitle-container">
          <h3 className="subtitle-header">
             <i className={`subtitle-icon ${props.icon}`} />
             {props.label}
