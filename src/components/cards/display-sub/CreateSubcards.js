@@ -7,16 +7,10 @@ import HorizontalBar from "../../horizontal-bar/HorizontalBar";
 import RoutingButton from "../../button/RoutingButton";
 import "./CreateSubcards.css";
 
-// CREATES CARD FRAME WITH APPROPRIATE CONTENT
-function CreateSubcards(props) {
+export default function CreateSubcards(props) {
    return (
-      <div
-         className={
-            props.isActive ? "card-box-top other-page-top" : "card-box-top"
-         }
-      >
+      <div className={`card-box-top ${props.isActive && "other-page-top"}`}>
          <div className="card-container">
-            {/* HEADER FOR BACK TO PREVIOUS PAGE */}
             <div className="close-card-button">
                <RoutingButton path={props.backTo} icon="fas fa-times" />
             </div>
@@ -37,5 +31,3 @@ function CreateSubcards(props) {
       </div>
    );
 }
-
-export default CreateSubcards;

@@ -2,7 +2,6 @@ import { blogRoutes } from "./blog-routes";
 import { portfolioRoutes } from "./portfolio-routes";
 import { rootRoutes } from "./root-routes";
 
-// Components
 import Blog from "../pages/blog/Blog";
 import Contact from "../pages/contact/Contact";
 import Experience from "../pages/experience/Experience";
@@ -13,6 +12,7 @@ import Skills from "../pages/skills/Skills";
 
 export const pageNotFound = {
     label: "PAGE NOT FOUND",
+    path: "*",
 	element: <PageNotFound />,
 	quote: "Understanding a question is half the answer",
 	author: "Socrates",

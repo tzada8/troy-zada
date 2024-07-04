@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import { blog, portfolio, routes } from "./routes/routes";
+import { blog, pageNotFound, portfolio, routes } from "./routes/routes";
 
 import Display from "./Display";
 import "./App.css";
@@ -11,64 +11,104 @@ import "./styles/text.css";
 function App() {
 	return (
 		<div>
-			<Router>
+			{/* TODO: Look into using <Fade> component. */}
+			<BrowserRouter>
 				<Switch>
-					{/* MAYBE FACTOR STUFF FROM INSIDE <SWITCH> OUT AND SIMPLIFY CODE??? */}
+					{/* TODO: See if possible to only do something like
+						<Display info={routes[0]} active={routes[0].path} />
+					and still be able to have transitions/animations.
+					Currently, doesn't seem possible since doing above would
+					only render 1 component, putting it in the place it already
+					should be (instead of transitioning it there). Maybe there's
+					a way to render component in an initial spot to allow the
+					transition to happen.
+					*/}
+					{/* TODO: If possible, would be able to get rid of double
+					routes looping in App.js and Display.js. */}
+
+
+					{/* TODO: Use this instead. */}
+					{/* {routes.map((r, i) => (
+						<Route exact key={i} path={r.path}>
+							<Display active={r.path} />
+						</Route>
+					))} */}
 
 					<Route exact path={routes[0].path}>
-						<Display home={true} startPos={true} />
+						<Display active={routes[0].path} />
 					</Route>
 
 					<Route exact path={routes[1].path}>
-						<Display experience={true} />
+						<Display active={routes[1].path} />
 					</Route>
 
 					<Route exact path={routes[2].path}>
-						<Display skills={true} />
+						<Display active={routes[2].path} />
 					</Route>
 
 					<Route exact path={routes[3].path}>
-						<Display portfolio={true} />
-					</Route>
-					<Route exact path={routes[portfolio].subroutes[1].path}>
-						<Display portfolio={false} troyZada={true} />
-					</Route>
-					<Route exact path={routes[portfolio].subroutes[0].path}>
-						<Display portfolio={false} moodivity={true} />
-					</Route>
-					<Route exact path={routes[portfolio].subroutes[3].path}>
-						<Display portfolio={false} sudokuSolver={true} />
-					</Route>
-					<Route exact path={routes[portfolio].subroutes[4].path}>
-						<Display portfolio={false} blackJack={true} />
-					</Route>
-					<Route exact path={routes[portfolio].subroutes[2].path}>
-						<Display portfolio={false} pathfinding={true} />
-					</Route>
-					<Route exact path={routes[portfolio].subroutes[5].path}>
-						<Display portfolio={false} dss={true} />
+						<Display active={routes[3].path} />
 					</Route>
 
 					<Route exact path={routes[4].path}>
-						<Display blog={true} />
-					</Route>
-					<Route exact path={routes[blog].subroutes[1].path}>
-						<Display blog={false} creatingThisWebsite={true} />
-					</Route>
-					<Route exact path={routes[blog].subroutes[0].path}>
-						<Display blog={false} firstWorkTerm={true} />
+						<Display active={routes[4].path} />
 					</Route>
 
 					<Route exact path={routes[5].path}>
-						<Display contact={true} />
+						<Display active={routes[5].path} />
 					</Route>
 
-					{/* IN CASE USER TYPES A LINK IN URL THAT DOES NOT EXIST */}
+					{/* TODO: Use this instead. */}
+					{/* {routes[portfolio].subroutes.map((r, i) => (
+						<Route exact key={i} path={r.path}>
+							<Display active={r.path} />
+						</Route>
+					))} */}
+
+					<Route exact path={routes[portfolio].subroutes[0].path}>
+						<Display active={routes[portfolio].subroutes[0].path} />
+					</Route>
+
+					<Route exact path={routes[portfolio].subroutes[1].path}>
+						<Display active={routes[portfolio].subroutes[1].path} />
+					</Route>
+
+					<Route exact path={routes[portfolio].subroutes[2].path}>
+						<Display active={routes[portfolio].subroutes[2].path} />
+					</Route>
+
+					<Route exact path={routes[portfolio].subroutes[3].path}>
+						<Display active={routes[portfolio].subroutes[3].path} />
+					</Route>
+
+					<Route exact path={routes[portfolio].subroutes[4].path}>
+						<Display active={routes[portfolio].subroutes[4].path} />
+					</Route>
+
+					<Route exact path={routes[portfolio].subroutes[5].path}>
+						<Display active={routes[portfolio].subroutes[5].path} />
+					</Route>
+
+					{/* TODO: Use this instead. */}
+					{/* {routes[blog].subroutes.map((r, i) => (
+						<Route exact key={i} path={r.path}>
+							<Display active={r.path} />
+						</Route>
+					))} */}
+
+					<Route exact path={routes[blog].subroutes[0].path}>
+						<Display active={routes[blog].subroutes[0].path} />
+					</Route>
+
+					<Route exact path={routes[blog].subroutes[1].path}>
+						<Display active={routes[blog].subroutes[1].path} />
+					</Route>
+
 					<Route>
-						<Display pageNotFound={true} />
+						<Display active={pageNotFound.path} />
 					</Route>
 				</Switch>
-			</Router>
+			</BrowserRouter>
 		</div>
 	);
 }
