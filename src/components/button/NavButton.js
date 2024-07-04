@@ -6,7 +6,7 @@ import "./Button.css";
 export default function NavButton(props) {
     return (
         <NavLink
-            exact
+            exact={props.exact}
             to={props.path}
             className="button-font nav-link background-change"
             activeClassName="nav-link-active"

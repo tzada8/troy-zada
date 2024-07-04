@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { routes } from "../../routes/routes";
+import { home, routes } from "../../routes/routes";
 
 import Icon from "../icon/Icon";
 import Logo from "../logo/Logo";
@@ -20,7 +20,13 @@ export default function Navbar(props) {
 			</div>
 			<div className={`nav-menu ${click && "active"}`}>
 				{routes.map((r, k) => (
-					<NavButton key={k} label={r.label} path={r.path} onClick={closeMenu} />
+					<NavButton
+						key={k}
+						label={r.label}
+						path={r.path}
+						onClick={closeMenu}
+						exact={r.path === routes[home].path}
+					/>
 				))}
 			</div>
 		</nav>
