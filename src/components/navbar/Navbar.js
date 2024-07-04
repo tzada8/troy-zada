@@ -34,7 +34,7 @@ function Navbar(props) {
 	);
 
 	const navbarMobileIconDisplay = (
-		<div className="menu-icon" onClick={handleClick}>
+		<div className="menu-icon center" onClick={handleClick}>
 			<Icon image={click ? "fas fa-times" : "fas fa-bars"} white clickable />
 		</div>
 	);
