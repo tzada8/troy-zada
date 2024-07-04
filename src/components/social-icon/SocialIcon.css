@@ -12,7 +12,7 @@
     width: 200px;
     margin-top: 6px;
     padding: 8px;
-    border-radius: 4px;
+    border-radius: var(--BORDER-RADIUS-DEFAULT);
     z-index: 999;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }

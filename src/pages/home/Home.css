@@ -11,7 +11,7 @@
 	height: 150px;
 	width: 150px;
 	margin: auto;
-	border-radius: 50%;
+	border-radius: var(--BORDER-RADIUS-ROUND);
 	border: 4px solid var(--DARK-BLUE);
 	transition: background var(--TRANSITION-DEFAULT);
 }

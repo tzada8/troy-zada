@@ -1,7 +1,7 @@
 figure.post-image-container {
     position: relative;
     border: 1px solid var(--BLACK);
-    border-radius: 10px;
+    border-radius: var(--BORDER-RADIUS-DEFAULT);
     width: 100%;
     padding-top: 75%;
     overflow: hidden;

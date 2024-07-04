@@ -10,7 +10,7 @@
 	justify-content: center;
 	height: 90px;
 	width: 90px;
-	border-radius: 50%;
+	border-radius: var(--BORDER-RADIUS-ROUND);
 	border: 2px solid var(--BLACK);
 	transition: color var(--TRANSITION-DEFAULT);
 }

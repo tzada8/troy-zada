@@ -12,7 +12,7 @@ hr.gradient-bar {
 hr.generic-bar {
     border: 0;
     border-top: 1px solid var(--BLACK);
-    border-radius: 8px;
+    border-radius: var(--BORDER-RADIUS-DEFAULT);
 }
 
 hr.thick {

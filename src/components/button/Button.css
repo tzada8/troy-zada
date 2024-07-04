@@ -17,6 +17,7 @@
     display: block;
     padding: 4px 10px;
     border: 2px solid var(--BLACK);
+    border-radius: var(--BORDER-RADIUS-DEFAULT);
 }
 
 .button-link {

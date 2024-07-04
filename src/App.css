@@ -25,6 +25,10 @@
    --TRANSITION-FAST: 0.2s linear;
    --TRANSITION-DEFAULT: 0.5s linear;
    --TRANSITION-EASE: 0.5s ease;
+
+   /* BORDERS */
+   --BORDER-RADIUS-ROUND: 50%;
+   --BORDER-RADIUS-DEFAULT: 8px;
 }
 
 * {
