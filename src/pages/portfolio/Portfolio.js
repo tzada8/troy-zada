@@ -4,7 +4,6 @@ import { portfolio, routes } from "../../routes/routes";
 
 import DetailedPost from "../../components/detailed-post/DetailedPost";
 import Subtitle from "../../components/subtitle/Subtitle";
-import "./Portfolio.css";
 
 export default function Portfolio() {
 	return (

@@ -3,7 +3,7 @@ import React from "react";
 import HorizontalBar from "../horizontal-bar/HorizontalBar";
 import "./Footer.css";
 
-function Footer(props) {
+export default function Footer(props) {
     return (
         <div className="footer-container">
             <HorizontalBar light />
@@ -13,5 +13,3 @@ function Footer(props) {
         </div>
     )
 }
-
-export default Footer;

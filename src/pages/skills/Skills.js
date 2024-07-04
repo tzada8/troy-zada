@@ -4,7 +4,6 @@ import { skillsData } from "../../data/skills-data";
 
 import ProgressBar from "../../components/progress-bar/ProgressBar";
 import Subtitle from "../../components/subtitle/Subtitle";
-import "./Skills.css";
 
 export default function Skills() {
 	return (

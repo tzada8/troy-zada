@@ -4,7 +4,6 @@ import { experienceData } from "../../data/experience-data";
 
 import Subtitle from "../../components/subtitle/Subtitle";
 import WorkInfo from "../../components/work-info/WorkInfo";
-import "./Experience.css";
 
 export default function Experience() {
 	return (

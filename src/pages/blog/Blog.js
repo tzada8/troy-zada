@@ -4,7 +4,6 @@ import { blog, routes } from "../../routes/routes";
 
 import DetailedPost from "../../components/detailed-post/DetailedPost";
 import Subtitle from "../../components/subtitle/Subtitle";
-import "./Blog.css";
 
 export default function Blog() {
 	return (
