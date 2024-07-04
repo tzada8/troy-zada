@@ -10,6 +10,7 @@ import RenderSubcards from "./components/cards/display-sub/RenderSubcards";
 function Display(props) {
 	return (
 		<div>
+			<Navbar isMid={props.home} />
 			<RenderCards
 				home={props.home}
 				experience={props.experience}
@@ -19,7 +20,6 @@ function Display(props) {
 				contact={props.contact}
 				pageNotFound={props.pageNotFound}
 			/>
-			<Navbar startPos={props.startPos} />
 			<RenderSubcards
 				troyZada={props.troyZada}
 				moodivity={props.moodivity}

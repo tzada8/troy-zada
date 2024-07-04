@@ -1,65 +1,34 @@
-/* GLOBAL VARIABLE FOR NUMBER OF ITEMS */
-:root {
-	--NUM_OF_ITEMS: 6;
-	--NAV_MENU_SIZE: calc(var(--NUM_OF_ITEMS) * 30px);
-}
-
 nav {
 	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 150px;
 	margin-top: 32px;
 	z-index: 999;
 	transition: margin-left 0.5s linear;
 }
 
 .middle {
-	margin-left: calc(50% - (135px / 2 + 25.5%));
+	margin-left: calc(50% - (150px / 2 + 25.5%));
 }
 
 .left {
-	margin-left: calc(50% - (135px + 33%));
+	margin-left: calc(50% - (150px + 33%));
 }
 
-.navbar-container {
-	display: flex;
-	height: var(--NAV_MENU_SIZE);
-	max-width: 1500px;
-	display: table-column;
-}
-
-.navbar-logo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 15px auto;
+.navbar-logo-position {
+	margin: 15px auto 20px;
 }
 
 .menu-icon {
 	display: none;
 }
 
-.nav-menu {
-	justify-content: center;
-	align-items: center;
-	width: 135px;
-	display: table;
-}
-
-.nav-item {
-	height: calc(var(--NAV_MENU_SIZE) / var(--NUM_OF_ITEMS));
-}
-
-/* MIGHT NEED TO ADJUST THE MAX-WIDTH DEPENDING ON CARD SIZES */
-
-/* IF SCREEN IS DESKTOP-SMALL VERSION, THEN HAVE FOLLOWING STYLES */
 @media screen and (max-width: 960px) {
 	nav {
 		background: var(--DARK-GREY);
 		position: fixed;
+		width: 100%;
+		height: 50px;
 		margin-top: 0;
-		width: 100vw;
 		transition: none;
 	}
 
@@ -68,16 +37,10 @@ nav {
 		margin-left: 0;
 	}
 
-	.navbar-container {
-		height: 50px;
-		display: flex;
-	}
-
-	.navbar-logo {
+	.navbar-logo-position {
 		position: absolute;
-		left: 15px;
-		margin: 0;
-		transform: translateY(13%);
+		margin-top: 5px;
+		margin-left: 20px;
 	}
 
 	.menu-icon {
@@ -85,8 +48,8 @@ nav {
 		display: block;
 		width: 32px;
 		height: 32px;
-		top: 20%;
-		right: 30px;
+		top: 9px;
+		right: 20px;
 	}
 
 	.nav-menu {
@@ -94,8 +57,6 @@ nav {
 		top: 50px;
 		right: -100%;
 		width: 100%;
-		height: calc(var(--NAV_MENU_SIZE) + 4px);
-		z-index: 1;
 		border: 3px solid var(--DARK-GREY);
 		border-top: none;
 		transition: right 0.5s ease;
@@ -103,10 +64,5 @@ nav {
 
 	.nav-menu.active {
 		right: 0;
-		transition: right 0.5s ease;
-	}
-
-	.nav-item {
-		padding: 0;
 	}
 }
