@@ -16,6 +16,7 @@ export default function Portfolio() {
 					label={proj.label}
 					src={proj.image}
 					details={proj.tagline}
+					bottomSpacing={routes[portfolio].subroutes.length - 1 !== k}
 				/>
 			))}
 		</div>

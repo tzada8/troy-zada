@@ -11,5 +11,5 @@ export default function Footer(props) {
                 "{props.quote}" - <span className="footer-author">{props.author}</span>
             </p>}
         </div>
-    )
+    );
 }

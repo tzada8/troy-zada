@@ -1,5 +1,8 @@
 .footer-container {
-    margin-top: 35px;
+    position: sticky;
+    bottom: 0;
+    padding-top: 20px;
+    z-index: 100;
 }
 
 p.footer-quote {

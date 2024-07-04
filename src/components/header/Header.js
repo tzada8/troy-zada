@@ -13,5 +13,5 @@ export default function Header(props) {
             </div>
             <HorizontalBar />
         </div>
-    )
+    );
 }

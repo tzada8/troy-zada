@@ -8,9 +8,13 @@ import Subtitle from "../../components/subtitle/Subtitle";
 export default function Skills() {
 	return (
 		<div>
-			{Object.keys(skillsData).map(k => (
+			{Object.keys(skillsData).map((k, i) => (
 				<div>
-					<Subtitle icon={skillsData[k].icon} label={skillsData[k].label} />
+					<Subtitle
+						icon={skillsData[k].icon}
+						label={skillsData[k].label}
+						topSpacing={i !== 0}
+					/>
 					{skillsData[k].data.map((s, kk) => <ProgressBar
 						key={kk}
 						label={s.label}

@@ -1,5 +1,6 @@
 :root {
     --CARD_WIDTH: 35%;
+    /* TODO: Maybe convert height as % of screen (similar to Juxtapose modal). */
     --CARD_HEIGHT: 525px;
 }
 
@@ -11,7 +12,6 @@
     max-width: 400px;
     height: var(--CARD_HEIGHT);
     align-content: center;
-    overflow-y: auto;
     border: 2px solid var(--BLACK);
     border-radius: var(--BORDER-RADIUS-DEFAULT);
     z-index: 8;
@@ -43,11 +43,15 @@
 }
 
 .card-container {
-    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    margin: 5%;
 }
 
 .card-content {
-    margin: 35px 0;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 @media screen and (min-width: 1200px) {

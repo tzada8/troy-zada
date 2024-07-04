@@ -16,6 +16,7 @@ export default function Blog() {
 					label={post.label}
 					src={post.image}
 					details={`Troy Zada \u00A0|\u00A0 ${post.date}`}
+					bottomSpacing={routes[blog].subroutes.length - 1 !== k}
 				/>
 			))}
 		</div>
