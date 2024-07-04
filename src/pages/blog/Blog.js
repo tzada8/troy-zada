@@ -9,18 +9,15 @@ export default function Blog() {
 	return (
 		<div>
 			<Subtitle icon="fas fa-blog" label="Recent Posts" />
-			<DetailedPost
-				label={routes[blog].subroutes[0].label}
-				path={routes[blog].subroutes[0].path}
-				src={routes[blog].subroutes[0].image}
-				details={`Troy Zada \u00A0|\u00A0 ${routes[blog].subroutes[0].date}`}
-			/>
-			<DetailedPost
-				label={routes[blog].subroutes[1].label}
-				path={routes[blog].subroutes[1].path}
-				src={routes[blog].subroutes[1].image}
-				details={`Troy Zada \u00A0|\u00A0 ${routes[blog].subroutes[1].date}`}
-			/>
+			{routes[blog].subroutes.map((post, k) => (
+				<DetailedPost
+					key={k}
+					path={post.path}
+					label={post.label}
+					src={post.image}
+					details={`Troy Zada \u00A0|\u00A0 ${post.date}`}
+				/>
+			))}
 		</div>
 	);
 }
