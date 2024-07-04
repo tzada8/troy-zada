@@ -19,8 +19,7 @@ export default function Display(props) {
 			<Navbar isMid={isHomeActive} />
 			<Home isOnlyComp={isHomeActive} />
 
-			{/* TODO: Technically <CreateCards /> should also display Home. */}
-			{routes.map((r, k) => (
+			{routes.map((r, k) => r.path !== routes[home].path && (
 				<Card
 					key={k}
 					isActive={props.active === r.path && !isHomeActive}
