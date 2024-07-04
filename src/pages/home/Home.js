@@ -6,12 +6,14 @@ import { contact, routes } from "../../routes/routes";
 import HorizontalBar from "../../components/horizontal-bar/HorizontalBar";
 import RoutingButton from "../../components/button/RoutingButton";
 import SocialIcon from "../../components/social-icon/SocialIcon";
-import "../../components/cards/display-main/CreateCards.css";
+import "../../components/card/Card.css";
 import "./Home.css";
 
 export default function Home(props) {
+	const cardLoc = props.isOnlyComp ? "main-card-inactive-pos" : "home-card-dual-pos";
+
 	return (
-		<div className={`card-box home-vis center ${!props.isOnlyComp && "home-loc"}`}>
+		<div className={`card-box home-visibility center ${cardLoc}`}>
 			<div className="card-container">
 				<div className={`home-img-round ${props.isOnlyComp ? "headshot1" : "headshot2"}`} />
 

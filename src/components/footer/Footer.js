@@ -7,9 +7,9 @@ function Footer(props) {
     return (
         <div className="footer-container">
             <HorizontalBar light />
-            <p className="body-small footer-quote">
+            {props.quote && props.author && <p className="body-small footer-quote">
                 "{props.quote}" - <span className="footer-author">{props.author}</span>
-            </p>
+            </p>}
         </div>
     )
 }

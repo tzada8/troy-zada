@@ -14,7 +14,7 @@ export default function RoutingButton(props) {
     );
     const textButton = (
         <div className="button-font">
-            {props.label}
+            {props.label && props.label.toUpperCase()}
             <Icon image={props.icon} className="button-icon" small white />
         </div>
     );

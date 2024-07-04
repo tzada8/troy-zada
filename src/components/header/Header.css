@@ -3,5 +3,7 @@
 }
 
 .header-title {
+    display: grid;
+    grid-template-columns: 1fr auto;
     margin-bottom: 5px;
 }

@@ -1,0 +1,83 @@
+:root {
+    --CARD_WIDTH: 35%;
+    --CARD_HEIGHT: 525px;
+}
+
+.card-box {
+    background: var(--WHITE);
+    position: absolute;
+    display: block;
+    width: var(--CARD_WIDTH);
+    max-width: 400px;
+    height: var(--CARD_HEIGHT);
+    align-content: center;
+    overflow-y: auto;
+    border: 2px solid var(--BLACK);
+    z-index: 8;
+    opacity: 0;
+    transition: var(--COMMON_TRANSITION);
+}
+
+.home-visibility {
+    z-index: 10;
+    opacity: 1;
+}
+
+.main-card-inactive-pos {
+    margin: 26px calc(50% - (var(--CARD_WIDTH) / 2));
+}
+
+.sub-card-inactive-pos {
+    margin: -20% calc(50% + 4% + 8px);
+}
+
+.home-card-dual-pos {
+    margin: 26px calc(50% - (var(--CARD_WIDTH) - 5%) - 16px);
+}
+
+.card-active-pos {
+    margin: 26px calc(50% + 4% + 8px);
+    z-index: 9;
+    opacity: 1;
+}
+
+.card-container {
+    margin: 30px;
+}
+
+.card-content {
+    margin: 35px 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .card-box {
+        max-width: 533px;
+        height: 600px;
+    }
+
+    .card-active-pos {
+        margin: 26px calc(50% + 6%);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .card-box {
+        display: none;
+        width: 92%;
+        max-width: none;
+        height: auto;
+        margin: 75px 4%;
+    }
+
+    .home-visibility {
+        display: block;
+    }
+
+    .home-card-dual-pos {
+        display: none;
+    }
+
+    .card-active-pos {
+        display: block;
+    }
+}

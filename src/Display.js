@@ -1,9 +1,10 @@
 import React from "react";
 
+import { FULL_NAME } from "./data/constants";
 import { blog, home, pageNotFound, portfolio, routes } from "./routes/routes";
 
-import CreateCards from "./components/cards/display-main/CreateCards";
-import CreateSubcards from "./components/cards/display-sub/CreateSubcards";
+import Card from "./components/card/Card";
+import DetailedPost from "./components/detailed-post/DetailedPost";
 import Home from "./pages/home/Home";
 import Navbar from "./components/navbar/Navbar";
 
@@ -20,42 +21,56 @@ export default function Display(props) {
 
 			{/* TODO: Technically <CreateCards /> should also display Home. */}
 			{routes.map((r, k) => (
-				<CreateCards
+				<Card
 					key={k}
 					isActive={props.active === r.path && !isHomeActive}
-					label={r.label}
-					path={r.path}
-					content={r.element}
+					label={r.label.toUpperCase()}
 					quote={r.quote}
 					author={r.author}
-				/>
+				>{r.element}</Card>
 			))}
 
 			{routes[portfolio].subroutes.map((r, k) => (
-				<CreateSubcards
+				<Card
 					key={k}
 					isActive={props.active === r.path}
+					label={r.label}
 					backTo={backToPortfolio}
-					content={r}
-				/>
+					subcard
+				>
+					<DetailedPost
+						label={r.label}
+						src={r.image}
+						details={`${FULL_NAME} \u00A0|\u00A0 ${r.date}`}
+						github={r.github}
+					/>
+					{r.element}
+				</Card>
 			))}
 
 			{routes[blog].subroutes.map((r, k) => (
-				<CreateSubcards
+				<Card
 					key={k}
 					isActive={props.active === r.path}
+					label={r.label}
 					backTo={backToBlog}
-					content={r}
-				/>
+					subcard
+				>
+					<DetailedPost
+						label={r.label}
+						src={r.image}
+						details={`${FULL_NAME} \u00A0|\u00A0 ${r.date}`}
+					/>
+					{r.element}
+				</Card>
 			))}
 
-			<CreateCards
-				label={pageNotFound.label}
+			<Card
 				isActive={props.active === pageNotFound.path}
-				content={pageNotFound.element}
+				label={pageNotFound.label}
 				quote={pageNotFound.quote}
 				author={pageNotFound.author}
-			/>
+			>{pageNotFound.element}</Card>
 		</div>
 	);
 }
