@@ -21,8 +21,10 @@
    --BODY-FONT: "Montserrat", sans-serif;
    --LOGO-FONT: "Merienda", cursive;
 
-   /* COMMON TRANSITION */
-   --COMMON_TRANSITION: all 0.5s linear;
+   /* TRANSITIONS */ 
+   --TRANSITION-FAST: 0.2s linear;
+   --TRANSITION-DEFAULT: 0.5s linear;
+   --TRANSITION-EASE: 0.5s ease;
 }
 
 * {

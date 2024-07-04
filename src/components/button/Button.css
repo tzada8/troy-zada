@@ -6,7 +6,7 @@
 	);
 	background-size: 200% 100%;
 	background-position: right bottom;
-	transition: background-position 0.4s linear;
+	transition: background-position var(--TRANSITION-DEFAULT);
 }
 
 .nav-link-active, .background-change:hover {

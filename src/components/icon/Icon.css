@@ -25,7 +25,7 @@ i.green-color {
 
 i.clickable-blue, i.clickable-grey {
     cursor: pointer;
-    transition: color 0.4s ease;
+    transition: color var(--TRANSITION-EASE);
 }
 
 i.clickable-blue:hover {

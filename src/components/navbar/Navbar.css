@@ -3,7 +3,7 @@ nav {
 	width: 150px;
 	margin-top: 32px;
 	z-index: 999;
-	transition: margin-left 0.5s linear;
+	transition: margin-left var(--TRANSITION-DEFAULT);
 }
 
 .middle {
@@ -59,7 +59,7 @@ nav {
 		width: 100%;
 		border: 3px solid var(--DARK-GREY);
 		border-top: none;
-		transition: right 0.5s ease;
+		transition: right var(--TRANSITION-EASE);
 	}
 
 	.nav-menu.active {
