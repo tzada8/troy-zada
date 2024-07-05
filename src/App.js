@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { blog, pageNotFound, portfolio, routes } from "./routes/routes";
 
@@ -12,7 +12,7 @@ function App() {
 	return (
 		<BrowserRouter>
 			{/* TODO: Look into using <Fade> component. */}
-			<Switch>
+			<Routes>
 				{/* TODO: See if possible to only do something like
 					<Display info={routes[0]} active={routes[0].path} />
 				and still be able to have transitions/animations.
@@ -25,88 +25,20 @@ function App() {
 				{/* TODO: If possible, would be able to get rid of double
 				routes looping in App.js and Display.js. */}
 
+				{routes.map((r, i) => (
+					<Route exact key={i} path={r.path} element={<Display active={r.path} />} />
+				))}
 
-				{/* TODO: Use this instead. */}
-				{/* {routes.map((r, i) => (
-					<Route exact key={i} path={r.path}>
-						<Display active={r.path} />
-					</Route>
-				))} */}
+				{routes[portfolio].subroutes.map((r, i) => (
+					<Route exact key={i} path={r.path} element={<Display active={r.path} />} />
+				))}
 
-				<Route exact path={routes[0].path}>
-					<Display active={routes[0].path} />
-				</Route>
+				{routes[blog].subroutes.map((r, i) => (
+					<Route exact key={i} path={r.path} element={<Display active={r.path} />} />
+				))}
 
-				<Route exact path={routes[1].path}>
-					<Display active={routes[1].path} />
-				</Route>
-
-				<Route exact path={routes[2].path}>
-					<Display active={routes[2].path} />
-				</Route>
-
-				<Route exact path={routes[3].path}>
-					<Display active={routes[3].path} />
-				</Route>
-
-				<Route exact path={routes[4].path}>
-					<Display active={routes[4].path} />
-				</Route>
-
-				<Route exact path={routes[5].path}>
-					<Display active={routes[5].path} />
-				</Route>
-
-				{/* TODO: Use this instead. */}
-				{/* {routes[portfolio].subroutes.map((r, i) => (
-					<Route exact key={i} path={r.path}>
-						<Display active={r.path} />
-					</Route>
-				))} */}
-
-				<Route exact path={routes[portfolio].subroutes[0].path}>
-					<Display active={routes[portfolio].subroutes[0].path} />
-				</Route>
-
-				<Route exact path={routes[portfolio].subroutes[1].path}>
-					<Display active={routes[portfolio].subroutes[1].path} />
-				</Route>
-
-				<Route exact path={routes[portfolio].subroutes[2].path}>
-					<Display active={routes[portfolio].subroutes[2].path} />
-				</Route>
-
-				<Route exact path={routes[portfolio].subroutes[3].path}>
-					<Display active={routes[portfolio].subroutes[3].path} />
-				</Route>
-
-				<Route exact path={routes[portfolio].subroutes[4].path}>
-					<Display active={routes[portfolio].subroutes[4].path} />
-				</Route>
-
-				<Route exact path={routes[portfolio].subroutes[5].path}>
-					<Display active={routes[portfolio].subroutes[5].path} />
-				</Route>
-
-				{/* TODO: Use this instead. */}
-				{/* {routes[blog].subroutes.map((r, i) => (
-					<Route exact key={i} path={r.path}>
-						<Display active={r.path} />
-					</Route>
-				))} */}
-
-				<Route exact path={routes[blog].subroutes[0].path}>
-					<Display active={routes[blog].subroutes[0].path} />
-				</Route>
-
-				<Route exact path={routes[blog].subroutes[1].path}>
-					<Display active={routes[blog].subroutes[1].path} />
-				</Route>
-
-				<Route>
-					<Display active={pageNotFound.path} />
-				</Route>
-			</Switch>
+				<Route path={pageNotFound.path} element={<Display active={pageNotFound.path} />} />
+			</Routes>
 		</BrowserRouter>
 	);
 }

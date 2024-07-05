@@ -4,12 +4,13 @@ import { NavLink } from "react-router-dom";
 import "./Button.css";
 
 export default function NavButton(props) {
+    const defaultClass = "button-font nav-link background-change";
+
     return (
         <NavLink
             exact={props.exact}
             to={props.path}
-            className="button-font nav-link background-change"
-            activeClassName="nav-link-active"
+            className={({isActive}) => `${defaultClass} ${isActive && "nav-link-active"}`}
             onClick={props.onClick}
         >
             {props.label.toUpperCase()}
