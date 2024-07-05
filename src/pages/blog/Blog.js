@@ -1,4 +1,5 @@
 import React from "react";
+import { FaBlog } from "react-icons/fa";
 
 import { blog, routes } from "../../routes/routes";
 
@@ -8,7 +9,7 @@ import Subtitle from "../../components/subtitle/Subtitle";
 export default function Blog() {
 	return (
 		<div>
-			<Subtitle icon="fas fa-blog" label="Recent Posts" />
+			<Subtitle icon={<FaBlog />} label="Recent Posts" />
 			{routes[blog].subroutes.map((post, k) => (
 				<DetailedPost
 					key={k}

@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCode } from "react-icons/fa";
 
 import { portfolio, routes } from "../../routes/routes";
 
@@ -8,7 +9,7 @@ import Subtitle from "../../components/subtitle/Subtitle";
 export default function Portfolio() {
 	return (
 		<div>
-			<Subtitle icon="fas fa-code" label="Coding Projects" />
+			<Subtitle icon={<FaCode />} label="Coding Projects" />
 			{routes[portfolio].subroutes.map((proj, k) => (
 				<DetailedPost
 					key={k}

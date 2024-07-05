@@ -1,7 +1,9 @@
+import { FaAward, FaBriefcase, FaUniversity } from "react-icons/fa";
+
 export const experienceData = {
 	education: {
 		label: "Education",
-		icon: "fas fa-university",
+		icon: <FaUniversity />,
 		data: [
 			{
 				label: "Management Engineering",
@@ -16,7 +18,7 @@ export const experienceData = {
 	},
 	work: {
 		label: "Work Experience",
-		icon: "fas fa-briefcase",
+		icon: <FaBriefcase />,
 		data: [
 			{
 				label: "Programming Teaching Assistant",
@@ -50,7 +52,7 @@ export const experienceData = {
 	},
 	awards: {
 		label: "Awards",
-		icon: "fas fa-award",
+		icon: <FaAward />,
 		data: [
 			{
 				label: "Gonzaga Leadership Award",

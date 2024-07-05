@@ -55,7 +55,7 @@ form .submit:hover {
    background: var(--WHITE);
    position: absolute;
    border: 2px solid var(--GREEN);
-   top: 30%;
+   top: 27%;
    left: 15%;
    width: 70%;
    right: 15%;

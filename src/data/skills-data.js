@@ -1,7 +1,9 @@
+import { FaCogs, FaUsers } from "react-icons/fa";
+
 export const skillsData = {
 	interpersonal: {
 		label: "Interpersonal Skills",
-		icon: "fas fa-users",
+		icon: <FaUsers />,
 		data: [
 			{
 				label: "Communication",
@@ -39,7 +41,7 @@ export const skillsData = {
 	},
 	technical: {
 		label: "Technical Skills",
-		icon: "fas fa-cogs",
+		icon: <FaCogs />,
 		data: [
 			{
 				label: "Java",

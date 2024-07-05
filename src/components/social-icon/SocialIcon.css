@@ -1,6 +1,6 @@
 .icon-frame {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 2px;
 }
 
 .social-tooltip {
@@ -10,7 +10,7 @@
     position: absolute;
     /* TODO: Adjust width as needed. */
     width: 200px;
-    margin-top: 6px;
+    margin-top: 2px;
     padding: 8px;
     border-radius: var(--BORDER-RADIUS-DEFAULT);
     z-index: 999;
@@ -22,7 +22,7 @@
     position: absolute;
     border-style: solid;
     bottom: 99%;
-    left: 5%;
+    left: 8%;
     border-width: 8px;
     border-color: transparent transparent var(--DARK-BLUE) transparent;
 }

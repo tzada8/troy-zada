@@ -13,6 +13,6 @@ export default function Icon(props) {
     const clickable = props.clickable && (props.white ? "clickable-grey" : "clickable-blue");
     const customClass = `${props.className} ${size} ${color} ${clickable}`;
 
-    // TODO: This will need to be updated for react-icons.
-    return <i className={`generic-icon ${props.image} ${customClass}`} />;
+    // TODO: Update icons to FA6 versions.
+    return React.cloneElement(props.image, {className: `generic-icon ${customClass}`});
 }

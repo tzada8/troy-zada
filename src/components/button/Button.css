@@ -22,7 +22,7 @@
 }
 
 .button-link {
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .nav-link {
@@ -39,6 +39,7 @@
         padding: 10px 0;
         text-align: center;
         border: none;
+        border-radius: 0;
         transition: none;
     }
 

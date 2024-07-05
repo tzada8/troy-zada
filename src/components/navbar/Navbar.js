@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 import { home, routes } from "../../routes/routes";
 
@@ -16,7 +17,7 @@ export default function Navbar(props) {
 		<nav className={props.isMid ? "middle" : "left"}>
 			<Logo className="navbar-logo-position" onClick={closeMenu} />
 			<div className="menu-icon center" onClick={handleClick}>
-				<Icon image={click ? "fas fa-times" : "fas fa-bars"} white clickable />
+				<Icon image={click ? <FaTimes /> : <FaBars />} white clickable />
 			</div>
 			<div className={`nav-menu ${click && "active"}`}>
 				{routes.map((r, k) => (

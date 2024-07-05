@@ -1,37 +1,37 @@
-i.generic-icon {
+.generic-icon {
     color: var(--BLACK);
     font-size: 32px;
 }
 
-i.large {
+.large {
     font-size: 48px;
 }
 
-i.small {
+.small {
     font-size: 16px;
 }
 
-i.white-color {
+.white-color {
     color: var(--WHITE);
 }
 
-i.blue-color {
+.blue-color {
     color: var(--BLUE);
 }
 
-i.green-color {
+.green-color {
     color: var(--GREEN);
 }
 
-i.clickable-blue, i.clickable-grey {
+.clickable-blue, i.clickable-grey {
     cursor: pointer;
     transition: color var(--TRANSITION-EASE);
 }
 
-i.clickable-blue:hover {
+.clickable-blue:hover {
     color: var(--DARK-BLUE);
 }
 
-i.clickable-grey:hover {
+.clickable-grey:hover {
     color: var(--GREY);
 }

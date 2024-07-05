@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCheckCircle, FaInbox } from "react-icons/fa";
 import emailjs from "emailjs-com";
 
 import Icon from "../../components/icon/Icon";
@@ -38,7 +39,7 @@ export default function Contact() {
 
 	return (
 		<div>
-			<Subtitle icon="fas fa-inbox" label="Send Me a Message" />
+			<Subtitle icon={<FaInbox />} label="Send Me a Message" />
 			<div className="contact-me-container">
 				<form id="contact-form" onSubmit={sendEmail}>
 					<h4 className="form-field-headers">NAME</h4>
@@ -87,7 +88,7 @@ export default function Contact() {
 				</form>
 
 				<div id="thank-you-container" className="center">
-					<Icon image="far fa-check-circle" green />
+					<Icon image={<FaCheckCircle />} green />
 					<h3>Thank you!</h3>
 					<p>Your message has been sent.</p>
 				</div>

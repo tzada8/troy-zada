@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaAngleRight, FaGithub } from "react-icons/fa";
 
 import HorizontalBar from "../horizontal-bar/HorizontalBar";
 import PostImage from "../post-image/PostImage";
@@ -10,9 +11,9 @@ export default function DetailedPost(props) {
 	const isClickable = props.path ? true : false;
 
     const detailsIcon = isClickable
-        ? <RoutingButton path={props.path} icon="fas fa-angle-right" />
+        ? <RoutingButton path={props.path} icon={<FaAngleRight />} />
         : props.github
-		? <RoutingButton path={props.github} icon="fab fa-github" />
+		? <RoutingButton path={props.github} icon={<FaGithub />} />
 		: <></>;
 
     const content = (
