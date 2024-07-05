@@ -8,7 +8,7 @@ import "./App.css";
 import "./styles/scrollbar.css";
 import "./styles/text.css";
 
-function App() {
+export default function App() {
 	return (
 		<BrowserRouter>
 			{/* TODO: Look into using <Fade> component. */}
@@ -42,5 +42,3 @@ function App() {
 		</BrowserRouter>
 	);
 }
-
-export default App;
