@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
 
-import { routes } from "../../routes/routes";
+import { home, routes } from "../../routes/routes";
 
 import Icon from "../icon/Icon";
 import Logo from "../logo/Logo";
@@ -22,7 +22,7 @@ export default function Navbar(props) {
 			</div>
 			<div className={`nav-menu ${click ? "active" : undefined}`}>
 				{routes.map((r, k) => (
-					<NavButton
+					r.path != routes[home].path && <NavButton
 						key={k}
 						label={r.label}
 						path={r.path}
