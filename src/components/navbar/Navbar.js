@@ -22,7 +22,7 @@ export default function Navbar(props) {
 			</div>
 			<div className={`nav-menu ${click ? "active" : undefined}`}>
 				{routes.map((r, k) => (
-					r.path != routes[home].path && <NavButton
+					r.path !== routes[home].path && <NavButton
 						key={k}
 						label={r.label}
 						path={r.path}

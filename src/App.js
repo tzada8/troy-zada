@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { blog, pageNotFound, portfolio, routes } from "./routes/routes";
+import { pageNotFound, routes } from "./routes/routes";
 
 import Display from "./Display";
 import "./App.css";
@@ -29,13 +29,9 @@ export default function App() {
 					<Route exact key={i} path={r.path} element={<Display active={r.path} />} />
 				))}
 
-				{routes[portfolio].subroutes.map((r, i) => (
-					<Route exact key={i} path={r.path} element={<Display active={r.path} />} />
-				))}
-
-				{routes[blog].subroutes.map((r, i) => (
-					<Route exact key={i} path={r.path} element={<Display active={r.path} />} />
-				))}
+				{routes.map(r => r.subroutes && r.subroutes.map((sr, k) => (
+					<Route exact key={k} path={sr.path} element={<Display active={sr.path} />} />
+				)))}
 
 				<Route path={pageNotFound.path} element={<Display active={pageNotFound.path} />} />
 			</Routes>
