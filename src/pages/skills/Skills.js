@@ -2,8 +2,8 @@ import React from "react";
 
 import { skillsData } from "../../data/skills-data";
 
-import ProgressBar from "../../components/progress-bar/ProgressBar";
 import Subtitle from "../../components/subtitle/Subtitle";
+import Wordcloud from "../../components/wordcloud/Wordcloud";
 
 export default function Skills() {
 	return (
@@ -11,11 +11,7 @@ export default function Skills() {
 			{skillsData.map((c, i) => (
 				<div key={i}>
 					<Subtitle icon={c.icon} label={c.label} topSpacing={i !== 0} />
-					{c.data.map((s, k) => <ProgressBar
-						key={k}
-						label={s.label}
-						percent={s.percent}
-					/>)}
+					<Wordcloud data={c.data} highThreshold={95} />
 				</div>
 			))}
 		</div>
