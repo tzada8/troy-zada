@@ -8,7 +8,7 @@ export default function Card(props) {
     const inactivePos = props.subcard ? "sub-card-inactive-pos" : "main-card-inactive-pos";
 
     return (
-        <div className={`card-box ${inactivePos} ${props.isActive && "card-active-pos"}`}>
+        <div className={`card-box ${inactivePos} ${props.isActive ? "card-active-pos" : undefined}`}>
             <div className="card-container">
                 <Header label={props.label} backTo={props.backTo} />
                 <div className="card-content">

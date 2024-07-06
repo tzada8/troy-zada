@@ -21,7 +21,7 @@ export default function RoutingButton(props) {
 
     const linkClass = "button-link background-change";
     const buttonContent = isIcon ? iconButton : textButton;
-    const buttonClass = !isIcon && linkClass;
+    const buttonClass = !isIcon ? linkClass : undefined;
 
     return isExternal ? (
         <a href={props.path} target="_blank" rel="noreferrer" className={buttonClass}>

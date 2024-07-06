@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaAngleRight, FaGithub } from "react-icons/fa6";
 
 import HorizontalBar from "../horizontal-bar/HorizontalBar";
+import Icon from "../icon/Icon";
 import PostImage from "../post-image/PostImage";
 import RoutingButton from "../button/RoutingButton";
 import "./DetailedPost.css";
@@ -10,11 +11,9 @@ import "./DetailedPost.css";
 export default function DetailedPost(props) {
 	const isClickable = props.path ? true : false;
 
-    const detailsIcon = isClickable
-        ? <RoutingButton path={props.path} icon={<FaAngleRight />} />
-        : props.github
-		? <RoutingButton path={props.github} icon={<FaGithub />} />
-		: <></>;
+    const detailsIcon = isClickable ? <Icon image={ <FaAngleRight />} clickable />
+        : props.github ? <RoutingButton path={props.github} icon={<FaGithub />} />
+		: undefined;
 
     const content = (
         <div>
@@ -28,7 +27,7 @@ export default function DetailedPost(props) {
     );
 
 	return (
-		<div className={props.bottomSpacing && "post-container"}>
+		<div className={props.bottomSpacing ? "post-container" : undefined}>
 			{isClickable ? <Link to={props.path} className="post-content">{content}</Link> : content}
 			<HorizontalBar thick />
 		</div>
