@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBlog } from "react-icons/fa";
+import { FaBlog } from "react-icons/fa6";
 
 import { blog, routes } from "../../routes/routes";
 

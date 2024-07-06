@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaAngleRight, FaGithub } from "react-icons/fa";
+import { FaAngleRight, FaGithub } from "react-icons/fa6";
 
 import HorizontalBar from "../horizontal-bar/HorizontalBar";
 import PostImage from "../post-image/PostImage";

@@ -1,5 +1,6 @@
 .generic-icon {
     color: var(--BLACK);
+    vertical-align: -10%;
     font-size: 32px;
 }
 

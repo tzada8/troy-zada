@@ -21,6 +21,7 @@
 
 .post-icon {
     grid-row: 1 / span 2;
+    margin-right: 3px;
 }
 
 .post-container {

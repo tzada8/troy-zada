@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa6";
 
 import { home, routes } from "../../routes/routes";
 

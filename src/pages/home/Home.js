@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillMessage } from "react-icons/ai";
+import { MdContactMail } from "react-icons/md";
 
 import { FULL_NAME, socials } from "../../data/constants";
 import { contact, routes } from "../../routes/routes";
@@ -43,7 +43,7 @@ export default function Home(props) {
 				<RoutingButton
 					path={routes[contact].path}
 					label="GET IN TOUCH"
-					icon={<AiFillMessage />}
+					icon={<MdContactMail />}
 				/>
 			</div>
 		</div>
