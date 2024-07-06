@@ -7,12 +7,21 @@ export const educationData = [
 		icon: <IoSchool />,
 		data: [
 			{
-				label: "Management Engineering",
+				label: "Management Sciences, PhD",
+				company: "University of Waterloo",
+				duration: "Sept 2024 - Present",
+				details: [
+					"Research interests oriented towards search engines and recommendation systems.",
+				],
+			},
+			{
+				label: "Management Engineering, BASc",
 				company: "University of Waterloo",
 				duration: "Sept 2019 - June 2024",
 				details: [
-					"Bachelor of Applied Science candidate developing expertise in data analytics, information systems, operations management, and organizational behaviour.",
-					"Some important courses to highlight include: Algorithms and Data Structures (Java), Databases and Software Design (SQL), Statistics (R), Optimization, and Organizational Behaviour.",
+					"Expertise in data analytics, information systems, and operations management.",
+					"Relevant courses: Machine Learning, Search Engines, Software Engineering, and Optimization.",
+					"Undergraduate Research Assistant researching the effectiveness of LLMs in answering medical questions.",
 				],
 			},
 		],
@@ -21,6 +30,13 @@ export const educationData = [
 		label: "Awards",
 		icon: <FaAward />,
 		data: [
+			{
+				label: "Super.com Transformative Impact",
+				duration: "Apr 2023, Dec 2023",
+				details: [
+					"Awarded twice consecutively among 60 interns for outstanding performance and delivering significant impact.",
+				],
+			},
 			{
 				label: "Gonzaga Leadership Award",
 				duration: "June 2019",
