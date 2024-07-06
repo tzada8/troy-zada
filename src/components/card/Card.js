@@ -11,8 +11,10 @@ export default function Card(props) {
         <div className={`card-box ${inactivePos} ${props.isActive && "card-active-pos"}`}>
             <div className="card-container">
                 <Header label={props.label} backTo={props.backTo} />
-                <div className="card-content">{props.children}</div>
-                <Footer quote={props.quote} author={props.author} />
+                <div className="card-content">
+                    {props.children}
+                    <Footer quote={props.quote} author={props.author} />
+                </div>
             </div>
         </div>
     );
