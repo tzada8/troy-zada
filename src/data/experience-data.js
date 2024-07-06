@@ -2,8 +2,8 @@ import { FaAward } from "react-icons/fa6";
 import { IoSchool } from "react-icons/io5";
 import { MdWork } from "react-icons/md";
 
-export const experienceData = {
-	education: {
+export const experienceData = [
+	{
 		label: "Education",
 		icon: <IoSchool />,
 		data: [
@@ -18,7 +18,7 @@ export const experienceData = {
 			},
 		],
 	},
-	work: {
+	{
 		label: "Work Experience",
 		icon: <MdWork />,
 		data: [
@@ -52,7 +52,7 @@ export const experienceData = {
 			},
 		],
 	},
-	awards: {
+	{
 		label: "Awards",
 		icon: <FaAward />,
 		data: [
@@ -79,4 +79,4 @@ export const experienceData = {
 			},
 		],
 	},
-};
+];

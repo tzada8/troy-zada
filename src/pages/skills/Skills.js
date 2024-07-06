@@ -8,15 +8,11 @@ import Subtitle from "../../components/subtitle/Subtitle";
 export default function Skills() {
 	return (
 		<div>
-			{Object.keys(skillsData).map((k, i) => (
-				<div>
-					<Subtitle
-						icon={skillsData[k].icon}
-						label={skillsData[k].label}
-						topSpacing={i !== 0}
-					/>
-					{skillsData[k].data.map((s, kk) => <ProgressBar
-						key={kk}
+			{skillsData.map((c, i) => (
+				<div key={i}>
+					<Subtitle icon={c.icon} label={c.label} topSpacing={i !== 0} />
+					{c.data.map((s, k) => <ProgressBar
+						key={k}
 						label={s.label}
 						percent={s.percent}
 					/>)}

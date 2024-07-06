@@ -8,15 +8,11 @@ import WorkInfo from "../../components/work-info/WorkInfo";
 export default function Experience() {
 	return (
 		<div>
-			{Object.keys(experienceData).map((k, i) => (
-				<div>
-					<Subtitle
-						icon={experienceData[k].icon}
-						label={experienceData[k].label}
-						topSpacing={i !== 0}
-					/>
-					{experienceData[k].data.map((w, kk) => <WorkInfo
-						key={kk}
+			{experienceData.map((exp, i) => (
+				<div key={i}>
+					<Subtitle icon={exp.icon} label={exp.label} topSpacing={i !== 0} />
+					{exp.data.map((w, k) => <WorkInfo
+						key={k}
 						label={w.label}
 						company={w.company}
 						duration={w.duration}
