@@ -3,6 +3,10 @@ export const rootRoutes = {
         label: "HOME",
         path: "/",
     },
+    education: {
+        label: "EDUCATION",
+        path: "/education",
+    },
     experience: {
         label: "EXPERIENCE",
         path: "/experience",

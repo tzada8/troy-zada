@@ -4,6 +4,7 @@ import { rootRoutes } from "./root-routes";
 
 import Blog from "../pages/blog/Blog";
 import Contact from "../pages/contact/Contact";
+import Education from "../pages/education/Education";
 import Experience from "../pages/experience/Experience";
 import Home from "../pages/home/Home";
 import PageNotFound from "../pages/page-not-found/PageNotFound";
@@ -22,6 +23,12 @@ export const routes = [
     {
         ...rootRoutes.home,
         element: <Home />,
+    },
+    {
+        ...rootRoutes.education,
+        element: <Education />,
+		quote: "Live as if you were to die tomorrow. Learn as if you were to live forever",
+		author: "M.K. Gandhi",
     },
     {
         ...rootRoutes.experience,
