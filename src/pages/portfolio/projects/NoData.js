@@ -3,7 +3,7 @@ import React from "react";
 import Paragraph from "../../../components/text-details/Paragraph";
 import Subheading from "../../../components/text-details/Subheading";
 
-export default function DSS() {
+export default function NoData() {
 	return (
 		<div>
 			<Subheading label="About the Application" />

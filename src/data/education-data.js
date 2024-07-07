@@ -9,7 +9,7 @@ export const educationData = [
 			{
 				label: "Management Sciences, PhD",
 				company: "University of Waterloo",
-				duration: "Sept 2024 - Present",
+				duration: "Sept. 2024 - Present",
 				details: [
 					"Research interests oriented towards search engines and recommendation systems.",
 				],
@@ -17,7 +17,7 @@ export const educationData = [
 			{
 				label: "Management Engineering, BASc",
 				company: "University of Waterloo",
-				duration: "Sept 2019 - June 2024",
+				duration: "Sept. 2019 - June 2024",
 				details: [
 					"Expertise in data analytics, information systems, and operations management.",
 					"Relevant courses: Machine Learning, Search Engines, Software Engineering, and Optimization.",
@@ -32,7 +32,7 @@ export const educationData = [
 		data: [
 			{
 				label: "Super.com Transformative Impact",
-				duration: "Apr 2023, Dec 2023",
+				duration: "Apr. 2023, Dec. 2023",
 				details: [
 					"Awarded twice consecutively among 60 interns for outstanding performance and delivering significant impact.",
 				],

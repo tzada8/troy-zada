@@ -2,39 +2,50 @@ import { BASE_GITHUB } from "./constants";
 import { rootRoutes } from "../routes/root-routes";
 
 // Images
-import blackJackImage from "../images/portfolio/blackjack.png";
-import decisionSupportSystemImage from "../images/portfolio/decision-support-system.png";
+import juxtaposeImage from "../images/portfolio/juxtapose.png";
 import moodivityImage from "../images/portfolio/moodivity.png";
+import noDataImage from "../images/portfolio/no-data.png";
 import pathfindingImage from "../images/portfolio/pathfinding-algorithms.png";
+import ResumeClassifierImage from "../images/portfolio/resume-classifier.png";
 import sudokuSolverImage from "../images/portfolio/sudoku-solver.png";
 import troyZadaImage from "../images/portfolio/troy-zada.png";
 
 // Components
-import BlackJack from "../pages/portfolio/projects/BlackJack";
-import DSS from "../pages/portfolio/projects/DSS";
+import Juxtapose from "../pages/portfolio/projects/Juxtapose";
 import Moodivity from "../pages/portfolio/projects/Moodivity";
+import NoData from "../pages/portfolio/projects/NoData";
 import Pathfinding from "../pages/portfolio/projects/Pathfinding";
+import ResumeClassifier from "../pages/portfolio/projects/ResumeClassifier";
 import SudokuSolver from "../pages/portfolio/projects/SudokuSolver";
+// TODO: Update image with better homepage.
 import TroyZada from "../pages/portfolio/projects/TroyZada";
 
-// TODO: Maybe change date to a duration like "September 2018 - June 2019".
 export const portfolioData = [
     {
-        label: "Moodivity",
-        path: `${rootRoutes.portfolio.path}/moodivity`,
-        element: <Moodivity />,
-        image: moodivityImage,
-        tagline: "Boost productivity while balancing mental health",
-        date: "November 2020",
-        github: `${BASE_GITHUB}/s6eskand/Moodivity`,
+        label: "Juxtapose",
+        path: `${rootRoutes.portfolio.path}/juxtapose`,
+        element: <Juxtapose />,
+        image: juxtaposeImage,
+        tagline: "Recommendation and comparison application for improving purchasing decisions",
+        date: "May 2023 - Apr. 2024",
+        github: `${BASE_GITHUB}/tzada8/capstone`,
     },
+	{
+		label: "NoData",
+        path: `${rootRoutes.portfolio.path}/no-data`,
+        element: <NoData />,
+        image: noDataImage,
+        tagline: "Search the Internet without access to data or Wi-Fi",
+        date: "May 2022",
+        github: `${BASE_GITHUB}/ryanshepps/NoData`,
+	},
     {
         label: "Troy Zada Website",
         path: `${rootRoutes.portfolio.path}/troyzada`,
         element: <TroyZada />,
         image: troyZadaImage,
         tagline: "Discover my experiences, qualities, and overall portfolio",
-        date: "July 2024",
+        date: "Feb. 2021 - July 2024",
         github: `${BASE_GITHUB}/tzada8/troyzada`,
     },
     {
@@ -43,7 +54,7 @@ export const portfolioData = [
         element: <Pathfinding />,
         image: pathfindingImage,
         tagline: "Visually compare various shortest path algorithms",
-        date: "April 2021",
+        date: "Apr. 2021",
         github: `${BASE_GITHUB}/tzada8/pathfinding-algorithms`,
     },
     {
@@ -52,25 +63,25 @@ export const portfolioData = [
         element: <SudokuSolver />,
         image: sudokuSolverImage,
         tagline: "Solve any sudoku board with ease",
-        date: "January 2021",
+        date: "Jan. 2021",
         github: `${BASE_GITHUB}/tzada8/sudoku-solver`,
     },
     {
-        label: "BlackJack",
-        path: `${rootRoutes.portfolio.path}/blackjack`,
-        element: <BlackJack />,
-        image: blackJackImage,
-        tagline: "Compete in BlackJack against the dealer",
-        date: "January 2021",
-        github: `${BASE_GITHUB}/tzada8/BlackJack`,
-    },
+		label: "Resume Classifier",
+        path: `${rootRoutes.portfolio.path}/resume-classifier`,
+        element: <ResumeClassifier />,
+        image: ResumeClassifierImage,
+        tagline: "Predicted the probability of receiving an interview depending on the resume",
+        date: "Jan. 2022 - Apr. 2022",
+        github: `${BASE_GITHUB}/rrokhit/resume-classifier`,
+	},
     {
-        label: "Decision Support System",
-        path: `${rootRoutes.portfolio.path}/decision-support-system`,
-        element: <DSS />,
-        image: decisionSupportSystemImage,
-        tagline: "Streamline group decision-making and organization",
-        date: "December 2019",
-        github: `${BASE_GITHUB}/tzada8/DecisionSupportSystem`,
+        label: "Moodivity",
+        path: `${rootRoutes.portfolio.path}/moodivity`,
+        element: <Moodivity />,
+        image: moodivityImage,
+        tagline: "Boost productivity while balancing mental health",
+        date: "Nov. 2020",
+        github: `${BASE_GITHUB}/s6eskand/Moodivity`,
     },
 ]
