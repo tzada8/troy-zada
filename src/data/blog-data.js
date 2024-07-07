@@ -1,4 +1,4 @@
-import { rootRoutes } from "./root-routes";
+import { rootRoutes } from "../routes/root-routes";
 
 // Images
 import creatingThisWebsiteImage from "../images/blog/creating-this-website.jpg";
@@ -9,7 +9,7 @@ import CreatingThisWebsite from "../pages/blog/posts/CreatingThisWebsite";
 import FirstWorkTerm from "../pages/blog/posts/FirstWorkTerm";
 
 // TODO: Blog idea: /top-5-favourite-reads.
-export const blogRoutes = [
+export const blogData = [
     {
         label: "My First Co-op Work Term",
         path: `${rootRoutes.blog.path}/first-work-term`,

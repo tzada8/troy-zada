@@ -1,5 +1,5 @@
-import { BASE_GITHUB } from "../data/constants";
-import { rootRoutes } from "./root-routes";
+import { BASE_GITHUB } from "./constants";
+import { rootRoutes } from "../routes/root-routes";
 
 // Images
 import blackJackImage from "../images/portfolio/blackjack.png";
@@ -18,7 +18,7 @@ import SudokuSolver from "../pages/portfolio/projects/SudokuSolver";
 import TroyZada from "../pages/portfolio/projects/TroyZada";
 
 // TODO: Maybe change date to a duration like "September 2018 - June 2019".
-export const portfolioRoutes = [
+export const portfolioData = [
     {
         label: "Moodivity",
         path: `${rootRoutes.portfolio.path}/moodivity`,

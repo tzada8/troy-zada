@@ -1,5 +1,5 @@
-import { blogRoutes } from "./blog-routes";
-import { portfolioRoutes } from "./portfolio-routes";
+import { blogData } from "../data/blog-data";
+import { portfolioData } from "../data/portfolio-data";
 import { rootRoutes } from "./root-routes";
 
 import Blog from "../pages/blog/Blog";
@@ -44,14 +44,14 @@ export const routes = [
         element: <Portfolio />,
 		quote: "As practice makes perfect, I cannot but make progress; each drawing one makes, each study one paints, is a step forward",
 		author: "Vincent Van Gogh",
-        subroutes: portfolioRoutes,
+        subroutes: portfolioData,
     },
     {
         ...rootRoutes.blog,
         element: <Blog />,
 		quote: "The reading of all good books is like a conversation with the finest minds of past centuries",
 		author: "Rene Descartes",
-        subroutes: blogRoutes,
+        subroutes: blogData,
     },
     {
         ...rootRoutes.contact,
