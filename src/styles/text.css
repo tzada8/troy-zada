@@ -3,7 +3,7 @@
     color: var(--WHITE);
     font-family: var(--LOGO-FONT);
     font-weight: 800;
-    font-size: 50px;
+    font-size: 55px;
 }
 
 /* HEADER */
@@ -13,26 +13,25 @@ h1, h2, h3, h4 {
     line-height: 120%;
 }
 
-/* TODO: Need to determine actual sizes. */
 /* TODO: Need to use media queries to make sizes bigger/smaller depending on screen. */
 h1 {
     color: var(--BLUE);
-    font-size: 48px;
+    font-size: 50px;
 }
 
 h2 {
     color: var(--BLUE);
-    font-size: 28px;
+    font-size: 35px;
 }
 
 h3 {
     color: var(--BLACK);
-    font-size: 16px;
+    font-size: 20px;
 }
 
 h4 {
     color: var(--DARK-BLUE);
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* BODY */
@@ -41,18 +40,18 @@ p, li {
     font-family: var(--BODY-FONT);
     line-height: 140%;
     letter-spacing: 0.2px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
 }
 
 p.body-small {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 /* BUTTON */
 .button-font {
     color: var(--WHITE);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.5px;
 }

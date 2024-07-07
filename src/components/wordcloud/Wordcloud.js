@@ -8,8 +8,8 @@ export default function Wordcloud(props) {
     const [colors, setColors] = useState({});
 
     const boldedCategories = ["highest", "high"];
-    const minFontSize = 12;
-    const maxFontSize = 26;
+    const minFontSize = 14;
+    const maxFontSize = 32;
 
     const maxVal = Math.max(...props.data.map(v => v.value));
     const minVal = Math.min(...props.data.map(v => v.value));
@@ -47,7 +47,7 @@ export default function Wordcloud(props) {
                 rotate={() => 0}
                 spiral="rectangular"
                 padding={2}
-                random={() => 0.5}
+                // random={() => 0.5}
                 fill={(d) => colors[d.category]}
             />
         </div>

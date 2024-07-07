@@ -1,17 +1,17 @@
 nav {
 	position: absolute;
-	width: 150px;
+	width: 160px;
 	margin-top: 32px;
 	z-index: 999;
 	transition: margin-left var(--TRANSITION-DEFAULT);
 }
 
 .middle {
-	margin-left: calc(50% - (150px / 2 + 25.5%));
+	margin-left: calc(50% - (160px / 2 + 25.5%));
 }
 
 .left {
-	margin-left: calc(50% - (150px + 33%));
+	margin-left: calc(50% - (160px + 33%));
 }
 
 .navbar-logo-position {
