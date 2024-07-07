@@ -6,10 +6,11 @@ import Blog from "../pages/blog/Blog";
 import Contact from "../pages/contact/Contact";
 import Education from "../pages/education/Education";
 import Experience from "../pages/experience/Experience";
-import Home from "../pages/home/Home";
 import PageNotFound from "../pages/page-not-found/PageNotFound";
 import Portfolio from "../pages/portfolio/Portfolio";
 import Skills from "../pages/skills/Skills";
+
+export const home = {...rootRoutes.home};
 
 export const pageNotFound = {
     label: "PAGE NOT FOUND",
@@ -17,13 +18,9 @@ export const pageNotFound = {
 	element: <PageNotFound />,
 	quote: "Understanding a question is half the answer",
 	author: "Socrates",
-}
+};
 
 export const routes = [
-    {
-        ...rootRoutes.home,
-        element: <Home />,
-    },
     {
         ...rootRoutes.education,
         element: <Education />,
@@ -62,9 +59,8 @@ export const routes = [
 		quote: "The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience",
 		author: "Eleanor Roosevelt",
     },
-]
+];
 
-export const home = routes.findIndex(route => route.path === rootRoutes.home.path);
 export const portfolio = routes.findIndex(route => route.path === rootRoutes.portfolio.path);
 export const blog = routes.findIndex(route => route.path === rootRoutes.blog.path);
 export const contact = routes.findIndex(route => route.path === rootRoutes.contact.path);

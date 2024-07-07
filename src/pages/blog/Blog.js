@@ -10,14 +10,14 @@ export default function Blog() {
 	return (
 		<div>
 			<Subtitle icon={<FaBlog />} label="Recent Posts" />
-			{routes[blog].subroutes.map((post, k) => (
+			{routes[blog].subroutes.map((post, i) => (
 				<DetailedPost
-					key={k}
+					key={post.path}
 					path={post.path}
 					label={post.label}
 					src={post.image}
 					details={`Troy Zada \u00A0|\u00A0 ${post.date}`}
-					bottomSpacing={routes[blog].subroutes.length - 1 !== k}
+					bottomSpacing={routes[blog].subroutes.length - 1 !== i}
 				/>
 			))}
 		</div>

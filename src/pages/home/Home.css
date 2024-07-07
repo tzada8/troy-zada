@@ -1,3 +1,16 @@
+.home-center, .home-left {
+    z-index: 10;
+    transition: margin var(--TRANSITION-DEFAULT);
+}
+
+.home-center {
+    margin: 26px calc(50% - (var(--CARD_WIDTH) / 2));
+}
+
+.home-left {
+    margin: 26px calc(50% - (var(--CARD_WIDTH) - 5%) - 16px);
+}
+
 .headshot1 {
 	background: url("../../images/home/headshot1.png") top -8px center/cover no-repeat;
 }
@@ -33,10 +46,19 @@
 	margin: 20px 0;
 }
 
-/* IF SCREEN IS VERY WIDE, INCREASE SIZE OF CONTENT IN CARD */
 @media screen and (min-width: 1200px) {
 	.home-img-round {
 		height: 175px;
 		width: 175px;
 	}
+}
+
+@media screen and (max-width: 960px) {
+	.home-center {
+		margin: 75px 4%;
+	}
+
+    .home-left {
+        display: none;
+    }
 }

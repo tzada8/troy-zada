@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
 
-import { home, routes } from "../../routes/routes";
+import { routes } from "../../routes/routes";
 
 import Icon from "../icon/Icon";
 import Logo from "../logo/Logo";
@@ -21,13 +21,8 @@ export default function Navbar(props) {
 				<Icon image={click ? <FaTimes /> : <FaBars />} white clickable />
 			</div>
 			<div className={`nav-menu ${click ? "active" : undefined}`}>
-				{routes.map((r, k) => (
-					r.path !== routes[home].path && <NavButton
-						key={k}
-						label={r.label}
-						path={r.path}
-						onClick={closeMenu}
-					/>
+				{routes.map(r => (
+					<NavButton key={r.path} label={r.label} path={r.path} onClick={closeMenu} />
 				))}
 			</div>
 		</nav>

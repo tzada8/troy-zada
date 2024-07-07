@@ -1,0 +1,45 @@
+/* HORIZONTAL ANIMATION */
+.slide-horizontal-enter {
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+.slide-horizontal-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all var(--TRANSITION-FAST);
+}
+
+.slide-horizontal-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-horizontal-exit-active {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all var(--TRANSITION-FAST);
+}
+
+/* VERTICAL ANIMATION */
+.slide-vertical-enter {
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+.slide-vertical-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all var(--TRANSITION-FAST);
+}
+
+.slide-vertical-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-vertical-exit-active {
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all var(--TRANSITION-FAST);
+}

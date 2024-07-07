@@ -11,10 +11,8 @@ import "../../components/card/Card.css";
 import "./Home.css";
 
 export default function Home(props) {
-	const cardLoc = props.isOnlyComp ? "main-card-inactive-pos" : "home-card-dual-pos";
-
 	return (
-		<div className={`card-box home-visibility center ${cardLoc}`}>
+		<div className={`card-box center ${props.isOnlyComp ? "home-center" : "home-left"}`}>
 			<div className="card-container">
 				<div className={`home-img-round ${props.isOnlyComp ? "headshot1" : "headshot2"}`} />
 

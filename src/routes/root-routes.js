@@ -6,4 +6,4 @@ export const rootRoutes = {
     portfolio: {label: "PORTFOLIO", path: "/portfolio"},
     blog: {label: "BLOG", path: "/blog"},
     contact: {label: "CONTACT", path: "/contact"},
-}
+};
