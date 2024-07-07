@@ -12,6 +12,7 @@
     max-width: 400px;
     height: var(--CARD_HEIGHT);
     align-content: center;
+    /* TODO: Top padding should be a %. */
     margin: 26px calc(50% + 6%);
     border: 2px solid var(--BLACK);
     border-radius: var(--BORDER-RADIUS-DEFAULT);

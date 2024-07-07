@@ -4,7 +4,6 @@
 }
 
 .social-tooltip {
-    /* TODO: Add transition to make tooltip appearance more subtle. */
     color: var(--WHITE);
     background: var(--DARK-BLUE);
     position: absolute;
