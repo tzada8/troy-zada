@@ -12,12 +12,12 @@
 	width: 95px;
 	border-radius: var(--BORDER-RADIUS-ROUND);
 	border: 2px solid var(--BLACK);
-	transition: color var(--TRANSITION-DEFAULT);
+	transition: color var(--TRANSITION-EASE), transform var(--TRANSITION-LONG);
 }
 
 .personal-logo:hover {
-    /* TODO: Maybe have gradient do a rotation. */
 	color: var(--HOVER-GREY);
+	transform: rotate(360deg);
 }
 
 
