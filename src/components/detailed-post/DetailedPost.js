@@ -27,7 +27,7 @@ export default function DetailedPost(props) {
     );
 
 	return (
-		<div className={props.bottomSpacing ? "post-container" : undefined}>
+		<div className={props.bottomSpacing ? "post-container" : ""}>
 			{isClickable ? <Link to={props.path} className="post-content">{content}</Link> : content}
 			<HorizontalBar thick />
 		</div>

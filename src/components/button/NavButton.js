@@ -9,7 +9,7 @@ export default function NavButton(props) {
     return (
         <NavLink
             to={props.path}
-            className={({isActive}) => `${defaultClass} ${isActive ? "nav-link-active" : undefined}`}
+            className={({isActive}) => `${defaultClass} ${isActive ? "nav-link-active" : ""}`}
             onClick={props.onClick}
         >
             {props.label.toUpperCase()}

@@ -4,9 +4,9 @@ import HorizontalBar from "../horizontal-bar/HorizontalBar";
 import "./WorkInfo.css";
 
 export default function WorkInfo(props) {
-    const companyAndDuration = props.company === undefined
-        ? props.duration
-        : `${props.company}, ${props.duration}`;
+    const companyAndDuration = props.company ?
+        `${props.company}, ${props.duration}`
+        : props.duration;
 
     return (
         <div className="work-info-container">

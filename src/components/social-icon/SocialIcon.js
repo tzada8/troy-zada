@@ -6,6 +6,8 @@ import "./SocialIcon.css";
 export default function SocialIcon(props) {
     const [isTooltipVisible, setIsTooltipVisible] = useState(false);
 
+    const tooltipClass = isTooltipVisible ? "visible-tooltip" : "";
+
     return (
         <div
             className="icon-frame"
@@ -13,7 +15,9 @@ export default function SocialIcon(props) {
             onMouseLeave={() => setIsTooltipVisible(false)}
         >
             <RoutingButton path={props.link} icon={props.icon} blue />
-            {props.tooltip && isTooltipVisible && <div className="social-tooltip center">{props.tooltip}</div>}
+            {props.tooltip && <div className={`social-tooltip center ${tooltipClass}`}>
+                {props.tooltip}
+            </div>}
         </div>
     )
 }
