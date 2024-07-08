@@ -8,5 +8,5 @@ export default function HorizontalBar(props) {
     const color = props.light && "light";
     const calcClass = props.gradient ? "gradient-bar" : `generic-bar ${size} ${style} ${color}`;
 
-    return <hr className={calcClass} />;
+    return <hr className={`${calcClass} ${props.className}`} />;
 }

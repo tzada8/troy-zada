@@ -1,3 +1,4 @@
+import { FULL_NAME } from "../data/constants";
 import { blogData } from "../data/blog-data";
 import { portfolioData } from "../data/portfolio-data";
 import { rootRoutes } from "./root-routes";
@@ -10,7 +11,12 @@ import PageNotFound from "../pages/page-not-found/PageNotFound";
 import Portfolio from "../pages/portfolio/Portfolio";
 import Skills from "../pages/skills/Skills";
 
-export const home = {...rootRoutes.home};
+export const home = {
+    ...rootRoutes.home,
+    label: FULL_NAME,
+    sublabel: "Management Sciences PhD Student @ University of Waterloo",
+    description: "Dedicated and diligent engineering graduate passionate about learning and teaching. Currently focused on researching how programming and optimization can enhance search engines and recommendation systems.",
+};
 
 export const pageNotFound = {
     label: "PAGE NOT FOUND",

@@ -17,7 +17,6 @@ import NoData from "../pages/portfolio/projects/NoData";
 import Pathfinding from "../pages/portfolio/projects/Pathfinding";
 import ResumeClassifier from "../pages/portfolio/projects/ResumeClassifier";
 import SudokuSolver from "../pages/portfolio/projects/SudokuSolver";
-// TODO: Update image with better homepage.
 import TroyZada from "../pages/portfolio/projects/TroyZada";
 
 export const portfolioData = [
@@ -41,7 +40,7 @@ export const portfolioData = [
 	},
     {
         label: "Troy Zada Website",
-        path: `${rootRoutes.portfolio.path}/troyzada`,
+        path: `${rootRoutes.portfolio.path}/troy-zada`,
         element: <TroyZada />,
         image: troyZadaImage,
         tagline: "Discover my experiences, qualities, and overall portfolio",
