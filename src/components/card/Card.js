@@ -10,7 +10,7 @@ export default function Card(props) {
             <div className="card-container">
                 <Header label={props.label} backTo={props.backTo} />
                 <div className="card-content">
-                    {props.children}
+                    <div className="main-content-flex">{props.children}</div>
                     <Footer quote={props.quote} author={props.author} />
                 </div>
             </div>

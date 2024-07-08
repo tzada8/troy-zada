@@ -28,8 +28,14 @@
 }
 
 .card-content {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     overflow-y: auto;
+}
+
+.main-content-flex {
+    flex: 1;
 }
 
 @media screen and (min-width: 1200px) {
@@ -44,7 +50,6 @@
         display: block;
         width: 92%;
         max-width: none;
-        height: auto;
         margin: 75px 4%;
     }
 }

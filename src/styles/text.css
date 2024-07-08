@@ -65,6 +65,11 @@ p.body-small {
     text-align: center;
 }
 
+.center-content {
+    height: 100%;
+    align-content: center;
+}
+
 .justify {
     text-align: justify;
 }
