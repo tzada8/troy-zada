@@ -7,8 +7,8 @@ import "./Logo.css";
 
 export default function Logo(props) {
     return (
-        <Link to={home.path} onClick={props.onClick}>
-            <div className={`personal-logo logo-text ${props.className}`}>TZ</div>
+        <Link to={home.path} onClick={props.onClick} className={props.className}>
+            <div className="personal-logo logo-text">TZ</div>
         </Link>
     );
 }

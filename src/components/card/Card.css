@@ -1,20 +1,27 @@
-:root {
-    --CARD_WIDTH: 35%;
-    /* TODO: Maybe convert height as % of screen (similar to Juxtapose modal). */
-    --CARD_HEIGHT: 525px;
-}
-
 .card-box {
+    /* SIZING */
+    --CARD-WIDTH: 35%;
+    --CARD-MAX-WIDTH: 800px;
+
+    --CARD-HEIGHT: 85%;
+    --CARD-MIN-HEIGHT: 400px;
+    --CARD-MAX-HEIGHT: 1000px;
+
+    /* POSITIONING */
+    --CARD-LEFT: calc(50% - (var(--CARD-WIDTH) - 5%));
+    --CARD-MIDDLE: calc(50% - (var(--CARD-WIDTH) / 2));
+    --CARD-RIGHT: calc(50% + 7%);
+
     background: var(--WHITE);
     position: absolute;
-    display: block;
-    width: var(--CARD_WIDTH);
-    max-width: 400px;
-    height: var(--CARD_HEIGHT);
-    align-content: center;
+    width: var(--CARD-WIDTH);
+    max-width: var(--CARD-MAX-WIDTH);
+    height: var(--CARD-HEIGHT);
+    min-height: var(--CARD-MIN-HEIGHT);
+    max-height: var(--CARD-MAX-HEIGHT);
     overflow-y: hidden;
-    /* TODO: Top padding should be a %. */
-    margin: 26px calc(50% + 6%);
+    top: var(--SPACING-TOP);
+    left: var(--CARD-RIGHT);
     border: 2px solid var(--BLACK);
     border-radius: var(--BORDER-RADIUS-DEFAULT);
     z-index: 9;
@@ -38,18 +45,11 @@
     flex: 1;
 }
 
-@media screen and (min-width: 1200px) {
-    .card-box {
-        max-width: 533px;
-        height: 600px;
-    }
-}
-
 @media screen and (max-width: 960px) {
     .card-box {
-        display: block;
         width: 92%;
         max-width: none;
-        margin: 75px 4%;
+        top: var(--SPACING-SMALL-TOP);
+        left: var(--SPACING-SMALL-LEFT);
     }
 }

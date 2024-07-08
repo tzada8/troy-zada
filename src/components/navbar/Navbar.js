@@ -16,14 +16,16 @@ export default function Navbar(props) {
 
 	return (
 		<nav className={props.isMid ? "middle" : "left"}>
-			<Logo className="navbar-logo-position" onClick={closeMenu} />
-			<div className="menu-icon center" onClick={handleClick}>
-				<Icon image={click ? <FaTimes /> : <FaBars />} white clickable />
-			</div>
-			<div className={`nav-menu ${click ? "active" : ""}`}>
-				{routes.map(r => (
-					<NavButton key={r.path} label={r.label} path={r.path} onClick={closeMenu} />
-				))}
+			<div className="navbar-container">
+				<Logo className="navbar-logo-position" onClick={closeMenu} />
+				<div className="menu-icon center" onClick={handleClick}>
+					<Icon image={click ? <FaTimes /> : <FaBars />} white clickable />
+				</div>
+				<div className={`nav-menu ${click ? "active" : ""}`}>
+					{routes.map(r => (
+						<NavButton key={r.path} label={r.label} path={r.path} onClick={closeMenu} />
+					))}
+				</div>
 			</div>
 		</nav>
 	);

@@ -30,6 +30,13 @@
    /* BORDERS */
    --BORDER-RADIUS-ROUND: 50%;
    --BORDER-RADIUS-DEFAULT: 8px;
+
+   /* POSITIONING */
+   --SPACING-TOP: 7%;
+
+   --NAV-SMALL-HEIGHT: 70px;
+   --SPACING-SMALL-TOP: calc(var(--NAV-SMALL-HEIGHT) + 30px);
+   --SPACING-SMALL-LEFT: 4%;
 }
 
 * {
@@ -68,5 +75,4 @@ html {
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
-   height: calc(var(--CARD_HEIGHT) + 52px);
 }

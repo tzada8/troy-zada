@@ -1,14 +1,14 @@
 .home-center, .home-left {
     z-index: 10;
-    transition: margin var(--TRANSITION-DEFAULT);
+    transition: left var(--TRANSITION-DEFAULT);
 }
 
 .home-center {
-    margin: 26px calc(50% - (var(--CARD_WIDTH) / 2));
+    left: var(--CARD-MIDDLE);
 }
 
 .home-left {
-    margin: 26px calc(50% - (var(--CARD_WIDTH) - 5%) - 16px);
+    left: var(--CARD-LEFT);
 }
 
 .headshot1 {
@@ -20,8 +20,8 @@
 }
 
 .home-img-round {
-	height: 150px;
-	width: 150px;
+	height: 175px;
+	width: 175px;
 	margin: auto;
 	background-position-x: center;
 	background-position-y: center;
@@ -44,16 +44,10 @@
 	margin: 20px 0;
 }
 
-@media screen and (min-width: 1200px) {
-	.home-img-round {
-		height: 175px;
-		width: 175px;
-	}
-}
-
 @media screen and (max-width: 960px) {
 	.home-center {
-		margin: 75px 4%;
+		top: var(--SPACING-SMALL-TOP);
+        left: var(--SPACING-SMALL-LEFT);
 	}
 
     .home-left {

@@ -78,9 +78,9 @@ p.body-small {
     text-indent: 30px;
 }
 
-/* VARIOUS SCREEN SIZES */
+/* TODO: Maybe add bigger text sizes for larger screens. */
 @media screen and (max-width: 960px) {
     .logo-text {
-        font-size: 21px;
+        font-size: 26px;
     }
 }
