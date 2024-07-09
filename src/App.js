@@ -16,7 +16,6 @@ function Display() {
 
 	return (
 		<div>
-			{/* TODO: Update CSS to remove absolute position. */}
 			<Navbar isMid={isHomeActive} />
 			<Home isOnlyComp={isHomeActive} />
 			<AnimatedSwitch location={location} />

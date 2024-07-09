@@ -13,7 +13,7 @@ h1, h2, h3, h4 {
     line-height: 120%;
 }
 
-/* TODO: Need to use media queries to make sizes bigger/smaller depending on screen. */
+/* TODO: Maybe use rem/em instead of px. */
 h1 {
     color: var(--BLUE);
     font-size: 50px;
@@ -78,7 +78,36 @@ p.body-small {
     text-indent: 30px;
 }
 
-/* TODO: Maybe add bigger text sizes for larger screens. */
+@media screen and (min-width: 1500px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p, li {
+        font-size: 16px;
+    }
+
+    p.body-small {
+        font-size: 14px;
+    }
+
+    .button-font {
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .logo-text {
         font-size: 26px;
