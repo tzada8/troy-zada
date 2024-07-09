@@ -3,15 +3,26 @@ import { FaCircleCheck } from "react-icons/fa6";
 import { HiQuestionMarkCircle } from "react-icons/hi";
 import emailjs from "emailjs-com";
 
+import FormButton from "../../components/button/FormButton";
 import Icon from "../../components/icon/Icon";
 import Subtitle from "../../components/subtitle/Subtitle";
 import "./Contact.css";
 
 export default function Contact() {
-	function sendEmail(e) {
-		e.preventDefault();
-		showThankYouMessage(); // SHOW THANK YOU MESSAGE FOR 3 SECONDS
+	const formFields = [
+		{name: "name", type: "text", htmlTag: "input"},
+		{name: "email", type: "email", htmlTag: "input"},
+		{name: "subject", type: "text", htmlTag: "input"},
+		{name: "message", type: "text", htmlTag: "textarea"},
+	];
 
+	const sendEmail = (e) => {
+		e.preventDefault();
+		// TODO: Move this to "result" (success) part of email.
+		// TODO: Create "fail" popup message in case message did not go through.
+		showThankYouMessage();
+
+		// TODO: Verify this works (or change to new way for emailing functionality).
 		emailjs
 			.sendForm(
 				"service_gmail",
@@ -30,62 +41,30 @@ export default function Contact() {
 		e.target.reset();
 	}
 
-	function showThankYouMessage() {
+	const showThankYouMessage = () => {
 		const message = document.getElementById("thank-you-container");
-		message.style.visibility = "visible"; // SHOW MESSAGE
-		setTimeout(function () {
-			message.style.visibility = "hidden"; // AFTER 3s HIDE MESSAGE
-		}, 3000);
+		message.style.visibility = "visible";
+		setTimeout(() => {message.style.visibility = "hidden"}, 5000);
 	}
 
 	return (
 		<div>
 			<Subtitle icon={<HiQuestionMarkCircle />} label="Send Me a Message" />
-			<div className="contact-me-container">
-				<form id="contact-form" onSubmit={sendEmail}>
-					<h4 className="form-field-headers">NAME</h4>
-					<input
-						name="name"
-						type="text"
-						className="form-control"
-						placeholder="Your name..."
-						required
-					/>
-					<br />
-					<h4 className="form-field-headers">EMAIL</h4>
-					<input
-						name="email"
-						type="email"
-						className="form-control"
-						placeholder="Your email..."
-						required
-					/>
-					<br />
-					<h4 className="form-field-headers">SUBJECT</h4>
-					<input
-						name="subject"
-						type="text"
-						className="form-control"
-						placeholder="Your subject..."
-						required
-					/>
-					<br />
-					<h4 className="form-field-headers">MESSAGE</h4>
-					<textarea
-						name="message"
-						type="text"
-						className="form-control message"
-						placeholder="Your message..."
-						rows="4"
-						required
-					></textarea>
-					<br />
-					<input
-						id="submit-button"
-						type="submit"
-						className="button-font bold submit"
-						value="SEND MESSAGE"
-					/>
+			<div className="contact-form-container">
+				<form onSubmit={sendEmail}>
+					{formFields.map(f => (
+						<div key={f.name}>
+							<h4>{f.name.toUpperCase()}</h4>
+							{React.createElement(f.htmlTag, {
+								name: f.name,
+								type: f.type,
+								className: `form-control ${f.htmlTag}-element`,
+								placeholder: `Your ${f.name}...`,
+								required: true,
+							})}
+						</div>
+					))}
+					<FormButton className="form-submit-sizing" label="SEND MESSAGE" />
 				</form>
 
 				<div id="thank-you-container" className="center">

@@ -1,3 +1,15 @@
+.submit-button {
+    background: var(--BLUE);
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: var(--BORDER-RADIUS-DEFAULT);
+    transition: background var(--TRANSITION-EASE);
+}
+
+.submit-button:hover {
+    background: var(--DARK-BLUE);
+}
+
 .background-change {
     background: linear-gradient(
 		to right,
