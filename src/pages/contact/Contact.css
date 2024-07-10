@@ -34,15 +34,3 @@ form .form-submit-sizing {
    height: 45px;
    margin: 10px 15% 0;
 }
-
-#thank-you-container {
-   background: var(--WHITE);
-   position: absolute;
-   top: 25%;
-   left: 15%;
-   right: 15%;
-   padding: 5px 10px;
-   border: 2px solid var(--GREEN);
-   box-shadow: 0 0px 6px 1px rgba(0, 0, 0, 0.4);
-   visibility: hidden;
-}

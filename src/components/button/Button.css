@@ -10,6 +10,16 @@
     background: var(--DARK-BLUE);
 }
 
+.submit-button:disabled {
+    background: var(--GREY);
+    color: var(--BLACK);
+    cursor: not-allowed;
+}
+
+.submit-button:disabled:hover {
+    background: var(--GREY);
+}
+
 .background-change {
     background: linear-gradient(
 		to right,

@@ -35,7 +35,7 @@ h4 {
 }
 
 /* BODY */
-p, li {
+p, li, input, textarea {
     color: var(--BLACK);
     font-family: var(--BODY-FONT);
     line-height: 140%;

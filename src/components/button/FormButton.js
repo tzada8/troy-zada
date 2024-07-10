@@ -8,6 +8,7 @@ export default function FormButton(props) {
             type="submit"
             className={`button-font bold submit-button ${props.className}`}
             value={props.label}
+            disabled={props.disabled}
         />
     );
 }

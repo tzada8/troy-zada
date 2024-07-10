@@ -1,10 +1,10 @@
-import React from "react";
-import { FaCircleCheck } from "react-icons/fa6";
+import React, { useState } from "react";
 import { HiQuestionMarkCircle } from "react-icons/hi";
-import emailjs from "emailjs-com";
+
+import { EMAIL } from "../../data/constants";
 
 import FormButton from "../../components/button/FormButton";
-import Icon from "../../components/icon/Icon";
+import Popup from "../../components/popup/Popup";
 import Subtitle from "../../components/subtitle/Subtitle";
 import "./Contact.css";
 
@@ -16,42 +16,63 @@ export default function Contact() {
 		{name: "message", type: "text", htmlTag: "textarea"},
 	];
 
-	const sendEmail = (e) => {
+	const defaultFormState = formFields.reduce((acc, f) => {
+		acc[f.name] = "";
+		return acc;
+	}, {});
+	const [formState, setFormState] = useState(defaultFormState);
+
+	const defaultSubmitMessage = {};
+	const [submitMessage, setSubmitMessage] = useState({defaultSubmitMessage});
+
+	const successMessage = {
+		type: "success",
+		label: "Thank you!",
+		text: "Your message has been sent.",
+	};
+	const failureMessage = {
+		type: "failure",
+		label: "Uh oh!",
+		text: `An error seems to have occurred. Please try again or email ${EMAIL} directly.`,
+	};
+	// If temporarily need to stop contact form, can use this.
+	// const constructionMessage = {
+	// 	type: "construction",
+	// 	label: "Coming soon!",
+	// 	text: `For now feel free to send me an email at ${EMAIL}.`,
+	// };
+
+	const handleChange = (e) => setFormState({...formState, [e.target.name]: e.target.value});
+
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-		// TODO: Move this to "result" (success) part of email.
-		// TODO: Create "fail" popup message in case message did not go through.
-		showThankYouMessage();
+		const data = {...formState, "form-name": "contact-form"};
+		data["subject"] = `${data["name"]} - ${data["subject"]}`;
+		const params = new URLSearchParams(data);
 
-		// TODO: Verify this works (or change to new way for emailing functionality).
-		emailjs
-			.sendForm(
-				"service_gmail",
-				"template_contact_form",
-				e.target,
-				"user_2i1vEGhwrmIRYHtiWXPEf"
-			)
-			.then(
-				(result) => {
-					console.log(result.text);
-				},
-				(error) => {
-					console.log(error.text);
-				}
-			);
-		e.target.reset();
-	}
+		try {
+			await fetch("/", {
+				method: "POST",
+				headers: {"Content-Type": "application/x-www-form-urlencoded"},
+				body: params.toString(),
+			})
+			showSubmitPopup(successMessage);
+		} catch (err) {
+			showSubmitPopup(failureMessage);
+		}
+		setFormState(defaultFormState);
+	};
 
-	const showThankYouMessage = () => {
-		const message = document.getElementById("thank-you-container");
-		message.style.visibility = "visible";
-		setTimeout(() => {message.style.visibility = "hidden"}, 5000);
+	const showSubmitPopup = (data) => {
+		setSubmitMessage(data);
+		setTimeout(() => {setSubmitMessage(defaultSubmitMessage)}, 8000);
 	}
 
 	return (
 		<div>
 			<Subtitle icon={<HiQuestionMarkCircle />} label="Send Me a Message" />
 			<div className="contact-form-container">
-				<form onSubmit={sendEmail}>
+				<form name="contact-form" onSubmit={handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
 					{formFields.map(f => (
 						<div key={f.name}>
 							<h4>{f.name.toUpperCase()}</h4>
@@ -60,18 +81,24 @@ export default function Contact() {
 								type: f.type,
 								className: `form-control ${f.htmlTag}-element`,
 								placeholder: `Your ${f.name}...`,
+								value: formState[f.name],
+								onChange: handleChange,
 								required: true,
 							})}
 						</div>
 					))}
-					<FormButton className="form-submit-sizing" label="SEND MESSAGE" />
+					<FormButton
+						className="form-submit-sizing"
+						label="SEND MESSAGE"
+						disabled={submitMessage.type}
+					/>
 				</form>
 
-				<div id="thank-you-container" className="center">
-					<Icon image={<FaCircleCheck />} green />
-					<h3>Thank you!</h3>
-					<p>Your message has been sent.</p>
-				</div>
+				<Popup
+					label={submitMessage.label}
+					text={submitMessage.text}
+					status={submitMessage.type}
+				/>
 			</div>
 		</div>
 	);
