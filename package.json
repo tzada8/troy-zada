@@ -16,10 +16,25 @@
     "react-transition-group": "^4.4.5",
     "web-vitals": "^4.2.1"
   },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "css"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|png|jpg|jpeg)$": "<rootDir>/tests/__mocks__/MockStyles.js"
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/setupTests.js"
+    ],
+    "testEnvironment": "jsdom"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest ./tests",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
