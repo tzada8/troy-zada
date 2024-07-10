@@ -16,15 +16,6 @@ export default function Contact() {
 		{name: "message", type: "text", htmlTag: "textarea"},
 	];
 
-	const defaultFormState = formFields.reduce((acc, f) => {
-		acc[f.name] = "";
-		return acc;
-	}, {});
-	const [formState, setFormState] = useState(defaultFormState);
-
-	const defaultSubmitMessage = {};
-	const [submitMessage, setSubmitMessage] = useState({defaultSubmitMessage});
-
 	const successMessage = {
 		type: "success",
 		label: "Thank you!",
@@ -39,8 +30,17 @@ export default function Contact() {
 	// const constructionMessage = {
 	// 	type: "construction",
 	// 	label: "Coming soon!",
-	// 	text: `For now feel free to send me an email at ${EMAIL}.`,
+	// 	text: `For now feel free to send an email to ${EMAIL}.`,
 	// };
+
+	const defaultFormState = formFields.reduce((acc, f) => {
+		acc[f.name] = "";
+		return acc;
+	}, {});
+	const [formState, setFormState] = useState(defaultFormState);
+
+	const defaultSubmitMessage = {};
+	const [submitMessage, setSubmitMessage] = useState({defaultSubmitMessage});
 
 	const handleChange = (e) => setFormState({...formState, [e.target.name]: e.target.value});
 
