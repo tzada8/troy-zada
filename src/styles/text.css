@@ -13,7 +13,6 @@ h1, h2, h3, h4 {
     line-height: 120%;
 }
 
-/* TODO: Maybe use rem/em instead of px. */
 h1 {
     color: var(--BLUE);
     font-size: 50px;
