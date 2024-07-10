@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Outlet, Route, Routes } from "react-router-dom";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 import { home, pageNotFound, routes } from "./routes/routes";
@@ -24,7 +24,7 @@ export default function AnimatedSwitch(props) {
                 unmountOnExit
             >
                 <Routes location={props.location}>
-                    <Route path={home.path} />
+                    <Route path={home.path} element={<Outlet />} />
 
                     {routes.map(r => (
                         <Route key={r.path} path={r.path} element={
