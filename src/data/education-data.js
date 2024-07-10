@@ -21,7 +21,7 @@ export const educationData = [
 				details: [
 					"Expertise in data analytics, information systems, and operations management.",
 					"Relevant courses: Machine Learning, Search Engines, Software Engineering, and Optimization.",
-					"Undergraduate Research Assistant researching the effectiveness of LLMs in answering medical questions.",
+					"Researched the effectiveness of LLMs in healthcare, focusing on their impact on self-diagnosis.",
 				],
 			},
 		],

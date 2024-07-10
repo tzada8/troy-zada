@@ -14,7 +14,7 @@ export const experienceData = [
 					"Resolved a vital AWS security leak to avoid catastrophic financial losses.",
 					"Triaged data alerts to enhance quality and mitigate noise, resulting in a 3x reduction of extraneous data issues.",
 					"Automatically aggregated 1M+ URLs into sitemaps weekly to improve search engine optimization.",
-					"Implementing alerting mechanisms to routinely detect and handle 1.3M products missing from the catalogue.",
+					"Implemented alerting mechanisms to routinely detect and handle 1.3M products missing from the catalogue.",
 				],
 			},
 		],
@@ -30,7 +30,7 @@ export const experienceData = [
 				details: [
 					"Strengthened the application's infrastructure by updating all project dependencies.",
 					"Performed data sanitization on unformatted fields to increase team productivity.",
-					"Integrated the application with Slack to automatically send approval messages, in turn, increasing team organization.",
+					"Integrated the application with Slack to automatically send approval messages, increasing team organization.",
 				],
 			},
 		],
@@ -44,7 +44,7 @@ export const experienceData = [
 				company: "TribalScale",
 				duration: "Sept. 2021 - Dec. 2021",
 				details: [
-					"Constructed a web application to increase project allocation productivity by 200%.",
+					"Constructed a web application to increase project allocation productivity.",
 					"Collaborated in a pair programming environment focused on efficiently developing the backend of a client's car dealership application.",
 				],
 			},
@@ -54,8 +54,7 @@ export const experienceData = [
 				duration: "Jan. 2021 - Apr. 2021",
 				details: [
 					"Prepared practice problems and explanations to teach complex Java programming concepts to students.",
-					"Validated all programming content and concepts before being released to ensure students could easily learn.",
-					"Reviewed student assessments in a timeline manner such that students can learn from their mistakes and improve.",
+					"Validated all programming content and concepts to ensure students could easily learn.",
 				],
 			},
 		],
@@ -69,8 +68,8 @@ export const experienceData = [
 				company: "EngineeringCPR",
 				duration: "Apr. 2020 - Sept. 2020",
 				details: [
-					"Primary focus involved manufacturing test fixtures and creating work instructions for testing 1200 ventilator systems as required due to COVID-19.",
-					"Worked in a manufacturing environment assembling fixtures through soldering, comprehending electrical schematics, and optimizing component placements.",
+					"Manufactured test fixtures and created work instructions to test 1200 ventilator systems as required due to COVID-19.",
+					"Assembled fixtures through soldering, comprehending electrical schematics, and optimizing component placements.",
 				],
 			},
 		],
