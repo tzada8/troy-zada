@@ -10,12 +10,12 @@ export default function RoutingButton(props) {
     const isIcon = props.label ? false : true;
 
     const iconButton = (
-        <Icon image={props.icon} blue={props.blue} large={props.blue} clickable />
+        <Icon image={props.icon} color={props.color} large={props.color} clickable />
     );
     const textButton = (
         <div className="button-font">
             {props.label && props.label.toUpperCase()}
-            <Icon image={props.icon} className="button-icon" small white />
+            <Icon image={props.icon} className="button-icon" small color="white" />
         </div>
     );
 

@@ -14,7 +14,7 @@ export default function SocialIcon(props) {
             onMouseEnter={() => setIsTooltipVisible(true)}
             onMouseLeave={() => setIsTooltipVisible(false)}
         >
-            <RoutingButton path={props.link} icon={props.icon} blue />
+            <RoutingButton path={props.link} icon={props.icon} color="blue" />
             {props.tooltip && <div className={`social-tooltip center ${tooltipClass}`}>
                 {props.tooltip}
             </div>}
