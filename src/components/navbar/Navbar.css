@@ -10,15 +10,16 @@ nav {
 	width: var(--NAV-WIDTH);
 	top: var(--SPACING-TOP);
 	z-index: 999;
-	transition: left var(--TRANSITION-DEFAULT);
 }
 
 .middle {
 	left: var(--NAV-MIDDLE);
+	transition: left var(--TRANSITION-DEFAULT);
 }
 
 .left {
 	left: var(--NAV-LEFT);
+	transition: left var(--TRANSITION-CARD);
 }
 
 .navbar-logo-position {

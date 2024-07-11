@@ -19,7 +19,7 @@ export default function AnimatedSwitch(props) {
         <SwitchTransition>
             <CSSTransition
                 key={props.location.pathname}
-                timeout={200}
+                timeout={350}
                 classNames={getAnimationStyle(props.location.pathname)}
                 unmountOnExit
             >

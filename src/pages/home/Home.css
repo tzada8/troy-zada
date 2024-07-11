@@ -1,22 +1,25 @@
 .home-center, .home-left {
     z-index: 10;
-    transition: left var(--TRANSITION-DEFAULT);
 }
 
 .home-center {
     left: var(--CARD-MIDDLE);
+	transition: left var(--TRANSITION-DEFAULT);
 }
 
 .home-left {
     left: var(--CARD-LEFT);
+	transition: left var(--TRANSITION-CARD);
 }
 
 .headshot1 {
 	background: url("../../images/home/headshot1.png");
+	transition: background var(--TRANSITION-DEFAULT);
 }
 
 .headshot2 {
 	background: url("../../images/home/headshot2.png");
+	transition: background var(--TRANSITION-CARD);
 }
 
 .home-img-round {
@@ -29,7 +32,6 @@
 	background-repeat: no-repeat;
 	border-radius: var(--BORDER-RADIUS-ROUND);
 	border: 4px solid var(--DARK-BLUE);
-	transition: background var(--TRANSITION-DEFAULT);
 }
 
 .home-intro-name {
