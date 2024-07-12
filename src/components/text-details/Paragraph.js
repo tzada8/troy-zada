@@ -6,7 +6,7 @@ export default function Paragraph(props) {
     return (
         <div>
             <p className="indent justify">{props.content}</p>
-            <br />
+            {!props.last && <br />}
         </div>
-    )
+    );
 }

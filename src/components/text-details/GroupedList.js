@@ -11,7 +11,7 @@ export default function GroupedList(props) {
                     <p className="justify"><span className="bold">{b.label}:</span> {b.content}</p>
                 </li>)}
             </ul>
-            <br />
+            {!props.last && <br />}
         </div>
-    )
+    );
 }
