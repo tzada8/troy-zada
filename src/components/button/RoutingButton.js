@@ -24,7 +24,7 @@ export default function RoutingButton(props) {
     const buttonClass = !isIcon ? linkClass : "";
 
     return isExternal ? (
-        <a href={props.path} target="_blank" rel="noreferrer" className={buttonClass}>
+        <a href={props.path} target="_blank" rel="noreferrer" className={buttonClass} aria-label={props.label || props.aria}>
             {buttonContent}
         </a>
     ) : (

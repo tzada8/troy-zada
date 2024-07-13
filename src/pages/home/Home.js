@@ -24,7 +24,7 @@ export default function Home(props) {
 						<p>{home.description}</p>
 						<div className="social-media">
 							{socials.map((s, k) => (
-								<SocialIcon key={k} link={s.link} icon={s.icon} tooltip={s.tooltip} />
+								<SocialIcon key={k} aria={s.aria} link={s.link} icon={s.icon} tooltip={s.tooltip} />
 							))}
 						</div>
 

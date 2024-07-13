@@ -12,7 +12,7 @@ export default function DetailedPost(props) {
 	const isClickable = props.path ? true : false;
 
     const detailsIcon = isClickable ? <Icon image={ <FaAngleRight />} clickable />
-        : props.github ? <RoutingButton path={props.github} icon={<FaGithub />} />
+        : props.github ? <RoutingButton path={props.github} icon={<FaGithub />} aria="GitHub" />
 		: undefined;
 
     const content = (

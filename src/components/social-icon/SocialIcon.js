@@ -14,10 +14,10 @@ export default function SocialIcon(props) {
             onMouseEnter={() => setIsTooltipVisible(true)}
             onMouseLeave={() => setIsTooltipVisible(false)}
         >
-            <RoutingButton path={props.link} icon={props.icon} color="blue" />
+            <RoutingButton path={props.link} icon={props.icon} aria={props.aria} color="blue" />
             {props.tooltip && <div className={`social-tooltip center ${tooltipClass}`}>
                 {props.tooltip}
             </div>}
         </div>
-    )
+    );
 }

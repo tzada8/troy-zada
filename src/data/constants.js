@@ -9,8 +9,8 @@ const GITHUB_LINK = `${BASE_GITHUB}/tzada8`;
 export const EMAIL = "tzada@uwaterloo.ca";
 
 export const socials = [
-    {link: `mailto:${EMAIL}`, icon: <FaSquareEnvelope />, tooltip: EMAIL},
-    {link: FACEBOOK_LINK, icon: <FaSquareFacebook />},
-    {link: LINKEDIN_LINK, icon: <FaLinkedin />},
-    {link: GITHUB_LINK, icon: <FaSquareGithub />},
+    {aria: "Email", link: `mailto:${EMAIL}`, icon: <FaSquareEnvelope />, tooltip: EMAIL},
+    {aria: "Facebook", link: FACEBOOK_LINK, icon: <FaSquareFacebook />},
+    {aria: "LinkedIn", link: LINKEDIN_LINK, icon: <FaLinkedin />},
+    {aria: "GitHub", link: GITHUB_LINK, icon: <FaSquareGithub />},
 ]

@@ -10,7 +10,7 @@ export default function Header(props) {
         <div className="header-container">
             <div className="header-title">
                 {props.label && <h2>{props.label}</h2>}
-                {props.backTo && <RoutingButton path={props.backTo} icon={<IoCloseSharp />} />}
+                {props.backTo && <RoutingButton path={props.backTo} icon={<IoCloseSharp />} aria="Close" />}
             </div>
             <HorizontalBar />
         </div>
