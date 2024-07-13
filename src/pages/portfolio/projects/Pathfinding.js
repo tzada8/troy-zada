@@ -7,7 +7,7 @@ import Subheading from "../../../components/text-details/Subheading";
 export default function Pathfinding() {
 	return (
 		<div>
-			<Subheading first label="About the Application" />
+			<Subheading label="About the Application" />
 			<Paragraph content="Understanding the purpose behind algorithms and how they operate can drastically improve overall learnings. By constructing an application to visually compare four differing shortest path algorithms, the benefits and drawbacks of each algorithm can easily be identified." />
 			<Paragraph content="For instance, the A* algorithm can determine the shortest distance the fastest but requires the end tile to be known beforehand. The other algorithms, however, can determine the shortest distance without require any comprehension of the end tile." />
 

@@ -7,7 +7,7 @@ import Subheading from "../../../components/text-details/Subheading";
 export default function Juxtapose() {
 	return (
 		<div>
-			<Subheading first label="About the Application" />
+			<Subheading label="About the Application" />
 			<Paragraph content="Juxtapose is a web application designed to help online shoppers tackle the difficulty of making well-informed and confident purchasing decisions by alleviating decision paralysis and information overload." />
 			<Paragraph content="By aggregating specifications, peer reviews, expert reviews, and related videos, and providing tailored recommendations, shoppers can reach purchasing decisions with ease." />
 			<GroupedList header="To use Juxtapose, users can:" bullets={[

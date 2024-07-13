@@ -65,7 +65,7 @@
 <div align="center">
     <img src="src/images/portfolio/troy-zada.webp" alt="Troy Zada Layoutx" width="400" height="300">
 </div>
-<br/>
+<br />
 
 The Troy Zada website helps users view information about me in one of the following categories:
 

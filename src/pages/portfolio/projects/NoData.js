@@ -7,7 +7,7 @@ import Subheading from "../../../components/text-details/Subheading";
 export default function NoData() {
 	return (
 		<div>
-			<Subheading first label="About the Application" />
+			<Subheading label="About the Application" />
 			<Paragraph content="NoData allows users to search the internet without needing to be connected to data or Wi-Fi. Users can text their search queries to a particular phone number, and the application will text back the results of the query. For instance, out camping and do not have access to data or Wi-Fi, but need to know today’s weather? Text your query “Will it rain today?” to the number, and your question will immediately be answered." />
 			<Paragraph content="Users can text the number by specifying flags such as --result or --url to get additional pieces of information. Interested in the URL of the returned results? By providing the --url flag, the URL of the result will be provided to you such that you can view the result’s webpage once you are connected to the Internet again." />
 

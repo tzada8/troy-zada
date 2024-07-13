@@ -7,7 +7,7 @@ import Subheading from "../../../components/text-details/Subheading";
 export default function Moodivity() {
 	return (
 		<div>
-			<Subheading first label="About the Application" />
+			<Subheading label="About the Application" />
 			<Paragraph content="Many face the daily stresses in life, often sacrificing their mental health for productivity. This quickly leads individuals down a vicious cycle of being unproductive and overwhelmed due to their deteriorating mental health and wellbeing." />
 			<Paragraph content="With Moodivity, users can create profiles and set daily goals. They can access activities linked to the work they are completing, including tracking their daily work and reflecting on their productivity by recording daily audio logs." />
 			<Paragraph content="These logs are transcribed and analyzed using advanced Machine Learning models, storing insights in the database. This allows users to review their performance and emotional states over time, providing guidance on how they can improve." />

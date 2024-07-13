@@ -7,7 +7,7 @@ import Subheading from "../../../components/text-details/Subheading";
 export default function SudokuSolver() {
 	return (
 		<div>
-			<Subheading first label="About the Application" />
+			<Subheading label="About the Application" />
 			<Paragraph content="Sudoku Solver provides users with the ability to solve any Sudoku puzzle with ease. Anytime they get stuck on a puzzle and cannot solve the board, this application provides that assistance." />
 			<Paragraph content="Users can input any Sudoku board, and the application will solve the board for them. If no solution exists, the application notifies the user." />
 

@@ -7,7 +7,7 @@ import Subheading from "../../../components/text-details/Subheading";
 export default function TroyZada() {
 	return (
 		<div>
-			<Subheading first label="About the Application" />
+			<Subheading label="About the Application" />
 			<Paragraph content="Every person has different previous experiences that defines their story. Thus, this website explains my story. Ranging from basic contact information to education, work experiences, and projects I’ve completed, everything here shapes Troy Zada." />
 			<GroupedList header="Users can view information about me in one of following categories:" bullets={[
 				{label: "Home", content: "Basic information as well as social media links"},

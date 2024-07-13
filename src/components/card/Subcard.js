@@ -14,6 +14,7 @@ export default function Subcard(props) {
                 details={`${FULL_NAME} \u00A0|\u00A0 ${props.date}`}
                 github={props.github}
             />
+            <br />
             {props.children}
         </Card>
     );

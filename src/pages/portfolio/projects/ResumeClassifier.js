@@ -7,7 +7,7 @@ import Subheading from "../../../components/text-details/Subheading";
 export default function ResumeClassifier() {
 	return (
 		<div>
-			<Subheading first label="About the Application" />
+			<Subheading label="About the Application" />
 			<Paragraph content="People often lack objective methods to evaluate how well their resume aligns with job postings. Thus, an easy way to assess resume compatibility with specific jobs would simplify the resume tailoring process." />
 			<Paragraph content="Using a dataset of 4,870 resumes, various analyses were conducted to better understand patterns and make predictions. Naïve Bayes and Decision Trees were employed to generalize the dataset for future predictions, while Association Rule Mining was used to gain insights into the current data." />
 
