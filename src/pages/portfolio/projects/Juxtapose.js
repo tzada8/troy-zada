@@ -11,7 +11,7 @@ export default function Juxtapose() {
 			<Paragraph content="Juxtapose is a web application designed to help online shoppers tackle the difficulty of making well-informed and confident purchasing decisions by alleviating decision paralysis and information overload." />
 			<Paragraph content="By aggregating specifications, peer reviews, expert reviews, and related videos, and providing tailored recommendations, shoppers can reach purchasing decisions with ease." />
 			<GroupedList header="To use Juxtapose, users can:" bullets={[
-				{label: "Search", content: "Search for product category (ex. DSLR cameras)"},
+				{label: "Search", content: "Search for product category (e.g., DSLR cameras)"},
 				{label: "Set Filters & Preferences", content: "Set filters and rank features based on personal preferences"},
 				{label: "View Recommendations", content: "See the products recommended to them"},
 				{label: "Compare", content: "Compare products and pick their favourite one"},

@@ -7,29 +7,35 @@ import Subheading from "../../../components/text-details/Subheading";
 export default function TroyZada() {
 	return (
 		<div>
-			<Subheading label="About the Application" />
-			<Paragraph content="Every individual has their own story to tell, and thus, this application explains my story. Ranging from basic contact information to my past experiences, to skills I possess, to projects I’ve worked on, and lastly, to some shared blog posts. All this explains who Troy Zada is." />
-			<Paragraph content="With this Troy Zada Website, users can view information about me in one of six categories, being Home, Experience, Skills, Portfolio, Blog, and Contact. " />
-			<GroupedList bullets={[
+			<Subheading first label="About the Application" />
+			<Paragraph content="Every person has different previous experiences that defines their story. Thus, this website explains my story. Ranging from basic contact information to education, work experiences, and projects I’ve completed, everything here shapes Troy Zada." />
+			<GroupedList header="Users can view information about me in one of following categories:" bullets={[
 				{label: "Home", content: "Basic information as well as social media links"},
-				{label: "Experience", content: "Education, work experiences, and awards"},
-				{label: "Skills", content: "Proficiency in various interpersonal and professional skills"},
-				{label: "Portfolio", content: "List of coding projects and communication projects worked on and completed"},
+				{label: "Education", content: "Universities I attended and awards I achieved"},
+				{label: "Experience", content: "Previous history of companies I worked at"},
+				{label: "Skills", content: "Proficiency in interpersonal and professional skills"},
+				{label: "Portfolio", content: "Projects I am working on or have completed"},
 				{label: "Blog", content: "Stories shared about past experiences"},
 				{label: "Contact", content: "A way to reach out and leave me a message"},
 			]}/>
 
 			<Subheading label="Tech Stack" />
 			<GroupedList header="Frontend" bullets={[
-				{label: "React", content: "UI framework of the application"},
-				{label: "JavaScript", content: "Frontend language of the application"},
-				{label: "HTML", content: "Markup design of webpage"},
-				{label: "CSS", content: "Styles for elements and components"},
+				{label: "React", content: "UI framework"},
+				{label: "JavaScript", content: "Frontend language"},
+				{label: "HTML", content: "Website markup structure"},
+				{label: "CSS", content: "Component styling"},
+				{label: "React Icons", content: "Predesigned icons"},
+				{label: "Google Fonts", content: "Custom font styles"},
 			]}/>
 
-			<Subheading label="Application's Functionality" />
-			<Paragraph content="Each part of the webpage is a unique component, where each component consists of its own set of elements (elements being basic HTML tags such as <div></div>). The components are then rendered to the screen, and the corresponding CSS styles are applied. " />
-			<Paragraph content="The webpage displays a corresponding card depending on what URL the user is currently at. For example, if the URL has “/experience” in it, then the Experience page will be displayed. Similarly, if the URL contains “/portfolio/troy-zada”, then the specific “troy-zada” card from the Portfolio section will be displayed. Home is always rendered." />
+			<GroupedList header="Deployment" bullets={[
+				{label: "Netlify", content: "Frontend deployment"},
+			]}/>
+
+			<Subheading label="Technical Functionality" />
+			<Paragraph content="Each page of the website is a composition of various components, where components are reusable pieces of code responsible for a single principle. Each page then specifies which components should be rendered to the screen, along with the corresponding CSS styles being applied." />
+			<Paragraph last content="For instance, this information is currently being displayed on a Card component, along with a Navbar component being responsible for providing the routes. As the user selects a different route (e.g., Experience page), different components are rendered instead such as a WorkInfo component responsible for displaying the individual boxes of my work experience. As various paths are selected, the rendered components update accordingly to ensure the correct information is always being displayed." />
 		</div>
 	);
 }
