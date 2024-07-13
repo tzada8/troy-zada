@@ -4,7 +4,7 @@
 <br />
 <div align="center">
     <a href="https://github.com/tzada8/troy-zada">
-        <img src="public/logo192.png" alt="Troy Zada">
+        <img src="public/favicon.ico" alt="Troy Zada">
     </a>
     <h3 align="center">Troy Zada: Discover my experiences, qualities, and overall portfolio</h3>
     <p align="center">
