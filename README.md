@@ -1,5 +1,11 @@
 <a id="readme-top"></a>
 
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+
+![Netlify Status](https://api.netlify.com/api/v1/badges/3ab975fd-ffa4-4906-a0e6-20aa0210c651/deploy-status)
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
