@@ -7,10 +7,9 @@ import Subheading from "../../../components/text-details/Subheading";
 export default function Pathfinding() {
 	return (
 		<div>
-			<Subheading label="About the Application" />
-			<Paragraph content="Determining the shortest distance between two points is a crucial aspect in day to day life. This application does exactly that. It determines the shortest distance between two points in any given obstacle using different approaches." />
-			<Paragraph content="With this Pathfinding Algorithms application, users can draw unique obstacles or choose one of the preset ones, and the shortest path between the start point and endpoint will be determined. " />
-			<Paragraph content="The user also has the option to watch the solution unfold or to choose between algorithms such that they may see the differences between how each algorithm works. " />
+			<Subheading first label="About the Application" />
+			<Paragraph content="Understanding the purpose behind algorithms and how they operate can drastically improve overall learnings. By constructing an application to visually compare four differing shortest path algorithms, the benefits and drawbacks of each algorithm can easily be identified." />
+			<Paragraph content="For instance, the A* algorithm can determine the shortest distance the fastest but requires the end tile to be known beforehand. The other algorithms, however, can determine the shortest distance without require any comprehension of the end tile." />
 
 			<Subheading label="Tech Stack" />
 			<GroupedList header="Frontend" bullets={[
@@ -22,16 +21,15 @@ export default function Pathfinding() {
 			]}/>
 
 			<GroupedList header="Algorithms" bullets={[
-				{label: "Breadth-First Search", content: "Checks the board by viewing the tiles closest to the start tile, then spreading out"},
-				{label: "Depth-First Search", content: "Fully attempts one path until a dead end is reached, then attempts another"},
-				{label: "A*", content: "Calculates a G, H and F cost for the current tile, being the distances between the start/end tile and the current tile"},
-				{label: "Dijkstra", content: "Checks tiles that are closest to the start tile"},
+				{label: "Breadth-First Search", content: "Views tiles closest to the start tile, spreading out evenly on all sides"},
+				{label: "Depth-First Search", content: "Fully attempts one path until a dead end is reached before moving onto another path"},
+				{label: "A*", content: "Calculates a G, H and F cost for the current tile, being the distances between the start/end tile to the current tile to determine the direction"},
+				{label: "Dijkstra", content: "Views tiles closest to the start tile"},
 			]}/>
 
-			<Subheading label="Application's Functionality" />
-			<Paragraph content="A settings component of the entire application allows the user to start the pathfinding, reset the board, see the steps of the solution, choose between different algorithms, and choose between different obstacles. " />
-			<Paragraph content="If a different obstacle is chosen, then the board resets, and the new obstacle is drawn instead. If a different algorithm is chosen, then the application remembers this algorithm for when the pathfinding begins. " />
-			<Paragraph content="Once an algorithm and obstacle are chosen, the user can then choose to see the steps or just view the solution. Seeing the steps will render red and green tiles to depict how the algorithm runs and which tiles it checks. " />
+			<Subheading label="Technical Functionality" />
+			<Paragraph content="A settings component of the entire application allows the user to adjust parameters before running the pathfinding. Users can start the pathfinding, clear the board, choose if they want to visually see the solution, choose between which algorithm to use, and choose between which obstacles to place." />
+			<Paragraph last content="Users can manually draw obstacles themselves or choose from one of the preset options. Once a particular algorithm and obstacle is selected, the user can specify if they want to see the visual solution or to just see the final solution." />
 		</div>
 	);
 }
