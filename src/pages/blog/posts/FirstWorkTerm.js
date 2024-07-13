@@ -6,29 +6,24 @@ import Subheading from "../../../components/text-details/Subheading";
 export default function FirstWorkTerm() {
 	return (
 		<div>
-			<Paragraph content="My first coop work term took place over the Spring 2020 term (May 2020 – August 2020), which also ended up being the first few months that COVID-19 emerged. The company I was working for is called EngineeringCPR, and their main responsibility involves designing and manufacturing medical devices. " />
+			<Paragraph content="During my first co-op term in Spring 2020 (May 2020 – August 2020), coinciding with the onset of COVID-19, I worked at EngineeringCPR, focusing on the design and manufacturing of medical devices." />
 
 			<Subheading label="Changing Roles" />
-			<Paragraph content="While I was working at EngineeringCPR, I was primarily responsible for validating the quality of all parts and components that endured the receiving, inspection, and inventory control process. In other words, I was responsible for inspecting all components that were to be used for manufacturing and conducting the respective procedures and documentation for each of the components. " />
-			<Paragraph content="However, after only a few weeks of working in this position, I was asked to aid EngineeringCPR in a manufacturing contracting position they had with a company called Thornhill Medical. Thus, when agreeing to this new role, I was required to entirely adapt my previous responsibilities for the new role. " />
-			<Paragraph content="In this new position, I began working as an engineering technician where I was doing much more than quality-based inspections. I was now responsible for manufacturing mechanical and electrical fixtures for Thornhill Medical. On top of physically assembling the fixtures, I was also required to complete documentation. Specifically, I was required to create instruction manuals and quality documents for the electrical/mechanical fixtures that I built. " />
+			<Paragraph content="While at EngineeringCPR, I was primarily responsible for validating the quality of all parts and components through receiving, inspection, and inventory control processes. This involved inspecting components, writing documentation, and performing necessary procedures." />
+			<Paragraph content="However, after a few weeks, I was asked to assist EngineeringCPR in a manufacturing contract with Thornhill Medical. Adapting to this new role, I was required to transition to an engineering technician, taking on responsibilities beyond quality inspections. I began manufacturing mechanical and electrical fixtures for Thornhill Medical, including physically assembly and documentation. Specifically, I created instruction manuals and quality documents for the fixtures I built." />
 
-			<Subheading label="Purpose of the Work I Completed" />
-			<Paragraph content="The fixtures and documentation work I was doing was all for Thornhill Medical since they were required to manufacture 1000 Intensive Care Units (ICUs) due to COVID-19. Thus, the test fixtures that I was manufacturing were to be used to test individual components of the ICUs before the ICU itself was assembled. " />
-			<Paragraph content="One of the fixtures I built and completed the specific documentation for can be seen in the image at the beginning of this post. I built this test fixture entirely, including all the mechanical and electrical work, and the fixture is to be used to test a Printed Circuit Board (PCB) before using the board within the actual ICU. " />
+			<Subheading label="Purpose Behind the Work" />
+			<Paragraph content="My work involved supporting Thornhill Medical in manufacturing 1200 Intensive Care Units (ICUs) in response to COVID-19. This included manufacturing test fixtures for evaluating individual ICU components prior to final assembled." />
+			<Paragraph content="An example of one of these fixtures, pictured at the beginning of this post, is one I constructed entirely from scratch. It encompasses both mechanical and electrical elements and is specifically designed to test Printed Circuit Boards (PCBs) before their integration into the ICU production line." />
 
-			<Subheading label="What I Learned" />
-			<Paragraph content="Overall, I learned a lot from this first work term experience. For starters, I had no experience assembling and working with electrical components as well as any of the electrical processes. However, after only four months of working in this position, I can confidently say that I am comfortable and experienced in working with electronics. " />
-			<Paragraph content="For example, soldering (a process where numerous metals are adjoined together by using a filler metal) was a skill I learned while working with EngineeringCPR and one I have found interesting and useful. Before I had never even heard of the word “solder”, but now, I am extremely familiar with it. " />
-			<Paragraph content="Other skills I learned from this work term include properly crimping wires, optimizing component placements, as well as all the various parts used in electrical builds such as the various connectors, wire sizes, etc." />
+			<Subheading label="Learnings" />
+			<Paragraph content="Overall, my first co-op experience was incredibly educational. Initially, I had no background in electrical processes, but after just four months, I can confidently say that I have hands-on experience in electrical engineering." />
+			<Paragraph content="For instance, I learned soldering, a technique where various metals are joined using a filler metal, while working at EngineeringCPR. Previously, I had no knowledge of soldering, but now I am proficient in it." />
+			<Paragraph content="Additionally, I acquired skills in properly crimping wires, optimizing component placements, and understanding the various components essential in electrical builds, such as different connectors and wire sizes." />
 
-			<Subheading label="Documentation Work" />
-			<Paragraph content="There were two main types of documentation I was required to complete. The first involved constructing work instructions. Simply, work instructions are manuals explaining how to build something, such that another individual can identically build it at a later time. " />
-			<Paragraph content="I was also in charge of creating Engineering Change Orders (ECOs) for the fixtures I build. Essentially, an ECO is a documentation package outlining the proposed changes for a part. For instance, some of the fixtures I was building needed to be updated (the original version was outdated), and thus, an ECO was required to outline what the updates for that fixture were and ensure that they are approved by the quality department. " />
-
-			<Subheading label="Conclusion" />
-			<Paragraph content="All in all, I performed a variety of tasks rather than just focusing on one specific task. I ranged from actually manufacturing the fixtures myself, to creating instructions for them, to enduring the ECO process, and then lastly, to the original quality-based tasks that I was assigned back at the EngineeringCPR offices." />
-			<Paragraph content="If I were to leave you with one message, it would be the following: “Don’t be afraid of change. Rather, embrace it.” Personally, if I never accepted the new role offer / the change to help contract for Thornhill Medical, I would never have been able to experience the manufacturing side of medical fixtures and would solely have been working on the quality side of these components, which in turn, would have meant that I would not have learned many of the incredible skills that I know today. " />
+			<Subheading label="Conclusions" />
+			<Paragraph content="During this work term, I engaged in a variety of tasks instead of focusing on one. I manufactured test fixtures, created work instructions, and handled all original quality-related tasks." />
+			<Paragraph last content="If there’s one message I’d like to leave you with, it’s this: “Don’t be afraid of change. Embrace it.” Personally, had I not accepted the new role as a contractor for Thornhill Medical, I would missed out on experiencing the manufacturing side of medical fixtures and would have remained solely on the quality side. Being open to change allowed me to broaden my horizons and acquire many additional skills that I would not have otherwise had the chance to learn." />
 		</div>
 	);
 }

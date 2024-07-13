@@ -14,7 +14,7 @@ export const blogData = [
         path: `${rootRoutes.blog.path}/first-work-term`,
 		element: <FirstWorkTerm />,
 		image: firstWorkTermImage,
-		date: "March 26, 2021", // TODO: Update.
+		date: "July 1, 2024",
     },
     {
         label: "How I Created This Website",
