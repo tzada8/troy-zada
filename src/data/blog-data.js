@@ -1,8 +1,8 @@
 import { rootRoutes } from "../routes/root-routes";
 
 // Images
-import creatingThisWebsiteImage from "../images/blog/creating-this-website.jpg";
-import firstWorkTermImage from "../images/blog/first-work-term.png";
+import creatingThisWebsiteImage from "../images/blog/creating-this-website.webp";
+import firstWorkTermImage from "../images/blog/first-work-term.webp";
 
 // Components
 import CreatingThisWebsite from "../pages/blog/posts/CreatingThisWebsite";

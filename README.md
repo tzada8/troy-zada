@@ -63,7 +63,7 @@
 ## About The Project
 
 <div align="center">
-    <img src="src/images//portfolio//troy-zada.png" alt="Troy Zada Layoutx" width="400" height="300">
+    <img src="src/images/portfolio/troy-zada.webp" alt="Troy Zada Layoutx" width="400" height="300">
 </div>
 <br/>
 

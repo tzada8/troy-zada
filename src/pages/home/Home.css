@@ -13,12 +13,12 @@
 }
 
 .headshot1 {
-	background: url("../../images/home/headshot1.png");
+	background: url("../../images/home/headshot1.webp");
 	transition: background var(--TRANSITION-DEFAULT);
 }
 
 .headshot2 {
-	background: url("../../images/home/headshot2.png");
+	background: url("../../images/home/headshot2.webp");
 	transition: background var(--TRANSITION-CARD);
 }
 

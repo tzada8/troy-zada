@@ -2,13 +2,13 @@ import { BASE_GITHUB } from "./constants";
 import { rootRoutes } from "../routes/root-routes";
 
 // Images
-import juxtaposeImage from "../images/portfolio/juxtapose.png";
-import moodivityImage from "../images/portfolio/moodivity.png";
-import noDataImage from "../images/portfolio/no-data.png";
-import pathfindingImage from "../images/portfolio/pathfinding-algorithms.png";
-import ResumeClassifierImage from "../images/portfolio/resume-classifier.png";
-import sudokuSolverImage from "../images/portfolio/sudoku-solver.png";
-import troyZadaImage from "../images/portfolio/troy-zada.png";
+import juxtaposeImage from "../images/portfolio/juxtapose.webp";
+import moodivityImage from "../images/portfolio/moodivity.webp";
+import noDataImage from "../images/portfolio/no-data.webp";
+import pathfindingImage from "../images/portfolio/pathfinding-algorithms.webp";
+import ResumeClassifierImage from "../images/portfolio/resume-classifier.webp";
+import sudokuSolverImage from "../images/portfolio/sudoku-solver.webp";
+import troyZadaImage from "../images/portfolio/troy-zada.webp";
 
 // Components
 import Juxtapose from "../pages/portfolio/projects/Juxtapose";
