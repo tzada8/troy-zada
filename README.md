@@ -1,70 +1,133 @@
-# Getting Started with Create React App
+<a id="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+    <a href="https://github.com/tzada8/troy-zada">
+        <img src="public/logo192.png" alt="Troy Zada">
+    </a>
+    <h3 align="center">Troy Zada: Discover my experiences, qualities, and overall portfolio</h3>
+    <p align="center">
+        The Troy Zada website is an application designed to share my story by detailing my various experiences including education, work, and projects.
+        <br />
+        <br />
+        <a href="https://troyzada.com">Production</a>
+        ·
+        <a href="https://troyzada.netlify.app/">Netlify</a>
+        </p>
+</div>
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
+<details>
+    <summary>Table of Contents</summary>
+    <ol>
+        <li>
+            <a href="#about-the-project">About The Project</a>
+        </li>
+        <li>
+            <a href="#getting-started">Getting Started</a>
+            <ul>
+                <li><a href="#installations">Installations</a></li>
+                <li><a href="#frontend-setup">Frontend Setup</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#adding-additional-packages">Adding Additional Packages</a>
+            <ul>
+                <li><a href="#frontend-packages">Frontend Packages</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#starting-the-app">Starting the App</a>
+            <ul>
+                <li><a href="#frontend-startup">Frontend Startup</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#testing">Testing</a>
+            <ul>
+                <li><a href="#frontend-tests">Frontend Tests</a></li>
+            </ul>
+        </li>
+    </ol>
+</details>
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<div align="center">
+    <img src="src/images//portfolio//troy-zada.png" alt="Troy Zada Layoutx" width="400" height="300">
+</div>
+<br/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The Troy Zada website helps users view information about me in one of the following categories:
 
-### `npm test`
+- <b>Home:</b> Basic information as well as social media links
+- <b>Education:</b> Universities I attended and awards I achieved
+- <b>Experience:</b> Previous history of companies I worked at
+- <b>Skills:</b> Proficiency in interpersonal and professional skills
+- <b>Portfolio:</b> Projects I am working on or have completed
+- <b>Blog:</b> Stories shared about past experiences
+- <b>Contact:</b> A way to reach out and leave me a message
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- GETTING STARTED -->
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installations
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ensure the following applications are locally installed:
 
-### `npm run eject`
+- [Node](https://nodejs.org/en/download)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Frontend Setup
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Install node dependencies
+    ```
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+<!-- ADDING ADDITIONAL PACKAGES -->
+## Adding Additional Packages
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Frontend Packages
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Install the additional packages. As as example:
+    ```
+    npm install react-icons
+    ```
+2. Commit the `package.json` and `package-lock.json` files
 
-### Code Splitting
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<!-- STARTING THE APP -->
+## Starting the App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Frontend Startup
 
-### Making a Progressive Web App
+1. Start the application at [http://localhost:3000](http://localhost:3000)
+    ```
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- TESTING -->
+## Testing
 
-### Deployment
+### Frontend Tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Run the tests
+    ```
+    npm test
+    ```
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
