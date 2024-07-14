@@ -12,10 +12,7 @@ export default function ProgressBar(props) {
 				<span className="percentage">{numberAsPercent}</span>
 			</p>
 			<div className="progress-bar__border">
-				<div
-					className="progress-bar__progress"
-					style={{ width: numberAsPercent }}
-				/>
+				<div className="progress-bar__progress" style={{ width: numberAsPercent }} />
 			</div>
 		</li>
 	);

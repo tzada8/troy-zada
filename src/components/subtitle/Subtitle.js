@@ -5,13 +5,13 @@ import Icon from "../icon/Icon";
 import "./Subtitle.css";
 
 export default function Subtitle(props) {
-   return (
-      <div className={props.topSpacing ? "subtitle-container" : ""}>
-         <h3 className="subtitle-header">
-            <Icon image={props.icon} className="subtitle-icon" small />
-            {props.label}
-         </h3>
-         <HorizontalBar dotted />
-      </div>
-   );
+	return (
+		<div className={props.topSpacing ? "subtitle-container" : ""}>
+			<h3 className="subtitle-header">
+				<Icon image={props.icon} className="subtitle-icon" small />
+				{props.label}
+			</h3>
+			<HorizontalBar dotted />
+		</div>
+	);
 }

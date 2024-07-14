@@ -1,25 +1,25 @@
 .work-info-container {
-    width: 90%;
-    margin: 15px auto 0;
-    padding: 10px;
-    border: 1px solid var(--GREY);
-    border-radius: var(--BORDER-RADIUS-DEFAULT);
+	width: 90%;
+	margin: 15px auto 0;
+	padding: 10px;
+	border: 1px solid var(--GREY);
+	border-radius: var(--BORDER-RADIUS-DEFAULT);
 }
 
 .work-role {
-    color: var(--BLUE);
-    margin-bottom: 2px;
+	color: var(--BLUE);
+	margin-bottom: 2px;
 }
 
 .work-duration {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .work-description {
-    margin-top: 8px;
+	margin-top: 8px;
 }
 
 li.work-detail {
-    list-style: initial;
-    margin-left: 13px;
+	list-style: initial;
+	margin-left: 13px;
 }

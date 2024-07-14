@@ -1,7 +1,7 @@
 .wordcloud {
-    width: 90%;
-    margin: 15px auto 0;
-    padding: 10px;
-    border: 1px solid var(--GREY);
-    border-radius: var(--BORDER-RADIUS-DEFAULT);
+	width: 90%;
+	margin: 15px auto 0;
+	padding: 10px;
+	border: 1px solid var(--GREY);
+	border-radius: var(--BORDER-RADIUS-DEFAULT);
 }

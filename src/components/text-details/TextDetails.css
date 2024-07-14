@@ -1,9 +1,9 @@
 li.list-item {
-    margin-left: 20px;
-    list-style: initial;
+	margin-left: 20px;
+	list-style: initial;
 }
 
 h3.content-subheading {
-    color: var(--DARK-BLUE);
-    padding-bottom: 3px;
+	color: var(--DARK-BLUE);
+	padding-bottom: 3px;
 }
