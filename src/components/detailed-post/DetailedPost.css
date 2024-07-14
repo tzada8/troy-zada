@@ -1,35 +1,35 @@
 .post-description-box {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding: 5px 5px 10px;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	padding: 5px 5px 10px;
 }
 
 .post-title {
-    grid-row: 1;
-    grid-column: 1;
-    padding-top: 2px;
-    color: var(--BLUE);
+	grid-row: 1;
+	grid-column: 1;
+	padding-top: 2px;
+	color: var(--BLUE);
 }
 
 .post-details {
-    grid-row: 2;
-    grid-column: 1;
-    padding-top: 6px;
+	grid-row: 2;
+	grid-column: 1;
+	padding-top: 6px;
 }
 
 .post-icon {
-    grid-row: 1 / span 2;
-    margin-right: 3px;
+	grid-row: 1 / span 2;
+	margin-right: 3px;
 }
 
 .post-container {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .post-content {
-    display: block;
-    width: 90%;
-    margin: 15px auto 0;
+	display: block;
+	width: 90%;
+	margin: 15px auto 0;
 }

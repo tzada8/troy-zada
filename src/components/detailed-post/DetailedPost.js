@@ -11,12 +11,14 @@ import "./DetailedPost.css";
 export default function DetailedPost(props) {
 	const isClickable = props.path ? true : false;
 
-    const detailsIcon = isClickable ? <Icon image={ <FaAngleRight />} clickable />
-        : props.github ? <RoutingButton path={props.github} icon={<FaGithub />} aria="GitHub" />
-		: undefined;
+	const detailsIcon = isClickable ? (
+		<Icon image={<FaAngleRight />} clickable />
+	) : props.github ? (
+		<RoutingButton path={props.github} icon={<FaGithub />} aria="GitHub" />
+	) : undefined;
 
-    const content = (
-        <div>
+	const content = (
+		<div>
 			<PostImage clickable={isClickable} src={props.src} alt={props.label} />
 			<div className="post-description-box">
 				<h3 className="post-title">{props.label}</h3>
@@ -24,11 +26,17 @@ export default function DetailedPost(props) {
 				<div className="post-icon">{detailsIcon}</div>
 			</div>
 		</div>
-    );
+	);
 
 	return (
 		<div className={props.bottomSpacing ? "post-container" : ""}>
-			{isClickable ? <Link to={props.path} className="post-content">{content}</Link> : content}
+			{isClickable ? (
+				<Link to={props.path} className="post-content">
+					{content}
+				</Link>
+			) : (
+				content
+			)}
 			<HorizontalBar thick />
 		</div>
 	);

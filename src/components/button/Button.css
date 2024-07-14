@@ -1,71 +1,69 @@
 .submit-button {
-    background: var(--BLUE);
-    cursor: pointer;
-    border-color: transparent;
-    border-radius: var(--BORDER-RADIUS-DEFAULT);
-    transition: background var(--TRANSITION-EASE);
+	background: var(--BLUE);
+	cursor: pointer;
+	border-color: transparent;
+	border-radius: var(--BORDER-RADIUS-DEFAULT);
+	transition: background var(--TRANSITION-EASE);
 }
 
 .submit-button:hover {
-    background: var(--DARK-BLUE);
+	background: var(--DARK-BLUE);
 }
 
 .submit-button:disabled {
-    background: var(--GREY);
-    color: var(--BLACK);
-    cursor: not-allowed;
+	background: var(--GREY);
+	color: var(--BLACK);
+	cursor: not-allowed;
 }
 
 .submit-button:disabled:hover {
-    background: var(--GREY);
+	background: var(--GREY);
 }
 
 .background-change {
-    background: linear-gradient(
-		to right,
-		var(--DARK-BLUE) 50%,
-		var(--BLUE) 50%
-	);
+	background: linear-gradient(to right, var(--DARK-BLUE) 50%, var(--BLUE) 50%);
 	background-size: 200% 100%;
 	background-position: right bottom;
 	transition: background-position var(--TRANSITION-DEFAULT);
 }
 
-.nav-link-active, .background-change:hover {
+.nav-link-active,
+.background-change:hover {
 	background-position: left bottom;
 }
 
-.button-link, .nav-link {
-    display: block;
-    width: 100%;
-    padding: 4px 10px;
-    border: 2px solid var(--BLACK);
-    border-radius: var(--BORDER-RADIUS-DEFAULT);
+.button-link,
+.nav-link {
+	display: block;
+	width: 100%;
+	padding: 4px 10px;
+	border: 2px solid var(--BLACK);
+	border-radius: var(--BORDER-RADIUS-DEFAULT);
 }
 
 .button-link {
-    margin: 10px auto;
+	margin: 10px auto;
 }
 
 .nav-link {
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
 .button-icon {
-    margin-left: 4px;
+	margin-left: 4px;
 }
 
 @media screen and (max-width: 960px) {
-    .nav-link {
-        margin-top: 0;
-        padding: 10px 0;
-        text-align: center;
-        border: none;
-        border-radius: 0;
-        transition: none;
-    }
+	.nav-link {
+		margin-top: 0;
+		padding: 10px 0;
+		text-align: center;
+		border: none;
+		border-radius: 0;
+		transition: none;
+	}
 
-    .nav-link:hover,
+	.nav-link:hover,
 	.nav-link-active {
 		background: var(--DARK-BLUE);
 	}

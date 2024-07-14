@@ -1,55 +1,55 @@
 .card-box {
-    /* SIZING */
-    --CARD-WIDTH: 35%;
-    --CARD-MAX-WIDTH: 800px;
+	/* SIZING */
+	--CARD-WIDTH: 35%;
+	--CARD-MAX-WIDTH: 800px;
 
-    --CARD-HEIGHT: 85%;
-    --CARD-MIN-HEIGHT: 400px;
-    --CARD-MAX-HEIGHT: 1000px;
+	--CARD-HEIGHT: 85%;
+	--CARD-MIN-HEIGHT: 400px;
+	--CARD-MAX-HEIGHT: 1000px;
 
-    /* POSITIONING */
-    --CARD-LEFT: calc(50% - (var(--CARD-WIDTH) - 5%));
-    --CARD-MIDDLE: calc(50% - (var(--CARD-WIDTH) / 2));
-    --CARD-RIGHT: calc(50% + 7%);
+	/* POSITIONING */
+	--CARD-LEFT: calc(50% - (var(--CARD-WIDTH) - 5%));
+	--CARD-MIDDLE: calc(50% - (var(--CARD-WIDTH) / 2));
+	--CARD-RIGHT: calc(50% + 7%);
 
-    background: var(--WHITE);
-    position: absolute;
-    width: var(--CARD-WIDTH);
-    max-width: var(--CARD-MAX-WIDTH);
-    height: var(--CARD-HEIGHT);
-    min-height: var(--CARD-MIN-HEIGHT);
-    max-height: var(--CARD-MAX-HEIGHT);
-    overflow-y: hidden;
-    top: var(--SPACING-TOP);
-    left: var(--CARD-RIGHT);
-    border: 2px solid var(--BLACK);
-    border-radius: var(--BORDER-RADIUS-DEFAULT);
-    z-index: 9;
+	background: var(--WHITE);
+	position: absolute;
+	width: var(--CARD-WIDTH);
+	max-width: var(--CARD-MAX-WIDTH);
+	height: var(--CARD-HEIGHT);
+	min-height: var(--CARD-MIN-HEIGHT);
+	max-height: var(--CARD-MAX-HEIGHT);
+	overflow-y: hidden;
+	top: var(--SPACING-TOP);
+	left: var(--CARD-RIGHT);
+	border: 2px solid var(--BLACK);
+	border-radius: var(--BORDER-RADIUS-DEFAULT);
+	z-index: 9;
 }
 
 .card-container {
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    margin: 5%;
+	display: flex;
+	flex-direction: column;
+	height: 90%;
+	margin: 5%;
 }
 
 .card-content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow-y: auto;
 }
 
 .main-content-flex {
-    flex: 1;
+	flex: 1;
 }
 
 @media screen and (max-width: 960px) {
-    .card-box {
-        width: 92%;
-        max-width: none;
-        top: var(--SPACING-SMALL-TOP);
-        left: var(--SPACING-SMALL-LEFT);
-    }
+	.card-box {
+		width: 92%;
+		max-width: none;
+		top: var(--SPACING-SMALL-TOP);
+		left: var(--SPACING-SMALL-LEFT);
+	}
 }
