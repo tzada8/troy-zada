@@ -1,9 +1,9 @@
 .header-container {
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .header-title {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    margin-bottom: 5px;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	margin-bottom: 5px;
 }

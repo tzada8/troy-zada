@@ -1,11 +1,12 @@
-.logo-container, .personal-logo {
+.logo-container,
+.personal-logo {
 	height: 95px;
 	width: 95px;
 	border-radius: var(--BORDER-RADIUS-ROUND);
 }
 
 .personal-logo {
-    background: linear-gradient(
+	background: linear-gradient(
 		45deg,
 		var(--LOGO-OUT-BLUE) 20%,
 		var(--LOGO-IN-BLUE) 50%,
@@ -23,9 +24,9 @@
 	transform: rotate(360deg);
 }
 
-
 @media screen and (max-width: 960px) {
-	.logo-container, .personal-logo {
+	.logo-container,
+	.personal-logo {
 		height: 50px;
 		width: 50px;
 	}

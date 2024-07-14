@@ -1,46 +1,47 @@
 .generic-icon {
-    color: var(--BLACK);
-    vertical-align: -10%;
-    font-size: 32px;
+	color: var(--BLACK);
+	vertical-align: -10%;
+	font-size: 32px;
 }
 
 .large {
-    font-size: 48px;
+	font-size: 48px;
 }
 
 .small {
-    font-size: 18px;
+	font-size: 18px;
 }
 
 .white-color {
-    color: var(--WHITE);
+	color: var(--WHITE);
 }
 
 .blue-color {
-    color: var(--BLUE);
+	color: var(--BLUE);
 }
 
 .green-color {
-    color: var(--GREEN);
+	color: var(--GREEN);
 }
 
 .red-color {
-    color: var(--RED);
+	color: var(--RED);
 }
 
 .orange-color {
-    color: var(--ORANGE);
+	color: var(--ORANGE);
 }
 
-.clickable-blue, i.clickable-grey {
-    cursor: pointer;
-    transition: color var(--TRANSITION-EASE);
+.clickable-blue,
+i.clickable-grey {
+	cursor: pointer;
+	transition: color var(--TRANSITION-EASE);
 }
 
 .clickable-blue:hover {
-    color: var(--DARK-BLUE);
+	color: var(--DARK-BLUE);
 }
 
 .clickable-grey:hover {
-    color: var(--GREY);
+	color: var(--GREY);
 }

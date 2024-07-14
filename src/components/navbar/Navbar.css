@@ -3,8 +3,8 @@ nav {
 	--NAV-WIDTH: 160px;
 
 	/* POSITIONING */
-    --NAV-LEFT: calc(50% - (var(--NAV-WIDTH) + 32%));
-    --NAV-MIDDLE: calc(50% - (var(--NAV-WIDTH) / 2 + 25.5%));
+	--NAV-LEFT: calc(50% - (var(--NAV-WIDTH) + 32%));
+	--NAV-MIDDLE: calc(50% - (var(--NAV-WIDTH) / 2 + 25.5%));
 
 	position: absolute;
 	width: var(--NAV-WIDTH);
@@ -43,7 +43,8 @@ nav {
 		transition: none;
 	}
 
-	.middle, .left {
+	.middle,
+	.left {
 		left: 0;
 	}
 

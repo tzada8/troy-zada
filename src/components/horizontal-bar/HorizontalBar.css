@@ -1,28 +1,28 @@
 hr.gradient-bar {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(
-       to right,
-       rgba(0, 0, 0, 0),
-       rgba(0, 0, 0, 0.75),
-       rgba(0, 0, 0, 0)
-    );
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.75),
+		rgba(0, 0, 0, 0)
+	);
 }
 
 hr.generic-bar {
-    border: 0;
-    border-top: 1px solid var(--BLACK);
-    border-radius: var(--BORDER-RADIUS-DEFAULT);
+	border: 0;
+	border-top: 1px solid var(--BLACK);
+	border-radius: var(--BORDER-RADIUS-DEFAULT);
 }
 
 hr.thick {
-    border-top-width: 2px;
+	border-top-width: 2px;
 }
 
 hr.dotted {
-    border-top-style: dotted;
+	border-top-style: dotted;
 }
 
 hr.light {
-    border-top-color: var(--GREY);
+	border-top-color: var(--GREY);
 }
