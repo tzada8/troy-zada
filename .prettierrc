@@ -5,9 +5,9 @@
 	"printWidth": 100,
 	"proseWrap": "preserve",
 	"semi": true,
-	"singleAttributePerLine": true,
+	"singleAttributePerLine": false,
 	"tabWidth": 4,
-	"trailingComma": "all",
+	"trailingComma": "es5",
 	"useTabs": true,
 	"singleQuote": false
 }

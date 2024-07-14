@@ -1,72 +1,73 @@
 :root {
-   /* COLOURS */
-   --BLACK: #2D3748;
-   --WHITE: #FEFEFE;
-   --DARK-GREY: #3D3D3D;
-   --GREY: #C4C4C4;
-   --LIGHT-GREY: #E7E7E7;
-   --HOVER-GREY: #C7C1C1;
+	/* COLOURS */
+	--BLACK: #2d3748;
+	--WHITE: #fefefe;
+	--DARK-GREY: #3d3d3d;
+	--GREY: #c4c4c4;
+	--LIGHT-GREY: #e7e7e7;
+	--HOVER-GREY: #c7c1c1;
 
-   --DARK-BLUE: #004E7C;
-   --BLUE: #009AD0;
+	--DARK-BLUE: #004e7c;
+	--BLUE: #009ad0;
 
-   --LOGO-OUT-BLUE: #056BA7;
-   --LOGO-IN-BLUE: #1FBCF5;
+	--LOGO-OUT-BLUE: #056ba7;
+	--LOGO-IN-BLUE: #1fbcf5;
 
-   --GREEN: #52C41A;
-   --RED: #FF4D4F;
-   --ORANGE: #FFA940;
+	--GREEN: #52c41a;
+	--RED: #ff4d4f;
+	--ORANGE: #ffa940;
 
-   /* FONTS */
-   --HEADING-FONT: "Raleway", sans-serif;
-   --BODY-FONT: "Montserrat", sans-serif;
-   --LOGO-FONT: "Merienda", cursive;
+	/* FONTS */
+	--HEADING-FONT: "Raleway", sans-serif;
+	--BODY-FONT: "Montserrat", sans-serif;
+	--LOGO-FONT: "Merienda", cursive;
 
-   /* TRANSITIONS */ 
-   --TRANSITION-FAST: 0.2s linear;
-   --TRANSITION-DEFAULT: 0.5s linear;
-   --TRANSITION-CARD: 0.35s ease;
-   --TRANSITION-EASE: 0.5s ease;
-   --TRANSITION-LONG: 1.5s ease;
+	/* TRANSITIONS */
+	--TRANSITION-FAST: 0.2s linear;
+	--TRANSITION-DEFAULT: 0.5s linear;
+	--TRANSITION-CARD: 0.35s ease;
+	--TRANSITION-EASE: 0.5s ease;
+	--TRANSITION-LONG: 1.5s ease;
 
-   /* BORDERS */
-   --BORDER-RADIUS-ROUND: 50%;
-   --BORDER-RADIUS-DEFAULT: 8px;
+	/* BORDERS */
+	--BORDER-RADIUS-ROUND: 50%;
+	--BORDER-RADIUS-DEFAULT: 8px;
 
-   /* POSITIONING */
-   --SPACING-TOP: 7%;
+	/* POSITIONING */
+	--SPACING-TOP: 7%;
 
-   --NAV-SMALL-HEIGHT: 70px;
-   --SPACING-SMALL-TOP: calc(var(--NAV-SMALL-HEIGHT) + 30px);
-   --SPACING-SMALL-LEFT: 4%;
+	--NAV-SMALL-HEIGHT: 70px;
+	--SPACING-SMALL-TOP: calc(var(--NAV-SMALL-HEIGHT) + 30px);
+	--SPACING-SMALL-LEFT: 4%;
 }
 
 * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: var(--BODY-FONT);
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: var(--BODY-FONT);
 }
 
 body {
-   background: url("./images/background/mountain2.webp") no-repeat center center fixed;
-   background-size: cover;
-   color: var(--BLACK);
+	background: url("./images/background/mountain2.webp") no-repeat center center fixed;
+	background-size: cover;
+	color: var(--BLACK);
 }
 
 li {
-   list-style: none;
+	list-style: none;
 }
 
-a, button {
-   cursor: pointer;
+a,
+button {
+	cursor: pointer;
 }
 
 a {
-   text-decoration: none;
+	text-decoration: none;
 }
 
 button {
-   border: none;
-   outline: none;
+	border: none;
+	outline: none;
 }
