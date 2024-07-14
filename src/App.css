@@ -49,7 +49,7 @@
 }
 
 body {
-	background: url("./images/background/mountain2.webp") no-repeat center center fixed;
+	background: url("./images/background/mountain.webp") no-repeat center center fixed;
 	background-size: cover;
 	color: var(--BLACK);
 }
