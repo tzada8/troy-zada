@@ -11,13 +11,15 @@ export default function Experience() {
 			{experienceData.map((exp, i) => (
 				<div key={i}>
 					<Subtitle icon={exp.icon} label={exp.label} topSpacing={i !== 0} />
-					{exp.data.map((w, k) => <WorkInfo
-						key={k}
-						label={w.label}
-						company={w.company}
-						duration={w.duration}
-						details={w.details}
-					/>)}
+					{exp.data.map((w, k) => (
+						<WorkInfo
+							key={k}
+							label={w.label}
+							company={w.company}
+							duration={w.duration}
+							details={w.details}
+						/>
+					))}
 				</div>
 			))}
 		</div>

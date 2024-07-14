@@ -12,21 +12,33 @@ export default function SudokuSolver() {
 			<Paragraph content="Users can input any Sudoku board, and the application will solve the board for them. If no solution exists, the application notifies the user." />
 
 			<Subheading label="Tech Stack" />
-			<GroupedList header="Frontend" bullets={[
-				{label: "Tkinter", content: "UI framework"},
-			]}/>
+			<GroupedList
+				header="Frontend"
+				bullets={[{ label: "Tkinter", content: "UI framework" }]}
+			/>
 
-			<GroupedList header="Backend" bullets={[
-				{label: "Python", content: "Backend language"},
-			]}/>
+			<GroupedList
+				header="Backend"
+				bullets={[{ label: "Python", content: "Backend language" }]}
+			/>
 
-			<GroupedList header="Algorithms" bullets={[
-				{label: "Backtracking", content: "Incrementally builds candidates for solutions and abandons a candidate as soon as it determines the candidate cannot lead to a valid solution"},
-			]}/>
+			<GroupedList
+				header="Algorithms"
+				bullets={[
+					{
+						label: "Backtracking",
+						content:
+							"Incrementally builds candidates for solutions and abandons a candidate as soon as it determines the candidate cannot lead to a valid solution",
+					},
+				]}
+			/>
 
 			<Subheading label="Technical Functionality" />
 			<Paragraph content="Users can either solve the current board or create a new board layout. When creating a board layout, users can insert numbers within each cell of the Sudoku board. Similarly, when solving the current board, users can specify if they are interested in visually seeing the backtracking algorithm in action or if they would prefer to just see the final solution." />
-			<Paragraph last content="Visually displaying the backtracking algorithm will show green and red tiles, depicting the tiles that were just placed or removed in order to reach the valid solution." />
+			<Paragraph
+				last
+				content="Visually displaying the backtracking algorithm will show green and red tiles, depicting the tiles that were just placed or removed in order to reach the valid solution."
+			/>
 		</div>
 	);
 }

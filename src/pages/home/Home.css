@@ -1,14 +1,15 @@
-.home-center, .home-left {
-    z-index: 10;
+.home-center,
+.home-left {
+	z-index: 10;
 }
 
 .home-center {
-    left: var(--CARD-MIDDLE);
+	left: var(--CARD-MIDDLE);
 	transition: left var(--TRANSITION-DEFAULT);
 }
 
 .home-left {
-    left: var(--CARD-LEFT);
+	left: var(--CARD-LEFT);
 	transition: left var(--TRANSITION-CARD);
 }
 
@@ -49,10 +50,10 @@
 @media screen and (max-width: 960px) {
 	.home-center {
 		top: var(--SPACING-SMALL-TOP);
-        left: var(--SPACING-SMALL-LEFT);
+		left: var(--SPACING-SMALL-LEFT);
 	}
 
-    .home-left {
-        display: none;
-    }
+	.home-left {
+		display: none;
+	}
 }

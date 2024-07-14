@@ -11,13 +11,15 @@ export default function Education() {
 			{educationData.map((e, i) => (
 				<div key={i}>
 					<Subtitle icon={e.icon} label={e.label} topSpacing={i !== 0} />
-					{e.data.map((w, k) => <WorkInfo
-						key={k}
-						label={w.label}
-						company={w.company}
-						duration={w.duration}
-						details={w.details}
-					/>)}
+					{e.data.map((w, k) => (
+						<WorkInfo
+							key={k}
+							label={w.label}
+							company={w.company}
+							duration={w.duration}
+							details={w.details}
+						/>
+					))}
 				</div>
 			))}
 		</div>

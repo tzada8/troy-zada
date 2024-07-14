@@ -16,7 +16,11 @@ export default function Home(props) {
 			<div className="card-container">
 				<div className="card-content center">
 					<div className="main-content-flex center-content">
-						<div className={`home-img-round ${props.isOnlyComp ? "headshot1" : "headshot2"}`} />
+						<div
+							className={`home-img-round ${
+								props.isOnlyComp ? "headshot1" : "headshot2"
+							}`}
+						/>
 						<h1 className="home-intro-name">{home.label}</h1>
 						<h3>{home.sublabel}</h3>
 						<HorizontalBar className="home-intro-bar" gradient />
@@ -24,7 +28,13 @@ export default function Home(props) {
 						<p>{home.description}</p>
 						<div className="social-media">
 							{socials.map((s, k) => (
-								<SocialIcon key={k} aria={s.aria} link={s.link} icon={s.icon} tooltip={s.tooltip} />
+								<SocialIcon
+									key={k}
+									aria={s.aria}
+									link={s.link}
+									icon={s.icon}
+									tooltip={s.tooltip}
+								/>
 							))}
 						</div>
 

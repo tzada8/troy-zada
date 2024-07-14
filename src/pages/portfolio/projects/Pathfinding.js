@@ -12,24 +12,49 @@ export default function Pathfinding() {
 			<Paragraph content="For instance, the A* algorithm can determine the shortest distance the fastest but requires the end tile to be known beforehand. The other algorithms, however, can determine the shortest distance without require any comprehension of the end tile." />
 
 			<Subheading label="Tech Stack" />
-			<GroupedList header="Frontend" bullets={[
-				{label: "Java Swing", content: "GUI for visual elements"},
-			]}/>
+			<GroupedList
+				header="Frontend"
+				bullets={[{ label: "Java Swing", content: "GUI for visual elements" }]}
+			/>
 
-			<GroupedList header="Backend" bullets={[
-				{label: "Java", content: "Language for the algorithms, obstacles, and features"},
-			]}/>
+			<GroupedList
+				header="Backend"
+				bullets={[
+					{
+						label: "Java",
+						content: "Language for the algorithms, obstacles, and features",
+					},
+				]}
+			/>
 
-			<GroupedList header="Algorithms" bullets={[
-				{label: "Breadth-First Search", content: "Views tiles closest to the start tile, spreading out evenly on all sides"},
-				{label: "Depth-First Search", content: "Fully attempts one path until a dead end is reached before moving onto another path"},
-				{label: "A*", content: "Calculates a G, H and F cost for the current tile, being the distances between the start/end tile to the current tile to determine the direction"},
-				{label: "Dijkstra", content: "Views tiles closest to the start tile"},
-			]}/>
+			<GroupedList
+				header="Algorithms"
+				bullets={[
+					{
+						label: "Breadth-First Search",
+						content:
+							"Views tiles closest to the start tile, spreading out evenly on all sides",
+					},
+					{
+						label: "Depth-First Search",
+						content:
+							"Fully attempts one path until a dead end is reached before moving onto another path",
+					},
+					{
+						label: "A*",
+						content:
+							"Calculates a G, H and F cost for the current tile, being the distances between the start/end tile to the current tile to determine the direction",
+					},
+					{ label: "Dijkstra", content: "Views tiles closest to the start tile" },
+				]}
+			/>
 
 			<Subheading label="Technical Functionality" />
 			<Paragraph content="A settings component of the entire application allows the user to adjust parameters before running the pathfinding. Users can start the pathfinding, clear the board, choose if they want to visually see the solution, choose between which algorithm to use, and choose between which obstacles to place." />
-			<Paragraph last content="Users can manually draw obstacles themselves or choose from one of the preset options. Once a particular algorithm and obstacle is selected, the user can specify if they want to see the visual solution or to just see the final solution." />
+			<Paragraph
+				last
+				content="Users can manually draw obstacles themselves or choose from one of the preset options. Once a particular algorithm and obstacle is selected, the user can specify if they want to see the visual solution or to just see the final solution."
+			/>
 		</div>
 	);
 }

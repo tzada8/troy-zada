@@ -36,7 +36,10 @@ export default function UniversityLifeLessons() {
 			<Paragraph content="People typically attend university for two primary reasons: to learn and to earn a degree. To succeed in both aspects, I’ve found it necessary to adapt my mindset accordingly. The mindset for genuine learning and expanding knowledge involves analyzing content by making connections to existing concepts and simplifying complex problems to familiar ones. Conversely, the mindset for performing well on assessments requires analyzing content to anticipate exam questions and preparing answers accordingly. By approaching new material with this dual perspective, I’ve been able to grasp and retain new knowledge effectively while achieving good grades on assessments." />
 
 			<Subheading label="10. Explore" />
-			<Paragraph last content="Aside from obtaining a degree, the primary goal of university is to learn and explore your passions. Use the time to experiment and discover what truly interests you. Once you begin full-time work after graduation, making changes becomes much more challenging." />
+			<Paragraph
+				last
+				content="Aside from obtaining a degree, the primary goal of university is to learn and explore your passions. Use the time to experiment and discover what truly interests you. Once you begin full-time work after graduation, making changes becomes much more challenging."
+			/>
 		</div>
 	);
 }
