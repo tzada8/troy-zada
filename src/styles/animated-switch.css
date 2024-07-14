@@ -3,47 +3,47 @@
 .slide-horizontal-exit-active,
 .slide-vertical-enter-active,
 .slide-vertical-exit-active {
-    transition: all var(--TRANSITION-CARD);
+	transition: all var(--TRANSITION-CARD);
 }
 
 /* HORIZONTAL ANIMATION */
 .slide-horizontal-enter {
-    opacity: 0;
-    transform: translateX(-75%);
+	opacity: 0;
+	transform: translateX(-75%);
 }
 
 .slide-horizontal-enter-active {
-    opacity: 1;
-    transform: translateX(0);
+	opacity: 1;
+	transform: translateX(0);
 }
 
 .slide-horizontal-exit {
-    opacity: 1;
-    transform: translateX(0);
+	opacity: 1;
+	transform: translateX(0);
 }
 
 .slide-horizontal-exit-active {
-    opacity: 0;
-    transform: translateX(-75%);
+	opacity: 0;
+	transform: translateX(-75%);
 }
 
 /* VERTICAL ANIMATION */
 .slide-vertical-enter {
-    opacity: 0;
-    transform: translateY(-75%);
+	opacity: 0;
+	transform: translateY(-75%);
 }
 
 .slide-vertical-enter-active {
-    opacity: 1;
-    transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .slide-vertical-exit {
-    opacity: 1;
-    transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .slide-vertical-exit-active {
-    opacity: 0;
-    transform: translateY(-75%);
+	opacity: 0;
+	transform: translateY(-75%);
 }

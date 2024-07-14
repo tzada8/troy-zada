@@ -1,114 +1,121 @@
 /* LOGO */
 .logo-text {
-    color: var(--WHITE);
-    font-family: var(--LOGO-FONT);
-    font-weight: 800;
-    font-size: 55px;
+	color: var(--WHITE);
+	font-family: var(--LOGO-FONT);
+	font-weight: 800;
+	font-size: 55px;
 }
 
 /* HEADER */
-h1, h2, h3, h4 {
-    font-family: var(--HEADING-FONT);
-    font-weight: 700;
-    line-height: 120%;
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--HEADING-FONT);
+	font-weight: 700;
+	line-height: 120%;
 }
 
 h1 {
-    color: var(--BLUE);
-    font-size: 50px;
+	color: var(--BLUE);
+	font-size: 50px;
 }
 
 h2 {
-    color: var(--BLUE);
-    font-size: 35px;
+	color: var(--BLUE);
+	font-size: 35px;
 }
 
 h3 {
-    color: var(--BLACK);
-    font-size: 20px;
+	color: var(--BLACK);
+	font-size: 20px;
 }
 
 h4 {
-    color: var(--DARK-BLUE);
-    font-size: 14px;
+	color: var(--DARK-BLUE);
+	font-size: 14px;
 }
 
 /* BODY */
-p, li, input, textarea {
-    color: var(--BLACK);
-    font-family: var(--BODY-FONT);
-    line-height: 140%;
-    letter-spacing: 0.2px;
-    font-size: 14px;
-    font-weight: 400;
+p,
+li,
+input,
+textarea {
+	color: var(--BLACK);
+	font-family: var(--BODY-FONT);
+	line-height: 140%;
+	letter-spacing: 0.2px;
+	font-size: 14px;
+	font-weight: 400;
 }
 
 p.body-small {
-    font-size: 12px;
+	font-size: 12px;
 }
 
 /* BUTTON */
 .button-font {
-    color: var(--WHITE);
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
+	color: var(--WHITE);
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
 }
 
 /* MISC */
 .bold {
-    font-weight: 600;
+	font-weight: 600;
 }
 
 .center {
-    text-align: center;
+	text-align: center;
 }
 
 .center-content {
-    height: 100%;
-    align-content: center;
+	height: 100%;
+	align-content: center;
 }
 
 .justify {
-    text-align: justify;
+	text-align: justify;
 }
 
 .indent {
-    text-indent: 30px;
+	text-indent: 30px;
 }
 
 @media screen and (min-width: 1500px) {
-    h1 {
-        font-size: 60px;
-    }
+	h1 {
+		font-size: 60px;
+	}
 
-    h2 {
-        font-size: 45px;
-    }
+	h2 {
+		font-size: 45px;
+	}
 
-    h3 {
-        font-size: 24px;
-    }
+	h3 {
+		font-size: 24px;
+	}
 
-    h4 {
-        font-size: 16px;
-    }
+	h4 {
+		font-size: 16px;
+	}
 
-    p, li {
-        font-size: 16px;
-    }
+	p,
+	li {
+		font-size: 16px;
+	}
 
-    p.body-small {
-        font-size: 14px;
-    }
+	p.body-small {
+		font-size: 14px;
+	}
 
-    .button-font {
-        font-size: 20px;
-    }
+	.button-font {
+		font-size: 20px;
+	}
 }
 
 @media screen and (max-width: 960px) {
-    .logo-text {
-        font-size: 26px;
-    }
+	.logo-text {
+		font-size: 26px;
+	}
 }
