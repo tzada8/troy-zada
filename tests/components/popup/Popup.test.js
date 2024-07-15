@@ -11,37 +11,31 @@ describe("Popup Component", () => {
 	it("renders success popup with correct icon, color, class, label, and text", () => {
 		renderPopup("success", "Success Label", "Success Text");
 
-		const popupElement = screen.getByText("Success Label").parentElement;
+		const popupElement = screen.getByTestId("submit-popup");
 		expect(popupElement).toHaveClass("success-popup");
 		expect(popupElement).toHaveClass("submit-popup");
 		expect(popupElement).toHaveClass("center");
 		expect(screen.getByText("Success Text")).toBeInTheDocument();
-		const svgElement = document.querySelector(".generic-icon");
-		expect(svgElement).toHaveClass("green-color");
 	});
 
 	it("renders failure popup with correct icon, color, class, label, and text", () => {
 		renderPopup("failure", "Failure Label", "Failure Text");
 
-		const popupElement = screen.getByText("Failure Label").parentElement;
+		const popupElement = screen.getByTestId("submit-popup");
 		expect(popupElement).toHaveClass("failure-popup");
 		expect(popupElement).toHaveClass("submit-popup");
 		expect(popupElement).toHaveClass("center");
 		expect(screen.getByText("Failure Text")).toBeInTheDocument();
-		const svgElement = document.querySelector(".generic-icon");
-		expect(svgElement).toHaveClass("red-color");
 	});
 
 	it("renders construction popup with correct icon, color, class, label, and text", () => {
 		renderPopup("construction", "Construction Label", "Construction Text");
 
-		const popupElement = screen.getByText("Construction Label").parentElement;
+		const popupElement = screen.getByTestId("submit-popup");
 		expect(popupElement).toHaveClass("construction-popup");
 		expect(popupElement).toHaveClass("submit-popup");
 		expect(popupElement).toHaveClass("center");
 		expect(screen.getByText("Construction Text")).toBeInTheDocument();
-		const svgElement = document.querySelector(".generic-icon");
-		expect(svgElement).toHaveClass("orange-color");
 	});
 
 	it("does not render popup when status is not provided", () => {

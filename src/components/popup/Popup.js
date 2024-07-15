@@ -29,7 +29,7 @@ export default function Popup(props) {
 
 	return (
 		props.status && (
-			<div className={`submit-popup center ${popupStyle.class}`}>
+			<div data-testid="submit-popup" className={`submit-popup center ${popupStyle.class}`}>
 				<Icon image={popupStyle.icon} color={popupStyle.color} />
 				<h3>{props.label}</h3>
 				<p>{props.text}</p>

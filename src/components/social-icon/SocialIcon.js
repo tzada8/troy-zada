@@ -10,6 +10,7 @@ export default function SocialIcon(props) {
 
 	return (
 		<div
+			data-testid="icon-frame"
 			className="icon-frame"
 			onMouseEnter={() => setIsTooltipVisible(true)}
 			onMouseLeave={() => setIsTooltipVisible(false)}

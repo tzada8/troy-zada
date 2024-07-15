@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import RoutingButton from "../../../src/components/button/RoutingButton";
@@ -18,15 +18,15 @@ describe("RoutingButton component", () => {
 			icon: <div>Icon</div>,
 		};
 
-		const { getByText, container } = render(<RoutingButton {...props} />);
+		render(<RoutingButton {...props} />);
 
-		const anchorElement = container.querySelector("a");
+		const anchorElement = screen.getByTestId("external-link");
 		expect(anchorElement).toBeInTheDocument();
 		expect(anchorElement).toHaveAttribute("href", "https://external.com");
 		expect(anchorElement).toHaveAttribute("target", "_blank");
 		expect(anchorElement).toHaveAttribute("rel", "noreferrer");
 
-		expect(getByText("EXTERNAL LINK")).toBeInTheDocument();
+		expect(screen.getByText("EXTERNAL LINK")).toBeInTheDocument();
 	});
 
 	it('renders as a Mailto link when path includes "mailto:"', () => {
@@ -36,13 +36,13 @@ describe("RoutingButton component", () => {
 			icon: <div>Icon</div>,
 		};
 
-		const { getByText, container } = render(<RoutingButton {...props} />);
+		render(<RoutingButton {...props} />);
 
-		const anchorElement = container.querySelector("a");
+		const anchorElement = screen.getByTestId("external-link");
 		expect(anchorElement).toBeInTheDocument();
 		expect(anchorElement).toHaveAttribute("href", "mailto:someone@example.com");
 
-		expect(getByText("EMAIL ME")).toBeInTheDocument();
+		expect(screen.getByText("EMAIL ME")).toBeInTheDocument();
 	});
 
 	it("renders as a Router Link for internal paths", () => {
@@ -52,17 +52,17 @@ describe("RoutingButton component", () => {
 			icon: <div>Icon</div>,
 		};
 
-		const { getByText, container } = render(
+		render(
 			<Router>
 				<RoutingButton {...props} />
 			</Router>
 		);
 
-		const linkElement = container.querySelector("a");
+		const linkElement = screen.getByTestId("internal-link");
 		expect(linkElement).toBeInTheDocument();
 		expect(linkElement).toHaveAttribute("href", "/internal");
 
-		expect(getByText("INTERNAL LINK")).toBeInTheDocument();
+		expect(screen.getByText("INTERNAL LINK")).toBeInTheDocument();
 	});
 
 	it("renders icon only when label is not provided", () => {
@@ -71,14 +71,14 @@ describe("RoutingButton component", () => {
 			icon: <div data-testid="mock-icon"></div>,
 		};
 
-		const { getByTestId, container } = render(
+		render(
 			<Router>
 				<RoutingButton {...props} />
 			</Router>
 		);
 
-		expect(getByTestId("mock-icon")).toBeInTheDocument();
-		expect(container.querySelector("a")).toBeInTheDocument();
+		expect(screen.getByTestId("mock-icon")).toBeInTheDocument();
+		expect(screen.getByTestId("internal-link")).toBeInTheDocument();
 	});
 
 	it("applies button-link class when label is provided", () => {
@@ -88,13 +88,13 @@ describe("RoutingButton component", () => {
 			icon: <div>Icon</div>,
 		};
 
-		const { container } = render(
+		render(
 			<Router>
 				<RoutingButton {...props} />
 			</Router>
 		);
 
-		const linkElement = container.querySelector("a");
+		const linkElement = screen.getByTestId("internal-link");
 		expect(linkElement).toHaveClass("button-link");
 	});
 
@@ -104,13 +104,13 @@ describe("RoutingButton component", () => {
 			icon: <div data-testid="mock-icon"></div>,
 		};
 
-		const { container } = render(
+		render(
 			<Router>
 				<RoutingButton {...props} />
 			</Router>
 		);
 
-		const linkElement = container.querySelector("a");
+		const linkElement = screen.getByTestId("internal-link");
 		expect(linkElement).not.toHaveClass("button-link");
 	});
 });

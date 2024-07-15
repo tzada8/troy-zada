@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import DetailedPost from "../../../src/components/detailed-post/DetailedPost";
@@ -38,16 +38,16 @@ describe("DetailedPost component", () => {
 			github: "https://github.com/test",
 		};
 
-		const { getByText, getByTestId } = render(
+		render(
 			<Router>
 				<DetailedPost {...props} />
 			</Router>
 		);
 
-		expect(getByText("Test Title")).toBeInTheDocument();
-		expect(getByText("Test Details")).toBeInTheDocument();
-		expect(getByTestId("mock-post-image")).toBeInTheDocument();
-		expect(getByTestId("mock-horizontal-bar")).toBeInTheDocument();
+		expect(screen.getByText("Test Title")).toBeInTheDocument();
+		expect(screen.getByText("Test Details")).toBeInTheDocument();
+		expect(screen.getByTestId("mock-post-image")).toBeInTheDocument();
+		expect(screen.getByTestId("mock-horizontal-bar")).toBeInTheDocument();
 	});
 
 	it("renders as a link when path is provided", () => {
@@ -58,14 +58,13 @@ describe("DetailedPost component", () => {
 			src: "src.jpg",
 		};
 
-		const { container } = render(
+		render(
 			<Router>
 				<DetailedPost {...props} />
 			</Router>
 		);
 
-		// Check if the content is wrapped inside a Link
-		expect(container.querySelector("a.post-content")).toBeInTheDocument();
+		expect(screen.getByTestId("post-content")).toBeInTheDocument();
 	});
 
 	it("does not render as a link when path is not provided", () => {
@@ -75,14 +74,13 @@ describe("DetailedPost component", () => {
 			src: "src.jpg",
 		};
 
-		const { container } = render(
+		render(
 			<Router>
 				<DetailedPost {...props} />
 			</Router>
 		);
 
-		// Check if the content is not wrapped inside a Link
-		expect(container.querySelector("a.post-content")).not.toBeInTheDocument();
+		expect(screen.queryByTestId("post-content")).not.toBeInTheDocument();
 	});
 
 	it('renders GitHub RoutingButton when "github" prop is provided', () => {
@@ -93,13 +91,13 @@ describe("DetailedPost component", () => {
 			github: "https://github.com/test",
 		};
 
-		const { getByTestId } = render(
+		render(
 			<Router>
 				<DetailedPost {...props} />
 			</Router>
 		);
 
-		expect(getByTestId("mock-routing-button")).toBeInTheDocument();
+		expect(screen.getByTestId("mock-routing-button")).toBeInTheDocument();
 	});
 
 	it("renders Icon with FaAngleRight when path is provided", () => {
@@ -110,13 +108,13 @@ describe("DetailedPost component", () => {
 			src: "src.jpg",
 		};
 
-		const { getByTestId } = render(
+		render(
 			<Router>
 				<DetailedPost {...props} />
 			</Router>
 		);
 
-		expect(getByTestId("mock-icon")).toBeInTheDocument();
+		expect(screen.getByTestId("mock-icon")).toBeInTheDocument();
 	});
 
 	it('applies "post-container" class when bottomSpacing is true', () => {
@@ -127,13 +125,13 @@ describe("DetailedPost component", () => {
 			bottomSpacing: true,
 		};
 
-		const { container } = render(
+		render(
 			<Router>
 				<DetailedPost {...props} />
 			</Router>
 		);
 
-		expect(container.firstChild).toHaveClass("post-container");
+		expect(screen.getByTestId("post-container")).toHaveClass("post-container");
 	});
 
 	it('does not apply "post-container" class when bottomSpacing is false', () => {
@@ -144,12 +142,12 @@ describe("DetailedPost component", () => {
 			bottomSpacing: false,
 		};
 
-		const { container } = render(
+		render(
 			<Router>
 				<DetailedPost {...props} />
 			</Router>
 		);
 
-		expect(container.firstChild).not.toHaveClass("post-container");
+		expect(screen.getByTestId("post-container")).not.toHaveClass("post-container");
 	});
 });
