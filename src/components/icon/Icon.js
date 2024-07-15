@@ -8,5 +8,8 @@ export default function Icon(props) {
 		props.clickable && (props.color === "white" ? "clickable-grey" : "clickable-blue");
 	const customClass = `${props.className} ${size} ${props.color}-color ${clickable}`;
 
-	return React.cloneElement(props.image, { "data-testid": "generic-icon", className: `generic-icon ${customClass}` });
+	return React.cloneElement(props.image, {
+		"data-testid": "generic-icon",
+		className: `generic-icon ${customClass}`,
+	});
 }
