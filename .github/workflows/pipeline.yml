@@ -21,7 +21,7 @@ jobs:
             - name: Set up Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v3
               with:
-                node-version: ${{ matrix.node-version }}
+                  node-version: ${{ matrix.node-version }}
 
             - name: Install dependencies
               run: npm install
@@ -41,10 +41,10 @@ jobs:
             - name: Set up Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v3
               with:
-                node-version: ${{ matrix.node-version }}
+                  node-version: ${{ matrix.node-version }}
 
             - name: Install dependencies
               run: npm install
-      
+
             - name: Run Tests
               run: npm test
