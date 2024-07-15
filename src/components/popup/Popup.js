@@ -12,20 +12,20 @@ export default function Popup(props) {
 					icon: <FaCircleCheck />,
 					color: "green",
 					class: "success-popup",
-			  }
+				}
 			: props.status === "failure"
-			? {
-					icon: <MdError />,
-					color: "red",
-					class: "failure-popup",
-			  }
-			: props.status === "construction"
-			? {
-					icon: <MdConstruction />,
-					color: "orange",
-					class: "construction-popup",
-			  }
-			: {};
+				? {
+						icon: <MdError />,
+						color: "red",
+						class: "failure-popup",
+					}
+				: props.status === "construction"
+					? {
+							icon: <MdConstruction />,
+							color: "orange",
+							class: "construction-popup",
+						}
+					: {};
 
 	return (
 		props.status && (

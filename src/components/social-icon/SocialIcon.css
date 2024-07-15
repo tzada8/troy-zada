@@ -15,7 +15,9 @@
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 	opacity: 0;
 	visibility: hidden;
-	transition: visibility var(--TRANSITION-EASE), opacity var(--TRANSITION-EASE);
+	transition:
+		visibility var(--TRANSITION-EASE),
+		opacity var(--TRANSITION-EASE);
 }
 
 .social-tooltip::after {

@@ -16,7 +16,9 @@
 	align-items: center;
 	justify-content: center;
 	border: 2px solid var(--BLACK);
-	transition: color var(--TRANSITION-EASE), transform var(--TRANSITION-LONG);
+	transition:
+		color var(--TRANSITION-EASE),
+		transform var(--TRANSITION-LONG);
 }
 
 .personal-logo:hover {

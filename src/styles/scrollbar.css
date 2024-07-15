@@ -8,9 +8,12 @@ div::-webkit-scrollbar-thumb {
 	-webkit-border-radius: var(--BORDER-RADIUS-DEFAULT);
 	border-radius: var(--BORDER-RADIUS-DEFAULT);
 	background-color: rgba(0, 0, 0, 0.15);
-	-webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+	-webkit-box-shadow:
+		inset -1px -1px 0px rgba(0, 0, 0, 0.05),
 		inset 1px 1px 0px rgba(0, 0, 0, 0.05);
-	box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+	box-shadow:
+		inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+		inset 1px 1px 0px rgba(0, 0, 0, 0.05);
 }
 
 div::-webkit-scrollbar-thumb:hover {
