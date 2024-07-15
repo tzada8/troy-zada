@@ -1,3 +1,5 @@
+import React from "react";
+
 import { FULL_NAME } from "../data/constants";
 import { blogData } from "../data/blog-data";
 import { portfolioData } from "../data/portfolio-data";

@@ -1,3 +1,5 @@
+import React from "react";
+
 import { FaCalendar } from "react-icons/fa6";
 
 export const experienceData = [

@@ -1,3 +1,5 @@
+import React from "react";
+
 import { rootRoutes } from "../routes/root-routes";
 
 // Images

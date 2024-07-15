@@ -1,3 +1,5 @@
+import React from "react";
+
 import { FaCogs, FaUsers } from "react-icons/fa";
 
 export const skillsData = [

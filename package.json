@@ -20,7 +20,7 @@
 			"css"
 		],
 		"moduleNameMapper": {
-			"\\.(css|png|jpg|jpeg)$": "<rootDir>/tests/__mocks__/MockStyles.js"
+			"\\.(css|webp)$": "<rootDir>/tests/__mocks__/MockStyles.js"
 		},
 		"setupFilesAfterEnv": [
 			"<rootDir>/tests/setupTests.js"
