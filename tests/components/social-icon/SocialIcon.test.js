@@ -38,7 +38,7 @@ describe("SocialIcon Component", () => {
 
 		setup(props);
 
-		const iconFrame = screen.getByRole("button", { name: "test-aria" }).closest(".icon-frame");
+		const iconFrame = screen.getByTestId("icon-frame");
 		const tooltip = screen.queryByText(/test-tooltip/i);
 
 		expect(tooltip).toHaveAttribute("aria-hidden", "true");

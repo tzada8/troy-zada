@@ -39,7 +39,7 @@ describe("Navbar Component", () => {
 		render(<Navbar isMid={isMid} />);
 
 		const menuIcon = screen.getByTestId("icon");
-		const navMenu = screen.getByRole("navigation").querySelector(".nav-menu");
+		const navMenu = screen.getByTestId("nav-menu");
 
 		expect(navMenu).not.toHaveClass("active");
 
@@ -60,7 +60,7 @@ describe("Navbar Component", () => {
 		fireEvent.click(menuIcon);
 
 		const navButton = screen.getByText(routes[0].label);
-		const navMenu = screen.getByRole("navigation").querySelector(".nav-menu");
+		const navMenu = screen.getByTestId("nav-menu");
 		fireEvent.click(navButton);
 
 		expect(navMenu).not.toHaveClass("active");
@@ -74,7 +74,7 @@ describe("Navbar Component", () => {
 		fireEvent.click(menuIcon);
 
 		const logo = screen.getByTestId("logo");
-		const navMenu = screen.getByRole("navigation").querySelector(".nav-menu");
+		const navMenu = screen.getByTestId("nav-menu");
 
 		fireEvent.click(logo);
 

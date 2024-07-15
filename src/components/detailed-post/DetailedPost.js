@@ -29,9 +29,9 @@ export default function DetailedPost(props) {
 	);
 
 	return (
-		<div className={props.bottomSpacing ? "post-container" : ""}>
+		<div data-testid="post-container" className={props.bottomSpacing ? "post-container" : ""}>
 			{isClickable ? (
-				<Link to={props.path} className="post-content">
+				<Link data-testid="post-content" to={props.path} className="post-content">
 					{content}
 				</Link>
 			) : (

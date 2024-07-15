@@ -21,7 +21,7 @@ export default function Navbar(props) {
 				<div className="menu-icon center" onClick={handleClick}>
 					<Icon image={click ? <FaTimes /> : <FaBars />} color="white" clickable />
 				</div>
-				<div className={`nav-menu ${click ? "active" : ""}`}>
+				<div data-testid="nav-menu" className={`nav-menu ${click ? "active" : ""}`}>
 					{routes.map((r) => (
 						<NavButton key={r.path} label={r.label} path={r.path} onClick={closeMenu} />
 					))}

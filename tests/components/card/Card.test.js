@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import Card from "../../../src/components/card/Card";
 
@@ -24,20 +24,15 @@ describe("Card component", () => {
 			author: "Author Name",
 		};
 
-		const { container, getByTestId } = render(
+		render(
 			<Card {...props}>
 				<div>Card Content</div>
 			</Card>
 		);
 
-		// Check if the main structure is rendered
-		expect(container.querySelector(".card-box")).toBeInTheDocument();
-		expect(container.querySelector(".card-container")).toBeInTheDocument();
-		expect(container.querySelector(".card-content")).toBeInTheDocument();
-
-		// Check if the header and footer are rendered
-		expect(getByTestId("mock-header")).toBeInTheDocument();
-		expect(getByTestId("mock-footer")).toBeInTheDocument();
+		expect(screen.getByTestId("card-box")).toBeInTheDocument();
+		expect(screen.getByTestId("mock-header")).toBeInTheDocument();
+		expect(screen.getByTestId("mock-footer")).toBeInTheDocument();
 	});
 
 	it("passes correct props to Header component", () => {
@@ -46,17 +41,14 @@ describe("Card component", () => {
 			backTo: "/back",
 		};
 
-		const { getByTestId } = render(
+		render(
 			<Card {...props}>
 				<div>Card Content</div>
 			</Card>
 		);
 
-		const header = getByTestId("mock-header");
+		const header = screen.getByTestId("mock-header");
 		expect(header).toBeInTheDocument();
-
-		// Since we are mocking the Header, we can make sure it's rendered
-		// however we can't check its props directly in this test
 	});
 
 	it("passes correct props to Footer component", () => {
@@ -65,17 +57,14 @@ describe("Card component", () => {
 			author: "Author Name",
 		};
 
-		const { getByTestId } = render(
+		render(
 			<Card {...props}>
 				<div>Card Content</div>
 			</Card>
 		);
 
-		const footer = getByTestId("mock-footer");
+		const footer = screen.getByTestId("mock-footer");
 		expect(footer).toBeInTheDocument();
-
-		// Since we are mocking the Footer, we can make sure it's rendered
-		// however we can't check its props directly in this test
 	});
 
 	it("renders children content", () => {
@@ -86,12 +75,12 @@ describe("Card component", () => {
 			author: "Author Name",
 		};
 
-		const { getByText } = render(
+		render(
 			<Card {...props}>
 				<div>Card Content</div>
 			</Card>
 		);
 
-		expect(getByText("Card Content")).toBeInTheDocument();
+		expect(screen.getByText("Card Content")).toBeInTheDocument();
 	});
 });

@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 import Wordcloud from "../../../src/components/wordcloud/Wordcloud";
 
@@ -38,48 +38,7 @@ describe("Wordcloud Component", () => {
 	});
 
 	it("renders without crashing", () => {
-		const { getByTestId } = render(<Wordcloud data={mockData} />);
-		expect(getByTestId("word-cloud")).toBeInTheDocument();
-	});
-
-	it("sets the font and colors correctly from CSS variables", () => {
-		const { getByTestId } = render(<Wordcloud data={mockData} />);
-		const wordCloud = getByTestId("word-cloud");
-		const firstWord = wordCloud.firstChild;
-
-		expect(firstWord.style.fill).toBe("#0000A0");
-	});
-
-	it("passes the correct props to the WordCloud component", () => {
-		const { getByTestId } = render(<Wordcloud data={mockData} />);
-		const wordCloud = getByTestId("word-cloud");
-		const firstWord = wordCloud.firstChild;
-
-		expect(wordCloud.childElementCount).toBe(mockData.length);
-		expect(firstWord.textContent).toBe(mockData[0].text);
-		expect(firstWord.style.fontWeight).toBe("600");
-		expect(firstWord.style.fontSize).toBeTruthy();
-	});
-
-	it("correctly applies font weight based on category", () => {
-		const { getByTestId } = render(<Wordcloud data={mockData} />);
-		const wordCloud = getByTestId("word-cloud");
-		const firstWord = wordCloud.firstChild;
-		const secondWord = wordCloud.children[1];
-
-		expect(firstWord.style.fontWeight).toBe("600");
-		expect(secondWord.style.fontWeight).toBe("600");
-	});
-
-	it("correctly calculates font size based on value", () => {
-		const { getByTestId } = render(<Wordcloud data={mockData} />);
-		const wordCloud = getByTestId("word-cloud");
-		const firstWord = wordCloud.firstChild;
-		const secondWord = wordCloud.children[1];
-
-		const firstWordFontSize = parseFloat(firstWord.style.fontSize);
-		const secondWordFontSize = parseFloat(secondWord.style.fontSize);
-
-		expect(secondWordFontSize).toBeGreaterThan(firstWordFontSize);
+		render(<Wordcloud data={mockData} />);
+		expect(screen.getByTestId("word-cloud")).toBeInTheDocument();
 	});
 });

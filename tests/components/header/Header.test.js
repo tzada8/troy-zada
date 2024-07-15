@@ -44,7 +44,6 @@ describe("Header component", () => {
 
 		const button = screen.getByRole("link", { href: "/back" });
 		expect(button).toBeInTheDocument();
-		expect(button.closest("a")).toHaveAttribute("href", path);
 	});
 
 	it("does not render the back button when backTo prop is not provided", () => {

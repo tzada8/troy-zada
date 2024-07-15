@@ -6,7 +6,7 @@ import "./Card.css";
 
 export default function Card(props) {
 	return (
-		<div className="card-box">
+		<div data-testid="card-box" className="card-box">
 			<div className="card-container">
 				<Header label={props.label} backTo={props.backTo} />
 				<div className="card-content">

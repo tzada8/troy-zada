@@ -22,7 +22,7 @@ describe("ProgressBar Component", () => {
 
 		render(<ProgressBar percent={percent} />);
 
-		const progressBarElement = document.querySelector(".progress-bar__progress");
+		const progressBarElement = screen.getByTestId("progress-bar__progress");
 		expect(progressBarElement).toHaveStyle(`width: ${percent}%`);
 	});
 
@@ -32,7 +32,7 @@ describe("ProgressBar Component", () => {
 		render(<ProgressBar percent={percent} />);
 
 		const percentageElement = screen.getByText(`${percent}%`);
-		const progressBarElement = document.querySelector(".progress-bar__progress");
+		const progressBarElement = screen.getByTestId("progress-bar__progress");
 
 		expect(percentageElement).toBeInTheDocument();
 		expect(progressBarElement).toHaveStyle(`width: ${percent}%`);
@@ -44,7 +44,7 @@ describe("ProgressBar Component", () => {
 		render(<ProgressBar percent={percent} />);
 
 		const percentageElement = screen.getByText(`${percent}%`);
-		const progressBarElement = document.querySelector(".progress-bar__progress");
+		const progressBarElement = screen.getByTestId("progress-bar__progress");
 
 		expect(percentageElement).toBeInTheDocument();
 		expect(progressBarElement).toHaveStyle(`width: ${percent}%`);

@@ -25,6 +25,7 @@ export default function RoutingButton(props) {
 
 	return isExternal ? (
 		<a
+			data-testid="external-link"
 			href={props.path}
 			target="_blank"
 			rel="noreferrer"
@@ -34,7 +35,7 @@ export default function RoutingButton(props) {
 			{buttonContent}
 		</a>
 	) : (
-		<Link to={props.path} className={buttonClass}>
+		<Link data-testid="internal-link" to={props.path} className={buttonClass}>
 			{buttonContent}
 		</Link>
 	);
