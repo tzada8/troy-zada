@@ -1,6 +1,5 @@
 <a id="readme-top"></a>
 
-
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
@@ -58,8 +57,8 @@
     </ol>
 </details>
 
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 <div align="center">
@@ -69,25 +68,25 @@
 
 The Troy Zada website helps users view information about me in one of the following categories:
 
-- <b>Home:</b> Basic information as well as social media links
-- <b>Education:</b> Universities I attended and awards I achieved
-- <b>Experience:</b> Previous history of companies I worked at
-- <b>Skills:</b> Proficiency in interpersonal and professional skills
-- <b>Portfolio:</b> Projects I am working on or have completed
-- <b>Blog:</b> Stories shared about past experiences
-- <b>Contact:</b> A way to reach out and leave me a message
+-   <b>Home:</b> Basic information as well as social media links
+-   <b>Education:</b> Universities I attended and awards I achieved
+-   <b>Experience:</b> Previous history of companies I worked at
+-   <b>Skills:</b> Proficiency in interpersonal and professional skills
+-   <b>Portfolio:</b> Projects I am working on or have completed
+-   <b>Blog:</b> Stories shared about past experiences
+-   <b>Contact:</b> A way to reach out and leave me a message
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 ### Installations
 
 Ensure the following applications are locally installed:
 
-- [Node](https://nodejs.org/en/download)
+-   [Node](https://nodejs.org/en/download)
 
 ### Frontend Setup
 
@@ -98,8 +97,8 @@ Ensure the following applications are locally installed:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- ADDING ADDITIONAL PACKAGES -->
+
 ## Adding Additional Packages
 
 ### Frontend Packages
@@ -112,8 +111,8 @@ Ensure the following applications are locally installed:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- STARTING THE APP -->
+
 ## Starting the App
 
 ### Frontend Startup
@@ -125,8 +124,8 @@ Ensure the following applications are locally installed:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- TESTING -->
+
 ## Testing
 
 ### Frontend Tests
