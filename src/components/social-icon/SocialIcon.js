@@ -16,7 +16,12 @@ export default function SocialIcon(props) {
 		>
 			<RoutingButton path={props.link} icon={props.icon} aria={props.aria} color="blue" />
 			{props.tooltip && (
-				<div className={`social-tooltip center ${tooltipClass}`}>{props.tooltip}</div>
+				<div
+					className={`social-tooltip center ${tooltipClass}`}
+					aria-hidden={!isTooltipVisible}
+				>
+					{props.tooltip}
+				</div>
 			)}
 		</div>
 	);
