@@ -33,25 +33,23 @@
             <a href="#getting-started">Getting Started</a>
             <ul>
                 <li><a href="#installations">Installations</a></li>
-                <li><a href="#frontend-setup">Frontend Setup</a></li>
+                <li><a href="#dependencies">Dependencies</a></li>
             </ul>
         </li>
         <li>
             <a href="#adding-additional-packages">Adding Additional Packages</a>
-            <ul>
-                <li><a href="#frontend-packages">Frontend Packages</a></li>
-            </ul>
         </li>
         <li>
             <a href="#starting-the-app">Starting the App</a>
-            <ul>
-                <li><a href="#frontend-startup">Frontend Startup</a></li>
-            </ul>
         </li>
         <li>
             <a href="#testing">Testing</a>
+        </li>
+         <li>
+            <a href="#linting-and-formatting">Linting and Formatting</a>
             <ul>
-                <li><a href="#frontend-tests">Frontend Tests</a></li>
+                <li><a href="#linting">Linting</a></li>
+                <li><a href="#formatting">Formatting</a></li>
             </ul>
         </li>
     </ol>
@@ -88,20 +86,19 @@ Ensure the following applications are locally installed:
 
 -   [Node](https://nodejs.org/en/download)
 
-### Frontend Setup
+### Dependencies
 
-1. Install node dependencies
-    ```
-    npm install
-    ```
+Install node dependencies:
+
+```
+npm install
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ADDING ADDITIONAL PACKAGES -->
 
 ## Adding Additional Packages
-
-### Frontend Packages
 
 1. Install the additional packages. As as example:
     ```
@@ -115,12 +112,11 @@ Ensure the following applications are locally installed:
 
 ## Starting the App
 
-### Frontend Startup
+Start the application at [http://localhost:3000](http://localhost:3000):
 
-1. Start the application at [http://localhost:3000](http://localhost:3000)
-    ```
-    npm start
-    ```
+```
+npm start
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,11 +124,36 @@ Ensure the following applications are locally installed:
 
 ## Testing
 
-### Frontend Tests
+Run the unit tests:
 
-1. Run the tests
-    ```
-    npm test
-    ```
+```
+npm test
+```
+
+<!-- LINTING AND FORMATTING -->
+
+## Linting and Formatting
+
+### Linting
+
+Run the eslint script:
+
+```
+npm run lint
+```
+
+### Formatting
+
+See if any files require formatting:
+
+```
+npm run prettier:check
+```
+
+Fix files that require formatting:
+
+```
+npm run prettier:write
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
