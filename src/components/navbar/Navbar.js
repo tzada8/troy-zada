@@ -17,7 +17,7 @@ export default function Navbar(props) {
 
 	const handleLogoClick = () => {
 		closeMenu();
-		ReactGA.event({ category: "User", action: "Logo click" });
+		ReactGA.event({ category: "Button", action: "Logo click" });
 	};
 
 	return (

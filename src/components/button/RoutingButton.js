@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from "react-ga4";
 import { Link } from "react-router-dom";
 
 import Icon from "../icon/Icon";
@@ -8,6 +9,11 @@ export default function RoutingButton(props) {
 	const externalLinks = ["https://", "mailto:"];
 	const isExternal = externalLinks.some((i) => props.path.includes(i));
 	const isIcon = props.label ? false : true;
+	const ariaText = props.label || props.aria;
+
+	const handleButtonClick = () => {
+		ReactGA.event({ category: "Button", action: `${ariaText} click` });
+	};
 
 	const iconButton = (
 		<Icon image={props.icon} color={props.color} large={props.color} clickable />
@@ -30,12 +36,18 @@ export default function RoutingButton(props) {
 			target="_blank"
 			rel="noreferrer"
 			className={buttonClass}
-			aria-label={props.label || props.aria}
+			aria-label={ariaText}
+			onClick={handleButtonClick}
 		>
 			{buttonContent}
 		</a>
 	) : (
-		<Link data-testid="internal-link" to={props.path} className={buttonClass}>
+		<Link
+			data-testid="internal-link"
+			to={props.path}
+			className={buttonClass}
+			onClick={handleButtonClick}
+		>
 			{buttonContent}
 		</Link>
 	);
