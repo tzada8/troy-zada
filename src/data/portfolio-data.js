@@ -28,7 +28,7 @@ export const portfolioData = [
 		element: <Juxtapose />,
 		image: juxtaposeImage,
 		tagline: "Recommendation and comparison application for improving purchasing decisions",
-		date: "May 2023 - Apr. 2024",
+		date: "May 2023 - Apr 2024",
 		github: `${BASE_GITHUB}/tzada8/capstone`,
 	},
 	{
@@ -46,7 +46,7 @@ export const portfolioData = [
 		element: <TroyZada />,
 		image: troyZadaImage,
 		tagline: "Discover my experiences, qualities, and overall portfolio",
-		date: "Feb. 2021 - July 2024",
+		date: "Feb 2021 - Jul 2024",
 		github: `${BASE_GITHUB}/tzada8/troyzada`,
 	},
 	{
@@ -55,7 +55,7 @@ export const portfolioData = [
 		element: <Pathfinding />,
 		image: pathfindingImage,
 		tagline: "Visually compare various shortest path algorithms",
-		date: "Apr. 2021",
+		date: "Apr 2021",
 		github: `${BASE_GITHUB}/tzada8/pathfinding-algorithms`,
 	},
 	{
@@ -64,7 +64,7 @@ export const portfolioData = [
 		element: <SudokuSolver />,
 		image: sudokuSolverImage,
 		tagline: "Solve any sudoku puzzle with ease",
-		date: "Jan. 2021",
+		date: "Jan 2021",
 		github: `${BASE_GITHUB}/tzada8/sudoku-solver`,
 	},
 	{
@@ -73,7 +73,7 @@ export const portfolioData = [
 		element: <ResumeClassifier />,
 		image: ResumeClassifierImage,
 		tagline: "Determine if applicants will receive an interview based on their resume",
-		date: "Jan. 2022 - Apr. 2022",
+		date: "Jan 2022 - Apr 2022",
 		github: `${BASE_GITHUB}/rrokhit/resume-classifier`,
 	},
 	{
@@ -82,7 +82,7 @@ export const portfolioData = [
 		element: <Moodivity />,
 		image: moodivityImage,
 		tagline: "Boost productivity while balancing mental health",
-		date: "Nov. 2020",
+		date: "Nov 2020",
 		github: `${BASE_GITHUB}/s6eskand/Moodivity`,
 	},
 ];

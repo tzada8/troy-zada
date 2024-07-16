@@ -1,13 +1,13 @@
 .icon-frame {
 	display: inline-block;
-	margin: 0 2px;
+	margin: 0 2.5px;
 }
 
 .social-tooltip {
 	color: var(--WHITE);
 	background: var(--DARK-BLUE);
 	position: absolute;
-	width: 200px;
+	width: 204px;
 	margin-top: 1.1%;
 	padding: 8px;
 	border-radius: var(--BORDER-RADIUS-DEFAULT);
