@@ -20,11 +20,16 @@ export default function Navbar(props) {
 		ReactGA.event({ category: "Button", action: "Logo click" });
 	};
 
+	const handleMenuClick = () => {
+		handleClick();
+		ReactGA.event({ category: "Button", action: "Menu click" });
+	};
+
 	return (
 		<nav className={props.isMid ? "middle" : "left"}>
 			<div className="navbar-container">
 				<Logo className="navbar-logo-position" onClick={handleLogoClick} />
-				<div className="menu-icon center" onClick={handleClick}>
+				<div className="menu-icon center" onClick={handleMenuClick}>
 					<Icon image={click ? <FaTimes /> : <FaBars />} color="white" clickable />
 				</div>
 				<div data-testid="nav-menu" className={`nav-menu ${click ? "active" : ""}`}>
