@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactGA from "react-ga4";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
 
@@ -14,10 +15,15 @@ export default function Navbar(props) {
 	const handleClick = () => setClick(!click);
 	const closeMenu = () => setClick(false);
 
+	const handleLogoClick = () => {
+		closeMenu();
+		ReactGA.event({ category: "User", action: "Logo click" });
+	};
+
 	return (
 		<nav className={props.isMid ? "middle" : "left"}>
 			<div className="navbar-container">
-				<Logo className="navbar-logo-position" onClick={closeMenu} />
+				<Logo className="navbar-logo-position" onClick={handleLogoClick} />
 				<div className="menu-icon center" onClick={handleClick}>
 					<Icon image={click ? <FaTimes /> : <FaBars />} color="white" clickable />
 				</div>

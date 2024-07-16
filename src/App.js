@@ -18,7 +18,7 @@ function Display() {
 	const isHomeActive = location.pathname === home.path;
 
 	useEffect(() => {
-		ReactGA.send({ hitType: "pageview", page: location.pathname });
+		ReactGA.send({ hitType: "pageview", page: location.pathname, title: location.pathname });
 	}, [location]);
 
 	return (
