@@ -11,7 +11,9 @@ export default function Header(props) {
 			<div className="header-title">
 				{props.label && <h2>{props.label}</h2>}
 				{props.backTo && (
-					<RoutingButton path={props.backTo} icon={<FaXmark />} aria="Close" />
+					<div>
+						<RoutingButton path={props.backTo} icon={<FaXmark />} aria="Close" />
+					</div>
 				)}
 			</div>
 			<HorizontalBar />
