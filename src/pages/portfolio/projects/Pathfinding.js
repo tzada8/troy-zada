@@ -51,9 +51,10 @@ export default function Pathfinding() {
 
 			<Subheading label="Technical Functionality" />
 			<Paragraph content="A settings component of the entire application allows the user to adjust parameters before running the pathfinding. Users can start the pathfinding, clear the board, choose if they want to visually see the solution, choose between which algorithm to use, and choose between which obstacles to place." />
+			<Paragraph content="Users can manually draw obstacles themselves or choose from one of the preset options. Once a particular algorithm and obstacle is selected, the user can specify if they want to visually see the solution unfold or if they just want to see the final solution." />
 			<Paragraph
 				last
-				content="Users can manually draw obstacles themselves or choose from one of the preset options. Once a particular algorithm and obstacle is selected, the user can specify if they want to see the visual solution or to just see the final solution."
+				content="Visually displaying the solution will individually render the tiles to portray how the algorithm determines the shortest path within the given set of obstacles. Red and green tiles will appear depicting which tiles the algorithm needed to check before reaching the end tile. If no solution exists, a popup message will inform the user that there is no possible path between the start and end tiles."
 			/>
 		</div>
 	);

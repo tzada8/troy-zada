@@ -27,7 +27,7 @@ export default function UniversityLifeLessons() {
 			<Paragraph content="In short, networking is life changing. It can uncover career opportunities that previously seemed out of reach, purely based on your connections." />
 
 			<Subheading label="7. Use a Calendar and To-do List" />
-			<Paragraph content="Effectively managing time is crucial. At university, I often faced multiple assessments due th same time. To handle this, I immediately noted deadlines as soon as I was aware of them. This helped me visualize my tasks and their deadlines. My to-do list compiled the tasks from different courses in one place, allowing me to prioritize them easily. Similarly, my calendar helped me plan my schedule, assessment work, and free time." />
+			<Paragraph content="Effectively managing time is crucial. At university, I often faced multiple assessments due the same time. To handle this, I immediately noted deadlines as soon as I was aware of them, which helped me visualize my overall agenda. My to-do list compiled the tasks from different courses in one place, allowing me to prioritize them easily. Similarly, my calendar helped me plan my schedule, assessment work, and free time." />
 
 			<Subheading label="8. Prioritization" />
 			<Paragraph content="Organizing the order work needs to be completed is highly valuable. For instance, working on an assignment that’s due in three weeks when there’s another due tomorrow is generally inefficient. Instead, organizing tasks based on their urgency and complexity is more effective. Personally, I find it beneficial to prioritize tasks first by their deadlines and then by complexity. If two tasks are due on the same day, I assess the time required to complete each task and start with the easier one. This approach offers several advantages: 1) it provides an immediate sense of accomplishment motivating me to complete the complex task, 2) leaves ample time to complete the complex task, and 3) helps get me into a work mindset for the complex task. Instead, if the more complex task was prioritized first, this would just result in two incomplete tasks and increased stress." />
@@ -38,7 +38,7 @@ export default function UniversityLifeLessons() {
 			<Subheading label="10. Explore" />
 			<Paragraph
 				last
-				content="Aside from obtaining a degree, the primary goal of university is to learn and explore your passions. Use the time to experiment and discover what truly interests you. Once you begin full-time work after graduation, making changes becomes much more challenging."
+				content="Aside from obtaining a degree, the primary goal of university is to learn and explore your passions. Use the time to experiment and discover what truly interests you. Once you begin full-time work after graduation, making changes isn’t impossible, but becomes much more challenging."
 			/>
 		</div>
 	);
