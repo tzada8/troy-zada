@@ -10,7 +10,7 @@ export default function FirstWorkTerm() {
 
 			<Subheading label="Changing Roles" />
 			<Paragraph content="While at EngineeringCPR, I was primarily responsible for validating the quality of all parts and components through receiving, inspection, and inventory control processes. This involved inspecting components, writing documentation, and performing necessary procedures." />
-			<Paragraph content="However, after a few weeks, I was asked to assist EngineeringCPR in a manufacturing contract with Thornhill Medical. Adapting to this new role, I was required to transition to an engineering technician, taking on responsibilities beyond quality inspections. I began manufacturing mechanical and electrical fixtures for Thornhill Medical, including physically assembly and documentation. Specifically, I created instruction manuals and quality documents for the fixtures I built." />
+			<Paragraph content="However, after a few weeks, I was asked to assist EngineeringCPR in a manufacturing contract with Thornhill Medical. Adapting to this new role, I was required to transition to an engineering technician, taking on responsibilities beyond quality inspections. I began manufacturing mechanical and electrical fixtures, including assembly and documentation. Specifically, I created instruction manuals and quality documents for the fixtures." />
 
 			<Subheading label="Purpose Behind the Work" />
 			<Paragraph content="My work involved supporting Thornhill Medical in manufacturing 1200 Intensive Care Units (ICUs) in response to COVID-19. This included manufacturing test fixtures for evaluating individual ICU components prior to final assembled." />
@@ -25,7 +25,7 @@ export default function FirstWorkTerm() {
 			<Paragraph content="During this work term, I engaged in a variety of tasks instead of focusing on one. I manufactured test fixtures, created work instructions, and handled all original quality-related tasks." />
 			<Paragraph
 				last
-				content="If there’s one message I’d like to leave you with, it’s this: “Don’t be afraid of change. Embrace it.” Personally, had I not accepted the new role as a contractor for Thornhill Medical, I would missed out on experiencing the manufacturing side of medical fixtures and would have remained solely on the quality side. Being open to change allowed me to broaden my horizons and acquire many additional skills that I would not have otherwise had the chance to learn."
+				content="If there’s one message I’d like to leave you with, it’s this: “Don’t be afraid of change. Embrace it.” Personally, had I not accepted the new role as a contractor for Thornhill Medical, I would have missed out on experiencing the manufacturing side of medical fixtures and would have remained solely on the quality side. Being open to change allowed me to broaden my horizons and acquire many additional skills that I would not have otherwise had the opportunity to learn."
 			/>
 		</div>
 	);
