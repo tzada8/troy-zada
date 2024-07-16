@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, useLocation } from "react-router-dom";
+import ReactGA from "react-ga4";
 
 import { home } from "./routes/routes";
 
@@ -10,9 +11,15 @@ import "./App.css";
 import "./styles/scrollbar.css";
 import "./styles/text.css";
 
+ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID);
+
 function Display() {
 	const location = useLocation();
 	const isHomeActive = location.pathname === home.path;
+
+	useEffect(() => {
+		ReactGA.send({ hitType: "pageview", page: location.pathname, title: location.pathname });
+	}, [location]);
 
 	return (
 		<div>
