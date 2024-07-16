@@ -17,6 +17,10 @@ function Display() {
 	const location = useLocation();
 	const isHomeActive = location.pathname === home.path;
 
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname);
+	}, []);
+
 	return (
 		<div>
 			<Navbar isMid={isHomeActive} />
@@ -27,10 +31,6 @@ function Display() {
 }
 
 export default function App() {
-	useEffect(() => {
-		ReactGA.pageview(window.location.pathname);
-	}, []);
-
 	return (
 		<BrowserRouter>
 			<Display />
