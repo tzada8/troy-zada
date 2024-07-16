@@ -22,11 +22,11 @@ form .textarea-element {
 }
 
 form .form-control:hover {
-	box-shadow: 0px 0px 6px 2px var(--DARK-BLUE);
+	box-shadow: 0 0 6px 2px var(--DARK-BLUE);
 }
 
 form .form-control:focus {
-	box-shadow: 0px 0px 6px 2px var(--BLUE);
+	box-shadow: 0 0 6px 2px var(--BLUE);
 }
 
 form .form-submit-sizing {
