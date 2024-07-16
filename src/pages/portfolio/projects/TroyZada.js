@@ -43,7 +43,10 @@ export default function TroyZada() {
 
 			<GroupedList
 				header="Deployment"
-				bullets={[{ label: "Netlify", content: "Frontend deployment" }]}
+				bullets={[
+					{ label: "Netlify", content: "Frontend deployment" },
+					{ label: "Google Analytics", content: "Tracking for page views and clicks" },
+				]}
 			/>
 
 			<Subheading label="Technical Functionality" />
