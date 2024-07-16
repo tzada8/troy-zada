@@ -1,5 +1,5 @@
 import React from "react";
-import { MdContactMail } from "react-icons/md";
+import { FaEnvelope } from "react-icons/fa6";
 
 import { socials } from "../../data/constants";
 import { contact, home, routes } from "../../routes/routes";
@@ -41,7 +41,7 @@ export default function Home(props) {
 						<RoutingButton
 							path={routes[contact].path}
 							label="GET IN TOUCH"
-							icon={<MdContactMail />}
+							icon={<FaEnvelope />}
 						/>
 					</div>
 				</div>

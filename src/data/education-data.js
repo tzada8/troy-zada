@@ -1,12 +1,10 @@
 import React from "react";
-
-import { FaAward } from "react-icons/fa6";
-import { IoSchool } from "react-icons/io5";
+import { FaAward, FaGraduationCap } from "react-icons/fa6";
 
 export const educationData = [
 	{
 		label: "Education",
-		icon: <IoSchool />,
+		icon: <FaGraduationCap />,
 		data: [
 			{
 				label: "Management Sciences, PhD",

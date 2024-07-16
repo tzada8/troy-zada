@@ -1,6 +1,5 @@
 import React from "react";
-import { FaCircleCheck } from "react-icons/fa6";
-import { MdConstruction, MdError } from "react-icons/md";
+import { FaCircleCheck, FaCircleExclamation, FaScrewdriverWrench } from "react-icons/fa6";
 
 import Icon from "../icon/Icon";
 import "./Popup.css";
@@ -15,13 +14,13 @@ export default function Popup(props) {
 				}
 			: props.status === "failure"
 				? {
-						icon: <MdError />,
+						icon: <FaCircleExclamation />,
 						color: "red",
 						class: "failure-popup",
 					}
 				: props.status === "construction"
 					? {
-							icon: <MdConstruction />,
+							icon: <FaScrewdriverWrench />,
 							color: "orange",
 							class: "construction-popup",
 						}

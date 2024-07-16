@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ReactGA from "react-ga4";
-import { FaTimes } from "react-icons/fa";
-import { FaBars } from "react-icons/fa6";
+import { FaBars, FaXmark } from "react-icons/fa6";
 
 import { routes } from "../../routes/routes";
 
@@ -30,7 +29,7 @@ export default function Navbar(props) {
 			<div className="navbar-container">
 				<Logo className="navbar-logo-position" onClick={handleLogoClick} />
 				<div className="menu-icon center" onClick={handleMenuClick}>
-					<Icon image={click ? <FaTimes /> : <FaBars />} color="white" clickable />
+					<Icon image={click ? <FaXmark /> : <FaBars />} color="white" clickable />
 				</div>
 				<div data-testid="nav-menu" className={`nav-menu ${click ? "active" : ""}`}>
 					{routes.map((r) => (

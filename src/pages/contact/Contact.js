@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HiQuestionMarkCircle } from "react-icons/hi";
+import { FaEnvelopeCircleCheck } from "react-icons/fa6";
 
 import { EMAIL } from "../../data/constants";
 
@@ -40,7 +40,7 @@ export default function Contact() {
 	const [formState, setFormState] = useState(defaultFormState);
 
 	const defaultSubmitMessage = {};
-	const [submitMessage, setSubmitMessage] = useState({ defaultSubmitMessage });
+	const [submitMessage, setSubmitMessage] = useState(defaultSubmitMessage);
 
 	const handleChange = (e) => setFormState({ ...formState, [e.target.name]: e.target.value });
 
@@ -72,7 +72,7 @@ export default function Contact() {
 
 	return (
 		<div>
-			<Subtitle icon={<HiQuestionMarkCircle />} label="Send Me a Message" />
+			<Subtitle icon={<FaEnvelopeCircleCheck />} label="Send Me a Message" />
 			<div className="contact-form-container">
 				<form
 					name="contact-form"

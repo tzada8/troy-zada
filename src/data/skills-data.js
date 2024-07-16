@@ -1,11 +1,10 @@
 import React from "react";
-
-import { FaCogs, FaUsers } from "react-icons/fa";
+import { FaGears, FaUserGroup } from "react-icons/fa6";
 
 export const skillsData = [
 	{
 		label: "Technical Skills",
-		icon: <FaCogs />,
+		icon: <FaGears />,
 		data: [
 			// 30
 			{ text: "Python", value: 100, category: "highest" },
@@ -46,7 +45,7 @@ export const skillsData = [
 	},
 	{
 		label: "Interpersonal Skills",
-		icon: <FaUsers />,
+		icon: <FaUserGroup />,
 		data: [
 			// 25
 			{ text: "Detail-oriented", value: 81, category: "highest" },
