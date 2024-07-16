@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, useLocation } from "react-router-dom";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 import { home } from "./routes/routes";
 
@@ -18,8 +18,8 @@ function Display() {
 	const isHomeActive = location.pathname === home.path;
 
 	useEffect(() => {
-		ReactGA.pageview(window.location.pathname);
-	}, []);
+		ReactGA.send({ hitType: "pageview", page: location.pathname });
+	}, [location]);
 
 	return (
 		<div>
