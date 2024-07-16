@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter, useLocation } from "react-router-dom";
+import ReactGA from "react-ga";
 
 import { home } from "./routes/routes";
 
@@ -9,6 +10,8 @@ import Navbar from "./components/navbar/Navbar";
 import "./App.css";
 import "./styles/scrollbar.css";
 import "./styles/text.css";
+
+ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID);
 
 function Display() {
 	const location = useLocation();
@@ -24,6 +27,10 @@ function Display() {
 }
 
 export default function App() {
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname);
+	}, []);
+
 	return (
 		<BrowserRouter>
 			<Display />
