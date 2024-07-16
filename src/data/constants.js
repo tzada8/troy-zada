@@ -7,7 +7,7 @@ export const BASE_GITHUB = "https://github.com";
 const LINKEDIN_LINK = "https://www.linkedin.com/in/troy-zada";
 const FACEBOOK_LINK = "https://www.facebook.com/troy.m.zada";
 const GITHUB_LINK = `${BASE_GITHUB}/tzada8`;
-export const EMAIL = "tzada@uwaterloo.ca";
+export const EMAIL = "tzada.info@gmail.com";
 
 export const socials = [
 	{ aria: "Email", link: `mailto:${EMAIL}`, icon: <FaSquareEnvelope />, tooltip: EMAIL },
