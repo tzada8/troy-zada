@@ -2,6 +2,8 @@
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+[![Node Version](https://img.shields.io/static/v1?label=Node&message=^20.9.0&color=52c41a&style=for-the-badge)](https://nodejs.org)
+[![npm Version](https://img.shields.io/static/v1?label=npm&message=^10.1.0&color=ff4d4f&style=for-the-badge)](https://nodejs.org)
 
 ![Netlify Status](https://api.netlify.com/api/v1/badges/3ab975fd-ffa4-4906-a0e6-20aa0210c651/deploy-status)
 
