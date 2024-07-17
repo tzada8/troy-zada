@@ -8,21 +8,21 @@
 }
 
 .skill-container {
-    padding: 6px 15px;
-    border: 1px solid var(--GREY);
-    border-radius: var(--BORDER-RADIUS-DEFAULT);
+	padding: 6px 15px;
+	border: 1px solid var(--GREY);
+	border-radius: var(--BORDER-RADIUS-DEFAULT);
 }
 
 .skill-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .skill-image {
-    margin-right: 8px;
-    width: 20px;
-    height: 20px;
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
 }
 
 @media screen and (max-width: 1300px) {
