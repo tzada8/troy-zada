@@ -12,10 +12,8 @@ export const experienceData = [
 				duration: "Jan 2023 - Jun 2024",
 				details: [
 					"Optimized database storage and compute usage resulting in drastic cost savings.",
-					"Resolved a vital AWS security leak to avoid catastrophic financial losses.",
 					"Triaged alerts to enhance data quality.",
 					"Setup weekly pipelines to generate sitemaps.",
-					"Implemented alerting mechanisms to routinely detect and handle missing products.",
 				],
 			},
 		],
@@ -30,8 +28,7 @@ export const experienceData = [
 				duration: "May 2022 - Aug 2022",
 				details: [
 					"Strengthened the application's infrastructure by updating all project dependencies.",
-					"Performed data sanitization on unformatted fields to increase team productivity.",
-					"Integrated the application with Slack to automatically send approval messages.",
+					"Integrated Slack to automate the process of sending approval messages.",
 				],
 			},
 		],
@@ -84,7 +81,7 @@ export const experienceData = [
 				company: "CANASTAMPI inc.",
 				duration: "Jun 2019 - Aug 2019",
 				details: [
-					"Operated and programmed numerous machines including a CNC Milling Machine, Lathe, Drill Press, and Pantograph to engrave, polish, and mill various parts.",
+					"Operated machines including a CNC Mill, Lathe, Drill Press, and Pantograph to engrave, polish, and fabricate parts.",
 					"Validated and verified machined parts precisely met drawing specifications.",
 				],
 			},
