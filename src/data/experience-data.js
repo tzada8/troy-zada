@@ -1,10 +1,52 @@
 import React from "react";
-import { FaCalendar } from "react-icons/fa6";
+import { FaIndustry, FaSchool } from "react-icons/fa6";
 
 export const experienceData = [
 	{
-		label: "2024",
-		icon: <FaCalendar />,
+		label: "Teaching",
+		icon: <FaSchool />,
+		data: [
+			{
+				label: "Decision Support Systems Teaching Assistant",
+				company: "University of Waterloo",
+				duration: "May 2025 - Aug 2025",
+				details: [
+					"Taught data engineering concepts such as transformations, predictions, and pyspark.",
+					"Promptly graded student assessments.",
+				],
+			},
+			{
+				label: "Advanced Machine Learning Teaching Assistant",
+				company: "University of Waterloo",
+				duration: "Jan 2025 - Apr 2025",
+				details: [
+					"Taught machine learning concepts such as neural networks, ensemble methods, and regression.",
+					"Promptly graded student assessments.",
+				],
+			},
+			{
+				label: "Python Programming Teaching Assistant",
+				company: "University of Waterloo",
+				duration: "Sep 2024 - Dec 2024",
+				details: [
+					"Taught Python programming concepts such as classes, looping, and testing.",
+					"Promptly graded student assessments.",
+				],
+			},
+			{
+				label: "Java Programming Teaching Assistant",
+				company: "University of Waterloo",
+				duration: "Jan 2021 - Apr 2021",
+				details: [
+					"Taught Java programming concepts such as classes, looping, and testing.",
+					"Promptly graded student assessments.",
+				],
+			},
+		],
+	},
+	{
+		label: "Industry",
+		icon: <FaIndustry />,
 		data: [
 			{
 				label: "Data Engineer",
@@ -12,31 +54,18 @@ export const experienceData = [
 				duration: "Jan 2023 - Jun 2024",
 				details: [
 					"Optimized database storage and compute usage resulting in drastic cost savings.",
-					"Triaged alerts to enhance data quality.",
 					"Setup weekly pipelines to generate sitemaps.",
 				],
 			},
-		],
-	},
-	{
-		label: "2022",
-		icon: <FaCalendar />,
-		data: [
 			{
 				label: "Software Engineer",
 				company: "FundThrough",
 				duration: "May 2022 - Aug 2022",
 				details: [
-					"Strengthened the application's infrastructure by updating all project dependencies.",
+					"Strengthened the application's infrastructure by updating project dependencies.",
 					"Integrated Slack to automate the process of sending approval messages.",
 				],
 			},
-		],
-	},
-	{
-		label: "2021",
-		icon: <FaCalendar />,
-		data: [
 			{
 				label: "Software Engineer",
 				company: "TribalScale",
@@ -47,21 +76,6 @@ export const experienceData = [
 				],
 			},
 			{
-				label: "Programming Teaching Assistant",
-				company: "University of Waterloo",
-				duration: "Jan 2021 - Apr 2021",
-				details: [
-					"Prepared practice problems and explanations to teach complex Java programming concepts to students.",
-					"Validated all programming content and concepts to ensure students could easily learn.",
-				],
-			},
-		],
-	},
-	{
-		label: "2020",
-		icon: <FaCalendar />,
-		data: [
-			{
 				label: "Design and Manufacturing Technician",
 				company: "EngineeringCPR",
 				duration: "Apr 2020 - Sep 2020",
@@ -70,19 +84,13 @@ export const experienceData = [
 					"Assembled fixtures through soldering, comprehending electrical schematics, and optimizing component placements.",
 				],
 			},
-		],
-	},
-	{
-		label: "2019",
-		icon: <FaCalendar />,
-		data: [
 			{
 				label: "Machine Shop Assistant",
 				company: "CANASTAMPI inc.",
 				duration: "Jun 2019 - Aug 2019",
 				details: [
-					"Operated machines including a CNC Mill, Lathe, Drill Press, and Pantograph to engrave, polish, and fabricate parts.",
-					"Validated and verified machined parts precisely met drawing specifications.",
+					"Operated machines including a CNC Mill, Lathe, Drill Press, and Pantograph to engrave, polish, and manufacture parts.",
+					"Validated and verified designed parts precisely met drawing specifications.",
 				],
 			},
 		],

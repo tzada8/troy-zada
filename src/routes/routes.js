@@ -16,9 +16,9 @@ import Skills from "../pages/skills/Skills";
 export const home = {
 	...rootRoutes.home,
 	label: FULL_NAME,
-	sublabel: "Management Sciences PhD Student @ University of Waterloo",
+	sublabel: "PhD Student at University of Waterloo",
 	description:
-		"Dedicated and diligent engineering graduate passionate about learning and teaching. Currently focused on researching how programming and optimization can enhance search engines and recommendation systems.",
+		"Passionate engineering graduate committed to learning and teaching, with a keen focus on researching human-centric evaluation of recomendation systems.",
 };
 
 export const pageNotFound = {
