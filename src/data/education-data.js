@@ -7,7 +7,7 @@ export const educationData = [
 		icon: <FaGraduationCap />,
 		data: [
 			{
-				label: "Management Sciences, PhD",
+				label: "Management Sciences & Engineering, PhD",
 				company: "University of Waterloo",
 				duration: "Sep 2024 - Present",
 				details: [

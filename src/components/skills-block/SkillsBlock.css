@@ -9,7 +9,6 @@
 
 .skill-container {
 	padding: 6px 15px;
-	border: 1px solid var(--GREY);
 	border-radius: var(--BORDER-RADIUS-DEFAULT);
 }
 
